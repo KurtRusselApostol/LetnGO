@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEE1DD"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_get_help_experience_host_4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btn_back_experience_host_4"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_123sdp"
+                android:background="#DEE1DD"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:text="How co-hosting works"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_18ssp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_169sdp"
+                android:layout_marginStart="@dimen/_27sdp"
+                android:layout_marginTop="@dimen/_38sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginBottom="0dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="@dimen/_7sdp"
+                app:strokeColor="#999999"
+                app:strokeWidth="@dimen/_2sdp">
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_1sdp"
+                android:text="Did you know that you can Host Experiences with others? Here’s where you can find out what Co-Hosts and assistants can do, how they can help make your Experience run a little smoother, and how to set them up for success. Life just got a little easier.                                                "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:text="How Co-Hosts help"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="The good news is if you’re a primary Host, you can add a team—including a Co-Host or assistant—to your Experience page for some extra help. These teammates are often trusted friends, partners, or someone from aprofessional team who can help you do things like manage your Experience, respond to inquiries, or message booked guests, so you can focus on other things.                                "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:layout_marginBottom="@dimen/_1sdp"
+                android:text="Becoming a Co-Host"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:paddingBottom="@dimen/_10sdp"
+                android:text="Want to help a fellow Experience Host lead guests or manage their page? Exciting! Your first step is to make sure you meet our quality standards. Once you’re invited to host or manage an Experience, you’ll need to submit ID verification to confirm you’re really you. Then, the primary Host of the team will need to send you an email invitation to join."
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_7sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginBottom="@dimen/_34sdp"
+                android:text="No longer interested in being a Co-Host? You can remove yourself from the Experience page. Just know, you won’t be able to host or manage the Experience anymore, but you’ll still have access to your Let n' Go account.                                      "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_13ssp" />
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEE1DD"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_get_help_host_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btn_back_host_2"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_46sdp"
+                android:layout_marginEnd="@dimen/_123sdp"
+                android:background="#DEE1DD"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_34sdp"
+                android:layout_marginBottom="1dp"
+                android:text="Optimizing your listing"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_169sdp"
+                android:layout_marginStart="@dimen/_27sdp"
+                android:layout_marginTop="@dimen/_38sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginBottom="0dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="@dimen/_8sdp"
+                app:strokeColor="#999999"
+                app:strokeWidth="2dp">
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_34sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:textAlignment="center"
+                android:text="Check out this essential guide to help you update or fine-tune your listing. Here’s where you’ll find details on how things work, and instructions for specific settings that can help you make the most of your presence on Let N' Go.                                     "
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:layout_marginBottom="1dp"
+                android:text="Adding pricing and fees"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="Want to manage your nightly price, discounts, and more? Head to Listings. Just know that custom prices will override your listing’s normal nightly, weekly, and monthly prices, or any nightly prices you’ve saved on your calendar. If you want to add other types of fees—like a cleaning fee to help you keep your place in good shape—you can also set it up in Listings.                       "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:layout_marginBottom="1dp"
+                android:text="Manage your listing"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginBottom="@dimen/_34sdp"
+                android:text="Want to manage your nightly price, discounts, and more? Head to Listings. Just know that custom prices will override your listing’s normal nightly, weekly, and monthly prices, or any nightly prices you’ve saved on your calendar. If you want to add other types of fees—like a cleaning fee to help you keep your place in good shape—you can also set it up in Listings.                       "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

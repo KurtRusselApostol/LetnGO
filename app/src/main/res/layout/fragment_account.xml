@@ -1,0 +1,479 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".MainActivity"
+        android:background="#DEE1DD"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/relative1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/layoutHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/rectangle"
+                android:padding="@dimen/_30sdp"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_30sdp"
+            android:layout_marginRight="@dimen/_30sdp"
+            android:layout_marginBottom="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:background="@color/Light_grey">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_112sdp"
+                android:background="@color/Light_grey">
+
+                    <ImageView
+                        android:id="@+id/up_profilePic"
+                        android:layout_width="@dimen/_59sdp"
+                        android:layout_height="@dimen/_64sdp"
+                        android:layout_marginStart="@dimen/_8sdp"
+                        android:layout_marginTop="@dimen/_8sdp"
+                        app:srcCompat="@drawable/accnew" />
+
+                <TextView
+                    android:id="@+id/up_fullName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_73sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:text="Name"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <!-- DIRECT TO PROFILE PAGE      -->
+
+                <TextView
+                    android:id="@+id/btn_timeline"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_69sdp"
+                    android:text="View Profile"
+                    android:textSize="12sp" />
+
+            </RelativeLayout>
+
+            <!--ACCOUNT SETTING SECTION-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_173sdp"
+                android:layout_marginTop="@dimen/_114sdp">
+
+                <TextView
+                    android:id="@+id/up_accountSettings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_11sdp"
+                    android:text="Account Settings"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_personal_info"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                    <TextView
+                        android:id="@+id/up_personalAndAccountText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:text="Personal and Account Information" />
+
+                    <ImageView
+                        android:id="@+id/up_personalAndAccountIcon"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        app:srcCompat="@drawable/accnew" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/securityButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_69sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                    <TextView
+                        android:id="@+id/up_security"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_125sdp"
+                        android:text="Security" />
+
+                    <ImageView
+                        android:id="@+id/up_securityIcon"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_25sdp"
+                        app:srcCompat="@drawable/safetyyy" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_notification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_102sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                    <TextView
+                        android:id="@+id/up_notification"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_108sdp"
+                        android:text="Notification" />
+
+                    <ImageView
+                        android:id="@+id/up_notificationIcon"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        app:srcCompat="@drawable/notifsnew" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_payment_payout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_134sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                    <TextView
+                        android:id="@+id/up_paymentAndPayout"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_60sdp"
+                        android:text="Payment and Payouts" />
+
+                    <ImageView
+                        android:id="@+id/up_paymentAndPayoutIcon"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        app:srcCompat="@drawable/payment_icon" />
+
+                </androidx.cardview.widget.CardView>
+
+
+            </RelativeLayout>
+
+            <!--  HOSTING SECTION    -->
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_123sdp"
+                android:layout_marginTop="@dimen/_288sdp">
+
+                <TextView
+                    android:id="@+id/up_hostingSection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:text="Hosting"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_host_exp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_38sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                <TextView
+                    android:id="@+id/up_manageHosting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginStart="@dimen/_38sdp"
+                    android:layout_marginEnd="@dimen/_84sdp"
+                    android:text="Manage Hosting" />
+
+                    <ImageView
+                        android:id="@+id/up_manageHostingIcon"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        app:srcCompat="@drawable/manage_hsting" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_list_space"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_77sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                <TextView
+                    android:id="@+id/up_startHosting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_100sdp"
+                    android:layout_marginStart="@dimen/_38sdp"
+                    android:text="Start Hosting" />
+
+                <ImageView
+                    android:id="@+id/up_startHostingIcon"
+                    android:layout_width="@dimen/_29sdp"
+                    android:layout_height="@dimen/_29sdp"
+                    app:srcCompat="@drawable/house_careicon" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+
+            <!--SUPPORT SECTION-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_168sdp"
+                android:layout_marginTop="@dimen/_411sdp">
+
+                <TextView
+                    android:id="@+id/textView102"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:text="Support"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_how_works"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_38sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                <TextView
+                    android:id="@+id/up_LetNGo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_38sdp"
+                    android:layout_marginEnd="@dimen/_63sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:text="How Let 'n Go Works" />
+
+                <ImageView
+                    android:id="@+id/up_LetNGoIcon"
+                    android:layout_width="@dimen/_29sdp"
+                    android:layout_height="@dimen/_29sdp"
+                    app:srcCompat="@drawable/logo1" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_safety_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_77sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                <TextView
+                    android:id="@+id/up_safetyCenter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_38sdp"
+                    android:layout_marginTop="@dimen/_6sdp"
+                    android:layout_marginEnd="@dimen/_97sdp"
+                    android:text="Safety Center" />
+
+                <ImageView
+                    android:id="@+id/up_safetyCenterIcon"
+                    android:layout_width="@dimen/_27sdp"
+                    android:layout_height="@dimen/_24sdp"
+                    app:srcCompat="@drawable/safetycenter_icon" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_get_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_111sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                <TextView
+                    android:id="@+id/up_getHelp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_38sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_121sdp"
+                    android:text="Get Help" />
+
+                <ImageView
+                    android:id="@+id/up_getHelpIcon"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    app:srcCompat="@drawable/support_icon" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_142sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                    <TextView
+                        android:id="@+id/up_feedBack"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_78sdp"
+                        android:text="Give us Feedback" />
+
+                    <ImageView
+                        android:id="@+id/up_feedBackIcon"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        app:srcCompat="@drawable/feedbacl_icon" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+            <!-- LEGAL SECTION-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_179sdp"
+                android:layout_marginTop="@dimen/_573sdp" >
+
+                <TextView
+                    android:id="@+id/up_legal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:text="Legal"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_terms"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_53sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                <TextView
+                    android:id="@+id/up_termOfService"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_38sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginEnd="@dimen/_81sdp"
+                    android:text="Terms of Service" />
+
+                <ImageView
+                    android:id="@+id/up_termOfServiceIcon"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    app:srcCompat="@drawable/tos_icon" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_privacyPolicy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_23sdp"
+                    android:layout_marginTop="@dimen/_88sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                    <TextView
+                        android:id="@+id/up_privacyPolicy"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_5sdp"
+                        android:layout_marginEnd="@dimen/_96sdp"
+                        android:text="Privacy Policy" />
+
+                    <ImageView
+                        android:id="@+id/up_privacyPolicyIcon"
+                        android:layout_width="@dimen/_28sdp"
+                        android:layout_height="@dimen/_23sdp"
+                        app:srcCompat="@drawable/privacypolicy_icon" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/btn_logout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_148sdp"
+                    app:cardBackgroundColor="@color/Light_grey">
+
+                <TextView
+                    android:id="@+id/textView103"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_30sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:textSize="16sp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:text="Log out" />
+
+                <ImageView
+                    android:id="@+id/imageView7"
+                    android:layout_width="@dimen/_28sdp"
+                    android:layout_height="@dimen/_23sdp"
+                    app:srcCompat="@drawable/logout" />
+
+                </androidx.cardview.widget.CardView>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

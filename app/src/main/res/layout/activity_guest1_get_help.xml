@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEE1DD"
+    android:fillViewport="true">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <LinearLayout
+            android:id="@+id/linearLayout_get_help_guest_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageButton
+                android:id="@+id/btn_back_host"
+                android:layout_width="@dimen/_35sdp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_46sdp"
+                android:layout_marginEnd="@dimen/_123sdp"
+                android:background="#DEE1DD"
+                android:src="@drawable/arrow_back" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_18sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginBottom="1dp"
+                android:text="Getting started on Let n' Go"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_169sdp"
+                android:layout_marginStart="@dimen/_27sdp"
+                android:layout_marginTop="@dimen/_38sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginBottom="0dp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="@dimen/_8sdp"
+                app:strokeColor="#999999"
+                app:strokeWidth="@dimen/_2sdp">
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_34sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="Whether you want to book a dream stay away from home or host an Let N' Go Experience in your own backyard, here’s how Let N' Go works for you—as a Host or a guest. Let’s start with the basics and go from there. Welcome to the community! "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="1dp"
+                android:text="The Let n' Go community"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_18sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:text="Let N' Go is a community based on connection and belonging. We take the safety of our Hosts and guests very seriously—Hosts must meet and maintain quality standards, and all personal profiles and listings are verified. We work to keep everyone safe on our site and app with encrypted personal data and a trusted payment system. Plus, we have a 24/7 community support team ready to answer any of your questions.                           "
+                android:textAlignment="center"
+                android:textColor="@color/black"
+                android:textSize="17sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:layout_marginBottom="1dp"
+                android:text="Getting set up"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_35sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:textAlignment="center"
+                android:text="Creating an account is free and easy! We’ll need to know a few basic details and then you’ll beasked to submit your government ID— which we don’t share with Hosts or anyone else. Now you're ready to book!         "
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:layout_marginBottom="1dp"
+                android:text="Hosting Basic"
+                android:textColor="@color/black"
+                android:textSize="17sp"
+                android:textStyle="bold" />
+
+
+            <me.biubiubiu.justifytext.library.JustifyTextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_36sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="@dimen/_25sdp"
+                android:textAlignment="center"
+                android:text="If you’re interested in hosting your space, we’ll guide you through the process step-by-step. To host Experiences, just review our quality standards, create a listing, and submit your compelling idea (through a form or a short video if you’re submitting an online experience) for review."
+                android:textColor="@color/black"
+                android:textSize="17sp"/>
+
+            <!--            <me.biubiubiu.justifytext.library.JustifyTextView-->
+            <!--                android:layout_width="match_parent"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="45dp"-->
+            <!--                android:layout_marginEnd="35dp"-->
+            <!--                android:layout_marginTop="20dp"-->
+            <!--                android:layout_marginBottom="5dp"-->
+            <!--                android:textAlignment="center"-->
+            <!--                android:text=""-->
+            <!--                android:textColor="@color/black"-->
+            <!--                android:textSize="16sp"/>-->
+
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,447 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".profile_edit"
+        android:orientation="vertical"
+        android:background="#DEE1DD">
+
+
+        <RelativeLayout
+            android:id="@+id/rl_one_login"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <View
+                android:id="@+id/v_one_login"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_154sdp" />
+
+            <RelativeLayout
+                android:layout_marginTop="@dimen/_69sdp"
+                android:id="@+id/rl_two_login"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:id="@+id/tv_one_login"
+                    android:textSize="28sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:text="E D I T Y O U R P R O F I L E"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:layout_below="@+id/tv_one_login"
+                    android:textSize="15sp"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:text="FILL OUT YOUR INFORMATION"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/editprofile_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/arrow_back" />
+
+        </RelativeLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="@dimen/_23sdp"
+            android:layout_marginStart="@dimen/_23sdp"
+            android:layout_marginEnd="@dimen/_23sdp"
+            app:cardCornerRadius="@dimen/_30sdp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <!--First Name Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_first_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_61sdp"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_5sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_Fname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:hint="First Name"
+                        android:padding="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Last Name Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_last_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_61sdp"
+                    android:layout_below="@+id/layout_first_name"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_4sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_Lname"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:layout_marginTop="@dimen/_28sdp"
+                        android:hint="Last Name"
+                        android:padding="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Email Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_61sdp"
+                    android:layout_below="@+id/layout_last_name"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:hint="Email"
+                        android:inputType="textEmailAddress"
+                        android:padding="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Birthday Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_birthday"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:layout_below="@+id/layout_email"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+
+                    <EditText
+                        android:id="@+id/ed_birthday"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:hint="Birthday"
+                        android:inputType="date"
+                        android:padding="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Contact Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_contact"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_61sdp"
+                    android:layout_below="@+id/layout_birthday"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_contact_no"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:hint="Contact No"
+                        android:inputType="phone"
+                        android:padding="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Age Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_age"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_61sdp"
+                    android:layout_below="@+id/layout_contact"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+
+                    <EditText
+                        android:id="@+id/ed_Age"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:hint="Age"
+                        android:inputType="number"
+                        android:padding="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Gender Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_61sdp"
+                    android:layout_below="@+id/layout_age"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <!--
+                    <TextView
+                        android:id="@+id/tv_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:layout_weight="1"
+                        android:layout_marginTop="10dp"
+                        android:text="Gender"
+                        android:paddingLeft="25dp"
+                        android:textColor="#808080"
+                        android:textSize="15sp"/>
+
+                    <Spinner
+                        android:id="@+id/spinner_gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"/>
+                    -->
+                    <EditText
+                        android:id="@+id/ed_Gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:hint="Gender"
+                        android:padding="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Address Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_61sdp"
+                    android:layout_below="@+id/layout_gender"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_Address"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:hint="Address"
+                        android:padding="@dimen/_17sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Description Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_description"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_61sdp"
+                    android:layout_below="@+id/layout_address"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_Description"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:hint="Description"
+                        android:padding="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Bank Account Details Begin-->
+                <TextView
+                    android:id="@+id/tv_bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/layout_description"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_30sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:text="Bank Details"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/line_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_2sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_below="@id/tv_bank"
+                    android:layout_centerHorizontal="true"
+                    android:background="#808080" />
+
+                <!--Bank Account Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_bank_account"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_61sdp"
+                    android:layout_below="@+id/line_view"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_bank_account"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:hint="Bank Account"
+                        android:padding="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!--Bank Number Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_bank_number"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_61sdp"
+                    android:layout_below="@+id/layout_bank_account"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+
+                    <EditText
+                        android:id="@+id/ed_bank_number"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_50sdp"
+                        android:hint="Bank Number"
+                        android:inputType="number"
+                        android:padding="@dimen/_19sdp"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/btn_update"
+                    style="?android:attr/borderlessButtonStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_38sdp"
+                    android:layout_below="@+id/layout_bank_number"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_23sdp"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_38sdp"
+                    android:elevation="@dimen/_2sdp"
+                    android:onClick="performEditProfile"
+                    android:text="Update Profile"
+                    android:textAllCaps="false"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_bank_number"
+                    app:layout_constraintWidth_percent="0.7" />
+            </RelativeLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+    </LinearLayout>
+</ScrollView>

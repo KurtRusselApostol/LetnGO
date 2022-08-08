@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DDDDDD">
+
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="17dp"
+        android:background="#DDDDDD">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_back"/>
+
+        <TextView
+            android:id="@+id/name_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="150dp"
+            android:text="Name"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="#DDDDDD"
+        android:padding="17dp">
+
+        <TextView
+            android:layout_marginStart="50dp"
+            android:id="@+id/Fname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text=" First Name:"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fieldname"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Fname"
+            android:layout_marginStart="50dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"/>
+
+        <TextView
+            android:layout_marginStart="50dp"
+            android:id="@+id/Mname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Mdille Name:"
+            android:layout_below="@+id/fieldname"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fieldmiddle"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Mname"
+            android:layout_marginStart="50dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"/>
+
+        <TextView
+            android:layout_marginStart="50dp"
+            android:id="@+id/Lname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Last Name:"
+            android:layout_below="@+id/fieldmiddle"
+            android:textStyle="bold"
+            android:textSize="20dp"/>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fieldlast"
+            android:layout_marginTop="10dp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/Lname"
+            android:layout_marginStart="50dp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="10dp"/>
+
+        <Button
+            android:id="@+id/button"
+            android:backgroundTint="#658B6F"
+            android:text="Button"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/fieldlast"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="50dp"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

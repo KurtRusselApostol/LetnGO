@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info_island"
+    tools:ignore="contentDescription">
+
+    <RelativeLayout
+        android:id="@+id/campingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tint="@color/colorWhite"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageButton
+            android:id="@+id/campingImg"
+            android:layout_width="414dp"
+            android:layout_height="418dp"
+            app:srcCompat="@drawable/beach_1"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="-2dp" />
+
+
+        <TextView
+            android:id="@+id/bedInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="462dp"
+            android:text="TextView"
+            android:textColor="#2f5754"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="462dp"
+            android:text="TextView"
+            android:textColor="#2f5754"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/doorInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="85dp"
+            android:layout_marginTop="508dp"
+            android:text="TextView"
+            android:textColor="#2f5754"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/locationInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="508dp"
+            android:text="TextView"
+            android:textColor="#2f5754"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="137dp"
+            android:layout_height="24dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="550dp"
+            android:text="@string/description"
+            android:textColor="#2f5754"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptionMsg"
+            android:layout_width="380dp"
+            android:layout_height="280dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="580dp"
+            android:text="@string/Lorem" />
+
+        <!-- ICONS-->
+
+        <ImageView
+            android:id="@+id/bathIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="455dp"
+            app:srcCompat="@drawable/bath"
+            app:tint="#2f5754" />
+
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="500dp"
+            app:srcCompat="@drawable/location"
+            app:tint="#2f5754" />
+
+        <ImageView
+            android:id="@+id/doorIcon"
+            android:layout_width="32dp"
+            android:layout_height="33dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="500dp"
+            app:srcCompat="@drawable/door"
+            app:tint="#2f5754" />
+
+        <ImageView
+            android:id="@+id/bedIcon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="455dp"
+            app:srcCompat="@drawable/bed"
+            app:tint="#2f5754" />
+
+        <RatingBar
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="430dp"
+            android:numStars="5"
+            android:rating="4" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="153dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="378dp"
+            app:srcCompat="@drawable/button_guidance" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="154dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="382dp"
+            android:text="@string/price"
+            android:textAlignment="center"
+            android:textColor="#2f5754"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

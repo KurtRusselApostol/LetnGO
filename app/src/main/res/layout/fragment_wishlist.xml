@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".FragmentPost">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/normal_background"
+            android:padding="10dp">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:id="@+id/imageButton5"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/icons8topic48"
+                    tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="331dp"
+                    tools:layout_editor_absoluteY="16dp"
+                    android:contentDescription="TODO" />
+
+                <ImageButton
+                    android:id="@+id/imageButton4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="#808080"
+                    android:src="@drawable/white_back_btn"
+                    app:layout_constraintCircleRadius="@dimen/cardview_compat_inset_shadow"
+                    tools:ignore="MissingConstraints,SpeakableTextPresentCheck"
+                    tools:layout_constraintCircleRadius="@dimen/cardview_default_radius"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="5dp" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <TextView
+                android:id="@+id/textWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Let n'Go"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"
+                tools:ignore="HardcodedText,MissingConstraints"
+                tools:layout_editor_absoluteX="120dp"
+                tools:layout_editor_absoluteY="16dp">
+
+
+            </TextView>
+
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+
+            android:layout_width="410dp"
+            android:layout_height="780dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fastscroll__bubble_corner"
+            android:layout_marginTop="100dp"
+            android:background="@drawable/d6"
+            android:fadingEdgeLength="@dimen/fab_margin"
+            android:gravity="center"
+            app:cardCornerRadius="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="800dp"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/textView86"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:text="Wishlist"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:id="@+id/imageView4"
+                    android:layout_width="320dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="90dp"
+                    android:layout_marginEnd="50dp"
+                    android:layout_marginRight="50dp"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/beach_1"
+                    tools:ignore="HardcodedText,RtlHardcoded" />
+
+                <Button
+                    android:id="@+id/b1"
+                    android:layout_width="120dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="145dp"
+                    android:layout_marginTop="620dp"
+                    android:layout_marginEnd="145dp"
+                    android:background="@drawable/buttonfield"
+                    android:backgroundTint="#56bb94"
+                    android:gravity="center"
+                    android:text="Add more"
+                    android:textStyle="normal"
+                    tools:ignore="HardcodedText,SpeakableTextPresentCheck" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

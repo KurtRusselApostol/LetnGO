@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".security3"
+    android:background="#DEE1DD">
+
+    <ImageView
+        android:layout_width="232dp"
+        android:layout_height="430dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="100dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/logo1" />
+
+    <ImageButton
+        android:id="@+id/button_back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:background="#DEE1DD"
+        android:src="@drawable/arrow_back"
+        tools:ignore="SpeakableTextPresentCheck">
+
+    </ImageButton>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="380dp"
+        android:text="@string/enter_password"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="430dp"
+        android:paddingStart="70dp"
+        android:paddingEnd="40dp"
+        android:text="@string/for_security"
+        android:textColor="@color/black"
+        android:textSize="12sp" />
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="110dp"
+        android:layout_marginTop="560dp"
+        android:layout_marginEnd="110dp"
+        android:background="@drawable/custom_button"
+        android:text="@string/continue_1"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        tools:ignore="TextContrastCheck" />
+
+    <EditText
+        android:id="@+id/editTextTextPassword"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="470dp"
+        android:layout_marginEnd="70dp"
+        android:background="@drawable/edit_background"
+        android:ems="13"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:paddingStart="95dp"
+        android:paddingEnd="95dp"
+        android:textAlignment="center"
+        tools:ignore="TextContrastCheck" />
+
+
+</RelativeLayout>

@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    app:layout_constraintBaseline_toTopOf="parent"
+    tools:context=".category_filter_one"
+    >
+
+
+    <LinearLayout
+        android:layout_width="389dp"
+        android:layout_height="1100dp"
+        android:orientation="vertical"
+        >
+
+        <RelativeLayout
+            android:layout_width="389dp"
+            android:layout_height="1050dp"
+            android:background="#dddddd">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="1050dp">
+
+                <TextView
+                    android:id="@+id/locationType"
+                    android:layout_width="220dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="70dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="26dp"
+                    android:text="LOCATION TYPE"
+                    android:textAlignment="center"
+                    android:textColor="#426263"
+                    android:textSize="25dp"
+                    android:textStyle="bold" />
+
+                <RadioButton
+                    android:id="@+id/beachRadBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="160dp"
+                    android:text="Beach"
+                    android:textColor="#426263"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/contrysideRadBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="15dp"
+                    android:text="Countryside"
+                    android:textColor="#426263"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/treehouseRadBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginEnd="160dp"
+                    android:text="Treehouse"
+                    android:textColor="#426263"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/cabinRadBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_marginEnd="11dp"
+                    android:text="Cabin"
+                    android:textColor="#426263"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/islandRadBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="190dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginEnd="11dp"
+                    android:text="Island"
+                    android:textColor="#426263"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/campingRadBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="160dp"
+                    android:layout_marginEnd="160dp"
+                    android:text="Camping"
+                    android:textColor="#426263"
+                    android:textSize="20dp" />
+
+                <RadioButton
+                    android:id="@+id/cavesRadBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="17dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginEnd="160dp"
+                    android:text="Caves"
+                    android:textColor="#426263"
+                    android:textSize="20dp" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="1050dp">
+
+                    <TextView
+                        android:id="@+id/placeType"
+                        android:layout_width="220dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="230dp"
+                        android:layout_marginEnd="107dp"
+                        android:text="PLACE TYPE"
+                        android:textAlignment="center"
+                        android:textColor="#426263"
+                        android:textSize="25dp"
+                        android:textStyle="bold" />
+
+                    <RadioButton
+                        android:id="@+id/entirePlaceRadBtn"
+                        android:layout_width="145dp"
+                        android:layout_height="46dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="270dp"
+                        android:layout_marginEnd="158dp"
+                        android:text="Entire Place"
+                        android:textColor="#426263"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/entirePlaceMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="305dp"
+                        android:text="An entire place which you rent only for yourself"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/shareRoomRadBtn"
+                        android:layout_width="145dp"
+                        android:layout_height="55dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="320dp"
+                        android:layout_marginEnd="158dp"
+                        android:text="Share Room"
+                        android:textColor="#426263"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/shareRoomMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="360dp"
+                        android:text="Sharing a room with guests"
+                        android:textSize="15dp" />
+
+                    <RadioButton
+                        android:id="@+id/privateRoomRadBtn"
+                        android:layout_width="198dp"
+                        android:layout_height="42dp"
+                        android:layout_marginStart="17dp"
+                        android:layout_marginTop="380dp"
+                        android:layout_marginEnd="88dp"
+                        android:text="Private Room"
+                        android:textColor="#426263"
+                        android:textSize="20dp" />
+
+                    <TextView
+                        android:id="@+id/privateRoomMsg"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="413dp"
+                        android:text="You have a own room in your rented location"
+                        android:textSize="15dp" />
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="153dp"
+                        android:layout_marginTop="450dp">
+
+                        <TextView
+                            android:id="@+id/roomNbeds"
+                            android:layout_width="220dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="70dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="27dp"
+                            android:text="ROOMS N BEDS"
+                            android:textAlignment="center"
+                            android:textColor="#426263"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/beds"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="235dp"
+                            android:text="Beds"
+                            android:textSize="20dp" />
+
+
+                        <RelativeLayout
+                            android:layout_width="145dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="190dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="21dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <Button
+                                android:id="@+id/removeBedBtn"
+                                android:layout_width="30dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/minus"
+                                android:backgroundTint="@color/black" />
+
+                            <EditText
+                                android:id="@+id/bedResult"
+                                android:layout_width="72dp"
+                                android:layout_height="18dp"
+                                android:layout_centerInParent="true"
+                                android:fontFamily=""
+                                android:inputType="number"
+                                android:minEms="1"
+                                android:paddingBottom="0dp"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/black"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:id="@+id/addBedBtn"
+                                android:layout_width="30dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/add"
+                                android:backgroundTint="@color/black" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/bathrooms"
+                            android:layout_width="122dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="167dp"
+                            android:text="Bathrooms"
+                            android:textSize="20dp" />
+
+                        <RelativeLayout
+                            android:layout_width="145dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="190dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="21dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <Button
+                                android:id="@+id/removeBathBtn"
+                                android:layout_width="30dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/minus"
+                                android:backgroundTint="@color/black" />
+
+                            <EditText
+                                android:id="@+id/bathResult"
+                                android:layout_width="72dp"
+                                android:layout_height="18dp"
+                                android:layout_centerInParent="true"
+                                android:fontFamily=""
+                                android:inputType="number"
+                                android:minEms="1"
+                                android:paddingBottom="0dp"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/black"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:id="@+id/addBathBtn"
+                                android:layout_width="30dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/add"
+                                android:backgroundTint="@color/black" />
+
+                        </RelativeLayout>
+
+
+                        <TextView
+                            android:id="@+id/Rooms"
+                            android:layout_width="116dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="27dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginEnd="167dp"
+                            android:text="Rooms"
+                            android:textSize="20dp" />
+
+                        <RelativeLayout
+                            android:layout_width="145dp"
+                            android:layout_height="26dp"
+                            android:layout_marginStart="190dp"
+                            android:layout_marginTop="110dp"
+                            android:layout_marginEnd="21dp"
+                            android:paddingTop="8dp"
+                            android:paddingBottom="8dp">
+
+                            <Button
+                                android:id="@+id/removeRoomBtn"
+                                android:layout_width="30dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentStart="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/minus"
+                                android:backgroundTint="@color/black" />
+
+                            <EditText
+                                android:id="@+id/roomResult"
+                                android:layout_width="72dp"
+                                android:layout_height="18dp"
+                                android:layout_centerInParent="true"
+                                android:fontFamily=""
+                                android:inputType="number"
+                                android:minEms="1"
+                                android:paddingBottom="0dp"
+                                android:text="1"
+                                android:textAlignment="center"
+                                android:textAllCaps="false"
+                                android:textColor="@android:color/black"
+                                android:textSize="10sp" />
+
+                            <Button
+                                android:id="@+id/addRoomBtn"
+                                android:layout_width="30dp"
+                                android:layout_height="50dp"
+                                android:layout_alignParentEnd="true"
+                                android:layout_centerVertical="true"
+                                android:background="@drawable/add"
+                                android:backgroundTint="@color/black" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="122dp"
+                        android:layout_marginTop="605dp">
+
+                        <TextView
+                            android:id="@+id/hostingLanguage"
+                            android:layout_width="257dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="31dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="32dp"
+                            android:text="HOSTING LANGUAGE"
+                            android:textAlignment="center"
+                            android:textColor="#426263"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <RadioButton
+                            android:id="@+id/englishRadBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="189dp"
+                            android:text="English" />
+
+                        <RadioButton
+                            android:id="@+id/japaneseRadBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="22dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="189dp"
+                            android:text="Japanese" />
+
+                        <RadioButton
+                            android:id="@+id/tagalogRadBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="190dp"
+                            android:layout_marginTop="50dp"
+                            android:layout_marginEnd="59dp"
+                            android:text="Tagalog" />
+
+                        <RadioButton
+                            android:id="@+id/frenchRadBtn"
+                            android:layout_width="101dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="190dp"
+                            android:layout_marginTop="80dp"
+                            android:layout_marginEnd="68dp"
+                            android:text="French" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="232dp"
+                        android:layout_marginTop="735dp">
+
+                        <TextView
+                            android:id="@+id/amelities"
+                            android:layout_width="257dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginStart="31dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginEnd="32dp"
+                            android:text="AMELITIES"
+                            android:textAlignment="center"
+                            android:textColor="#426263"
+                            android:textSize="25dp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/essentials"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="50dp"
+                            android:text="ESSENTIALS" />
+
+                        <CheckBox
+                            android:id="@+id/airconCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="70dp"
+                            android:text="Air Condition" />
+
+                        <CheckBox
+                            android:id="@+id/washerCheckBox"
+                            android:layout_width="165dp"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginEnd="-52dp"
+                            android:text="Washer" />
+
+                        <CheckBox
+                            android:id="@+id/dryerCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="190dp"
+                            android:layout_marginTop="70dp"
+                            android:text="Dryer" />
+
+                        <CheckBox
+                            android:id="@+id/kitchenCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="190dp"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginEnd="0dp"
+                            android:text="Kitchen" />
+
+                        <TextView
+                            android:id="@+id/features"
+                            android:layout_width="wrap_content"
+                            android:layout_height="23dp"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="140dp"
+                            android:text="FEATURES" />
+
+                        <CheckBox
+                            android:id="@+id/poolCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="160dp"
+                            android:text="Pool" />
+
+                        <CheckBox
+                            android:id="@+id/gymCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="190dp"
+                            android:text="Gym" />
+
+                        <CheckBox
+                            android:id="@+id/bbqGrillheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="190dp"
+                            android:layout_marginTop="160dp"
+                            android:text="BBQ Grill" />
+
+                        <CheckBox
+                            android:id="@+id/fireplaceCheckBox"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="190dp"
+                            android:layout_marginTop="190dp"
+                            android:text="Fireplace" />
+
+
+                    </RelativeLayout>
+
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="67dp"
+                    android:layout_marginTop="975dp">
+
+
+                    <TextView
+                        android:id="@+id/clearAll"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentStart="true"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:clickable="true"
+                        android:text="Clear all"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/showBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="270dp"
+                        android:layout_marginTop="8dp"
+                        android:backgroundTint="#fff"
+                        android:text="Show" />
+
+
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <!-- divider -->
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="224dp"
+                android:background="#000000" />
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="448dp"
+                android:background="#000000" />
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="601dp"
+                android:background="#000000" />
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="726dp"
+                android:background="#000000" />
+
+            <View
+                android:layout_width="350dp"
+                android:layout_height="2dp"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="970dp"
+                android:background="#000000" />
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

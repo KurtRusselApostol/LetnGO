@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DDDDDD"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_13sdp"
+        android:background="#DDDDDD">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_back"/>
+
+        <TextView
+            android:id="@+id/Email_confirmation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_77sdp"
+            android:text="Email Address"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar">
+
+        <TextView
+            android:id="@+id/confiad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:text="Confirm your email address"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/conficontent"
+            android:layout_width="@dimen/_231sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/confiad"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:text="By clicking the button, you are confirming your email address and agreeing to terms of services"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/confiensure"
+            android:layout_width="@dimen/_231sdp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/conficontent"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="This ensures we have the right email in case we need to contact you."
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="@dimen/_231sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_below="@+id/confiensure"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:backgroundTint="#658B6F"
+            android:text="confirm" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

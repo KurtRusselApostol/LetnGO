@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEE1DD"
+    tools:context=".Safety_notice">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <RelativeLayout
+            android:id="@+id/responsive21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="MissingConstraints">
+
+            <ImageButton
+                android:id="@+id/safety_notice_back"
+                android:layout_width="@dimen/_38sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_42sdp"
+                android:background="@drawable/btn_background"
+                android:backgroundTint="#FDFCFC"
+                android:src="@drawable/arrow_back"
+                app:layout_constraintCircleRadius="@dimen/cardview_compat_inset_shadow"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpeakableTextPresentCheck,ImageContrastCheck"
+                tools:layout_constraintCircleRadius="@dimen/cardview_default_radius"
+                tools:layout_editor_absoluteY="@dimen/_12sdp" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_77sdp"
+                android:layout_marginTop="@dimen/_38sdp"
+                android:layout_marginEnd="@dimen/_77sdp"
+                android:gravity="center"
+                android:text="Safety Notice"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textColor="#388E3C"
+                android:textSize="@dimen/_23ssp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_2sdp"
+                android:layout_marginTop="@dimen/_77sdp"
+                android:background="#658B6F"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+            <ImageView
+                android:id="@+id/Arriving_soon_image"
+                android:layout_width="@dimen/_291sdp"
+                android:layout_height="@dimen/_461sdp"
+                android:layout_marginStart="@dimen/fastscroll__handle_height"
+                android:layout_marginTop="@dimen/_107sdp"
+                android:layout_marginEnd="@dimen/fastscroll__handle_height"
+                android:layout_marginBottom="@dimen/fastscroll__handle_height"
+                android:background="@drawable/beach_1"
+                android:contentDescription="TODO"
+                tools:ignore="ContentDescription,HardcodedText,ImageContrastCheck">
+
+            </ImageView>
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

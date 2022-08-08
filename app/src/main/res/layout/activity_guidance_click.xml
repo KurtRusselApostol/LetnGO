@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#DEE1DD"
+    tools:context=".guidance_click">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp">
+
+            <ImageButton
+                android:id="@+id/back_btn2"
+                android:layout_width="@dimen/_37sdp"
+                android:layout_height="@dimen/_37sdp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:background="@drawable/round_back_btn"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:src="@drawable/white_back_btn" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_77sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Hosts: Guidance on host safety"
+                android:textColor="@color/black"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_46sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Emergency procedures"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_115sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Contact info"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_84sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="Indicate local emergency numbers and the nearest hospital. Give your guests a clear emergency contact number as well as backup. You also need to make it clear how you should be contacted if the guest has questions or issues arise."
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_69sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Supplies"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="Make a first aid kit that are easily accessible and available all the time."
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_115sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Fire prevention"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_77sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="Make it sure you have a functioning smoke alarm and that your home meets government safety guidelines for your area. You need to make it sure too that you have a functioning fire extinguisher and complete required maintenance."
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_84sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Exits"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="Make it sure you have a clearly marked fire escape route, and you post a map in your home Incase of an emergency."
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_30sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Minimize hazards"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_84sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Privacy"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_54sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="You need to be mindful of your guests’ privacy. You need to make sure you are aware of and comply with local laws."
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_69sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Occupancy"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="Make sure to establish a safe occupancy limits, your local government may have guidelines."
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_123sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Access"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_84sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="Check your home to identify any areas where guests might trip or fall and either remove the hazard or mark clearly. Fix any exposed wires. You need to make it sure stairs are safe and have railings. Remove any objects that may be dangerous to your guests."
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_84sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="Child-proofing"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_77sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="Make sure your home is safe for the children’s, notify the guests for the potential hazards. Or else remove any potential harm to your guests."
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_100ssp"
+                android:layout_marginStart="@dimen/_46sdp"
+                android:layout_marginEnd="@dimen/_46sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/these_are_the_tips"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/set_clear_expectations"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_77sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/the_listing_you"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_111sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/building_rules"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_84sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/make_sure"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_100sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/smoking"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_69sdp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/if_you_do"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_77sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/parking"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/make_sure_you_tell"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_108sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/noise"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_77sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/you_need_to"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_84sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/pets"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_46sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/if_you_allow"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_84sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/house_rules"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_46sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/to_prevent"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_123sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/set_guest_requirements"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_92sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/every_guest"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_111sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/read_profiles_reviews"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_77sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/if_you_want"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_111sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/knowing_your_guest"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_77sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/our_let_n_go"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_111sdp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:text="@string/keep_safety"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_77sdp"
+                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_23sdp"
+                android:fontFamily="sans-serif-medium"
+                android:justificationMode="inter_word"
+                android:text="@string/make_sure_you"
+                android:textColor="@color/black"
+                android:textSize="15sp" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>

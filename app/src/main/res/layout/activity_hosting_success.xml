@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".hosting_success"
+    android:background="#648b6e">
+
+    <LinearLayout
+        android:id="@+id/ll_header"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_marginTop="50dp"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/remove_button"
+            android:backgroundTint="#81b08d" />
+
+        <TextView
+            android:id="@+id/tv_hosting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            android:text=""
+            android:textAlignment="center"
+            android:textColor="#658B6F"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/img_help"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/question"
+            android:backgroundTint="#81b08d" />
+
+
+    </LinearLayout>
+
+
+    <ImageView
+        android:id="@+id/imageView1.1"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="-4dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginEnd="4dp"
+        android:layout_marginRight="50dp"
+        android:contentDescription="@string/todo1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.491"
+        app:srcCompat="@drawable/success"
+        tools:ignore="RtlHardcoded"
+        tools:visibility="visible">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/success"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_header"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="618dp"
+        android:layout_marginEnd="50dp"
+        android:background="@drawable/hosting_final"
+        android:backgroundTint="#81b08d"
+        android:text="OK"
+        android:textColor="@color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
+
+
+</RelativeLayout>

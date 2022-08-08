@@ -1,0 +1,914 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".hosting_next"
+        android:orientation="vertical"
+        android:background="#658B6F">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#658B6F">
+
+            <LinearLayout
+                android:id="@+id/ll_button"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/img_Cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/remove_button" />
+
+                <TextView
+                    android:id="@+id/tv_hosting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/start_hosting"
+                    android:text="Start Hosting"
+                    android:textAlignment="center"
+                    android:textColor="@color/white"
+                    android:textSize="30sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/img_help"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    app:srcCompat="@drawable/question" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_description_hosting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_button"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="30dp"
+                android:text="Your Place Description"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_place"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/host_layout"
+            android:elevation="10dp">
+
+            <!--TYPE OF PLACE-->
+            <TextView
+                android:id="@+id/tv_type_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:text="What kind of place?"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner_kind_place"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_type_place"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10" />
+
+            <!--PLACE DESCRIPTION-->
+            <TextView
+                android:id="@+id/tv_describe"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/spinner_kind_place"
+                android:text="Which one of the terms used to describe your place?"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner_describe"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_describe"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10" />
+
+            <!--SPACE DESCRIPTION-->
+            <TextView
+                android:id="@+id/tv_space"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/spinner_describe"
+                android:text="What kind of space will be available for travels?"
+                android:textSize="20sp" />
+
+            <Spinner
+                android:id="@+id/spinner_space"
+                style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/tv_space"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:ems="10" />
+
+            <!--LOCATION DESCRIPTION-->
+            <TextView
+                android:id="@+id/tv_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner_space"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Where is your place located?"
+                android:textSize="20sp" />
+
+            <!--STREET LAYOUT -->
+            <LinearLayout
+                android:id="@+id/ll_street"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tv_location"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_street"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_location"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Street"
+                    android:textSize="20sp" />
+
+                <!--Street Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_street"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_host_full_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_street"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Enter your street"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!--CITY LAYOUT -->
+            <LinearLayout
+                android:id="@+id/ll_city"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ll_street"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_city"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_location"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="City"
+                    android:textSize="20sp" />
+
+                <!--City Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_city"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_host_full_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_city"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Enter your city"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!--STATE LAYOUT -->
+            <LinearLayout
+                android:id="@+id/ll_state"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ll_city"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_location"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="State"
+                    android:textSize="20sp" />
+
+                <!--City Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_state"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="27dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_host_full_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_state"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Enter your state"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!--ZIP CODE LAYOUT -->
+            <LinearLayout
+                android:id="@+id/ll_zip"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ll_state"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_zip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_location"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Zip Code"
+                    android:textSize="20sp" />
+
+                <!--City Begin-->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_zip"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="-4dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColorHint="#808080"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/layout_host_full_name"
+                    app:layout_constraintWidth_percent="0.7">
+
+                    <EditText
+                        android:id="@+id/ed_zip"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:hint="Enter zip code"
+                        android:textColor="#000000"
+                        android:textColorHint="#808080"
+                        android:textSize="15sp" />
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+
+            <!--COMMUNITY LAYOUT -->
+            <LinearLayout
+                android:id="@+id/ll_country"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ll_zip"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_country"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_location"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Country"
+                    android:textSize="20sp" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp_country"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginStart="20dp"
+                    app:ccp_defaultLanguage="ENGLISH" />
+            </LinearLayout>
+
+            <!--APPROACH LINE-->
+            <View
+                android:id="@+id/line_approach"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_below="@id/ll_country"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="#808080" />
+
+            <!--APPROACH DESCRIPTION-->
+            <TextView
+                android:id="@+id/tv_approach"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_country"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="How many individuals do you want to approach?"
+                android:textSize="20sp" />
+
+            <!--NUMBER OF GUEST LAYOUT -->
+            <LinearLayout
+                android:id="@+id/ll_guest"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tv_approach"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_guest"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Guest"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/img_guest_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="90dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="decrementGuest"
+                    android:src="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/tv_guest_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="15sp"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/img_guest_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:onClick="incrementGuest"
+                    android:src="@drawable/add" />
+            </LinearLayout>
+
+            <!--NUMBER OF BED LAYOUT -->
+            <LinearLayout
+                android:id="@+id/ll_bed"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ll_guest"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_bed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Bed"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/img_bed_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="108dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="decrementBed"
+                    android:src="@drawable/minus"/>
+
+                <TextView
+                    android:id="@+id/tv_bed_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="15sp"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/img_bed_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="incrementBed"
+                    android:src="@drawable/add"/>
+            </LinearLayout>
+
+            <!--NUMBER OF ROOM LAYOUT -->
+            <LinearLayout
+                android:id="@+id/ll_room"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ll_bed"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_room"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Room"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/img_room_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="89dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="decrementRoom"
+                    android:src="@drawable/minus"/>
+
+                <TextView
+                    android:id="@+id/tv_room_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="15sp"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/img_room_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="incrementRoom"
+                    android:src="@drawable/add"/>
+            </LinearLayout>
+
+            <!--NUMBER OF BATHROOM LAYOUT -->
+            <LinearLayout
+                android:id="@+id/ll_bathroom"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/ll_room"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/tv_bathroom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Bathroom"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:id="@+id/img_bathroom_minus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="55dp"
+                    android:layout_marginTop="20dp"
+                    android:onClick="decrementBathroom"
+                    android:src="@drawable/minus" />
+
+                <TextView
+                    android:id="@+id/tv_bathroom_result"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:textSize="15sp"
+                    android:textAlignment="center" />
+
+                <ImageView
+                    android:id="@+id/img_bathroom_add"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:onClick="incrementBathroom"
+                    android:src="@drawable/add" />
+            </LinearLayout>
+
+            <!--PLACE HAS TO OFFER DESCRIPTION-->
+            <TextView
+                android:id="@+id/tv_offer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_bathroom"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="What your place has to offer?"
+                android:textSize="20sp" />
+
+            <!--AMENITIES-->
+            <TextView
+                android:id="@+id/tv_amenities"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_offer"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Amenities"
+                android:textSize="20sp" />
+
+            <!--POOL-->
+            <CheckBox
+                android:id="@+id/chk_pool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_amenities"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Pool"
+                android:textSize="20sp"/>
+
+            <!--JACCUZI-->
+            <CheckBox
+                android:id="@+id/chk_jaccuzi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_pool"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Jaccuzi"
+                android:textSize="20sp"/>
+
+            <!--PATIO-->
+            <CheckBox
+                android:id="@+id/chk_patio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_jaccuzi"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Patio"
+                android:textSize="20sp"/>
+
+            <!--BBQ GRILL-->
+            <CheckBox
+                android:id="@+id/chk_grill"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_patio"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="BBQ Grill"
+                android:textSize="20sp"/>
+
+            <!--FIRE FIT-->
+            <CheckBox
+                android:id="@+id/chk_fire_fit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_grill"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Fire Fit"
+                android:textSize="20sp"/>
+
+            <!--POOL TABLE-->
+            <CheckBox
+                android:id="@+id/chk_pool_table"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_fire_fit"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Pool Table"
+                android:textSize="20sp"/>
+
+            <!--INDOOR FIRE PLACE-->
+            <CheckBox
+                android:id="@+id/chk_fire_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_pool_table"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Indoor Fire Place"
+                android:textSize="20sp"/>
+
+            <!--OUTDOOR DINING AREA-->
+            <CheckBox
+                android:id="@+id/chk_dining"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_fire_place"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Outdoor Dining Area"
+                android:textSize="20sp"/>
+
+            <!--EXERCISE EQUIPMENT-->
+            <CheckBox
+                android:id="@+id/chk_equipment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_dining"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Exercise Equipment"
+                android:textSize="20sp"/>
+
+            <!--WHAT ABOUT THIS DESCRIPTION-->
+            <TextView
+                android:id="@+id/tv_this"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_equipment"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="What about this?"
+                android:textSize="20sp" />
+
+            <!--Wi-Fi-->
+            <CheckBox
+                android:id="@+id/chk_wifi"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_this"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Wi-Fi"
+                android:textSize="20sp"/>
+
+            <!--TELEVISION-->
+            <CheckBox
+                android:id="@+id/chk_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_wifi"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Television"
+                android:textSize="20sp"/>
+
+            <!--AIR CONDITION-->
+            <CheckBox
+                android:id="@+id/chk_air_con"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_tv"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Air Condition"
+                android:textSize="20sp"/>
+
+            <!--KITCHEN-->
+            <CheckBox
+                android:id="@+id/chk_kitchen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_air_con"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Kitchen"
+                android:textSize="20sp"/>
+
+            <!--WASHER-->
+            <CheckBox
+                android:id="@+id/chk_washer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_kitchen"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Washer"
+                android:textSize="20sp"/>
+
+            <!--FREE PARKING-->
+            <CheckBox
+                android:id="@+id/chk_parking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_washer"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Free Parking"
+                android:textSize="20sp"/>
+
+            <!--PAID PARKING-->
+            <CheckBox
+                android:id="@+id/chk_paid_parking"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_parking"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Paid Parking"
+                android:textSize="20sp"/>
+
+            <!--DEDICATED WORK SPACE-->
+            <CheckBox
+                android:id="@+id/chk_workspace"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_paid_parking"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Dedicated Workspace"
+                android:textSize="20sp"/>
+
+            <!--OUTDOOR SHOWER-->
+            <CheckBox
+                android:id="@+id/chk_shower"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_workspace"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Outdoor Shower"
+                android:textSize="20sp" />
+
+            <!--SAFETY ITEMS DESCRIPTION-->
+            <TextView
+                android:id="@+id/tv_safety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_shower"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="5dp"
+                android:text="Safety Items"
+                android:textSize="20sp" />
+
+            <!--FIRST AID KIT-->
+            <CheckBox
+                android:id="@+id/chk_kit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_safety"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="First Aid Kit"
+                android:textSize="20sp"/>
+
+            <!--FIRE EXTINGUISHER-->
+            <CheckBox
+                android:id="@+id/chk_extinguisher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_kit"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Fire Extinguisher"
+                android:textSize="20sp"/>
+
+            <!--SMOKE ALARM-->
+            <CheckBox
+                android:id="@+id/chk_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_extinguisher"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:text="Smoke Alarm"
+                android:textSize="20sp"/>
+
+            <!--CARBON MONOXIDE ALARM-->
+            <CheckBox
+                android:id="@+id/chk_carbon_alarm"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/chk_alarm"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="30dp"
+                android:text="Carbon Monoxide Alarm"
+                android:textSize="20sp" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:orientation="horizontal"
+            android:background="#658B6F">
+
+            <TextView
+                android:id="@+id/tv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="40dp"
+                android:layout_weight="1"
+                android:text="Back"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#8AB294"/>
+
+            <TextView
+                android:id="@+id/tv_next"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingTop="40dp"
+                android:layout_weight="1"
+                android:text="Next"
+                android:textAlignment="center"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="#8AB294" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

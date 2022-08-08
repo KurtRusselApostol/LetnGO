@@ -1,0 +1,378 @@
+<resources>
+    <string name="app_name">LetnGo</string>
+    <string name="newsfeed">Newsfeed</string>
+    <string name="categories">Categories</string>
+    <string name="explore">Explore</string>
+    <string name="notification">Notification</string>
+    <string name="account">Account</string>
+    <string name="welcome">WELCOME</string>
+    <string name="travelers">Travelers</string>
+    <string name="username">Username</string>
+    <string name="enter_your_username">Enter your username</string>
+    <string name="password">Password</string>
+    <string name="enter_your_password">Enter your password</string>
+    <string name="log_in">LOG IN</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="sign_in_with_google">Sign in with Google</string>
+    <string name="search_elements">Search Elements</string>
+    <string name="todo">TODO</string>
+    <string name="todo1">TODO</string>
+    <string name="start_exploring_start">Start by exploring stays or Experiences. Applying filters such as public homes, private locations, preferred host language, and various amenities available to narrow your options</string>
+    <string name="away_from_your">away from your next</string>
+    <string name="getaway">getaway</string>
+    <string name="one_start_exploring">1. Start exploring</string>
+    <string name="two_payment_process">2. Payment Process</string>
+    <string name="payment_process_once">Once you\'ve found what you\'re looking for, you may proceed to the payment process. However, we suggest you learn first about the host, location, and recent feedback and get the details regarding cancellation options</string>
+    <string name="three_booking">3. Booking</string>
+    <string name="booking_you_are_all">You\'re all set! Connect with your host through the application for local tips, questions, or advice, in addition, you may also contact Let N\' Go anytime for any inquiries regarding your booking.</string>
+    <string name="you_are_three">You are 3 Steps</string>
+    <string name="contact">Contact us</string>
+    <string name="wherever_you">Wherever you go,</string>
+    <string name="we_are_here">we\'re here to help</string>
+    <string name="health_and_safety">Health and safety is a priority</string>
+    <string name="health_and_safety_is">Hosts are committing to enhanced COVID-19 cleaning protocols, and listings are rated for cleanliness</string>
+    <string name="more_cancellation_options_hosts">Hosts can offer a range of flexible cancellation options which are clearly stated at booking.</string>
+    <string name="more_cancellation_options">More cancellation options</string>
+    <string name="support_anytime_with">With 24/7 global customer support we\'re there for you whenever you need assistance</string>
+    <string name="support_anytime">Support anytime, day or night</string>
+    <string name="need_to_get">Need to get in touch?</string>
+    <string name="our_support_team">Our Support team is spread across the globe to give you an answer faster.</string>
+    <string name="finish_booking">Finish Booking</string>
+    <string name="payment">Payment</string>
+    <string name="add_payment">Add payment</string>
+    <string name="gcash_payment">GCash Payment</string>
+    <string name="mercado_bella">Mercado, Bella</string>
+    <string name="bllmrcd0913_gmail_com">bllmrcd0913@gmail.com</string>
+    <string name="_63_951_9589527">+63 951 9589527</string>
+    <string name="check_in">Check In</string>
+    <string name="sat_28_may">Sat 28 May</string>
+    <string name="check_out">Check Out</string>
+    <string name="sun_29_may">Sun 29 May</string>
+    <string name="rooms_1">Rooms:1</string>
+    <string name="max_guest_2">Max Guest: 2</string>
+    <string name="let_n_go_hotel_cebu_multiple_use_hotel">Let\' n Go Hotel Cebu - Multiple Use Hotel</string>
+    <string name="php_7_500">PHP 7,500</string>
+    <string name="includes_taxes_and_charges">includes taxes and charges</string>
+    <string name="free_cancellation_until_12_00_am_28_may">Free cancellation until 12:00 am 28 May</string>
+    <string name="your_booking_is_with_let_n_go_hotel_cebu_multiple_use_hotel_facilitated_by_by_our_partner_company">Your booking is with Let; n Go Hotel Cebu- Multiple Use Hotel, Facilitated by by our partner company.</string>
+    <string name="by_completing_this_booking_you_agree_to_the_booking_conditions_general_terms_and_privacy_policy">By completing this booking you agree to the booking conditions, general terms, and privacy policy.</string>
+    <string name="letn_go_com_s_role_is_solely_provide_the_platform_between_the_relevant_travel_company_and_the_customer">Letn\'Go.com\'s role is solely provide the platform between the relevant travel company and the customer.</string>
+    <string name="letn_go_com_s_customer_service_support_will_be_available_to_you_for_this_booking">Letn\'Go.com\'s customer service support will be available to you for this booking</string>
+    <string name="book_now">Book Now</string>
+    <string name="direct_to_the_owner">Direct to the owner</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_your_email" />
+    <!--    <string name="hi_there">Hi there!</string>-->
+    <string name="guest">Guest</string>
+    <string name="account_settings">Account Settings</string>
+    <string name="timeline">Timeline</string>
+    <string name="personal_information">Personal Information</string>
+    <string name="payments_and_payout">Payments and Payout</string>
+    <string name="notifications">Notifications</string>
+    <string name="hosting">Hosting</string>
+    <string name="list_your_space">List your Space</string>
+    <string name="host_an_experience">Host an Experience</string>
+
+    <string name="web_client_id" translatable="false">1079858573691-agsp0s4o4b3lftsisptgqr500nqqa87m.apps.googleusercontent.com</string>
+
+    <string-array name="country">
+        <item>   </item>
+        <item>Afghanistan</item>
+        <item>Albania</item>
+        <item>Algeria</item>
+        <item>Andorra</item>
+        <item>Angola</item>
+        <item>Antigua and Barbuda</item>
+        <item>Argentina</item>
+        <item>Armenia</item>
+        <item>Australia</item>
+        <item>Austria</item>
+        <item>Azerbaijan</item>
+        <item>Canada</item>
+
+    </string-array>
+    <string name="title_activity_guest_message">GuestMessage</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+
+    <!--    <attr name="ccp_defaultLanguage" format="enum">-->
+    <!--        <enum name="AFRIKAANS" value="0" />-->
+    <!--        <enum name="ARABIC" value="1" />-->
+    <!--        <enum name="BENGALI" value="2" />-->
+    <!--        <enum name="CHINESE_SIMPLIFIED" value="3" />-->
+    <!--        <enum name="CHINESE_TRADITIONAL" value="4" />-->
+    <!--        <enum name="CZECH" value="5" />-->
+    <!--        <enum name="DANISH" value="6" />-->
+    <!--        <enum name="DUTCH" value="7" />-->
+    <!--        <enum name="ENGLISH" value="8" />-->
+    <!--        <enum name="FARSI" value="9" />-->
+    <!--        <enum name="FRENCH" value="10" />-->
+    <!--        <enum name="GERMAN" value="11" />-->
+    <!--        <enum name="GREEK" value="12" />-->
+    <!--        <enum name="GUJARATI" value="13" />-->
+    <!--        <enum name="HEBREW" value="14" />-->
+    <!--        <enum name="HINDI" value="15" />-->
+    <!--        <enum name="INDONESIA" value="16" />-->
+    <!--        <enum name="ITALIAN" value="17" />-->
+    <!--        <enum name="JAPANESE" value="18" />-->
+    <!--        <enum name="KAZAKH" value="19" />-->
+    <!--        <enum name="KOREAN" value="20" />-->
+    <!--        <enum name="MARATHI" value="21"/>-->
+    <!--        <enum name="POLISH" value="22" />-->
+    <!--        <enum name="PORTUGUESE" value="23" />-->
+    <!--        <enum name="PUNJABI" value="24" />-->
+    <!--        <enum name="RUSSIAN" value="25" />-->
+    <!--        <enum name="SLOVAK" value="26" />-->
+    <!--        <enum name="SLOVENIAN" value="27" />-->
+    <!--        <enum name="SPANISH" value="28" />-->
+    <!--        <enum name="SWEDISH" value="29" />-->
+    <!--        <enum name="TAGALOG" value="30" />-->
+    <!--        <enum name="THAI" value="31" />-->
+    <!--        <enum name="TURKISH" value="32" />-->
+    <!--        <enum name="UKRAINIAN" value="33" />-->
+    <!--        <enum name="URDU" value="34" />-->
+    <!--        <enum name="UZBEK" value="35" />-->
+    <!--        <enum name="VIETNAMESE" value="36" />-->
+    <!--        <enum name="BASQUE" value="2" />-->
+    <!--        <enum name="BENGALI" value="3" />-->
+    <!--        <enum name="CHINESE_SIMPLIFIED" value="4" />-->
+    <!--        <enum name="CHINESE_TRADITIONAL" value="5" />-->
+    <!--        <enum name="CZECH" value="6" />-->
+    <!--        <enum name="DANISH" value="7" />-->
+    <!--        <enum name="DUTCH" value="8" />-->
+    <!--        <enum name="ENGLISH" value="9" />-->
+    <!--        <enum name="FARSI" value="10" />-->
+    <!--        <enum name="FRENCH" value="11" />-->
+    <!--        <enum name="GERMAN" value="12" />-->
+    <!--        <enum name="GREEK" value="13" />-->
+    <!--        <enum name="GUJARATI" value="14" />-->
+    <!--        <enum name="HEBREW" value="15" />-->
+    <!--        <enum name="HINDI" value="16" />-->
+    <!--        <enum name="INDONESIA" value="17" />-->
+    <!--        <enum name="ITALIAN" value="18" />-->
+    <!--        <enum name="JAPANESE" value="19" />-->
+    <!--        <enum name="KAZAKH" value="20" />-->
+    <!--        <enum name="KOREAN" value="21" />-->
+    <!--        <enum name="MARATHI" value="22"/>-->
+    <!--        <enum name="POLISH" value="23" />-->
+    <!--        <enum name="PORTUGUESE" value="24" />-->
+    <!--        <enum name="PUNJABI" value="25" />-->
+    <!--        <enum name="RUSSIAN" value="26" />-->
+    <!--        <enum name="SLOVAK" value="27" />-->
+    <!--        <enum name="SLOVENIAN" value="28" />-->
+    <!--        <enum name="SPANISH" value="29" />-->
+    <!--        <enum name="SWEDISH" value="30" />-->
+    <!--        <enum name="TAGALOG" value="31" />-->
+    <!--        <enum name="THAI" value="32" />-->
+    <!--        <enum name="TURKISH" value="33" />-->
+    <!--        <enum name="UKRAINIAN" value="34" />-->
+    <!--        <enum name="URDU" value="35" />-->
+    <!--        <enum name="UZBEK" value="36" />-->
+    <!--        <enum name="VIETNAMESE" value="37" />-->
+    <!--    </attr>-->
+
+    <!--    <attr name="ccp_countryAutoDetectionPref" format="enum"/>-->
+
+
+    <!--    <string name="app_name">My Application</string>-->
+    <string name="search">Search</string>
+    <string name="island">Island</string>
+    <string name="countryside">Countryside</string>
+    <string name="cabin">Cabin</string>
+    <string name="caves">Caves</string>
+    <string name="camping">Camping</string>
+    <string name="beach">Beach</string>
+    <!--    <string name="todo">TODO</string>-->
+    <string name="treehouse">Treehouse</string>
+
+
+    <string name="welcome_travelers">Welcome Travelers</string>
+
+    <!--Spinner dropdown Government ID-->
+    <string-array name="government_id">
+        <item>Unified Multi Purpose Identification Card</item>
+        <item>Employee ID</item>
+        <item>Drivers License</item>
+        <item>Professional Regulation Commission ID</item>
+        <item>Passport</item>
+        <item>SSS ID</item>
+        <item>Government Service Insurance System Card</item>
+        <item>Overseas Workers Welfare Administration</item>
+    </string-array>
+
+
+    <string name="title_activity_user_homepage">UserHomepage</string>
+    <string name="homepage_19">Homepage - 19</string>
+    <string name="homepage_20">Homepage - 20</string>
+    <string name="homepage_21">Homepage - 21</string>
+    <string name="homepage_22">Homepage - 22</string>
+    <string name="homepage_23">Homepage - 23</string>
+    <string name="homepage_24">Homepage - 24</string>
+    <string name="letngologo">letngologo</string>
+    <string name="smalllogo">smalllogo</string>
+    <string name="choose_you_stay">Choose you stay</string>
+    <string name="_28_may_29_may">28 May - 29 May</string>
+    <string name="roundbtn">roundbtn</string>
+    <string name="dropdown">dropdownbtn</string>
+    <string name="breakfast_included">Breakfast Included</string>
+    <string name="from_6_april_2022_your_chosen_cancellation_policy_will_apply_regardless_of_corona_virus">from 6 april 2022 your chosen cancellation policy will apply regardless of corona virus</string>
+
+    <!--    <string name="app_name">security</string>-->
+    <string name="security">Security</string>
+    <string name="setting_up_extra_security">Setting Up Extra Security</string>
+    <string name="get_alerts">Get alerts about unrecognized logins.</string>
+    <string name="login_alerts">Login Alerts</string>
+    <string name="alert_message">If you get an alert from unfamiliar location or browser, you\'ll be able to reset your password and secure your account.</string>
+    <string name="email">Email</string>
+    <string name="off">Off</string>
+    <string name="login">Login Alerts</string>
+    <string name="login_message1">Choose whether you want to get email alerts.</string>
+    <string name="get_email">Get email alert at Sample@gmail.com</string>
+    <string name="save">Save</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="for_security">For security, please re-enter your password to continue.</string>
+    <string name="continue_1">Continue</string>
+    <string name="find_location">FInd Location</string>
+    <string name="san_pablo_sison_surigao_del_norte">San Pablo, Sison Surigao del Norte</string>
+    <!--    <string name="password">Password</string>-->
+
+    <!--SPINNER DROPDOWN LISTS HOSTING NEXT MODULE-->
+    <!--SPINNER DROP DOWN KIND OF PLACE-->
+    <string-array name="kind_of_place_description">
+        <item>Apartment</item>
+        <item>House</item>
+        <item>Secondary Unit</item>
+        <item>Unique Space</item>
+        <item>Bed and Breakfast</item>
+        <item>Boutique Hotel</item>
+    </string-array>
+
+    <!--SPINNER DROP DOWN DESCRIBE YOUR PLACE-->
+    <string-array name="place_description">
+        <item>Home</item>
+        <item>Cabin</item>
+        <item>Villa</item>
+        <item>Town House</item>
+    </string-array>
+
+    <!--SPINNER DROP DOWN DESCRIBE YOUR SPACE-->
+    <string-array name="space_description">
+        <item>An Entire Place</item>
+        <item>A Private Room</item>
+        <item>A Shared Room</item>
+    </string-array>
+    <string name="title_activity_notif_settings1">notif_settings!</string>
+
+    <string name="safety_center">Safety Center</string>
+    <string name="get_the_support">Get the support, tools, and information you need to be safe</string>
+    <string name="call_local">Call local emergency services</string>
+    <string name="you_should_not_spy">You should not spy on other people. The cameras are not allowed in your listing unless they are previously disclosed and visible, these are never permitted in private rooms such as bathrooms or sleeping areas. Do not access others’ accounts without authorization or violate others’ privacy, copyrights etc.</string>
+    <string name="travel_safety_tips">Travel safety tips</string>
+    <string name="search_book_with_confidence"><![CDATA[Search & book with confidence]]></string>
+    <string name="keeping_yourself_your_payment">Keeping yourself, your payment and your personal information are protected by staying on our secured platform throughout the entire process from communication, to booking and payment. You should not provide credit card information in another platform to avoid getting scammed.</string>
+    <string name="get_the_phone_numbers">Get the phone numbers you need if someone is in danger or injured.</string>
+    <string name="the_let_n_go_community">The Let n’Go community members share their homes, neighborhoods, and experiences. If you’re opening your home as a host or experiencing a host’s hospitality as a guest, you need to feel safe and secured to trust anyone. We ask of you to respect others’ property, information, and personal properties.</string>
+    <string name="theft_vandalism_or_extortion">Theft, vandalism, or extortion</string>
+    <string name="do_not_take_property">Do not take property that isn’t yours or use someone’s belongings without their permission, copy others’ keys or any identity documents, damage others’ properties, remain in listings after a stay is concluded. or threaten anyone with giving a bad ratings or any other penalty or harm to obtain compensation or other benefits.</string>
+    <string name="spam_phishing_or_fraud">Spam, phishing, or fraud</string>
+    <string name="you_should_not_make_transactions">You should not make transactions outside of Let n’Go payments system, commit booking fraud, credit card fraud, or launder money, attempt to drive traffic to other sites or market unrelated products, diverting payments meant for others, abusing our referrals system or making a false claim against the other members of our community.</string>
+    <string name="violating_the_other_privacy_or_intellectual_property_rights">Violating the other privacy or intellectual property rights</string>
+    <string name="guest_advice_on_travelling_safety">Guest: Advice on travelling safety</string>
+    <string name="hosts_guidance_on_host_safety">Hosts: Guidance on host safety</string>
+    <string name="learn_about_let_n_go_trust_and_safety">Learn about Let N\' Go Trust and Safety</string>
+    <string name="every_night_millions">Every night, millions of people stay in homes on Let n\' Go in cities all over the world.</string>
+    <string name="read_the_ratings_and_reviews">Read the ratings and reviews</string>
+    <string name="safe_tips_for_choosing_a_place">Safe tips for choosing a place</string>
+    <string name="traveling_around">Traveling around means spending your own time and hard-earned money. So, you will want to be sure to find a place that suits you perfectly. These are some guides to assist you in your travel with confidence, knowing that you’ve made the right decisions, you will not worry anymore.</string>
+    <string name="get_exactly_what_you_re_looking_for_by_using_our_search_filters_like_price_home_type_and_amenities_you_need_to_make_sure_that_you_ve_read_the_host_s_profile_or_experience_description_and_paying_attention_to_the_amenities_house_rules_or_travel_requirements_and_the_cancellation_policy_or_procedures">Get exactly what you’re looking for by using our search filters, like price, home type, and amenities. You need to make sure that you’ve read the host’s profile or experience description and paying attention to the amenities, house rules or Travel requirements, and the cancellation policy or procedures.</string>
+    <string name="read_the_ratings_reviews"><![CDATA[Read the ratings & reviews]]></string>
+    <string name="looking_through">Looking through feedback from the past guests can you help find the right fit for you. You will the see ratings on detailed reviews with feedback about the experience.</string>
+    <string name="do_a_safety_check">Do a safety check</string>
+    <string name="the_guests">The Guests can only leave feedback after they’ve stayed with the specific host, The feedback you’re seeing is based on actual experiences.</string>
+    <string name="get_your_questions_answered">Get your questions answered</string>
+    <string name="let_n_go">Let n’Go has secure messaging tool that is a safe and easy way for you to ask the potential host about any questions you have about their home before you book. After you finished booking, you can also message your host to stay in touch throughout your trip.</string>
+    <string name="always_communicate_pay_on_let_n_go"><![CDATA[Always communicate & pay on Let n\'Go]]></string>
+    <string name="once_you_ve_arrived">Once you’ve arrived to your destined location, you need to make sure you know where all relevant emergency equipment and safety information is located. If you’re not sure where something like the first aid kit or fire extinguisher is, don not hesitate to ask your host about it. It is better to be always prepared before you travel.</string>
+    <string name="research_local_travel_alerts_warnings"><![CDATA[Research local travel alerts & warnings]]></string>
+    <string name="even_if_you_re_traveling">Even if you’re traveling using our Let n’Go mobile app or not, it’s always a good idea to research your destination ahead of time to check with your local embassy in case there are any travel warnings or other requirements.</string>
+    <string name="remember">Remember :</string>
+    <string name="in_an_emergency">In an emergency, or if your personal safety is threatened, contact local police or emergency services immediately.</string>
+    <string name="guest_advice">Guest: Advice on travelling safely</string>
+    <string name="building_rules">Building rules</string>
+    <string name="your_let_n_go_experience_begins_the_moment_you_embrace_adventure_it_will_only_be_possible_when_you_trust_our_community_and_feel_safe">Your Let n’Go experience begins the moment you embrace adventure. It will only be possible when you trust our community and feel safe.</string>
+    <string name="the_listing_you">The listing you provide should let the potential guests know about the unique features and amenities of your home. This will help your guests to have an idea about you and your area.</string>
+    <string name="house_rules">House Rules</string>
+    <string name="if_you_want">If you want to know more about your guest before accepting their reservation request, check out their profile. The Hosts and guests can only review each other after a reservation is complete, so the feedback you’re reading is based on actual experiences.</string>
+    <string name="knowing_your_guest">Knowing your guest in advance</string>
+    <string name="harming_yourself_or_others">Harming yourself or others</string>
+    <string name="make_sure">Make sure you relay your house common rules to your guests. You may need to notify your neighbors that you will have guests, and remind guests not to bother your neighbors, you can make specific expectations (like quiet hours) in your house rules.</string>
+    <string name="set_guest_requirements">Set guest requirements</string>
+    <string name="read_profiles_reviews"><![CDATA[Read profiles & reviews]]></string>
+    <string name="every_guest">Every guest is asked to provide their Correct full name, date of birth, phone number, email address and payment information to Let n’Go before booking. Home hosts also have the option to require guests to provide Let n’Go with any government ID before booking their listing</string>
+    <string name="our_let_n_go">Our Let n’Go provides a secure messaging tool that gives you the chance to get to know guests and answer or ask any questions. Messaging is a great place to communicate things like check-in or provide local recommendations.</string>
+    <string name="to_prevent">To prevent any surprises, you may want to include the information covered above in your House Rules in your Let n’Go listing profile.</string>
+    <string name="keep_safety"><![CDATA[Keep safety info & equipment handy]]></string>
+    <string name="do_not_commit">Do not commit physical or sexual assault, sexual abuse, sexual harassment, domestic violence, robbery, human trafficking, or any other acts of violence, or hold anyone against their will. Members of dangerous organizations, including terrorist, organized criminal, and violent racist groups, we do not welcome this kind of organizations. Let n’Go is committed to working with law enforcement as appropriate and responding to valid law enforcement requests.</string>
+    <string name="you_need_to">You need to remind your guests about keeping noise down. You may consider if you will allow babies, pets, or parties. Develop a policy about guests inviting other people over, and ensure your guests are clear about your “policy.”</string>
+    <string name="threatening_anyone">Threatening anyone</string>
+    <string name="do_not_convey">Do not convey an intent to harm anyone by your words or any physical actions. We take threats of self-harm as seriously as we do actions and may intervened if we become aware of the threat.</string>
+    <string name="creating_hazardous">Creating hazardous situations</string>
+    <string name="do_not_keep">Do not keep unsecured weapons, disease risks, or dangerous animals, nor should you create conditions that increase the likelihood of a fire, delay or prevent escape in the event of emergency.</string>
+    <string name="if_you_allow">If you allow pets, make sure your guests are educated about things like local parks and local customs (cleaning up after your dog).</string>
+    <string name="make_sure_you">Make sure you equip your home and your guests with the safety essentials they might need during their trip. This includes things like a working smoke and a fire extinguisher, a first aid kit, and information on how to get in touch with local authorities.</string>
+    <string name="these_are_the_tips">These are the tips on how you can help to ensure your hosting, and your guest’s trip, goes off without a problem.</string>
+    <string name="pets">Pets</string>
+    <string name="set_clear_expectations">Set clear expectations</string>
+    <string name="smoking">Smoking</string>
+    <string name="if_you_do">If you do not allow smoking, we suggest posting a sign to remind your guests. If you do allow smoking, ensure you have an ashtray available in smoking areas.</string>
+    <string name="parking">Parking</string>
+    <string name="make_sure_you_tell">Make sure you tell them the parking rules for your building and neighborhood to your guests.</string>
+    <string name="noise">Noise</string>
+
+
+    <!-- lorem ipsul -->
+
+    <string name="Lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. </string>
+    <string name="price">Price</string>
+    <string name="description">Description</string>
+
+
+    <!-- filters -->
+    <string name="locationType">LOCATION TYPE</string>
+    <string name="placeType">Place Type</string>
+    <string name="entirePlace">Entire Place</string>
+    <string name="entplaceComment">An entire place which you rent only for yourself</string>
+    <string name="shareRoom">Share Room</string>
+    <string name="sroomComment">Sharing a room with guests</string>
+    <string name="privateRoom">Private Room</string>
+    <string name="roomsNbeds">ROOMS N BEDS</string>
+    <string name="proomComment">You have a own room in your rented location</string>
+    <string name="bed">Bed</string>
+    <string name="rooms">Rooms</string>
+    <string name="bathroom">Bathrooms</string>
+    <string name="hostingLanguage">proomComment">HOSTING LANGUAGE</string>
+    <string name="whatsonyourmind">Whats on your mind</string>
+    <string name="news_feed">News Feed</string>
+    <string name="what_s_on_your_mind" />
+    <string name="share_your_feedback">Share your Feedback</string>
+    <string name="thanks_for_sending_us">Thanks for sending us your ideas, issues, or appreciations. We can\'t respond individually, but we\'ll pass it on to the teams who are working to help make Let N\'Go better for everyone</string>
+    <string name="if_you_do_have_a_specific_question">If you do have a specific question or read help resolving a problem, you can visit our Help Center or contact us to connect with our support team</string>
+    <string name="what_s_your_feedback_about">What\'s your feedback about?</string>
+    <string name="please">Please select</string>
+    <string name="what_s_the_topic_or_feature">What\'s the topic or feature?</string>
+    <string name="add_details">Add Details</string>
+    <string name="need_to_get_in_touch">Need to get in touch?</string>
+    <string name="our_support">Our Support team is spread across the globe to give you an answer faster.</string>
+    <string name="contact_us">Contact us</string>
+    <string name="submit">Submit</string>
+
+
+</resources>

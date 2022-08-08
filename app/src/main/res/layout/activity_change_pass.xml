@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#DDDDDD">
+
+    <RelativeLayout
+        android:id="@+id/tool_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/_13sdp"
+        android:background="#DDDDDD">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@drawable/arrow_back"/>
+
+        <TextView
+            android:id="@+id/name_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="@dimen/_77sdp"
+            android:text="Change Password"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/tool_bar"
+        android:background="#DDDDDD"
+        android:padding="@dimen/_13sdp">
+
+        <TextView
+            android:id="@+id/Cpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:text="Current Password"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fieldCpas"
+            android:layout_width="@dimen/_231sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/Cpass"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/Newpass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fieldCpas"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="New password"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fieldNpas"
+            android:layout_width="@dimen/_231sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/Newpass"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_8sdp" />
+
+        <TextView
+            android:id="@+id/Re_pass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fieldNpas"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="Re-Type password"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fieldRpas"
+            android:layout_width="@dimen/_231sdp"
+            android:layout_height="@dimen/_30sdp"
+            android:layout_below="@+id/Re_pass"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_8sdp" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="@dimen/_231sdp"
+            android:layout_height="@dimen/_46sdp"
+            android:layout_below="@+id/fieldRpas"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:backgroundTint="#658B6F"
+            android:text="Button" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

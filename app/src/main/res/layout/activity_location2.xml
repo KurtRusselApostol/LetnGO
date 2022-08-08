@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        android:orientation="vertical"
+        android:background="#DEE1DD">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="40dp">
+
+            <TextView
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginEnd="20dp"
+                android:layout_alignParentRight="true"
+                android:drawableRight="@drawable/loclogo"
+                android:clickable="true"
+                android:focusable="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="7dp"
+            android:layout_marginEnd="7dp"
+            android:background="@drawable/semiroundtextfield">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/san_pablo_sison_surigao_del_norte"
+                android:textStyle="bold"
+                android:textSize="5pt"
+                android:gravity="bottom"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="25dp"
+                android:drawableEnd="@drawable/location"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="25dp"
+                android:text="Lorem ksdnfos sjfnous sksdkjb jef j ef dsnfuj shbfihde ks fhbqwijek sbf ejbf asb aufb auebf efub dasubdw oasdh easbda awubda ajbwda jdijdiw fojrr ihrtenri ihrele  erhe heieo fsdfg tyu ghj sdf sfjnosef soeof efboue wejfewou fwoefbwoe wefwoef wefjubwe fwoefwe fwbfw efwe fw fwe fw wje f fewowekf e;wfuj ef ewjfbw fwofb efbefbef f fiebf fiwbefwiuksufewfjnefb "
+                android:textSize="4.5pt"
+                android:textStyle="bold"
+                android:textColor="#DEE1DD"
+                android:layout_marginBottom="10dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/room2"
+                android:layout_marginStart="7dp"
+                android:layout_marginEnd="7dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:text="3 Beds"/>
+
+            <TextView
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:text="5 Rooms"/>
+
+            <TextView
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="60dp"
+                android:text="2 Bathrooms"/>
+
+            <TextView
+                android:layout_width="500px"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="100dp"
+                android:text="P 7,500 per night"
+                android:textStyle="bold"
+                android:textSize="7pt"
+                />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Book Now"
+                android:textAllCaps="false"
+                android:layout_marginStart="280dp"
+                android:background="@drawable/buttonfield"
+                android:layout_marginTop="120dp"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:clickable="true"
+                android:focusable="true"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:text="Go Back"
+                android:gravity="top"
+                android:textColor="#658B6F"
+                android:layout_marginStart="315dp"
+                android:layout_marginTop="170dp"
+                android:drawableLeft="@drawable/back"
+                android:clickable="true"
+                android:focusable="true"/>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

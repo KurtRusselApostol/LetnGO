@@ -1,0 +1,561 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".FragmentPost">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/fastscroll__handle_padding"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:background="@drawable/normal_background"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/textWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Let n'Go"
+                android:textColor="@color/colorWhite"
+                android:textSize="40sp"
+                tools:ignore="HardcodedText,MissingConstraints"
+                tools:layout_editor_absoluteX="120dp"
+                tools:layout_editor_absoluteY="16dp">
+
+
+            </TextView>
+
+            <ImageButton
+                android:id="@+id/imageButton4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="54dp"
+                android:background="@drawable/rounded_button"
+                android:backgroundTint="#808080"
+                android:src="@drawable/white_back_btn"
+                app:layout_constraintCircleRadius="@dimen/cardview_compat_inset_shadow"
+                app:layout_constraintEnd_toStartOf="@+id/textWelcome"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_constraintCircleRadius="@dimen/cardview_default_radius"
+                tools:layout_editor_absoluteY="16dp"
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpeakableTextPresentCheck"
+                android:contentDescription="TODO" />
+
+            <ImageButton
+                android:id="@+id/imageButton5"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/icons8topic48"
+                tools:ignore="ContentDescription,HardcodedText,MissingConstraints,SpeakableTextPresentCheck"
+                tools:layout_editor_absoluteX="331dp"
+                tools:layout_editor_absoluteY="16dp"
+                android:contentDescription="TODO" />
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <LinearLayout
+
+            android:layout_width="410dp"
+            android:layout_height="440dp"
+            android:layout_gravity="center"
+            android:layout_margin="@dimen/fastscroll__bubble_corner"
+            android:layout_marginTop="100dp"
+            android:background="#ffffff"
+            android:fadingEdgeLength="@dimen/fab_margin"
+            android:gravity="center"
+            app:cardCornerRadius="20dp">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="440dp"
+                android:background="@drawable/d6">
+
+
+                <TextView
+                    android:id="@+id/textView86"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="150dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center"
+                    android:text="Wishlist"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <Button
+                    android:layout_width="30dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="330dp"
+                    android:background="@drawable/hamburger"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="30dp"
+                    android:background="@drawable/wishlist"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/button12"
+                    android:layout_width="145dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="132.5dp"
+                    android:layout_marginTop="140dp"
+                    android:layout_marginEnd="132.5dp"
+                    android:background="@drawable/items"
+                    android:text="All Items"
+                    tools:ignore="HardcodedText" />
+
+                <ImageView
+                    android:layout_width="225dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="33.5dp"
+                    android:layout_marginTop="230dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/beach_1"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText">
+
+
+                </ImageView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:text="2 Bathrooms"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="240dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="2 beds"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="270dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="5 rooms"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="300dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="Location"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="350dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="7,500 Php per night"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="400dp"
+                    android:layout_marginEnd="270dp"
+                    android:layout_marginBottom="10dp"
+                    android:rating="5"
+                    tools:ignore="SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="390dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="#56bb94"
+                    android:contextClickable="true"
+                    android:text="add to wishlist"
+                    android:textSize="12sp"
+
+
+                    tools:ignore="HardcodedText" />
+
+
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="-25dp"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@drawable/d6"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="225dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="33.5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/beach_1"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText">
+
+
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:text="2 Bathrooms"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="2 beds"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="2 beds"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="3 rooms"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="Location"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="6,500 Php per night"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,SpeakableTextPresentCheck">
+
+
+                </TextView>
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginEnd="270dp"
+                    android:layout_marginBottom="10dp"
+                    android:rating="5"
+                    tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="#56bb94"
+                    android:contextClickable="true"
+                    android:text="add to wishlist"
+                    android:textSize="12sp"
+
+                    tools:ignore="HardcodedText" />
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/d6"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:layout_width="225dp"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="33.5dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="15dp"
+                    android:background="@drawable/beach_1"
+                    android:contentDescription="TODO"
+                    tools:ignore="ContentDescription,HardcodedText">
+
+
+                </ImageView>
+
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="2dp"
+                    android:gravity="center"
+                    android:text="2 Bathrooms"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="2 beds"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="2 beds"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="70dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="3 rooms"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="100dp"
+                    android:layout_marginEnd="70dp"
+                    android:gravity="center"
+                    android:text="Location"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="150dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center"
+                    android:text="6,500 Php per night"
+                    android:textColor="#2F575D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText,SpeakableTextPresentCheck">
+
+
+                </TextView>
+
+                <RatingBar
+                    style="@style/Widget.AppCompat.RatingBar.Small"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="200dp"
+                    android:layout_marginEnd="270dp"
+                    android:layout_marginBottom="10dp"
+                    android:rating="5"
+                    tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
+                <Button
+                    android:id="@+id/button7"
+                    android:layout_width="120dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="270dp"
+                    android:layout_marginTop="190dp"
+                    android:layout_marginEnd="10dp"
+                    android:contextClickable="true"
+                    android:text="add to wishlist"
+                    android:textSize="12sp"
+                    android:background="@drawable/rounded_button"
+                    android:backgroundTint="#56bb94"
+
+
+                    tools:ignore="HardcodedText" />
+
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragment_GuestAccount"
+    android:background="#DEE1DD"
+    android:scrollbars="none">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:id="@+id/responsiveText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="70dp"
+            android:layout_marginEnd="32dp"
+            android:text="Your Account"
+            android:textColor="@color/colorTrendingEnd"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.061"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.083" />
+
+
+        <TextView
+            android:id="@+id/newsfeedGuestNote"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="185dp"
+            android:layout_marginRight="20dp"
+            android:gravity="fill_horizontal"
+            android:text="Once you log in, you can find amazing places here."
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/newsfeedGuest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="140dp"
+            android:layout_marginRight="20dp"
+            android:text="Log in to your Account"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints"
+            android:textColor="@color/black"/>
+
+        <RelativeLayout
+            android:id="@+id/relative2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="310dp"
+            android:layout_marginRight="40dp">
+
+            <Button
+                android:id="@+id/btn_safety_center"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_terms"
+                android:layout_marginTop="3dp"
+                android:background="#DEE1DD"
+                android:drawableLeft="@drawable/safetyyy"
+                android:paddingLeft="10dp"
+                android:paddingRight="160dp"
+                android:text="      Safety Center"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_contact_support"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_safety_center"
+                android:layout_marginTop="3dp"
+                android:background="#DEE1DD"
+                android:drawableLeft="@drawable/contactsup"
+                android:paddingLeft="10dp"
+                android:paddingRight="140dp"
+                android:text="     Contact Support"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_get_help"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/btn_contact_support"
+                android:layout_marginTop="3dp"
+                android:layout_marginBottom="100dp"
+                android:background="#DEE1DD"
+                android:drawableLeft="@drawable/gethelp"
+                android:paddingLeft="10dp"
+                android:paddingRight="190dp"
+                android:text="    Get Help"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+            <!--Legal Starts-->
+            <View
+                android:id="@+id/line_view4"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:background="#808080" />
+
+            <Button
+                android:id="@+id/btn_terms"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:background="#DEE1DD"
+                android:drawableLeft="@drawable/terms"
+                android:paddingLeft="10dp"
+                android:paddingRight="120dp"
+                android:text="     Terms of Service"
+                android:textAlignment="textStart"
+                android:textAllCaps="false"
+                android:textColor="@color/black" />
+
+        </RelativeLayout>
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="130dp"
+            android:layout_marginEnd="32dp"
+            android:background="@color/colorTrendingEnd"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <Button
+            android:id="@+id/buttonLogin"
+            android:layout_width="139dp"
+            android:layout_height="54dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="250dp"
+            android:background="@drawable/rounded_button"
+            android:text="Log in"
+            android:textColor="@color/white"
+            tools:ignore="MissingConstraints,TextContrastCheck"
+            tools:layout_editor_absoluteX="340dp"
+            tools:layout_editor_absoluteY="250dp" />
+
+    </RelativeLayout>
+
+</ScrollView>

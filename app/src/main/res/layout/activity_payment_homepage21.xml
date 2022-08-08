@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".payment_homepage21"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_headerLayerOne"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutHeaderOne"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle"
+            android:padding="40dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageView
+            android:id="@+id/iv_letNGoLogo"
+            android:layout_width="44dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="350dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/letngologo" />
+
+        <ImageButton
+            android:id="@+id/btn_backButtonPaymentDetails"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/roundbtn"
+            android:src="@drawable/arrow_back" />
+
+
+        <TextView
+            android:id="@+id/tv_fillYourDetails"
+            android:layout_width="192dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="20dp"
+            android:text="Fill your Details"
+            android:textColor="@color/white"
+            android:textSize="19sp"
+            android:textStyle="bold" />
+
+
+        <ImageButton
+            android:id="@+id/btn_whiteBtnOne"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/roundbtn" />
+
+        <ImageButton
+            android:id="@+id/btn_greyBtnTwo"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="70dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/graybtn" />
+
+        <ImageButton
+            android:id="@+id/btn_greyBtnThree"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_marginStart="80dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/graybtn" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="710dp"
+            android:layout_below="@+id/layoutHeaderOne"
+            >
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="710dp"
+                android:background="@color/white">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/tv_YourDetails"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="50dp"
+                        android:fontFamily="sans-serif"
+                        android:text="Your Details"
+                        android:textColor="#658B6F"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+
+                    <TextView
+                        android:id="@+id/tv_lastname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="100dp"
+                        android:text="Last Name"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/et_lastnametxt"
+                        android:layout_width="341dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="120dp"
+                        android:layout_marginStart="20dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="#658B6F" />
+
+                    <TextView
+                        android:id="@+id/tv_firstName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="180dp"
+                        android:text="First Name"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/ed_firstNameTxt"
+                        android:layout_width="341dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="200dp"
+                        android:ems="10"
+                        android:inputType="textPersonName"
+                        android:textColor="#658B6F" />
+
+                    <TextView
+                        android:id="@+id/tv_reminderOne"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="240dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="on arrival the guest will need a photo ID that matches this name. You cannot change this later."
+                        android:textColor="#FF0000"
+                        android:textSize="8sp" />
+
+
+                    <TextView
+                        android:id="@+id/tv_emailAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="280dp"
+                        android:text="Email Address"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/ed_emailAddressTxt"
+                        android:layout_width="341dp"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="300dp"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#658B6F" />
+
+                    <TextView
+                        android:id="@+id/tv_reminderTwo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="340dp"
+                        android:fontFamily="sans-serif-light"
+                        android:text="Witihn 2 minutes we'll send an email here to let you know if your booking is confirmed."
+                        android:textColor="#FF0000"
+                        android:textSize="8sp" />
+
+                    <TextView
+                        android:id="@+id/tv_contactNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="370dp"
+                        android:text="Contact Number"
+                        android:textSize="14sp" />
+
+                    <EditText
+                        android:id="@+id/ed_contactNumberTxt"
+                        android:layout_width="341dp"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="390dp"
+                        android:layout_marginStart="20dp"
+                        android:ems="10"
+                        android:inputType="textEmailAddress"
+                        android:textColor="#658B6F" />
+                </RelativeLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    //Lower Header//
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="101dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rl_headerLayerOne">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutHeader2"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:background="@drawable/rectangle"
+            android:padding="40dp"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/btn_nextStep"
+            android:layout_width="120dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="250dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/edit_background"
+            android:fontFamily="sans-serif"
+            android:foregroundTint="#658B6F"
+            android:text="Next Step"
+            android:textAllCaps="false"
+            android:textColor="#658B6F"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp" />
+
+
+        // Total prices of the booking//
+        <TextView
+            android:id="@+id/tv_tolalPrice"
+            android:layout_width="192dp"
+            android:layout_height="31dp"
+            android:fontFamily="sans-serif"
+            android:text="PHP 00000.00"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"/>
+
+        <TextView
+            android:id="@+id/textView27"
+            android:layout_width="192dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Includes taxes and charges"
+            android:textColor="@color/white"
+            android:textSize="13sp" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

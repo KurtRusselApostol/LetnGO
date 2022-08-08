@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".PrivacyPolicy4">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:ignore="ExtraText">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:background="@drawable/normal_background"
+            android:padding="10dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:layout_editor_absoluteY="80dp">
+
+                <ImageButton
+                    android:id="@+id/btn_privacy"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_background"
+                    android:minHeight="48dp"
+                    android:src="@drawable/arrow_back"
+                    tools:ignore="ContentDescription,ImageContrastCheck,MissingConstraints,SpeakableTextPresentCheck"
+                    tools:layout_editor_absoluteX="16dp"
+                    tools:layout_editor_absoluteY="6dp" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:addStatesFromChildren="true">
+
+
+            <LinearLayout
+                android:id="@+id/privacy_policy4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:orientation="vertical"
+                tools:ignore="ExtraText,UselessParent">
+
+                <TextView
+                    android:id="@+id/textView96"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="50dp"
+                    android:text="Your Privacy"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="36dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="Thank you for using Let'n Go. The information that's shared with us helps to provide a great experience for you. Our Privacy Policy Describes how we collect, use, process and disclosure your personal information.                                                          "
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:id="@+id/textView99"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="15dp"
+                    android:text="Strictly Necessary"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="These tools are necessary for the app to function and can't be switched off in our systems. They are usually only set in response to actions you made which result only set in response to actions you made which result in a request for services, such as setting your privacy preferences, logging in or filling in forms.                                                         "
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="320dp"
+                android:layout_height="260dp"
+                android:layout_below="@+id/privacy_policy4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                app:srcCompat="@drawable/beach_3" />
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="400dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Brain Tree                             "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Google Maps                       "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Google reCAPTCHA           "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:addStatesFromChildren="true">
+
+            <LinearLayout
+                android:id="@+id/functional"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="UselessLeaf">
+
+                <TextView
+                    android:id="@+id/textView100"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="35dp"
+                    android:text="Functional"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/functional"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="50dp"
+                app:srcCompat="@drawable/beach_3"
+                android:contentDescription="TODO" />
+
+            <Switch
+                android:id="@+id/switch4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="90dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Turn all off                            "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Facebook Functionalities "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:addStatesFromChildren="true">
+
+            <LinearLayout
+                android:id="@+id/performance"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/textView101"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="35dp"
+                    android:textSize="15sp"
+                    android:text="Performance"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="These tools allow us to count visits and traffic sources, so we can measure and improvethe performance of our app. They help us know which app interfaces are the most and least popular and see how visitors move around the app. All information these files collect is aggregated and therefore anonymous. If you do not allow these files we will not collect this information from these files."
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="380dp"
+                android:layout_height="420dp"
+                android:layout_below="@+id/performance"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="53dp"
+                app:srcCompat="@drawable/beach_3" />
+
+            <Switch
+                android:id="@+id/switch7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="280dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Turn all off                            "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch7"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:text="Branch                               "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch8"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:text="Bugsnag                           "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch10"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch9"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:text="Sift                                         "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch10"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:text="Amplitude                            "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch11"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:text="Kochava                               "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch13"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch12"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:text="Google Analytics                "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:addStatesFromChildren="true">
+
+            <LinearLayout
+                android:id="@+id/performance2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                tools:ignore="UselessParent">
+
+                <TextView
+                    android:id="@+id/textView102"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="35dp"
+                    android:textSize="15sp"
+                    android:text="Performance"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <me.biubiubiu.justifytext.library.JustifyTextView
+                    android:layout_width="348dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="35dp"
+                    android:layout_marginBottom="5dp"
+                    android:text="These tools are set through our app by our advertising partners. They may be used those companies to build a profile of your interests and show you relevant ads elsewhere. They work by uniquely identifying your device. if you don't allow these files, you will not experience our targeted advertising across different places as as result of these files.                                                    "
+                    android:textAlignment="center"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="380dp"
+                android:layout_height="550dp"
+                android:layout_below="@+id/performance2"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="47dp"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="53dp"
+                app:srcCompat="@drawable/beach_3" />
+
+            <Switch
+                android:id="@+id/switch14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="280dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Turn all off                            "
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch15"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch14"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Google Ads                              "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch16"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch15"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Braze                           "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch17"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch16"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Facebook Analytics                                  "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch18"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch17"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Google DoubleClick             "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch19"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch18"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Snapchat               "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+            <Switch
+                android:id="@+id/switch20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/switch19"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="50dp"
+                android:minHeight="48dp"
+                android:text="Liveramp                "
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                tools:ignore="HardcodedText,UseSwitchCompatOrMaterialXml" />
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/button_save_btn"
+            android:layout_width="330dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="40dp"
+            android:background="@drawable/beach_3"
+            android:text="Save"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText"
+            android:textAllCaps="false"
+            android:textColor="@color/white"/>
+
+        // this textview is for space, don't  delete this//
+
+        <me.biubiubiu.justifytext.library.JustifyTextView
+            android:layout_width="348dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="35dp"
+            android:layout_marginBottom="5dp"
+            android:text=" JUST FOR SPACE DON'T DELETE THIS"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            tools:ignore="HardcodedText" />
+
+
+    </LinearLayout>
+
+
+
+</ScrollView>

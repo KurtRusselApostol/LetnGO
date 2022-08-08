@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_guest"
+    app:startDestination="@id/fragmentExplore">
+
+    <fragment
+        android:id="@+id/fragment_GuestNewsfeed"
+        android:name="com.example.letngo.Fragment_GuestNewsfeed"
+        android:label="fragment__guest_newsfeed"
+        tools:layout="@layout/fragment__guest_newsfeed" />
+    <fragment
+        android:id="@+id/fragmentCategories2"
+        android:name="com.example.letngo.FragmentCategories"
+        android:label="fragment_categories"
+        tools:layout="@layout/fragment_categories" />
+    <fragment
+        android:id="@+id/fragmentExplore"
+        android:name="com.example.letngo.FragmentExplore"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" />
+    <fragment
+        android:id="@+id/fragment_GuestAccount"
+        android:name="com.example.letngo.Fragment_GuestAccount"
+        android:label="fragment__guest_account"
+        tools:layout="@layout/fragment__guest_account" />
+    <fragment
+        android:id="@+id/fragment_GuestNotification"
+        android:name="com.example.letngo.Fragment_GuestNotification"
+        android:label="fragment__guest_notification"
+        tools:layout="@layout/fragment__guest_notification" />
+
+</navigation>

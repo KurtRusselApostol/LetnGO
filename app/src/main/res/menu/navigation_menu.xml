@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/fragmentNewsfeed"
+        android:icon="@drawable/homeblck"
+        android:title="@string/newsfeed"/>
+
+    <item
+        android:id="@+id/fragmentCategories"
+        android:icon="@drawable/catnew"
+        android:title="@string/categories"/>
+
+    <item
+        android:id="@+id/fragmentExplore"
+        android:icon="@drawable/explorenew"
+        android:title="@string/explore"/>
+
+    <item
+        android:id="@+id/fragmentNotification"
+        android:icon="@drawable/notifsnew"
+        android:title="@string/notification"/>
+
+    <item
+        android:id="@+id/fragmentAccount"
+        android:icon="@drawable/accnew"
+        android:title="@string/account"/>
+
+</menu>

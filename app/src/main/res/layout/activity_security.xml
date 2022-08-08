@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/normal_background"
+    android:name ='.security'
+    >
+
+    <ImageView
+        android:id="@+id/imageView15"
+        android:layout_width="232dp"
+        android:layout_height="430dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="-50dp"
+        android:layout_marginEnd="100dp"
+        android:contentDescription="TODO"
+        app:srcCompat="@drawable/logo1" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:background="#DEE1DD"
+        android:src="@drawable/arrow_back"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck">
+
+    </ImageButton>
+
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="300dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="360dp"
+        android:background="@drawable/beach_1"
+        android:backgroundTint="@color/white"
+        android:contentDescription="TODO"
+        tools:ignore="ContentDescription,HardcodedText" />
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="200dp"
+        android:text="@string/security"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+        android:textColor="@color/white"
+        android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="380dp"
+        android:paddingStart="75dp"
+        android:paddingEnd="75dp"
+        android:text="@string/setting_up_extra_security"
+        android:textColor="@color/black"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:paddingStart="75dp"
+        android:paddingEnd="75dp"
+        android:text="@string/get_alerts"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
+
+    <ImageButton
+        android:id="@+id/button"
+        android:layout_width="60dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="230dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginEnd="80dp"
+        android:background="#DEE1DD"
+        android:backgroundTint="@color/Light_grey"
+        android:onClick="security2"
+        android:padding="@dimen/cardview_default_radius"
+        android:src="@drawable/next"
+        tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck">
+
+    </ImageButton>
+
+
+</RelativeLayout>
+
+
+
+
+

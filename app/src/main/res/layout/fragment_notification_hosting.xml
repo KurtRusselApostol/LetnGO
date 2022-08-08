@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NotificationHosting"
+    android:scrollbars="none"
+    android:background="#DEE1DD">
+
+    <RelativeLayout
+        android:id="@+id/relativeNotif"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <Button
+            android:id="@+id/btn_checking_out1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:background="#DEE1DD"
+            android:drawableEnd="@drawable/nexxt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Checking Out"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_currently_hosting1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_checking_out1"
+            android:layout_marginTop="3dp"
+            android:background="#DEE1DD"
+            android:drawableEnd="@drawable/nexxt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Currently Hosting"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_arriving_soon1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_currently_hosting1"
+            android:layout_marginTop="4dp"
+            android:background="#DEE1DD"
+            android:drawableEnd="@drawable/nexxt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Arriving Soon"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_upcoming1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_arriving_soon1"
+            android:layout_marginTop="3dp"
+            android:background="#DEE1DD"
+            android:drawableEnd="@drawable/nexxt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Upcoming"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/btn_all_reservations1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@+id/btn_upcoming1"
+            android:layout_marginTop="3dp"
+            android:layout_marginBottom="100dp"
+            android:background="#DEE1DD"
+            android:drawableEnd="@drawable/nexxt"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="All Reservations"
+            android:textAlignment="textStart"
+            android:textAllCaps="false"
+            android:textColor="@color/black" />
+
+    </RelativeLayout>
+
+</ScrollView>

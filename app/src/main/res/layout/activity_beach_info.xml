@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".info_beach"
+    tools:ignore="contentDescription">
+
+    <RelativeLayout
+        android:id="@+id/campingInfo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:tint="@color/colorWhite"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageButton
+            android:id="@+id/campingImg"
+            android:layout_width="@dimen/_318sdp"
+            android:layout_height="@dimen/_321sdp"
+            app:srcCompat="@drawable/beach_1"
+            tools:layout_editor_absoluteX="-2dp"
+            tools:layout_editor_absoluteY="-2dp" />
+
+
+        <TextView
+            android:id="@+id/bedInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_355sdp"
+            android:text="TextView"
+            android:textColor="#2f5754"
+            android:textSize="12sp" />
+
+        <TextView
+            android:id="@+id/textView102"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_215sdp"
+            android:layout_marginTop="@dimen/_355sdp"
+            android:text="TextView"
+            android:textColor="#2f5754"
+            android:textSize="12sp"/>
+
+
+        <TextView
+            android:id="@+id/doorInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_65sdp"
+            android:layout_marginTop="@dimen/_391sdp"
+            android:text="TextView"
+            android:textColor="#2f5754"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/locationInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="280dp"
+            android:layout_marginTop="@dimen/_391sdp"
+            android:text="TextView"
+            android:textColor="#2f5754"
+            android:textSize="12sp" />
+
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="@dimen/_105sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_423sdp"
+            android:text="@string/description"
+            android:textColor="#2f5754"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <!-- ICONS-->
+
+        <TextView
+            android:id="@+id/descriptionMsg"
+            android:layout_width="@dimen/_292sdp"
+            android:layout_height="@dimen/_215sdp"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_446sdp"
+            android:text="@string/Lorem" />
+
+        <ImageView
+            android:id="@+id/bathIcon"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_marginStart="@dimen/_192sdp"
+            android:layout_marginTop="@dimen/_350sdp"
+            app:srcCompat="@drawable/bath"
+            app:tint="#2f5754" />
+
+        <ImageView
+            android:id="@+id/locationIcon"
+            android:layout_width="@dimen/_23sdp"
+            android:layout_height="@dimen/_23sdp"
+            android:layout_marginStart="@dimen/_192sdp"
+            android:layout_marginTop="@dimen/_384sdp"
+            app:srcCompat="@drawable/location"
+            app:tint="#2f5754" />
+
+        <ImageView
+            android:id="@+id/doorIcon"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_385sdp"
+            app:srcCompat="@drawable/door"
+            app:tint="#2f5754" />
+
+        <ImageView
+            android:id="@+id/bedIcon"
+            android:layout_width="@dimen/_27sdp"
+            android:layout_height="@dimen/_27sdp"
+            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginTop="@dimen/_350sdp"
+            app:srcCompat="@drawable/bed"
+            app:tint="#2f5754" />
+
+        <RatingBar
+            style="?android:attr/ratingBarStyleSmall"
+            android:layout_width="@dimen/_62sdp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_215sdp"
+            android:layout_marginTop="@dimen/_331sdp"
+            android:numStars="5"
+            android:rating="4" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/_118sdp"
+            android:layout_height="@dimen/_37sdp"
+            android:layout_marginStart="@dimen/_96sdp"
+            android:layout_marginTop="@dimen/_291sdp"
+            app:srcCompat="@drawable/button_guidance" />
+
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="@dimen/_118sdp"
+            android:layout_height="@dimen/_18sdp"
+            android:layout_marginStart="@dimen/_96sdp"
+            android:layout_marginTop="@dimen/_294sdp"
+            android:text="@string/price"
+            android:textAlignment="center"
+            android:textColor="#2f5754"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

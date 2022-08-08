@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".enter_coupon">
+
+    <!-- TODO: Update blank fragment layout -->
+    <androidx.cardview.widget.CardView
+        android:layout_width="385dp"
+        android:layout_height="156dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="100dp"
+        app:cardCornerRadius="15dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="15dp"
+            android:text="Enter your Coupon"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="340dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginStart="20dp"
+            android:backgroundTint="@color/Light_grey"
+            android:background="@color/Light_grey" />
+
+        <EditText
+            android:id="@+id/first_letter"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="50dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="L"
+            android:textColor="@color/black"
+            android:text=""
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/second_letter"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="95dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:textColor="@color/black"
+            android:hint="E"
+            android:text=""
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/third_letter"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="140dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="T"
+            android:textColor="@color/black"
+            android:text=""
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/forth_letter"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="185dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="N"
+            android:textColor="@color/black"
+            android:text=""
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/fifth_letter"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="230dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="G"
+            android:textColor="@color/black"
+            android:text=""
+            android:textAlignment="center"/>
+
+        <EditText
+            android:id="@+id/sixth_letter"
+            android:layout_width="30dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginStart="275dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:hint="O"
+            android:textColor="@color/black"
+            android:text=""
+            android:textAlignment="center"/>
+
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="150dp"
+            android:text="Cancel"
+            android:textSize="13dp"
+            android:background="@drawable/relative_layout_design" />
+
+        <Button
+            android:id="@+id/confirmBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginTop="110dp"
+            android:layout_marginStart="250dp"
+            android:text="Confirm"
+            android:textSize="13dp"
+            android:background="@drawable/relative_layout_design" />
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>

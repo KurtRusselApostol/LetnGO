@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".FragmentPostList">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="1200dp">
+
+        <RelativeLayout
+            android:layout_width="360dp"
+            android:layout_height="1200dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="20dp"
+            android:background="#dadada">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="317dp"
+                android:layout_marginTop="30dp">
+
+
+                <TextView
+                    android:id="@+id/tv_captionPost"
+                    android:layout_width="match_parent"
+                    android:layout_height="46dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:text="Caption"
+                    android:textSize="15sp" />
+
+                <ImageView
+                    android:id="@+id/iv_picturePost"
+                    android:layout_width="360dp"
+                    android:layout_height="210dp"
+                    android:layout_marginTop="45dp"
+                    android:src="@drawable/beach_1" />
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardviewPost"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="265dp"
+                    android:layout_marginTop="220dp"
+                    android:elevation="12dp"
+                    app:cardCornerRadius="40dp">
+
+                    <ImageView
+                        android:id="@+id/iv_profilePicturePost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:src="@tools:sample/avatars" />
+                </androidx.cardview.widget.CardView>
+
+                <LinearLayout
+                    android:layout_width="250dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="265dp">
+
+                    //No btn for ViewEye//
+
+                    <ImageView
+                        android:id="@+id/icn_viewEye"
+                        android:layout_width="25dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="9dp"
+                        android:src="@drawable/eye" />
+
+                    <TextView
+                        android:id="@+id/tv_viewEyeNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="13dp"
+                        android:text="1"
+                        android:textAlignment="center"
+                        android:textSize="10sp" />
+
+                    //clickable btn heart icn//
+
+                    <ImageView
+                        android:id="@+id/btn_heart"
+                        android:layout_width="25dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="9dp"
+                        android:clickable="true"
+                        android:src="@drawable/ic_blue_favorite_24"
+                        app:tint="@color/black" />
+
+                    <TextView
+                        android:id="@+id/tv_heartNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="13dp"
+                        android:text="1"
+                        android:textSize="10sp" />
+
+                    //clickable btn comment icon//
+
+                    <ImageView
+                        android:id="@+id/btn_comment"
+                        android:layout_width="25dp"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="9dp"
+                        android:clickable="true"
+                        android:src="@drawable/icn_message" />
+
+                    <TextView
+                        android:id="@+id/tv_commentsNum"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="13dp"
+                        android:text="0"
+                        android:textSize="10sp" />
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+</ScrollView>

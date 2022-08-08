@@ -1,0 +1,387 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".new_signup"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".sign_up"
+        android:background="#DEE1DD"
+        android:orientation="vertical">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="1300dp"
+            android:layout_gravity="center"
+            android:layout_margin="50dp">
+
+            <Button
+                android:id="@+id/btn_signup"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="4dp"
+                android:layout_marginBottom="656dp"
+                android:background="@drawable/btn_login"
+                android:fontFamily="@font/poppins_medium"
+                android:text="SIGN UP"
+                android:textColor="#2F575D"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.515"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.788" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginBottom="600dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="OR"
+                android:textAlignment="center"
+                android:textColor="@color/login_text"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.273" />
+
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="710dp"
+                android:background="@drawable/btn_google"
+                android:fontFamily="@font/poppins_light"
+                android:paddingLeft="60dp"
+                android:paddingRight="40dp"
+                android:text="BACK TO LOGIN"
+                android:textSize="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.901" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="-2dp"
+                android:layout_marginBottom="1258dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="SIGNUP "
+                android:textColor="@color/login_text"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.153"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.195" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="73dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Username"
+                android:textColor="#2F575D"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.273" />
+
+            <EditText
+                android:id="@+id/ed_username"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="93dp"
+                android:backgroundTint="#FBFAFA"
+                android:drawableRight="@drawable/user"
+                android:ems="10"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Enter your username"
+                android:inputType="textPersonName"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.331" />
+
+            <EditText
+                android:id="@+id/ed_email"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="3dp"
+                android:layout_marginTop="185dp"
+                android:backgroundTint="#FBFAFA"
+                android:drawableRight="@drawable/email"
+                android:ems="10"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Enter your email"
+                android:inputType="textEmailAddress"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.331" />
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="149dp"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ed_password"
+                android:layout_marginBottom="128dp"
+                app:ccp_defaultLanguage="ENGLISH" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="-1dp"
+                android:layout_marginTop="258dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Mobile number"
+                android:textColor="#2F575D"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.273" />
+
+            <EditText
+                android:id="@+id/ed_mobile"
+                android:layout_width="match_parent"
+                android:layout_height="61dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="140dp"
+                android:layout_marginTop="292dp"
+                android:autofillHints=""
+                android:backgroundTint="#FBFAFA"
+                android:ems="10"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Enter your number"
+                android:inputType="textPersonName"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.331" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="1dp"
+                android:layout_marginTop="163dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Email"
+                android:textColor="#2F575D"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.273" />
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginBottom="899dp"
+                android:fontFamily="@font/poppins_light"
+                android:text="Password"
+                android:textColor="#2F575D"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.148"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.273" />
+
+
+            <EditText
+                android:id="@+id/ed_password"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="404dp"
+                android:backgroundTint="#FBFAFA"
+                android:clickable="true"
+                android:ems="20"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Enter your password"
+                android:inputType="textPassword"
+                android:drawableRight="@drawable/hide"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.331" />
+
+
+            <EditText
+                android:id="@+id/ed_cpassword"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="2dp"
+                android:layout_marginTop="479dp"
+                android:backgroundTint="#FBFAFA"
+                android:clickable="true"
+                android:drawableRight="@drawable/hide"
+                android:ems="20"
+                android:fontFamily="@font/poppins_light"
+                android:hint="Confirm  password"
+                android:inputType="textPassword"
+                android:textSize="17sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.494"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.331" />
+
+        </RelativeLayout>
+
+
+
+        <!--    <RelativeLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="68dp"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_margin="50dp">-->
+
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btn_signup"-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="50dp"-->
+        <!--            android:layout_alignParentStart="true"-->
+        <!--            android:layout_alignParentBottom="true"-->
+        <!--            android:layout_marginBottom="12dp"-->
+        <!--            android:background="@drawable/btn_login"-->
+        <!--            android:fontFamily="@font/poppins_light"-->
+        <!--            android:onClick="Register"-->
+        <!--            android:text="SIGN UP"-->
+        <!--            android:textColor="#FBFBFB"-->
+        <!--            android:textSize="20sp"-->
+        <!--            android:textStyle="bold"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.515"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.788" />-->
+        <!--    </RelativeLayout>-->
+
+        <!--    <RelativeLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="90dp"-->
+        <!--        android:layout_gravity="center"-->
+        <!--        android:layout_margin="50dp">-->
+
+        <!--        <View-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="1dp"-->
+        <!--            android:background="@color/login_text"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintEnd_toEndOf="parent"-->
+        <!--            app:layout_constraintHorizontal_bias="0.0"-->
+        <!--            app:layout_constraintStart_toStartOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent"-->
+        <!--            app:layout_constraintVertical_bias="0.835" />-->
+
+        <!--        &lt;!&ndash;palitan ko lang saglit&ndash;&gt;-->
+        <!--&lt;!&ndash;        <Button&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:id="@+id/button4"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_width="match_parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_height="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_alignParentStart="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_alignParentTop="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_centerHorizontal="true"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:layout_marginTop="16dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:background="@drawable/btn_google"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:drawableLeft="@drawable/google"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:fontFamily="@font/poppins_light"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:onClick="moveToLogin"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:paddingLeft="70dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:paddingRight="50dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:text="Already signed up? Login Here"&ndash;&gt;-->
+        <!--&lt;!&ndash;            android:textSize="20dp"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:layout_constraintBottom_toBottomOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:layout_constraintEnd_toEndOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:layout_constraintStart_toStartOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:layout_constraintTop_toTopOf="parent"&ndash;&gt;-->
+        <!--&lt;!&ndash;            app:layout_constraintVertical_bias="0.901" />&ndash;&gt;-->
+        <!--    </RelativeLayout>-->
+
+    </LinearLayout>
+</ScrollView>
+

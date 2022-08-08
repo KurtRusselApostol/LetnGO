@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#dddddd"
+    android:fillViewport="true"
+    tools:context=".Create_post"
+    android:scrollbars="none"
+    android:id="@+id/viewcreate">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+
+        <RelativeLayout
+            android:id="@+id/cardviewCointainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/_7sdp"
+            android:layout_marginTop="@dimen/_7sdp"
+            android:layout_marginBottom="@dimen/_7sdp"
+            android:layout_marginRight="@dimen/_7sdp">
+
+
+            <com.google.android.material.card.MaterialCardView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_6sdp"
+                android:layout_marginEnd="@dimen/_6sdp"
+                android:layout_marginBottom="@dimen/_6sdp"
+                android:background="@drawable/btn_background"
+                app:cardBackgroundColor="#ffffff"
+                app:cardCornerRadius="@dimen/_20sdp"
+                app:cardElevation="@dimen/_7sdp"
+                app:strokeColor="#CCCCCC"
+                app:strokeWidth="@dimen/_2sdp">
+
+
+                <RelativeLayout
+
+                    android:id="@+id/post"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_marginTop="@dimen/_7sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_marginBottom="@dimen/_7sdp" >
+
+                    <EditText
+                        android:id="@+id/instruction_create"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_69sdp"
+                        android:layout_marginEnd="@dimen/_15sdp"
+                        android:layout_marginBottom="@dimen/_146sdp"
+                        android:background="#ffffff"
+                        android:hint="What's on your mind?"
+                        android:inputType="textMultiLine"
+                        android:textColor="@color/black"
+                        android:textColorHint="#dadada"
+                        android:textSize="@dimen/_17ssp" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="@dimen/_246sdp"
+                        android:layout_height="@dimen/_1sdp"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_42sdp"
+                        android:background="?android:attr/listDivider" />
+
+                    <ImageView
+                        android:id="@+id/image_view"
+                        android:layout_width="@dimen/_210sdp"
+                        android:layout_height="@dimen/_227sdp"
+                        android:layout_marginStart="@dimen/_30sdp"
+                        android:layout_marginTop="@dimen/_177sdp"
+                        app:srcCompat="@android:drawable/divider_horizontal_dim_dark" />
+                </RelativeLayout>
+
+
+                <Button
+                    android:id="@+id/btn_post"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp"
+                    android:layout_gravity="bottom"
+                    android:layout_marginStart="@dimen/_11sdp"
+                    android:layout_marginEnd="@dimen/_11sdp"
+                    android:layout_marginBottom="@dimen/_15sdp"
+                    android:background="@drawable/btn_background"
+                    android:backgroundTint="#dddddd"
+                    android:bottomLeftRadius="@dimen/_4sdp"
+                    android:outlineAmbientShadowColor="@color/cardview_shadow_end_color"
+                    android:text="Post"
+                    android:textColor="#658354"
+                    android:textStyle="bold" />
+
+                <ImageButton
+                    android:id="@+id/img_exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+                    android:layout_marginTop="@dimen/_10sdp"
+                    android:layout_marginStart="@dimen/_15sdp"
+                    app:srcCompat="@drawable/remove_button"
+                    android:background="@color/colorWhite"/>
+
+                <TextView
+                    android:id="@+id/findAccount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_15sdp"
+                    android:layout_marginBottom="@dimen/_16sdp"
+                    android:text="Create Post"
+                    android:textAlignment="center"
+                    android:textColor="#666666"
+                    android:textSize="@dimen/_17ssp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:id="@+id/relative2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_392sdp"
+                    android:layout_marginBottom="@dimen/_46sdp"
+                    android:layout_marginRight="@dimen/_7sdp"
+                    android:layout_marginLeft="@dimen/_7sdp"
+                    android:layout_gravity="bottom">
+
+                    <Button
+                        android:id="@+id/btn_location"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:layout_below="@+id/btn_gallery"
+                        android:layout_marginTop="@dimen/_2sdp"
+                        android:layout_marginBottom="@dimen/_7sdp"
+                        android:background="#DEE1DD"
+                        android:drawableLeft="@drawable/location"
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:paddingRight="@dimen/_146sdp"
+                        android:text="    Location"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="#426263" />
+
+                    <Button
+                        android:id="@+id/btn_gallery"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_11sdp"
+                        android:background="#DEE1DD"
+                        android:drawableLeft="@drawable/photos"
+                        android:paddingLeft="@dimen/_7sdp"
+                        android:paddingRight="@dimen/_92sdp"
+                        android:text="     Photos/Videos"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="#426263" />
+
+                </RelativeLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+</ScrollView>
+
+

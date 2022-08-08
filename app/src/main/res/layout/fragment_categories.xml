@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".FragmentCategories"
+    android:background="#DEE1DD"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_background"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/textWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="25sp"
+                android:text="CATEGORIES"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageMessage"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/message1"
+                app:layout_constraintBottom_toBottomOf="@id/textWelcome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textWelcome"
+                app:layout_constraintVertical_bias="0.0"
+                app:tint="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/white_rectangle_background"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageMessage"
+                >
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:hint="@string/search_elements"
+                    android:imeOptions="actionSearch"
+                    android:fontFamily="@font/poppins_light"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/_11sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:background="@drawable/search_icon_background"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/searchblck"
+                    app:tint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_marginBottom="@dimen/_92sdp"
+            android:background="@drawable/round_categories">
+
+            <RelativeLayout
+                android:id="@+id/beach"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_marginStart="@dimen/_14sdp"
+                android:layout_marginTop="@dimen/_30sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/round_facilities"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_192sdp">
+
+                <TextView
+                    android:layout_width="@dimen/_68sdp"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingTop="@dimen/_23sdp"
+                    android:text="@string/beach"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_19sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/beach_pic"
+                tools:ignore="ContentDescription" />
+
+
+            <RelativeLayout
+                android:id="@+id/tree_house"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_114sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/round_categ"
+                android:clickable="true"
+                android:focusable="true"
+                android:onClick="openTreehouse"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_165sdp">
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_53sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingTop="@dimen/_23sdp"
+                    android:text="@string/treehouse"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_77sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_100sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/tree_house"
+                tools:ignore="ContentDescription" />
+
+
+            <RelativeLayout
+                android:id="@+id/camping"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_198sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/round_pricing"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_173sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_54sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingTop="@dimen/_23sdp"
+                    android:text="@string/camping"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_115sdp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_192sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/camp_pic"
+                tools:ignore="ContentDescription" />
+
+            <RelativeLayout
+                android:id="@+id/caves"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_282sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/round_type"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_184sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_53sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingTop="@dimen/_23sdp"
+                    android:text="@string/caves"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_107sdp"
+                android:layout_height="@dimen/_61sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_285sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:background="@drawable/caves_pic"
+                tools:ignore="ContentDescription"/>
+
+            <RelativeLayout
+                android:id="@+id/country_side"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_366sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/round_type"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_157sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_54sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingTop="@dimen/_23sdp"
+                    android:text="@string/countryside"
+                    android:textColor="@color/black"
+                    android:textSize="17sp" />
+
+            </RelativeLayout>
+
+
+            <ImageView
+                android:layout_width="@dimen/_100sdp"
+                android:layout_height="@dimen/_69sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_369sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:background="@drawable/countyside_pic"
+                tools:ignore="ContentDescription"/>
+
+            <RelativeLayout
+                android:id="@+id/cabin"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_450sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/round_type"
+                android:clickable="true"
+                android:focusable="true"
+                android:paddingStart="@dimen/_15sdp"
+                android:paddingEnd="@dimen/_184sdp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_54sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingTop="@dimen/_23sdp"
+                    android:text="@string/cabin"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_77sdp"
+                android:layout_height="@dimen/_78sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_442sdp"
+                android:layout_marginEnd="@dimen/_30sdp"
+                android:background="@drawable/cabin_pic"
+                tools:ignore="ContentDescription"/>
+
+
+            <RelativeLayout
+                android:id="@+id/island"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_65sdp"
+                android:layout_marginStart="@dimen/_13sdp"
+                android:layout_marginTop="@dimen/_534sdp"
+                android:layout_marginEnd="@dimen/_13sdp"
+                android:background="@drawable/round_type"
+                android:clickable="true"
+                android:focusable="true">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_54sdp"
+                    android:layout_marginStart="@dimen/_19sdp"
+                    android:layout_marginEnd="@dimen/_154sdp"
+                    android:fontFamily="@font/poppins_bold"
+                    android:paddingTop="@dimen/_23sdp"
+                    android:text="@string/island"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="@dimen/_107sdp"
+                android:layout_height="@dimen/_69sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="@dimen/_530sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:background="@drawable/island_pic"
+                tools:ignore="ContentDescription"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
