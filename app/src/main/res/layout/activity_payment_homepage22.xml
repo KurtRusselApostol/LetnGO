@@ -10,21 +10,21 @@
 
     <RelativeLayout
         android:id="@+id/textView3"
-        android:layout_width="411dp"
-        android:layout_height="81dp"
+        android:layout_width="419dp"
+        android:layout_height="55dp"
         android:background="@drawable/rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" >
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:layout_width="44dp"
             android:layout_height="45dp"
             android:layout_marginStart="340dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="5dp"
             android:background="@drawable/letngologo" />
 
         <ImageButton
@@ -32,7 +32,7 @@
             android:layout_width="29dp"
             android:layout_height="30dp"
             android:layout_marginStart="15dp"
-            android:layout_marginTop="23dp"
+            android:layout_marginTop="13dp"
             android:background="@drawable/roundbtn"
             android:src="@drawable/arrow_back" />
 
@@ -41,7 +41,7 @@
             android:layout_width="192dp"
             android:layout_height="31dp"
             android:layout_marginStart="50dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="15dp"
             android:text="Booking Overview"
             android:textColor="@color/white"
             android:textSize="18sp"
@@ -52,7 +52,7 @@
             android:layout_width="5dp"
             android:layout_height="5dp"
             android:layout_marginStart="55dp"
-            android:layout_marginTop="57dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/graybtn" />
 
         <ImageButton
@@ -60,7 +60,7 @@
             android:layout_width="5dp"
             android:layout_height="5dp"
             android:layout_marginStart="75dp"
-            android:layout_marginTop="57dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/roundbtn" />
 
 
@@ -69,21 +69,23 @@
             android:layout_width="5dp"
             android:layout_height="5dp"
             android:layout_marginStart="95dp"
-            android:layout_marginTop="57dp"
+            android:layout_marginTop="40dp"
             android:background="@drawable/graybtn" />
     </RelativeLayout>
 
+
     <RelativeLayout
         android:id="@+id/rectanglewhite"
-        android:layout_width="415dp"
-        android:layout_height="368dp"
+        android:layout_width="410dp"
+        android:layout_height="312dp"
         android:background="@drawable/rectangle_white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.154">
+        app:layout_constraintVertical_bias="0.126">
 
         <TextView
             android:id="@+id/textView7"
@@ -128,7 +130,7 @@
             android:layout_width="350dp"
             android:layout_height="55dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="115dp"
+            android:layout_marginTop="105dp"
             android:fontFamily="sans-serif"
             android:text="Edison Avenue Cebu City, 4301 Cebu, Philippines"
             android:textColor="#658B6F"
@@ -145,7 +147,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="165dp"
             android:fontFamily="sans-serif"
             android:text="Check-In"
             android:textColor="#658B6F"
@@ -157,7 +159,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="280dp"
-            android:layout_marginTop="180dp"
+            android:layout_marginTop="165dp"
             android:fontFamily="sans-serif"
             android:text="Sat 28 May 2022"
             android:textColor="#658B6F"
@@ -169,7 +171,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="215dp"
+            android:layout_marginTop="190dp"
             android:fontFamily="sans-serif"
             android:text="Check-Out"
             android:textColor="#658B6F"
@@ -181,7 +183,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="280dp"
-            android:layout_marginTop="215dp"
+            android:layout_marginTop="190dp"
             android:fontFamily="sans-serif"
             android:text="Sun 29 May 2022"
             android:textColor="#658B6F"
@@ -192,7 +194,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="255dp"
+            android:layout_marginTop="215dp"
             android:fontFamily="sans-serif"
             android:text="For"
             android:textColor="#658B6F"
@@ -204,7 +206,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="280dp"
-            android:layout_marginTop="255dp"
+            android:layout_marginTop="215dp"
             android:fontFamily="sans-serif"
             android:text="1 night, 1 room"
             android:textColor="#658B6F"
@@ -215,7 +217,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="290dp"
+            android:layout_marginTop="240dp"
             android:fontFamily="sans-serif"
             android:text="Supperior Queen Room"
             android:textColor="#658B6F"
@@ -227,7 +229,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="280dp"
-            android:layout_marginTop="290dp"
+            android:layout_marginTop="240dp"
             android:fontFamily="sans-serif"
             android:text="PHP 9,065"
             android:textColor="#658B6F"
@@ -238,7 +240,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="315dp"
+            android:layout_marginTop="260dp"
             android:fontFamily="sans-serif"
             android:text="Taxes and charges"
             android:textColor="#658B6F"
@@ -249,7 +251,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="280dp"
-            android:layout_marginTop="315dp"
+            android:layout_marginTop="260dp"
             android:fontFamily="sans-serif"
             android:text="PHP 9,500"
             android:textColor="#658B6F"
@@ -260,7 +262,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="340dp"
+            android:layout_marginTop="280dp"
             android:fontFamily="sans-serif"
             android:text="Discount Voucher"
             android:textColor="#658B6F"
@@ -272,7 +274,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="280dp"
-            android:layout_marginTop="340dp"
+            android:layout_marginTop="280dp"
             android:fontFamily="sans-serif"
             android:text="-PHP 2,500"
             android:textColor="#658B6F"
@@ -281,19 +283,18 @@
 
     </RelativeLayout>
 
-
     <RelativeLayout
         android:id="@+id/rectanglewhite3"
-        android:layout_width="412dp"
-        android:layout_height="263dp"
+        android:layout_width="411dp"
+        android:layout_height="214dp"
         android:background="@drawable/rectangle_white"
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.466"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.786">
+        app:layout_constraintVertical_bias="0.777">
 
         <TextView
             android:id="@+id/textView47"
@@ -395,16 +396,15 @@
         android:textSize="14sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.825"
+        app:layout_constraintHorizontal_bias="0.831"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.53" />
-
+        app:layout_constraintVertical_bias="0.525" />
 
     <RelativeLayout
         android:id="@+id/textView5"
-        android:layout_width="410dp"
-        android:layout_height="132dp"
+        android:layout_width="407dp"
+        android:layout_height="115dp"
         android:background="@drawable/rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -418,7 +418,7 @@
             android:layout_width="192dp"
             android:layout_height="31dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             android:fontFamily="sans-serif"
             android:text="PHP 7,500"
             android:textColor="@color/white"
@@ -430,7 +430,7 @@
             android:layout_width="192dp"
             android:layout_height="31dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="55dp"
             android:text="Includes taxes and charges"
             android:textColor="@color/white"
             android:textSize="14sp" />
@@ -440,7 +440,7 @@
             android:layout_width="120dp"
             android:layout_height="40dp"
             android:layout_marginStart="255dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="30dp"
             android:background="@drawable/edit_background"
             android:fontFamily="sans-serif"
             android:foregroundTint="#658B6F"

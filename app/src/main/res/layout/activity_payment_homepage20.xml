@@ -11,8 +11,8 @@
 
     <TextView
         android:id="@+id/textView3"
-        android:layout_width="413dp"
-        android:layout_height="82dp"
+        android:layout_width="412dp"
+        android:layout_height="73dp"
         android:background="@drawable/rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -73,6 +73,7 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.018" />
 
+
     <ImageButton
         android:layout_width="28dp"
         android:layout_height="34dp"
@@ -80,27 +81,26 @@
         android:src="@drawable/down_arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.997"
+        app:layout_constraintHorizontal_bias="0.992"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
+        app:layout_constraintVertical_bias="0.104" />
 
     <EditText
         android:id="@+id/dropdowntext"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:backgroundTint="#dadada"
         android:hint="From 6 April 2022 your chosen cancellation policy will apply, regardless of Corona Virus "
         android:padding="12dp"
         android:textColor="@color/black"
         android:textSize="9sp"
-        android:backgroundTint="#dadada"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.094" />
-
+        app:layout_constraintVertical_bias="0.103" />
 
     <RelativeLayout
         android:id="@+id/rectanglewhite"
@@ -112,7 +112,7 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.157">
+        app:layout_constraintVertical_bias="0.191">
 
 
         <TextView
@@ -195,8 +195,8 @@
             android:id="@+id/button3"
             android:layout_width="130dp"
             android:layout_height="25dp"
-            android:layout_marginStart="155dp"
-            android:layout_marginTop="49dp"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="50dp"
             android:background="@drawable/relative_layout_design"
             android:fontFamily="sans-serif-thin"
             android:foregroundTint="@color/black"
@@ -209,29 +209,25 @@
             app:strokeColor="@color/black"
             app:strokeWidth="0.5dp" />
 
+        <Button
+            android:layout_width="130dp"
+            android:layout_height="25dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="15dp"
+            android:background="@drawable/relative_layout_design"
+            android:fontFamily="sans-serif-thin"
+            android:foregroundTint="@color/black"
+            android:text="Free cancelation"
+            android:textAllCaps="true"
+            android:textColor="@color/black"
+            android:textSize="10sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:strokeColor="@color/black"
+            app:strokeWidth="0.5dp" />
+
 
     </RelativeLayout>
-
-    <Button
-        android:layout_width="130dp"
-        android:layout_height="25dp"
-        android:fontFamily="sans-serif-thin"
-        android:foregroundTint="@color/black"
-        android:text="Free cancelation"
-        android:textAllCaps="true"
-        android:textColor="@color/black"
-        android:textSize="10sp"
-        android:textStyle="bold"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.044"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19"
-        app:strokeColor="@color/black"
-        android:background="@drawable/relative_layout_design"
-        app:strokeWidth="0.5dp" />
 
 
     <RelativeLayout
@@ -241,10 +237,10 @@
         android:background="@drawable/rectangle"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.75"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.467">
+        app:layout_constraintVertical_bias="0.635">
 
         <TextView
             android:id="@+id/textView7"
