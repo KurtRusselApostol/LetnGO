@@ -18,3 +18,4 @@ public class Checking_out extends AppCompatActivity {
         back.setOnClickListener(v -> onBackPressed());
     }
 }
+//
