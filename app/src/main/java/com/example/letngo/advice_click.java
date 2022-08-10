@@ -6,7 +6,7 @@ import android.widget.ImageButton;
 import androidx.appcompat.app.AppCompatActivity;
 
 public class advice_click extends AppCompatActivity {
-//
+//eto sir?
     ImageButton back;
 
     @Override
