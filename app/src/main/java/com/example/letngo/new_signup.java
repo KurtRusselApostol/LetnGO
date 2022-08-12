@@ -310,5 +310,6 @@ public class new_signup extends AppCompatActivity {
         startActivity(new Intent(getApplicationContext(), com.example.letngo.new_login.class));
         finish();
     }
-
+    // Added Comment
 }
+
