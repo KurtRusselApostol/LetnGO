@@ -37,3 +37,5 @@ public class MainActivity extends AppCompatActivity {
         FirebaseAuth.getInstance().signOut();
     }
 }
+
+//test commit & push
