@@ -54,7 +54,7 @@
             android:layout_below="@+id/confiad"
             android:layout_marginStart="@dimen/_38sdp"
             android:layout_marginTop="@dimen/_38sdp"
-            android:text="By clicking the button, you are confirming your email address and agreeing to terms of services"
+            android:text="By clicking the button, you are confirming your email address and agreeing to terms of services."
             android:textSize="15sp"
             android:textStyle="bold" />
 
