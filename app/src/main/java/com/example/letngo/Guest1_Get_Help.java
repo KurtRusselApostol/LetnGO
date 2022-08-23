@@ -19,4 +19,3 @@ public class Guest1_Get_Help extends AppCompatActivity {
     }
 }
 
-//test commit & push 2
