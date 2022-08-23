@@ -52,7 +52,7 @@
                 android:layout_marginTop="@dimen/_38sdp"
                 android:layout_marginEnd="@dimen/_77sdp"
                 android:gravity="center"
-                android:text="All Reservation"
+                android:text="All Reservations"
                 android:textAlignment="center"
                 android:textAllCaps="false"
                 android:textColor="#388E3C"
