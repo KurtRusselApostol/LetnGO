@@ -43,7 +43,7 @@
                 android:layout_marginStart="@dimen/_18sdp"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:layout_marginBottom="1dp"
-                android:text="Getting started on Let n' Go"
+                android:text="Getting started on Let n Go"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
