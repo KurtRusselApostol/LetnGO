@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.letngo.databinding.FragmentFirst3Binding;
-
+/*
 public class First3Fragment extends Fragment {
 
     private FragmentFirst3Binding binding;
@@ -44,4 +44,4 @@ public class First3Fragment extends Fragment {
         binding = null;
     }
 
-}
+}*/
