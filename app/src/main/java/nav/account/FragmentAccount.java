@@ -17,6 +17,14 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 import login.system.new_login;
+import nav.account.help.GetHelp;
+import nav.account.hosting.Manage_Hosting;
+import nav.account.hosting.start_hosting;
+import nav.account.notif.notif_settings1;
+import nav.account.privacy.PrivacyPolicy;
+import nav.account.safety.safety_center;
+import nav.account.support.Terms_Services;
+import nav.account.support.letngo_support;
 
 public class FragmentAccount extends Fragment {
 
@@ -105,7 +113,7 @@ public class FragmentAccount extends Fragment {
                 break;
 
             case R.id.securityButton:
-                Intent intent2 = new Intent(getActivity(), security.class);
+                Intent intent2 = new Intent(getActivity(), nav.account.security.security.class);
                 startActivity(intent2);
                 break;
 
@@ -115,7 +123,7 @@ public class FragmentAccount extends Fragment {
                 break;
 
             case R.id.btn_payment_payout:
-                Intent intent4 = new Intent(getActivity(), nav.account.payment.class);
+                Intent intent4 = new Intent(getActivity(), nav.account.payment.payment.class);
                 startActivity(intent4);
                 break;
 
