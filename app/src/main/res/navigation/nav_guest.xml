@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_explore" />
     <fragment
         android:id="@+id/fragment_GuestAccount"
-        android:name="com.example.letngo.Fragment_GuestAccount"
+        android:name="nav.account.Fragment_GuestAccount"
         android:label="fragment__guest_account"
         tools:layout="@layout/fragment__guest_account" />
     <fragment

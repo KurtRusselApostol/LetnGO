@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.example.letngo.FragmentExplore;
-import com.example.letngo.Fragment_GuestAccount;
+import nav.account.Fragment_GuestAccount;
 import com.example.letngo.Fragment_GuestNewsfeed;
 import com.example.letngo.Fragment_GuestNotification;
 import com.example.letngo.R;
