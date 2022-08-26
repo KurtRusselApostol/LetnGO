@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#dddddd"
-    tools:context="nav.account.letngo_support2">
+    tools:context="nav.account.support.letngo_support2">
 
     <LinearLayout
         android:layout_width="match_parent"

@@ -44,13 +44,13 @@
                 android:layout_height="@dimen/_112sdp"
                 android:background="@color/Light_grey">
 
-                    <ImageView
-                        android:id="@+id/up_profilePic"
-                        android:layout_width="@dimen/_59sdp"
-                        android:layout_height="@dimen/_64sdp"
-                        android:layout_marginStart="@dimen/_8sdp"
-                        android:layout_marginTop="@dimen/_8sdp"
-                        app:srcCompat="@drawable/accnew" />
+                <ImageView
+                    android:id="@+id/up_profilePic"
+                    android:layout_width="@dimen/_64sdp"
+                    android:layout_height="@dimen/_64sdp"
+                    android:layout_marginStart="@dimen/_8sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    app:srcCompat="@drawable/kane_user_icon" />
 
                 <TextView
                     android:id="@+id/up_fullName"
@@ -69,7 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_69sdp"
+                    android:layout_marginTop="@dimen/_75sdp"
                     android:text="View Profile"
                     android:textSize="12sp" />
 
@@ -108,9 +108,9 @@
 
                     <ImageView
                         android:id="@+id/up_personalAndAccountIcon"
-                        android:layout_width="@dimen/_29sdp"
-                        android:layout_height="@dimen/_29sdp"
-                        app:srcCompat="@drawable/accnew" />
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:srcCompat="@drawable/kane_user_icon" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -133,9 +133,9 @@
 
                     <ImageView
                         android:id="@+id/up_securityIcon"
-                        android:layout_width="@dimen/_29sdp"
-                        android:layout_height="@dimen/_25sdp"
-                        app:srcCompat="@drawable/safetyyy" />
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:srcCompat="@drawable/kane_security" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -158,9 +158,9 @@
 
                     <ImageView
                         android:id="@+id/up_notificationIcon"
-                        android:layout_width="@dimen/_29sdp"
-                        android:layout_height="@dimen/_29sdp"
-                        app:srcCompat="@drawable/notifsnew" />
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:srcCompat="@drawable/kane_notification" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -183,9 +183,9 @@
 
                     <ImageView
                         android:id="@+id/up_paymentAndPayoutIcon"
-                        android:layout_width="@dimen/_29sdp"
-                        android:layout_height="@dimen/_29sdp"
-                        app:srcCompat="@drawable/payment_icon" />
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:srcCompat="@drawable/kane_wallet" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -227,9 +227,9 @@
 
                     <ImageView
                         android:id="@+id/up_manageHostingIcon"
-                        android:layout_width="@dimen/_29sdp"
-                        android:layout_height="@dimen/_29sdp"
-                        app:srcCompat="@drawable/manage_hsting" />
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:srcCompat="@drawable/kane_manage_host" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -252,9 +252,9 @@
 
                 <ImageView
                     android:id="@+id/up_startHostingIcon"
-                    android:layout_width="@dimen/_29sdp"
-                    android:layout_height="@dimen/_29sdp"
-                    app:srcCompat="@drawable/house_careicon" />
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    app:srcCompat="@drawable/kane_start_host" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -284,20 +284,20 @@
                     android:layout_marginTop="@dimen/_38sdp"
                     app:cardBackgroundColor="@color/Light_grey">
 
-                <TextView
-                    android:id="@+id/up_LetNGo"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_38sdp"
-                    android:layout_marginEnd="@dimen/_63sdp"
-                    android:layout_marginTop="@dimen/_6sdp"
-                    android:text="How Let 'n Go Works" />
+                    <TextView
+                        android:id="@+id/up_LetNGo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_63sdp"
+                        android:text="How Let 'n Go Works" />
 
-                <ImageView
-                    android:id="@+id/up_LetNGoIcon"
-                    android:layout_width="@dimen/_29sdp"
-                    android:layout_height="@dimen/_29sdp"
-                    app:srcCompat="@drawable/logo1" />
+                    <ImageView
+                        android:id="@+id/up_LetNGoIcon"
+                        android:layout_width="@dimen/_29sdp"
+                        android:layout_height="@dimen/_29sdp"
+                        app:srcCompat="@drawable/logo1" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -309,20 +309,20 @@
                     android:layout_marginTop="@dimen/_77sdp"
                     app:cardBackgroundColor="@color/Light_grey">
 
-                <TextView
-                    android:id="@+id/up_safetyCenter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_38sdp"
-                    android:layout_marginTop="@dimen/_6sdp"
-                    android:layout_marginEnd="@dimen/_97sdp"
-                    android:text="Safety Center" />
+                    <TextView
+                        android:id="@+id/up_safetyCenter"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/_38sdp"
+                        android:layout_marginTop="@dimen/_6sdp"
+                        android:layout_marginEnd="@dimen/_97sdp"
+                        android:text="Safety Center" />
 
-                <ImageView
-                    android:id="@+id/up_safetyCenterIcon"
-                    android:layout_width="@dimen/_27sdp"
-                    android:layout_height="@dimen/_24sdp"
-                    app:srcCompat="@drawable/safetycenter_icon" />
+                    <ImageView
+                        android:id="@+id/up_safetyCenterIcon"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:srcCompat="@drawable/kane_safety" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -345,9 +345,9 @@
 
                 <ImageView
                     android:id="@+id/up_getHelpIcon"
-                    android:layout_width="@dimen/_28sdp"
-                    android:layout_height="@dimen/_23sdp"
-                    app:srcCompat="@drawable/support_icon" />
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    app:srcCompat="@drawable/kane_customer_service" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -370,9 +370,9 @@
 
                     <ImageView
                         android:id="@+id/up_feedBackIcon"
-                        android:layout_width="@dimen/_28sdp"
-                        android:layout_height="@dimen/_23sdp"
-                        app:srcCompat="@drawable/feedbacl_icon" />
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:srcCompat="@drawable/kane_feedback" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -413,9 +413,9 @@
 
                 <ImageView
                     android:id="@+id/up_termOfServiceIcon"
-                    android:layout_width="@dimen/_28sdp"
-                    android:layout_height="@dimen/_23sdp"
-                    app:srcCompat="@drawable/tos_icon" />
+                    android:layout_width="@dimen/_30sdp"
+                    android:layout_height="@dimen/_30sdp"
+                    app:srcCompat="@drawable/kane_terms" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -438,9 +438,9 @@
 
                     <ImageView
                         android:id="@+id/up_privacyPolicyIcon"
-                        android:layout_width="@dimen/_28sdp"
-                        android:layout_height="@dimen/_23sdp"
-                        app:srcCompat="@drawable/privacypolicy_icon" />
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="@dimen/_30sdp"
+                        app:srcCompat="@drawable/kane_privacy_policy" />
 
                 </androidx.cardview.widget.CardView>
 

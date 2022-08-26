@@ -12,6 +12,9 @@ import androidx.fragment.app.Fragment;
 import com.example.letngo.R;
 
 import login.system.new_login;
+import nav.account.help.GetHelp;
+import nav.account.safety.safety_center;
+import nav.account.support.Terms_Services;
 
 /**
  * A simple {@link Fragment} subclass.
