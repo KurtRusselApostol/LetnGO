@@ -12,7 +12,7 @@
         tools:layout="@layout/fragment__guest_newsfeed" />
     <fragment
         android:id="@+id/fragmentCategories2"
-        android:name="com.example.letngo.FragmentCategories"
+        android:name="nav.categories.FragmentCategories"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" />
     <fragment

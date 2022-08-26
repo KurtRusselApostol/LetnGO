@@ -9,6 +9,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
 
+import nav.categories.HomePage;
+
 public class MainActivity extends AppCompatActivity {
 
     private static final int SPLASH_SCREEN = 3000;
@@ -22,7 +24,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(MainActivity.this,HomePage.class);
+            Intent intent = new Intent(MainActivity.this, HomePage.class);
             startActivity(intent);
             finish();
         },SPLASH_SCREEN);

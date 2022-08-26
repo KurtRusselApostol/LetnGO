@@ -1,23 +1,23 @@
-package com.example.letngo;
+package nav.categories;
 
 import android.os.Bundle;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class sub_countryside extends AppCompatActivity {
+import com.example.letngo.R;
+
+public class sub_treehouse extends AppCompatActivity {
 
     ImageButton back;
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub_countryside);
+        setContentView(R.layout.activity_sub_treehouse);
 
-        back = findViewById(R.id.country_side_back);
+        back = findViewById(R.id.treehouse_back);
 
         back.setOnClickListener(v -> onBackPressed());
-
     }
 }

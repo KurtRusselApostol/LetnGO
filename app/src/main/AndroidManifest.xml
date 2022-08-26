@@ -269,28 +269,28 @@
             android:name=".Change_password"
             android:exported="false" />
         <activity
-            android:name=".sub_island"
+            android:name="nav.categories.sub_island"
             android:exported="false" />
         <activity
-            android:name=".sub_cabin"
+            android:name="nav.categories.sub_cabin"
             android:exported="false" />
         <activity
-            android:name=".sub_countryside"
+            android:name="nav.categories.sub_countryside"
             android:exported="false" />
         <activity
-            android:name=".sub_caves"
+            android:name="nav.categories.sub_caves"
             android:exported="false" />
         <activity
-            android:name=".sub_camping"
+            android:name="nav.categories.sub_camping"
             android:exported="false" />
         <activity
-            android:name=".sub_treehouse"
+            android:name="nav.categories.sub_treehouse"
             android:exported="false" />
         <activity
             android:name=".GuestMessage"
             android:exported="false" />
         <activity
-            android:name=".sub_beach"
+            android:name="nav.categories.sub_beach"
             android:exported="false" />
         <activity
             android:name=".letngo_support"
@@ -349,7 +349,7 @@
             android:name="login.system.forgot_password"
             android:exported="false" />
         <activity android:name=".messages" /> <!-- android:exported="false" -->
-        <activity android:name=".HomePage" /> <!-- android:exported="true" -->
+        <activity android:name="nav.categories.HomePage" /> <!-- android:exported="true" -->
         <activity
             android:name=".MainActivity"
             android:exported="true">
