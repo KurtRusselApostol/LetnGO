@@ -12,7 +12,7 @@ import nav.account.FragmentAccount;
 import nav.categories.FragmentCategories;
 import com.example.letngo.FragmentExplore;
 import nav.newsfeed.FragmentNewsfeed;
-import com.example.letngo.FragmentNotification;
+import nav.notifications.FragmentNotification;
 import com.example.letngo.R;
 import nav.newsfeed.messages;
 import com.google.android.material.bottomnavigation.BottomNavigationView;

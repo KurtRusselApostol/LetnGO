@@ -1,4 +1,4 @@
-package com.example.letngo;
+package nav.notifications;
 
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;

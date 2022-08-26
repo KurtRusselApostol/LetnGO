@@ -1,4 +1,4 @@
-package com.example.letngo;
+package nav.notifications;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.letngo.R;
 
 /**
  * A simple {@link Fragment} subclass.

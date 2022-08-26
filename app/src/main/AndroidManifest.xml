@@ -133,19 +133,19 @@
             android:name=".location"
             android:exported="false" />
         <activity
-            android:name=".All_Reservation"
+            android:name="nav.notifications.All_Reservation"
             android:exported="false" />
         <activity
-            android:name=".Upcoming"
+            android:name="nav.notifications.Upcoming"
             android:exported="false" />
         <activity
-            android:name=".Arriving_Soon"
+            android:name="nav.notifications.Arriving_Soon"
             android:exported="false" />
         <activity
-            android:name=".Currently_Hosting"
+            android:name="nav.notifications.Currently_Hosting"
             android:exported="false" />
         <activity
-            android:name=".Checking_out"
+            android:name="nav.notifications.Checking_out"
             android:exported="false" />
         <activity
             android:name="nav.account.security3"
@@ -333,13 +333,13 @@
             <!-- <action android:name="android.intent.action.MAIN" /> -->
         </activity>
         <activity
-            android:name=".Safety_notice"
+            android:name="nav.notifications.Safety_notice"
             android:exported="false" />
         <activity
-            android:name=".Travel_Offers"
+            android:name="nav.notifications.Travel_Offers"
             android:exported="false" />
         <activity
-            android:name=".Travel_Tips"
+            android:name="nav.notifications.Travel_Tips"
             android:exported="false" />
         <activity
             android:name=".Whats_New"

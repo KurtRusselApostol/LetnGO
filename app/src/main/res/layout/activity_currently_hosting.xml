@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Currently_Hosting"
+    tools:context="nav.notifications.Currently_Hosting"
     android:background="#DEE1DD">
 
     <ScrollView

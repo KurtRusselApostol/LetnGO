@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#DEE1DD"
     android:orientation="vertical"
-    tools:context=".FragmentNotification">
+    tools:context="nav.notifications.FragmentNotification">
 
     <RelativeLayout
         android:layout_width="wrap_content"

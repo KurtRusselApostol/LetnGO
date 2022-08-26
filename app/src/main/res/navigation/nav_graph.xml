@@ -22,7 +22,7 @@
         tools:layout="@layout/fragment_explore" />
     <fragment
         android:id="@+id/fragmentNotification"
-        android:name="com.example.letngo.FragmentNotification"
+        android:name="nav.notifications.FragmentNotification"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
     <fragment

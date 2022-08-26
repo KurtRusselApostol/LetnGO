@@ -1,20 +1,21 @@
-package com.example.letngo;
+package nav.notifications;
 
 import android.os.Bundle;
 import android.widget.ImageButton;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class Travel_Offers extends AppCompatActivity {
+import com.example.letngo.R;
+
+public class Arriving_Soon extends AppCompatActivity {
 
     ImageButton back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_travel_offers);
-
-        back = findViewById(R.id.travel_offers_back);
+        setContentView(R.layout.activity_arriving_soon);
+        back = findViewById(R.id.Arriving_soon_back);
 
         back.setOnClickListener(v -> onBackPressed());
     }
