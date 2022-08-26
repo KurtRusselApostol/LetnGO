@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="nav.account.security2"
+    tools:context="nav.account.security.security2"
     android:background="@drawable/normal_background">
 
 

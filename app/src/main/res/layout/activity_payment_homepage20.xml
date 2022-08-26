@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#ffffff"
     android:backgroundTint="#ffffff"
-    tools:context="nav.account.Payment_Homepage20">
+    tools:context="nav.account.payment.Payment_Homepage20">
 
 
     <TextView

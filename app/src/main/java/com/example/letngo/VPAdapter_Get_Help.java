@@ -6,9 +6,9 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import nav.account.Experience_Host_Get_Help;
-import nav.account.Guest_Get_Help;
-import nav.account.Host_Get_Help;
+import nav.account.help.Experience_Host_Get_Help;
+import nav.account.help.Guest_Get_Help;
+import nav.account.help.Host_Get_Help;
 
 public class VPAdapter_Get_Help extends FragmentStateAdapter {
 
