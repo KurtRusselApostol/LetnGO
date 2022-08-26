@@ -10,7 +10,7 @@ import androidx.fragment.app.Fragment;
 
 import nav.account.FragmentAccount;
 import nav.categories.FragmentCategories;
-import com.example.letngo.FragmentExplore;
+import nav.explore.FragmentExplore;
 import nav.newsfeed.FragmentNewsfeed;
 import nav.notifications.FragmentNotification;
 import com.example.letngo.R;

@@ -17,7 +17,7 @@
         tools:layout="@layout/fragment_categories" />
     <fragment
         android:id="@+id/fragmentExplore"
-        android:name="com.example.letngo.FragmentExplore"
+        android:name="nav.explore.FragmentExplore"
         android:label="fragment_explore"
         tools:layout="@layout/fragment_explore" />
     <fragment
