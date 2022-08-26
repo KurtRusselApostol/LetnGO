@@ -7,27 +7,27 @@
 
     <fragment
         android:id="@+id/fragmentNewsfeed"
-        android:name="com.example.letngo.FragmentNewsfeed"
+        android:name="nav.newsfeed.FragmentNewsfeed"
         android:label="fragment_newsfeed"
         tools:layout="@layout/fragment_newsfeed" />
     <fragment
         android:id="@+id/fragmentCategories"
-        android:name="com.example.letngo.FragmentCategories"
+        android:name="nav.categories.FragmentCategories"
         android:label="fragment_categories"
         tools:layout="@layout/fragment_categories" />
     <fragment
         android:id="@+id/fragmentExplore"
-        android:name="com.example.letngo.FragmentExplore"
+        android:name="nav.explore.FragmentExplore"
         android:label="fragment_explore"
         tools:layout="@layout/fragment_explore" />
     <fragment
         android:id="@+id/fragmentNotification"
-        android:name="com.example.letngo.FragmentNotification"
+        android:name="nav.notifications.FragmentNotification"
         android:label="fragment_notification"
         tools:layout="@layout/fragment_notification" />
     <fragment
         android:id="@+id/fragmentAccount"
-        android:name="com.example.letngo.FragmentAccount"
+        android:name="nav.account.FragmentAccount"
         android:label="fragment_account"
         tools:layout="@layout/fragment_account" />
 </navigation>
