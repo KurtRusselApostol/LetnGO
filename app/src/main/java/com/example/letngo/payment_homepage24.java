@@ -7,6 +7,8 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import login.system.UserHompage;
+
 public class payment_homepage24 extends AppCompatActivity {
 
     private static final int SPLASH_SCREEN = 3000;
@@ -21,7 +23,7 @@ public class payment_homepage24 extends AppCompatActivity {
         setContentView(R.layout.activity_payment_homepage24);
 
         new Handler().postDelayed(() -> {
-            Intent intent = new Intent(payment_homepage24.this,UserHompage.class);
+            Intent intent = new Intent(payment_homepage24.this, UserHompage.class);
             startActivity(intent);
             finish();
         },SPLASH_SCREEN);

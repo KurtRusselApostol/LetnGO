@@ -1,4 +1,4 @@
-package com.example.letngo;
+package login.system;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -8,6 +8,13 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import com.example.letngo.FragmentAccount;
+import com.example.letngo.FragmentCategories;
+import com.example.letngo.FragmentExplore;
+import com.example.letngo.FragmentNewsfeed;
+import com.example.letngo.FragmentNotification;
+import com.example.letngo.R;
+import com.example.letngo.messages;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class UserHompage extends AppCompatActivity {
@@ -62,7 +69,7 @@ public class UserHompage extends AppCompatActivity {
 
 
     private void show_Message() {
-        Intent intent = new Intent(UserHompage.this,messages.class);
+        Intent intent = new Intent(UserHompage.this, messages.class);
         startActivity(intent);
     }
 

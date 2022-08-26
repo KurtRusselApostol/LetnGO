@@ -15,6 +15,8 @@ import androidx.fragment.app.Fragment;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
+import login.system.new_login;
+
 public class FragmentAccount extends Fragment {
 
     public CardView start, manage, edit, how, logout, notif_settings,

@@ -222,7 +222,7 @@
 
         </activity>
         <activity
-            android:name=".UserHompage"
+            android:name="login.system.UserHompage"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -304,7 +304,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".new_signup"
+            android:name="login.system.new_signup"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -315,7 +315,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".new_login"
+            android:name="login.system.new_login"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -346,7 +346,7 @@
             android:exported="false" /> <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <activity
-            android:name=".forgot_password"
+            android:name="login.system.forgot_password"
             android:exported="false" />
         <activity android:name=".messages" /> <!-- android:exported="false" -->
         <activity android:name=".HomePage" /> <!-- android:exported="true" -->

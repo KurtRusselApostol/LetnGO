@@ -9,6 +9,8 @@ import android.widget.Button;
 
 import androidx.fragment.app.Fragment;
 
+import login.system.new_login;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link Fragment_GuestNotification#newInstance} factory method to

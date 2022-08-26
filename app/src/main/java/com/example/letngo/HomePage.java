@@ -13,6 +13,8 @@ import androidx.fragment.app.Fragment;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
+import login.system.new_login;
+
 public class HomePage extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
 
@@ -88,7 +90,7 @@ public class HomePage extends AppCompatActivity {
     //Method for message button
     public void show_login()
     {
-        Intent intent = new Intent(this,new_login.class);
+        Intent intent = new Intent(this, new_login.class);
         startActivity(intent);
     }
 

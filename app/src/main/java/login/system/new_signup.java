@@ -1,4 +1,4 @@
-package com.example.letngo;
+package login.system;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,6 +16,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.letngo.R;
+import com.example.letngo.ReadWriteUserDeatils;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
@@ -307,7 +309,7 @@ public class new_signup extends AppCompatActivity {
 
 
     private void moveToLogin() {
-        startActivity(new Intent(getApplicationContext(), com.example.letngo.new_login.class));
+        startActivity(new Intent(getApplicationContext(), new_login.class));
         finish();
     }
     // Added Comment
