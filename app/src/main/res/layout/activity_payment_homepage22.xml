@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#DDDDDD"
     android:backgroundTint="#DDDDDD"
-    tools:context=".payment_homepage22">
+    tools:context="nav.account.payment_homepage22">
 
     <RelativeLayout
         android:id="@+id/textView3"

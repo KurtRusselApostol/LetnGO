@@ -8,7 +8,7 @@ import android.widget.ImageView;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
-import com.example.letngo.FragmentAccount;
+import nav.account.FragmentAccount;
 import nav.categories.FragmentCategories;
 import com.example.letngo.FragmentExplore;
 import nav.newsfeed.FragmentNewsfeed;

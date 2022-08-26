@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#DEE1DD"
     android:scrollbars="none"
-    tools:context=".Timeline">
+    tools:context="nav.account.Timeline">
 
 
     <RelativeLayout

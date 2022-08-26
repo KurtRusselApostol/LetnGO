@@ -25,71 +25,71 @@
             android:name=".SignUpActivity"
             android:exported="false" />
         <activity
-            android:name=".PrivacyPolicy4"
+            android:name="nav.account.PrivacyPolicy4"
             android:exported="false" />
         <activity
-            android:name=".PrivacyPolicy3"
+            android:name="nav.account.PrivacyPolicy3"
             android:exported="false" />
         <activity
-            android:name=".PrivacyPolicy2"
+            android:name="nav.account.PrivacyPolicy2"
             android:exported="false" />
         <activity
-            android:name=".PrivacyPolicy"
+            android:name="nav.account.PrivacyPolicy"
             android:exported="false" />
         <activity
-            android:name=".letngo_support2"
+            android:name="nav.account.letngo_support2"
             android:exported="false" />
         <activity
-            android:name=".Feedback"
+            android:name="nav.account.Feedback"
             android:exported="false" /> <!-- <meta-data android:name="com.google.android.geo.API_KEY" -->
         <!-- android:value="AIzaSyCCEOC9mmgv4YOsEmimr0scnRApzJcsxQ0"/> -->
         <activity
-            android:name=".GetHelp"
+            android:name="nav.account.GetHelp"
             android:exported="false" />
         <activity
-            android:name=".Experience_Host4_Get_Help"
+            android:name="nav.account.Experience_Host4_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Experience_Host3_Get_Help"
+            android:name="nav.account.Experience_Host3_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Experience_Host2_Get_Help"
+            android:name="nav.account.Experience_Host2_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Experience_Host1_Get_Help"
+            android:name="nav.account.Experience_Host1_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Host4_Get_Help"
+            android:name="nav.account.Host4_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Host3_Get_Help"
+            android:name="nav.account.Host3_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Host2_Get_Help"
+            android:name="nav.account.Host2_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Host1_Get_Help"
+            android:name="nav.account.Host1_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Guest4_Get_Help"
+            android:name="nav.account.Guest4_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Guest3_Get_Help"
+            android:name="nav.account.Guest3_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Guest2_Get_Help"
+            android:name="nav.account.Guest2_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".Guest1_Get_Help"
+            android:name="nav.account.Guest1_Get_Help"
             android:exported="false" />
         <activity
-            android:name=".guidance_click"
+            android:name="nav.account.guidance_click"
             android:exported="false" />
         <activity
-            android:name=".advice_click"
+            android:name="nav.account.advice_click"
             android:exported="false" />
         <activity
-            android:name=".safety_center"
+            android:name="nav.account.safety_center"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -99,10 +99,10 @@
 
         </activity>
         <activity
-            android:name=".Manage_Hosting"
+            android:name="nav.account.Manage_Hosting"
             android:exported="false" />
         <activity
-            android:name=".Terms_Services"
+            android:name="nav.account.Terms_Services"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -113,19 +113,19 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".notif_settings5"
+            android:name="nav.account.notif_settings5"
             android:exported="false" />
         <activity
-            android:name=".notif_settings4"
+            android:name="nav.account.notif_settings4"
             android:exported="false" />
         <activity
-            android:name=".notif_settings3"
+            android:name="nav.account.notif_settings3"
             android:exported="false" />
         <activity
-            android:name=".notif_settings2"
+            android:name="nav.account.notif_settings2"
             android:exported="false" />
         <activity
-            android:name=".notif_settings1"
+            android:name="nav.account.notif_settings1"
             android:exported="false"
             android:label="@string/title_activity_notif_settings1"
             android:theme="@style/Theme.LetnGo.NoActionBar" />
@@ -148,16 +148,16 @@
             android:name=".Checking_out"
             android:exported="false" />
         <activity
-            android:name=".security3"
+            android:name="nav.account.security3"
             android:exported="false" />
         <activity
-            android:name=".security2"
+            android:name="nav.account.security2"
             android:exported="false" />
         <activity
-            android:name=".security1"
+            android:name="nav.account.security1"
             android:exported="false" />
         <activity
-            android:name=".security"
+            android:name="nav.account.security"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -179,22 +179,22 @@
 
         </activity>
         <activity
-            android:name=".payment_homepage24"
+            android:name="nav.account.payment_homepage24"
             android:exported="false" />
         <activity
-            android:name=".payment_homepage23"
+            android:name="nav.account.payment_homepage23"
             android:exported="false" />
         <activity
-            android:name=".payment_homepage22"
+            android:name="nav.account.payment_homepage22"
             android:exported="false" />
         <activity
-            android:name=".payment_homepage21"
+            android:name="nav.account.payment_homepage21"
             android:exported="false" />
         <activity
-            android:name=".Payment_Homepage20"
+            android:name="nav.account.Payment_Homepage20"
             android:exported="false" />
         <activity
-            android:name=".payment"
+            android:name="nav.account.payment"
             android:exported="false" />
         <activity
             android:name=".hosting_success"
@@ -232,7 +232,7 @@
 
         </activity>
         <activity
-            android:name=".Timeline"
+            android:name="nav.account.Timeline"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -243,7 +243,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".start_hosting"
+            android:name="nav.account.start_hosting"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -293,7 +293,7 @@
             android:name="nav.categories.sub_beach"
             android:exported="false" />
         <activity
-            android:name=".letngo_support"
+            android:name="nav.account.letngo_support"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -326,7 +326,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".Edit_Profile"
+            android:name="nav.account.Edit_Profile"
             android:exported="false">
 
             <!-- <intent-filter> -->
