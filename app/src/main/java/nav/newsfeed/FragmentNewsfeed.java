@@ -1,4 +1,4 @@
-package com.example.letngo;
+package nav.newsfeed;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.widget.Button;
 import android.widget.ImageView;
 
 import androidx.fragment.app.Fragment;
+
+import com.example.letngo.R;
 
 
 public class FragmentNewsfeed extends Fragment {
@@ -66,7 +68,7 @@ public class FragmentNewsfeed extends Fragment {
     }
 
     private void show_Message() {
-        startActivity(new Intent((getActivity()), com.example.letngo.messages.class));
+        startActivity(new Intent((getActivity()), messages.class));
 
     }
 

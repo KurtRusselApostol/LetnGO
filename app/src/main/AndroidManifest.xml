@@ -254,7 +254,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".Create_post"
+            android:name="nav.newsfeed.Create_post"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -348,7 +348,7 @@
         <activity
             android:name="login.system.forgot_password"
             android:exported="false" />
-        <activity android:name=".messages" /> <!-- android:exported="false" -->
+        <activity android:name="nav.newsfeed.messages" /> <!-- android:exported="false" -->
         <activity android:name="nav.categories.HomePage" /> <!-- android:exported="true" -->
         <activity
             android:name=".MainActivity"

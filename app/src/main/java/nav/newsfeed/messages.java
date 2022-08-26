@@ -1,8 +1,10 @@
-package com.example.letngo;
+package nav.newsfeed;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.letngo.R;
 
 public class messages extends AppCompatActivity {
 

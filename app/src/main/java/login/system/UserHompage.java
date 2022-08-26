@@ -11,10 +11,10 @@ import androidx.fragment.app.Fragment;
 import com.example.letngo.FragmentAccount;
 import nav.categories.FragmentCategories;
 import com.example.letngo.FragmentExplore;
-import com.example.letngo.FragmentNewsfeed;
+import nav.newsfeed.FragmentNewsfeed;
 import com.example.letngo.FragmentNotification;
 import com.example.letngo.R;
-import com.example.letngo.messages;
+import nav.newsfeed.messages;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class UserHompage extends AppCompatActivity {

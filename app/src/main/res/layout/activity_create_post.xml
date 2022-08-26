@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#dddddd"
     android:fillViewport="true"
-    tools:context=".Create_post"
+    tools:context="nav.newsfeed.Create_post"
     android:scrollbars="none"
     android:id="@+id/viewcreate">
 

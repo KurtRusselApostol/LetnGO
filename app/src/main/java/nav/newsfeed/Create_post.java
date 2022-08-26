@@ -1,4 +1,4 @@
-package com.example.letngo;
+package nav.newsfeed;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -12,6 +12,8 @@ import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.letngo.FragmentPost;
+import com.example.letngo.R;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.annotations.Nullable;
@@ -62,7 +64,7 @@ public class Create_post extends AppCompatActivity {
                 Post.put("create post", postText);
                 reference.push().setValue(Post);
                 Toast.makeText(Create_post.this, "Success", Toast.LENGTH_LONG).show();
-                Intent intent=new Intent(Create_post.this,FragmentPost.class);
+                Intent intent=new Intent(Create_post.this, FragmentPost.class);
                 startActivity(intent);
             }
         });
