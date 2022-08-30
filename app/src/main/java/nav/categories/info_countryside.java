@@ -11,6 +11,6 @@ public class info_countryside extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_countryside_info);
+        setContentView(R.layout.categories_countryside_info);
     }
 }

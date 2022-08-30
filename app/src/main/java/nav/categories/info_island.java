@@ -11,6 +11,6 @@ public class info_island extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_island_info);
+        setContentView(R.layout.categories_island_info);
     }
 }

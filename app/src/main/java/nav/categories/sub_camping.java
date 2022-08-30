@@ -14,7 +14,7 @@ public class sub_camping extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub_camping);
+        setContentView(R.layout.categories_sub_camping);
 
         back = findViewById(R.id.camping_back);
 

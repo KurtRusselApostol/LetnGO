@@ -11,6 +11,6 @@ public class info_caves extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_caves_info);
+        setContentView(R.layout.categories_caves_info);
     }
 }

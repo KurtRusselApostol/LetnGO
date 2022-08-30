@@ -14,7 +14,7 @@ public class sub_beach extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub_beach);
+        setContentView(R.layout.categories_sub_beach);
 
         back = findViewById(R.id.beach_back);
 
