@@ -32,7 +32,7 @@ public class Timeline extends AppCompatActivity {
     @Override
             protected void onCreate(Bundle savedInstanceState) {
                 super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_timeline);
+                setContentView(R.layout.account_timeline);
 
                 auth = FirebaseAuth.getInstance();
                 user = auth.getCurrentUser();

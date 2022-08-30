@@ -79,7 +79,7 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
     // Inflate the layout for this fragment
     //return inflater.inflate(R.layout.fragment_account, container, false);
 
-    View v = inflater.inflate(R.layout.fragment__guest_account, container, false);
+    View v = inflater.inflate(R.layout.account_guest_account, container, false);
      button = v.findViewById(R.id.buttonLogin);
      terms_service = v.findViewById(R.id.btn_terms);
      safety = v.findViewById(R.id.btn_safety_center);

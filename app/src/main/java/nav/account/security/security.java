@@ -15,7 +15,7 @@ public class security extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_security);
+        setContentView(R.layout.account_security);
 
         btn_back = (ImageButton) findViewById(R.id.back);
 

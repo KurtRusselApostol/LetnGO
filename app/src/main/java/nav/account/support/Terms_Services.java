@@ -15,7 +15,7 @@ public class Terms_Services extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_terms_services);
+        setContentView(R.layout.account_support_terms_services);
 
         back = findViewById(R.id.terms_back);
 
