@@ -19,7 +19,7 @@
         android:id="@+id/fragmentExplore"
         android:name="nav.explore.FragmentExplore"
         android:label="fragment_explore"
-        tools:layout="@layout/fragment_explore" />
+        tools:layout="@layout/explore_explore" />
     <fragment
         android:id="@+id/fragment_GuestAccount"
         android:name="nav.account.Fragment_GuestAccount"

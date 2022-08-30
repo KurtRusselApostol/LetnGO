@@ -14,7 +14,7 @@ public class Checking_out extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_checking_out);
+        setContentView(R.layout.notifications_checking_out);
         back = findViewById(R.id.checkout_back);
 
         back.setOnClickListener(v -> onBackPressed());

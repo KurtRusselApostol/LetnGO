@@ -9,7 +9,7 @@
         android:id="@+id/fragmentNewsfeed"
         android:name="nav.newsfeed.FragmentNewsfeed"
         android:label="fragment_newsfeed"
-        tools:layout="@layout/fragment_newsfeed" />
+        tools:layout="@layout/newsfeed_newsfeed" />
     <fragment
         android:id="@+id/fragmentCategories"
         android:name="nav.categories.FragmentCategories"
@@ -19,12 +19,12 @@
         android:id="@+id/fragmentExplore"
         android:name="nav.explore.FragmentExplore"
         android:label="fragment_explore"
-        tools:layout="@layout/fragment_explore" />
+        tools:layout="@layout/explore_explore" />
     <fragment
         android:id="@+id/fragmentNotification"
         android:name="nav.notifications.FragmentNotification"
         android:label="fragment_notification"
-        tools:layout="@layout/fragment_notification" />
+        tools:layout="@layout/notifications_notification" />
     <fragment
         android:id="@+id/fragmentAccount"
         android:name="nav.account.FragmentAccount"

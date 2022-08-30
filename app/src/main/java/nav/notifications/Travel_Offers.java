@@ -14,7 +14,7 @@ public class Travel_Offers extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_travel_offers);
+        setContentView(R.layout.notifications_travel_offers);
 
         back = findViewById(R.id.travel_offers_back);
 

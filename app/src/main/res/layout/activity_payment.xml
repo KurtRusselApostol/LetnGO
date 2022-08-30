@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:background="#ffffff"
     android:backgroundTint="#ffffff"
-    tools:context="nav.account.payment">
+    tools:context="nav.account.payment.payment">
 
 
     <RelativeLayout

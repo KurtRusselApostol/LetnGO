@@ -14,7 +14,7 @@ public class Travel_Tips extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_travel_tips);
+        setContentView(R.layout.notifications_travel_tips);
 
         back = findViewById(R.id.travel_tips_btn);
 

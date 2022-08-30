@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="#DEE1DD"
     android:fillViewport="true"
-    tools:context="nav.account.GetHelp">
+    tools:context="nav.account.help.GetHelp">
 
 
     <RelativeLayout
