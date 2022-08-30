@@ -107,7 +107,7 @@ public class new_login extends AppCompatActivity {
                     int selection = password.getSelectionEnd();
                     if (passwordVisible) {
                         //set drawable image here
-                        password.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.hidden_eye, 0);
+                        password.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.hidden_eyeee, 0);
                         //for hide password
                         password.setTransformationMethod(PasswordTransformationMethod.getInstance());
                         passwordVisible = false;
