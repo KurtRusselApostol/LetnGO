@@ -54,7 +54,7 @@ public class new_login extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_login);
+        setContentView(R.layout.login_system_login);
 
         email = findViewById(R.id.ed_username);
         password = findViewById(R.id.ed_password);

@@ -63,11 +63,11 @@
 
     <TextView
         android:id="@+id/textView85"
-        android:layout_width="356dp"
-        android:layout_height="47dp"
-        android:text="Once you have a reservation. This is where you can come to track your payments and refunds"
+        android:layout_width="@dimen/_300sdp"
+        android:layout_height="@dimen/_55sdp"
+        android:text="Once you have a reservation,\n this is where you can come to track your\npayments and refunds."
         android:textAlignment="center"
-        android:textSize="14sp"
+        android:textSize="@dimen/_15sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.49"

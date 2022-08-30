@@ -15,7 +15,7 @@ public class sub_countryside extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub_countryside);
+        setContentView(R.layout.categories_sub_countryside);
 
         back = findViewById(R.id.country_side_back);
 

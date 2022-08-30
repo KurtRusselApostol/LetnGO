@@ -18,7 +18,7 @@ public class safety_center extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_safety_center);
+        setContentView(R.layout.safety_safety_center);
 
         advice = findViewById(R.id.btn_advice);
         guidance = findViewById(R.id.btn_guidance);

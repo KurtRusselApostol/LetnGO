@@ -14,7 +14,7 @@ public class sub_treehouse extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub_treehouse);
+        setContentView(R.layout.categories_sub_treehouse);
 
         back = findViewById(R.id.treehouse_back);
 

@@ -29,7 +29,7 @@ public class GetHelp extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_get_help);
+        setContentView(R.layout.account_help_get_help);
 
         tabLayout = findViewById(R.id.get_help);
         viewPager = findViewById(R.id.viewPagerGetHelp);
@@ -78,7 +78,7 @@ public class GetHelp extends AppCompatActivity {
             ViewPager2 viewPager;
             VPAdapter_Get_Help get_helpAdapter;
 
-            setContentView(R.layout.activity_get_help);
+            setContentView(R.layout.account_help_get_help);
 
             tabLayout = findViewById(R.id.get_help);
             viewPager = findViewById(R.id.viewPagerGetHelp);

@@ -14,7 +14,7 @@ public class sub_cabin extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub_cabin);
+        setContentView(R.layout.categories_sub_cabin);
 
         back = findViewById(R.id.cabin_back);
 

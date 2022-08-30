@@ -20,7 +20,7 @@ import com.example.letngo.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import login.system.new_login;
+
 import nav.account.help.GetHelp;
 import nav.account.hosting.Manage_Hosting;
 import nav.account.hosting.start_hosting;
@@ -29,6 +29,7 @@ import nav.account.privacy.PrivacyPolicy;
 import nav.account.safety.safety_center;
 import nav.account.support.Terms_Services;
 import nav.account.support.letngo_support;
+import nav.categories.HomePage;
 
 public class FragmentAccount extends Fragment {
 
@@ -57,7 +58,7 @@ public class FragmentAccount extends Fragment {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
 
-        View v = inflater.inflate(R.layout.fragment_account, container, false);
+        View v = inflater.inflate(R.layout.account_account, container, false);
 
         ///////////////Button Id Layout//////////////////////
         TextView fullName = v.findViewById(R.id.up_fullName);
@@ -177,13 +178,6 @@ public class FragmentAccount extends Fragment {
 
             case R.id.btn_logout:
                 Intent intent13 = new Intent(getActivity(), new_login.class);
-
-                //Clearing login data from local storage, Following code will be commented temporarily
-                //SharedPreferences sp = this.getActivity().getSharedPreferences("Login", MODE_PRIVATE);
-
-                //String ema = sp.getString("ema", null);
-                //String pass = sp.getString("pass", null);
-
                 startActivity(intent13);
                 break;
 

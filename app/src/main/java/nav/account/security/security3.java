@@ -20,7 +20,7 @@ public class security3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_security3);
+        setContentView(R.layout.account_security3);
 
         button4 = (Button) findViewById(R.id.button3);
 

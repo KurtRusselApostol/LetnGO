@@ -52,7 +52,7 @@ public class Edit_Profile extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_edit_profile);
+        setContentView(R.layout.account_edit_profile);
 
         back = findViewById(R.id.editprofile_back);
         update = findViewById(R.id.btn_update);

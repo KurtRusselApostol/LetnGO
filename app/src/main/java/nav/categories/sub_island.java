@@ -14,7 +14,7 @@ public class sub_island extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub_island);
+        setContentView(R.layout.categories_sub_island);
 
         back = findViewById(R.id.island_back);
 

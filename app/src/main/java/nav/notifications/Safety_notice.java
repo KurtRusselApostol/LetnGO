@@ -15,7 +15,7 @@ public class Safety_notice extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_safety_notice);
+        setContentView(R.layout.notifications_safety_notice);
 
         back = findViewById(R.id.safety_notice_back);
 

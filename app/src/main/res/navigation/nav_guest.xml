@@ -14,17 +14,17 @@
         android:id="@+id/fragmentCategories2"
         android:name="nav.categories.FragmentCategories"
         android:label="fragment_categories"
-        tools:layout="@layout/fragment_categories" />
+        tools:layout="@layout/categories_fragement" />
     <fragment
         android:id="@+id/fragmentExplore"
         android:name="nav.explore.FragmentExplore"
         android:label="fragment_explore"
-        tools:layout="@layout/fragment_explore" />
+        tools:layout="@layout/explore_explore" />
     <fragment
         android:id="@+id/fragment_GuestAccount"
         android:name="nav.account.Fragment_GuestAccount"
         android:label="fragment__guest_account"
-        tools:layout="@layout/fragment__guest_account" />
+        tools:layout="@layout/account_guest_account" />
     <fragment
         android:id="@+id/fragment_GuestNotification"
         android:name="com.example.letngo.Fragment_GuestNotification"

@@ -34,9 +34,10 @@
 
         <RelativeLayout
             android:id="@+id/WelcomeBack"
-            android:layout_width="330dp"
-            android:layout_height="100dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp">
 
 
@@ -45,9 +46,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10dp"
-                android:fontFamily="@font/poppins_light"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Welcome Back,"
-                android:textColor="#658B6F"
+                android:textColor="#7BAA98"
                 android:textSize="20dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -62,10 +63,11 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@+id/tv_welcome"
                 android:layout_marginLeft="10dp"
-                android:fontFamily="@font/poppins_light"
+                android:layout_marginTop="-30dp"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Log In"
-                android:textColor="#658B6F"
-                android:textSize="40dp"
+                android:textColor="#7BAA98"
+                android:textSize="50dp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -78,10 +80,10 @@
 
         <RelativeLayout
             android:id="@+id/UsernamePassword"
-            android:layout_width="330dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="80dp"
+            android:layout_marginTop="40dp"
             android:layout_marginRight="40dp">
 
 
@@ -91,11 +93,12 @@
                 android:layout_height="55dp"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
                 android:backgroundTint="#FBFAFA"
                 android:drawableRight="@drawable/user"
                 android:ems="10"
                 android:fontFamily="@font/poppins_light"
-                android:hint="Enter your username"
+                android:hint="Username"
                 android:inputType="textPersonName"
                 android:textColor="#000000"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -112,11 +115,12 @@
                 android:layout_below="@+id/ed_username"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
+                android:background="@drawable/custom_input"
                 android:backgroundTint="#FBFAFA"
                 android:drawableRight="@drawable/hide"
                 android:ems="10"
                 android:fontFamily="@font/poppins_light"
-                android:hint="Enter your password"
+                android:hint="Password"
                 android:inputType="textPassword"
                 android:longClickable="false"
                 android:textColor="#000000"
@@ -134,11 +138,12 @@
                 android:layout_below="@+id/tv_forgot_pass"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="30dp"
-                android:background="@drawable/btn_login"
+                android:background="@drawable/button_gradient"
                 android:fontFamily="@font/poppins_medium"
                 android:text="LOG IN"
                 android:textColor="#2F575D"
                 android:textSize="20sp"
+                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.525"
@@ -151,7 +156,7 @@
                 android:layout_width="172dp"
                 android:layout_height="26dp"
                 android:layout_below="@+id/ed_password"
-                android:layout_marginLeft="10dp"
+                android:layout_marginLeft="15dp"
                 android:background="#00FFFFFF"
                 android:fontFamily="@font/poppins_medium"
                 android:text="Forgot Password?"
@@ -188,9 +193,11 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="330dp"
-            android:layout_height="100dp"
-            android:layout_marginTop="80dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/UsernamePassword"
+            android:layout_marginTop="50dp"
+            android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp">
 
 

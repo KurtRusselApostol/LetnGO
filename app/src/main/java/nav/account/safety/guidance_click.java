@@ -13,7 +13,7 @@ public class guidance_click extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_guidance_click);
+        setContentView(R.layout.safety_guidance_click);
 
 
         back = findViewById(R.id.back_btn2);
