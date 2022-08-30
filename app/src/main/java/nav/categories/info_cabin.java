@@ -11,6 +11,6 @@ public class info_cabin extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cabin_info);
+        setContentView(R.layout.categories_cabin_info);
     }
 }

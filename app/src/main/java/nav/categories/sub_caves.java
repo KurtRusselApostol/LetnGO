@@ -14,7 +14,7 @@ public class sub_caves extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_sub_caves);
+        setContentView(R.layout.categories_sub_caves);
 
         back = findViewById(R.id.caves_back);
 

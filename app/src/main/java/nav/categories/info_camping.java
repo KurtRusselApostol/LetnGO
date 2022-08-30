@@ -11,6 +11,6 @@ public class info_camping extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_camping_info);
+        setContentView(R.layout.categories_camping_info);
     }
 }
