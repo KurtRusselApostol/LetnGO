@@ -1,6 +1,9 @@
 package nav.account;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
 
@@ -25,6 +28,7 @@ public class Timeline extends AppCompatActivity {
     FirebaseAuth auth;
     FirebaseUser user;
     ImageButton backButton;
+    Button EditButton;
 
     DatabaseReference reference;
 
@@ -52,6 +56,14 @@ public class Timeline extends AppCompatActivity {
 
         backButton.setOnClickListener(v -> onBackPressed());
 
+        EditButton = findViewById(R.id.EditButton);
+        EditButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openActivity();
+            }
+        });
+
 
         reference.addValueEventListener(new ValueEventListener() {
             @Override
@@ -69,8 +81,12 @@ public class Timeline extends AppCompatActivity {
 
           }
         });
-
+}
+    public void openActivity(){
+        Intent intent = new Intent(this, Edit_Profile.class);
+        startActivity(intent);
     }
 }
+
 
 

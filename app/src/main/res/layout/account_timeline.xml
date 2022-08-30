@@ -41,7 +41,7 @@
                     android:src="@drawable/backback" />
 
                 <Button
-                    android:id="@+id/timelineHeader"
+                    android:id="@+id/EditButton"
                     android:layout_width="120dp"
                     android:layout_height="40dp"
                     android:layout_marginStart="240dp"
