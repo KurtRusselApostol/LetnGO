@@ -13,7 +13,7 @@ public class Host4_Get_Help extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_host4_get_help);
+        setContentView(R.layout.account_help_host4_get_help);
 
         back = findViewById(R.id.btn_back_host_4);
 

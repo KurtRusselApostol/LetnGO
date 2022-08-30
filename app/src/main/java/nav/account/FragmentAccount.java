@@ -16,7 +16,7 @@ import com.example.letngo.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
-import login.system.new_login;
+
 import nav.account.help.GetHelp;
 import nav.account.hosting.Manage_Hosting;
 import nav.account.hosting.start_hosting;
@@ -25,6 +25,7 @@ import nav.account.privacy.PrivacyPolicy;
 import nav.account.safety.safety_center;
 import nav.account.support.Terms_Services;
 import nav.account.support.letngo_support;
+import nav.categories.HomePage;
 
 public class FragmentAccount extends Fragment {
 
@@ -172,7 +173,8 @@ public class FragmentAccount extends Fragment {
                 break;
 
             case R.id.btn_logout:
-                Intent intent13 = new Intent(getActivity(), new_login.class);
+                FirebaseAuth.getInstance().signOut();
+                Intent intent13 = new Intent(getActivity(), HomePage.class);
                 startActivity(intent13);
                 break;
 

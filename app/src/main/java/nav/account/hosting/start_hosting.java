@@ -44,7 +44,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_start_hosting);
+        setContentView(R.layout.account_hosting_start_hosting);
 
         //SETTING INITIALIZATIONS
         full_name = findViewById(R.id.ed_host_full_name);

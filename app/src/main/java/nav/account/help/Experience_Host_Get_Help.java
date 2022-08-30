@@ -65,7 +65,7 @@ public class Experience_Host_Get_Help extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_experience__host__get__help, container, false);
+        View v = inflater.inflate(R.layout.account_help_experience_host_get_help, container, false);
 
         exp_host1 = v.findViewById(R.id.btn_experience_host_1);
         exp_host2 = v.findViewById(R.id.btn_experience_host_2);
