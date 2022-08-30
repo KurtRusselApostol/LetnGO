@@ -36,7 +36,7 @@ import java.util.regex.Pattern;
 public class new_signup extends AppCompatActivity {
 
     //get data form edit text into string variables
-    private EditText username, email, mobile,  password , cpass;
+    private EditText username, email, mobile,  password , confirmPass;
     Button button, back;
     boolean passwordVisible;
     private CountryCodePicker countryCodePicker;
@@ -58,13 +58,13 @@ public class new_signup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.login_system_signup);
+        setContentView(R.layout.activity_new_signup);
 
         username = findViewById(R.id.ed_username);
         email = findViewById(R.id.ed_email);
         mobile = findViewById(R.id.ed_mobile);
         password = findViewById(R.id.ed_password);
-        cpass = findViewById(R.id.ed_cpassword);
+        confirmPass = findViewById(R.id.ed_cpassword);
         countryCodePicker = findViewById(R.id.ccp);
         button = findViewById(R.id.btn_signup);
         back = findViewById(R.id.btn_back);
@@ -102,28 +102,28 @@ public class new_signup extends AppCompatActivity {
             }
         });
 
-        cpass.setOnTouchListener(new View.OnTouchListener() {
+        confirmPass.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 final int Right = 2;
                 if (event.getAction() == MotionEvent.ACTION_UP){
-                    if (event.getRawX() >= cpass.getRight()-cpass.getCompoundDrawables()[Right].getBounds().width()){
+                    if (event.getRawX() >= confirmPass.getRight()- confirmPass.getCompoundDrawables()[Right].getBounds().width()){
                         int selection = password.getSelectionEnd();
                         if (passwordVisible){
                             //set drawable image here
-                            cpass.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.hidden, 0);
+                            confirmPass.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.hidden, 0);
                             //for hide password
-                            cpass.setTransformationMethod(PasswordTransformationMethod.getInstance());
+                            confirmPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
                             passwordVisible = false;
                         }else {
                             //set drawable image here
-                            cpass.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.eye_1, 0);
+                            confirmPass.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.eye_1, 0);
                             //for show password
-                            cpass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
+                            confirmPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                             passwordVisible = true;
 
                         }
-                        cpass.setSelection(selection);
+                        confirmPass.setSelection(selection);
                         return true;
                     }
                 }
@@ -151,7 +151,7 @@ public class new_signup extends AppCompatActivity {
                 String em = email.getText().toString();
                 String mb = mobile.getText().toString();
                 String pass = password.getText().toString();
-                String cpassword = cpass.getText().toString();
+                String cpassword = confirmPass.getText().toString();
                 String ccpicker = countryCodePicker.getSelectedCountryCode();
                 String country = countryCodePicker.getSelectedCountryEnglishName();
 
@@ -208,23 +208,23 @@ public class new_signup extends AppCompatActivity {
                     password.requestFocus();
                 }
                 else if (!PASSWORD_PATTERN.matcher(pass).matches()){
-                    Toast.makeText(new_signup.this, "Password should be at least 6 digits, 1 special character", Toast.LENGTH_LONG).show();
+                    Toast.makeText(new_signup.this, "Password should be at least 8 characters with at least one letter and one number", Toast.LENGTH_LONG).show();
                     password.setError("Password too weak");
                     password.requestFocus();
                 }
                 else if (TextUtils.isEmpty(cpassword)){
                     Toast.makeText(new_signup.this, "Please confirm your password", Toast.LENGTH_LONG).show();
-                    cpass.setError("Password confirmation is required");
-                    cpass.requestFocus();
+                    confirmPass.setError("Password confirmation is required");
+                    confirmPass.requestFocus();
                 }
                 else if (!pass.equals(cpassword)){
                     Toast.makeText(new_signup.this, "Password not match!", Toast.LENGTH_LONG).show();
-                    cpass.setError("Password confirmation is required");
-                    cpass.requestFocus();
+                    confirmPass.setError("Password confirmation is required");
+                    confirmPass.requestFocus();
 
                     //Clear entered password
                     password.clearComposingText();
-                    cpass.clearComposingText();
+                    confirmPass.clearComposingText();
                 }
                 else{
                     registerUser(un, em, mb, pass, fn, ln, bd, ag, gd, ad, dc);
