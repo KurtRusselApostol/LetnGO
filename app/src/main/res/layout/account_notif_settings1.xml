@@ -97,15 +97,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif-black"
-        android:text="Choose whether you want to get a Let n Go notification alert."
-        android:textSize="12sp"
+        android:text="Choose whether you want to\nget a Let n Go notification alert."
+        android:textSize="@dimen/_15sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.705"
+        app:layout_constraintHorizontal_bias="0.374"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.212" />
+        app:layout_constraintVertical_bias="0.24" />
 
     <RadioButton
         android:id="@+id/radioButton"
@@ -149,12 +149,13 @@
         android:text="Save"
         android:textColor="@color/white"
         android:textStyle="bold"
+        android:textSize="@dimen/_25sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.549" />
+        app:layout_constraintVertical_bias="0.584" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 

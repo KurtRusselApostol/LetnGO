@@ -63,16 +63,16 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:text="For security., Please re-enter your password to continue"
+        android:text="For security, please re-enter\nyour password to continue"
         android:textColor="@color/black"
-        android:textSize="12sp"
+        android:textSize="@dimen/_15sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.211" />
+        app:layout_constraintVertical_bias="0.193" />
 
     <TextView
         android:id="@+id/textView78"
@@ -111,11 +111,12 @@
         android:layout_height="wrap_content"
         android:text="Continue"
         android:textColor="@color/white"
+        android:textSize="@dimen/_25sdp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.397" />
+        app:layout_constraintVertical_bias="0.431" />
 </androidx.constraintlayout.widget.ConstraintLayout>
