@@ -65,7 +65,7 @@ public class NotificationTraveller extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_notification_traveller, container, false);
+        view = inflater.inflate(R.layout.notifications_notification_traveller, container, false);
 
         Button btn_safety_notice1 = (Button) view.findViewById(R.id.btn_Safety_Notice1);
 

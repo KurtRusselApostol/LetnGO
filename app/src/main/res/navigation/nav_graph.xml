@@ -24,7 +24,7 @@
         android:id="@+id/fragmentNotification"
         android:name="nav.notifications.FragmentNotification"
         android:label="fragment_notification"
-        tools:layout="@layout/fragment_notification" />
+        tools:layout="@layout/notifications_notification" />
     <fragment
         android:id="@+id/fragmentAccount"
         android:name="nav.account.FragmentAccount"

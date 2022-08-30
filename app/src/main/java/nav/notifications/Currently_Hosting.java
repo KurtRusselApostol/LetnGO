@@ -14,7 +14,7 @@ public class Currently_Hosting extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_currently_hosting);
+        setContentView(R.layout.notifications_currently_hosting);
         back = findViewById(R.id.currently_hosting_back);
 
         back.setOnClickListener(v -> onBackPressed());
