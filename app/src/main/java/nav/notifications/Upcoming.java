@@ -14,7 +14,7 @@ public class Upcoming extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_upcoming);
+        setContentView(R.layout.notifications_upcoming);
 
         back = findViewById(R.id.upcoming_back);
 

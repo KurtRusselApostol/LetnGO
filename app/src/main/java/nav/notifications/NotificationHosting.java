@@ -64,7 +64,7 @@ public class NotificationHosting extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        view = inflater.inflate(R.layout.fragment_notification_hosting, container, false);
+        view = inflater.inflate(R.layout.notifications_notification_hosting, container, false);
 
         Button btn_checkingOut = (Button) view.findViewById(R.id.btn_checking_out1);
 
