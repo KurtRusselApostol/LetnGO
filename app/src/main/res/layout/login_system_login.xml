@@ -26,8 +26,9 @@
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/ic_background_img"
-                tools:ignore="MissingConstraints" />
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_background_img" />
 
 
             <ImageButton
@@ -36,6 +37,8 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:backgroundTint="#00FFFFFF"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/back_arrow"
                 tools:ignore="MissingConstraints" />
 
