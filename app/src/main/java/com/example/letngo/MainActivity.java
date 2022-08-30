@@ -1,6 +1,7 @@
 package com.example.letngo;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
@@ -24,6 +25,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new Handler().postDelayed(() -> {
+
+            //Code below is only temporary. May be replaced and deleted
+            //TODO Direct to UserHomepage when it logs in
+//            SharedPreferences sp = this.getSharedPreferences("Login", MODE_PRIVATE);
+//
+//            String ema = sp.getString("ema", null);
+//            String pass = sp.getString("pass", null);
+
             Intent intent = new Intent(MainActivity.this, HomePage.class);
             startActivity(intent);
             finish();
