@@ -62,7 +62,7 @@ public class FragmentCategories extends Fragment implements View.OnClickListener
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View v = inflater.inflate(R.layout.fragment_categories, container, false);
+        View v = inflater.inflate(R.layout.categories_fragement, container, false);
         RelativeLayout rl_beach = v.findViewById(R.id.beach);
         RelativeLayout rl_treehouse = v.findViewById(R.id.tree_house);
         RelativeLayout rl_camping = v.findViewById(R.id.camping);

@@ -58,7 +58,7 @@ public class new_signup extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_signup);
+        setContentView(R.layout.login_system_signup);
 
         username = findViewById(R.id.ed_username);
         email = findViewById(R.id.ed_email);

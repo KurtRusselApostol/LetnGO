@@ -14,7 +14,7 @@
         android:id="@+id/fragmentCategories"
         android:name="nav.categories.FragmentCategories"
         android:label="fragment_categories"
-        tools:layout="@layout/fragment_categories" />
+        tools:layout="@layout/categories_fragement" />
     <fragment
         android:id="@+id/fragmentExplore"
         android:name="nav.explore.FragmentExplore"
