@@ -144,6 +144,60 @@ public class Edit_Profile extends AppCompatActivity {
             reference.child(userUid).get().addOnCompleteListener(task -> {
                 task.getResult();
 
+                /**
+                 * can only show one result!
+                  */
+                if (Firstname.getText().toString().equals("")) {
+                    Toast.makeText(getApplicationContext(), "First Name must not be empty", Toast.LENGTH_LONG).show();
+                    Firstname.requestFocus();
+                }
+                else if (Lastname.getText().toString().equals("")) {
+                    Toast.makeText(getApplicationContext(), "Last Name must not be empty", Toast.LENGTH_LONG).show();
+                    Lastname.requestFocus();
+                }
+                else if (Birthday.getText().toString().equals("")) {
+                    Toast.makeText(getApplicationContext(), "Birthday must not be empty", Toast.LENGTH_LONG).show();
+                    Birthday.requestFocus();
+                }
+                else if (ContactNo.getText().toString().equals("")) {
+                    Toast.makeText(getApplicationContext(), "Contact No. must not be empty", Toast.LENGTH_LONG).show();
+                    ContactNo.requestFocus();
+                }
+                else if (ContactNo.getText().toString().length() != 10) {
+                    Toast.makeText(getApplicationContext(), "Contact No. must be 10 digits", Toast.LENGTH_LONG).show();
+                    ContactNo.requestFocus();
+                }
+                else if (Age.getText().toString().equals("")) {
+                    Toast.makeText(getApplicationContext(), "Age must be not be empty", Toast.LENGTH_LONG).show();
+                    Age.requestFocus();
+                }
+                else if (Integer.parseInt(Age.getText().toString()) <= 18) {
+                    Toast.makeText(getApplicationContext(), "Age must be equal or greater than 18", Toast.LENGTH_LONG).show();
+                    Age.requestFocus();
+                }
+                else if (Gender.getText().toString().equals("")) {
+                    Toast.makeText(getApplicationContext(), "Gender must not be empty", Toast.LENGTH_LONG).show();
+                    Gender.requestFocus();
+                }
+                else if (Description.getText().toString().equals("")) {
+                    Toast.makeText(getApplicationContext(), "Description must not be empty", Toast.LENGTH_LONG).show();
+                    Description.requestFocus();
+                } else{
+                    reference.child(userUid).child("FirstName").setValue(Firstname.getText().toString());
+                    reference.child(userUid).child("LastName").setValue(Lastname.getText().toString());
+                    reference.child(userUid).child("Birthday").setValue(Birthday.getText().toString());
+                    reference.child(userUid).child("Age").setValue(Age.getText().toString());
+                    reference.child(userUid).child("Gender").setValue(Gender.getText().toString());
+                    reference.child(userUid).child("Address").setValue(Address.getText().toString());
+                    reference.child(userUid).child("Description").setValue(Description.getText().toString());
+
+                    Toast.makeText(getApplicationContext(), "Profile Updated Successfully", Toast.LENGTH_LONG).show();
+                    Intent i = new Intent(getApplicationContext(), Edit_Profile.class);
+                    finish();
+                    startActivity(i);
+                }
+
+                /**
                 if (Firstname.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(), "First Name must not be empty", Toast.LENGTH_LONG).show();
                     Firstname.requestFocus();
@@ -213,7 +267,7 @@ public class Edit_Profile extends AppCompatActivity {
                         }
                     }
                 }
-
+                */
             });
 
         });
