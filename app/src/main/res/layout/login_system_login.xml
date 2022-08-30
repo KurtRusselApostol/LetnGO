@@ -8,6 +8,7 @@
     android:fillViewport="true">
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
@@ -15,19 +16,29 @@
         android:orientation="vertical"
         tools:context="login.system.new_login">
 
+
         <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_10sdp">
+            android:layout_marginTop="0dp"
+            android:layout_marginBottom="-90dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/ic_background_img"
+                tools:ignore="MissingConstraints" />
+
 
             <ImageButton
                 android:id="@+id/imageCancel"
-                android:layout_width="wrap_content"
-                android:layout_height="40dp"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
                 android:layout_weight="1"
-                app:srcCompat="@drawable/remove_button"
+                android:backgroundTint="#00FFFFFF"
+                app:srcCompat="@drawable/back_arrow"
                 tools:ignore="MissingConstraints" />
+
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -83,7 +94,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginLeft="40dp"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="10dp"
             android:layout_marginRight="40dp">
 
 
@@ -95,7 +106,9 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/custom_input"
                 android:backgroundTint="#FBFAFA"
-                android:drawableRight="@drawable/user"
+                android:drawableStart="@drawable/ic_user_focused"
+                android:drawablePadding="12dp"
+                android:paddingStart="12dp"
                 android:ems="10"
                 android:fontFamily="@font/poppins_light"
                 android:hint="Username"
@@ -117,12 +130,14 @@
                 android:layout_marginTop="10dp"
                 android:background="@drawable/custom_input"
                 android:backgroundTint="#FBFAFA"
-                android:drawableRight="@drawable/hide"
+                android:drawableStart="@drawable/hidden_eye"
+                android:drawablePadding="12dp"
                 android:ems="10"
                 android:fontFamily="@font/poppins_light"
                 android:hint="Password"
                 android:inputType="textPassword"
                 android:longClickable="false"
+                android:paddingStart="12dp"
                 android:textColor="#000000"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
@@ -177,7 +192,7 @@
                 android:layout_below="@+id/btn_login"
                 android:layout_marginLeft="10dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginBottom="50dp"
+                android:layout_marginBottom="10dp"
                 android:background="@drawable/btn_google"
                 android:drawableLeft="@drawable/google"
                 android:paddingLeft="40dp"
@@ -196,7 +211,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/UsernamePassword"
-            android:layout_marginTop="50dp"
             android:layout_marginRight="40dp"
             android:layout_marginLeft="40dp">
 
