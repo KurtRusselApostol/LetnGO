@@ -15,7 +15,7 @@ public class Manage_Hosting extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_manage_hosting);
+        setContentView(R.layout.account_hosting_manage_hosting);
 
         back = findViewById(R.id.manage_back);
 
