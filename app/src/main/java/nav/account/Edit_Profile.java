@@ -106,6 +106,7 @@ public class Edit_Profile extends AppCompatActivity {
                     Firstname.setText(firstname);
                     Lastname.setText(lastname);
                     Email.setText(email);
+                    Email.setEnabled(false); //make email field uneditable
                     Birthday.setText(birthday);
                     ContactNo.setText(mobile);
                     Age.setText(age);
