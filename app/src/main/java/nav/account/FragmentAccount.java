@@ -177,7 +177,13 @@ public class FragmentAccount extends Fragment {
                 break;
 
             case R.id.btn_logout:
-                Intent intent13 = new Intent(getActivity(), new_login.class);
+                Intent intent13 = new Intent(getActivity(), HomePage.class);
+                FirebaseAuth.getInstance().signOut();
+                //Clearing login data from local storage, Following code will be commented temporarily
+                //SharedPreferences sp = this.getActivity().getSharedPreferences("Login", MODE_PRIVATE);
+
+                //String ema = sp.getString("ema", null);
+                //String pass = sp.getString("pass", null);
                 startActivity(intent13);
                 break;
 
