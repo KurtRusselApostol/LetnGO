@@ -29,5 +29,5 @@
         android:id="@+id/fragmentAccount"
         android:name="nav.account.FragmentAccount"
         android:label="fragment_account"
-        tools:layout="@layout/fragment_account" />
+        tools:layout="@layout/account_account" />
 </navigation>

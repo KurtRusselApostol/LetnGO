@@ -11,7 +11,7 @@ public class info_treehouse extends AppCompatActivity{
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_treehouse_info);
+        setContentView(R.layout.categories_treehouse_info);
     }
 }
 

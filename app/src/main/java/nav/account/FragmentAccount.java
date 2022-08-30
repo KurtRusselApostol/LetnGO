@@ -53,7 +53,7 @@ public class FragmentAccount extends Fragment {
         FirebaseAuth auth = FirebaseAuth.getInstance();
         FirebaseUser user = auth.getCurrentUser();
 
-        View v = inflater.inflate(R.layout.fragment_account, container, false);
+        View v = inflater.inflate(R.layout.account_account, container, false);
 
         ///////////////Button Id Layout//////////////////////
         TextView fullName = v.findViewById(R.id.up_fullName);

@@ -14,7 +14,7 @@ public class advice_click extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_advice_click);
+        setContentView(R.layout.safety_advice_click);
 
         back = findViewById(R.id.back_btn1); //back button
 

@@ -14,7 +14,7 @@ public class security1 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_security1);
+        setContentView(R.layout.account_security1);
 
         button1 = (ImageButton) findViewById(R.id.button1);
         button1.setOnClickListener(v -> openSecurity2());

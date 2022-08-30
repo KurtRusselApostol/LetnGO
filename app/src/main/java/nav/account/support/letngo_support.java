@@ -17,7 +17,7 @@ public class letngo_support extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_letngo_support);
+        setContentView(R.layout.account_support_letngo_support);
 
         back = findViewById(R.id.back_btn);
 
