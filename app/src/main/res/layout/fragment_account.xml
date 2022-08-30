@@ -40,7 +40,7 @@
             android:background="@color/Light_grey">
 
             <RelativeLayout
-                android:id="@+id/kane_name"
+                android:id="@+id/newk_name"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_95sdp"
                 android:background="@color/Light_grey">
@@ -51,7 +51,7 @@
                     android:layout_height="@dimen/_64sdp"
                     android:layout_marginStart="@dimen/_8sdp"
                     android:layout_marginTop="@dimen/_8sdp"
-                    app:srcCompat="@drawable/kane_user_icon" />
+                    app:srcCompat="@drawable/newk_user_icon" />
 
                 <TextView
                     android:id="@+id/up_fullName"
@@ -60,6 +60,7 @@
                     android:layout_marginStart="@dimen/_75sdp"
                     android:layout_marginTop="@dimen/_30sdp"
                     android:text="Name"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -72,16 +73,17 @@
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_75sdp"
                     android:text="View Profile"
+                    android:textColor="@color/black"
                     android:textSize="12sp" />
 
             </RelativeLayout>
 
             <!--ACCOUNT SETTING SECTION-->
             <RelativeLayout
-                android:id="@+id/kane_accountsettings"
+                android:id="@+id/newk_accountsettings"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_175sdp"
-                android:layout_below="@+id/kane_name">
+                android:layout_below="@+id/newk_name">
 
                 <TextView
                     android:id="@+id/up_accountSettings"
@@ -89,6 +91,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="@dimen/_11sdp"
                     android:text="Account Settings"
+                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
@@ -106,13 +109,14 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_6sdp"
-                        android:text="Personal and Account Information" />
+                        android:text="Personal and Account Information"
+                        android:textColor="@color/black" />
 
                     <ImageView
                         android:id="@+id/up_personalAndAccountIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_user_icon" />
+                        app:srcCompat="@drawable/newk_user_icon" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -131,13 +135,14 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_6sdp"
                         android:layout_marginEnd="@dimen/_125sdp"
-                        android:text="Security" />
+                        android:text="Security"
+                        android:textColor="@color/black" />
 
                     <ImageView
                         android:id="@+id/up_securityIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_security" />
+                        app:srcCompat="@drawable/newk_security" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -156,13 +161,14 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_6sdp"
                         android:layout_marginEnd="@dimen/_108sdp"
-                        android:text="Notification" />
+                        android:text="Notification"
+                        android:textColor="@color/black" />
 
                     <ImageView
                         android:id="@+id/up_notificationIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_notification" />
+                        app:srcCompat="@drawable/newk_notification" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -181,13 +187,14 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_6sdp"
                         android:layout_marginEnd="@dimen/_60sdp"
-                        android:text="Payment and Payouts" />
+                        android:text="Payment and Payouts"
+                        android:textColor="@color/black" />
 
                     <ImageView
                         android:id="@+id/up_paymentAndPayoutIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_wallet" />
+                        app:srcCompat="@drawable/newk_wallet" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -197,10 +204,10 @@
             <!--  HOSTING SECTION    -->
 
             <RelativeLayout
-                android:id="@+id/kane_hosting"
+                android:id="@+id/newk_hosting"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_105sdp"
-                android:layout_below="@+id/kane_accountsettings">
+                android:layout_below="@+id/newk_accountsettings">
 
                 <TextView
                     android:id="@+id/up_hostingSection"
@@ -226,13 +233,14 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_6sdp"
                         android:layout_marginEnd="@dimen/_84sdp"
-                        android:text="Manage Hosting" />
+                        android:text="Manage Hosting"
+                        android:textColor="@color/black" />
 
                     <ImageView
                         android:id="@+id/up_manageHostingIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_manage_host" />
+                        app:srcCompat="@drawable/newk_manage_host" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -251,13 +259,14 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_6sdp"
                         android:layout_marginEnd="@dimen/_100sdp"
-                        android:text="Start Hosting" />
+                        android:text="Start Hosting"
+                        android:textColor="@color/black" />
 
                     <ImageView
                         android:id="@+id/up_startHostingIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_start_host" />
+                        app:srcCompat="@drawable/newk_start_host" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -266,10 +275,10 @@
 
             <!--SUPPORT SECTION-->
             <RelativeLayout
-                android:id="@+id/kane_support"
+                android:id="@+id/newk_support"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_175sdp"
-                android:layout_below="@id/kane_hosting">
+                android:layout_below="@id/newk_hosting">
 
                 <TextView
                     android:id="@+id/textView102"
@@ -295,7 +304,8 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_6sdp"
                         android:layout_marginEnd="@dimen/_63sdp"
-                        android:text="How Let 'n Go Works" />
+                        android:text="How Let 'n Go Works"
+                        android:textColor="@color/black"/>
 
                     <ImageView
                         android:id="@+id/up_LetNGoIcon"
@@ -320,13 +330,14 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_6sdp"
                         android:layout_marginEnd="@dimen/_97sdp"
-                        android:text="Safety Center" />
+                        android:text="Safety Center"
+                        android:textColor="@color/black"/>
 
                     <ImageView
                         android:id="@+id/up_safetyCenterIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_safety" />
+                        app:srcCompat="@drawable/newk_safety" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -345,13 +356,14 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginEnd="@dimen/_121sdp"
-                        android:text="Get Help" />
+                        android:text="Get Help"
+                        android:textColor="@color/black"/>
 
                     <ImageView
                         android:id="@+id/up_getHelpIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_customer_service" />
+                        app:srcCompat="@drawable/newk_customer_service" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -370,13 +382,14 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginEnd="@dimen/_78sdp"
-                        android:text="Give us Feedback" />
+                        android:text="Give us Feedback"
+                        android:textColor="@color/black"/>
 
                     <ImageView
                         android:id="@+id/up_feedBackIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_feedback" />
+                        app:srcCompat="@drawable/newk_feedback" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -384,10 +397,10 @@
 
             <!-- LEGAL SECTION-->
             <RelativeLayout
-                android:id="@+id/kane_legal"
+                android:id="@+id/newk_legal"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_155sdp"
-                android:layout_below="@id/kane_support">
+                android:layout_below="@id/newk_support">
 
                 <TextView
                     android:id="@+id/up_legal"
@@ -413,13 +426,14 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginEnd="@dimen/_81sdp"
-                        android:text="Terms of Service" />
+                        android:text="Terms of Service"
+                        android:textColor="@color/black"/>
 
                     <ImageView
                         android:id="@+id/up_termOfServiceIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_terms" />
+                        app:srcCompat="@drawable/newk_terms" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -438,13 +452,14 @@
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginEnd="@dimen/_96sdp"
-                        android:text="Privacy Policy" />
+                        android:text="Privacy Policy"
+                        android:textColor="@color/black"/>
 
                     <ImageView
                         android:id="@+id/up_privacyPolicyIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
-                        app:srcCompat="@drawable/kane_privacy_policy" />
+                        app:srcCompat="@drawable/newk_privacy_policy" />
 
                 </androidx.cardview.widget.CardView>
 
@@ -471,7 +486,7 @@
                         android:id="@+id/imageView7"
                         android:layout_width="@dimen/_28sdp"
                         android:layout_height="@dimen/_23sdp"
-                        app:srcCompat="@drawable/kane_logout" />
+                        app:srcCompat="@drawable/newk_logout" />
 
                 </androidx.cardview.widget.CardView>
 
