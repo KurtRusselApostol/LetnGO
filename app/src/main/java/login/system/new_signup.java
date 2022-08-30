@@ -44,12 +44,12 @@ public class new_signup extends AppCompatActivity {
 
 
     // defining our own password pattern
-    private static final Pattern PASSWORD_PATTERN =
-            Pattern.compile("^" +
-                    "(?=.*[@#$%^&+=])" +     // at least 1 special character
-                    "(?=\\S+$)" +            // no white spaces
-                    ".{6,}" +                // at least 6 characters
-                    "$");
+    private static final Pattern PASSWORD_PATTERN = Pattern.compile("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"); //Minimum eight characters, at least one letter and one number
+//            Pattern.compile("^" +
+//                    "(?=.*[@#$%^&+=])" +     // at least 1 special character
+//                    "(?=\\S+$)" +            // no white spaces
+//                    ".{6,}" +                // at least 6 characters
+//                    "$");
 
 
 
