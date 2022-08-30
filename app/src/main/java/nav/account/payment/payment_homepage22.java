@@ -17,7 +17,7 @@ public class payment_homepage22 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment_homepage22);
+        setContentView(R.layout.account_payment_homepage22);
 
         back = findViewById(R.id.back);
         select = findViewById(R.id.button);
