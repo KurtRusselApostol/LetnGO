@@ -18,7 +18,7 @@ public class payment extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_payment);
+        setContentView(R.layout.account_payment);
 
         back = findViewById(R.id.activity_paymentback);
         select = findViewById(R.id.button9);

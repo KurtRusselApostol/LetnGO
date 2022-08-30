@@ -15,7 +15,7 @@ public class notif_settings3 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notif_settings3);
+        setContentView(R.layout.account_notif_settings3);
 
         back = findViewById(R.id.backButton);
         payments = findViewById(R.id.your_payments);

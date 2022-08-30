@@ -22,7 +22,7 @@ public class payment_homepage24 extends AppCompatActivity {
         // for full screen
         getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
 //        Objects.requireNonNull(getSupportActionBar()).hide();
-        setContentView(R.layout.activity_payment_homepage24);
+        setContentView(R.layout.account_payment_homepage24);
 
         new Handler().postDelayed(() -> {
             Intent intent = new Intent(payment_homepage24.this, UserHompage.class);

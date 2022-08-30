@@ -13,7 +13,7 @@ public class notif_settings5 extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_notif_settings5);
+        setContentView(R.layout.account_notif_settings5);
 
         back = findViewById(R.id.img_back);
 
