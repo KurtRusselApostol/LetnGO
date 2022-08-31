@@ -1,12 +1,15 @@
 package nav.explore;
 
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.fragment.app.Fragment;
 
+import com.example.letngo.MainActivity;
 import com.example.letngo.R;
 
 /**
@@ -62,4 +65,5 @@ public class FragmentExplore extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.explore_explore, container, false);
     }
+
 }
