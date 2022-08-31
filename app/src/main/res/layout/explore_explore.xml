@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity"
+    android:background="#658B6F"
     android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_8sdp"
-        android:background="#658B6F"
+        android:layout_margin="@dimen/_5sdp"
         android:orientation="vertical">
 
         <RelativeLayout
@@ -35,14 +35,16 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_40sdp"
+            android:layout_height="@dimen/_50sdp"
             android:layout_below="@+id/explore_find">
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/explore_search"
                 android:layout_width="@dimen/_225sdp"
-                android:layout_height="match_parent"
+                android:layout_height="@dimen/_40sdp"
                 android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toLeftOf="@id/explore_filter"
+                android:layout_centerVertical="true"
                 android:background="@drawable/btn_background"
                 android:clickable="true"
                 android:focusable="true">
@@ -52,9 +54,11 @@
             <ImageView
                 android:id="@+id/explore_filter"
                 android:layout_width="@dimen/_40sdp"
-                android:layout_height="match_parent"
-                android:layout_toEndOf="@id/explore_search"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentEnd="true"
                 android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_centerVertical="true"
                 android:background="@drawable/settings_round_bg"
                 android:clickable="true"
                 android:focusable="true"
@@ -64,7 +68,8 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_50sdp">
+            android:layout_height="@dimen/_50sdp"
+            android:background="#C2D5C9">
 
             <TextView
                 android:id="@+id/explore_mostpopular"
@@ -72,8 +77,12 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/_15sdp"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 android:text="Most Popular"
-                android:textColor="@color/white"
+                android:textColor="#FFFFFF"
                 android:textSize="16pt"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
@@ -84,7 +93,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/explore_mostpopular"
-            android:layout_marginBottom="1dp">
+            android:layout_marginBottom="1dp"
+            android:background="#C2D5C9">
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -114,6 +124,10 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
                         tools:ignore="HardcodedText,PxUsage">
                     </TextView>
 
@@ -126,8 +140,11 @@
                         android:text="Philippines"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
-                        tools:ignore="HardcodedText,PxUsage">
-                    </TextView>
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        tools:ignore="HardcodedText,PxUsage"></TextView>
 
                 </RelativeLayout>
 
@@ -153,6 +170,10 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
                         tools:ignore="HardcodedText,PxUsage">
                     </TextView>
 
@@ -165,6 +186,10 @@
                         android:text="Philippines"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
                         tools:ignore="HardcodedText,PxUsage">
                     </TextView>
 
@@ -188,12 +213,11 @@
                         android:layout_height="wrap_content"
                         android:layout_above="@id/explore_ph3"
                         android:layout_alignStart="@id/explore_pic3"
-                        android:text="Phasellus Aliquet"
+                        android:text="Donec Rhoncus"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
-                        tools:ignore="HardcodedText,PxUsage">
-                    </TextView>
+                        tools:ignore="HardcodedText,PxUsage"></TextView>
 
                     <TextView
                         android:id="@+id/explore_ph3"
@@ -213,141 +237,195 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp">
+            android:layout_height="@dimen/_50sdp"
+            android:background="#C2D5C9">
 
             <TextView
-
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginStart="52dp"
+                android:id="@+id/explore_recentlyvisited"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:text="Recently Visited"
                 android:textColor="@color/white"
                 android:textSize="16pt"
                 android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText" />
+
         </RelativeLayout>
 
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="-30dp"
-            android:layout_marginEnd="1dp"
-            android:layout_marginBottom="1dp">
+            android:layout_below="@+id/explore_recentlyvisited"
+            android:layout_marginBottom="1dp"
+            android:background="#C2D5C9">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="10dp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:id="@+id/explore_layout4"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp">
 
                     <ImageView
-                        android:layout_width="500px"
-                        android:layout_height="603px"
-                        android:layout_marginStart="60dp"
-                        android:src="@drawable/room"
+                        android:id="@+id/explore_pic4"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/explore_hotel4"
                         tools:ignore="ContentDescription,PxUsage" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="220dp"
-                        android:text="More than Blue Hotel"
+                        android:layout_above="@id/explore_ph4"
+                        android:layout_alignStart="@id/explore_pic4"
+                        android:text="Vehicula Tellus"
                         android:textColor="@color/white"
-                        android:textSize="8pt"
+                        android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
-                        tools:ignore="HardcodedText,PxUsage" />
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                     <TextView
+                        android:id="@+id/explore_ph4"
                         android:layout_width="500px"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="240dp"
+                        android:layout_alignStart="@id/explore_pic4"
+                        android:layout_alignParentBottom="true"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
                         android:text="Philippines"
                         android:textColor="@color/white"
-                        android:textSize="6pt"
-                        tools:ignore="HardcodedText,PxUsage">
+                        android:textSize="@dimen/_15sdp"
+                        tools:ignore="HardcodedText,PxUsage"></TextView>
 
-                    </TextView>
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="220dp"
-                        android:text="More than Blue Hotel"
-                        android:textColor="@color/white"
-                        android:textSize="8pt"
-                        android:textStyle="bold"
-                        tools:ignore="HardcodedText,PxUsage">
-                    </TextView>
-                    <TextView
-                        android:layout_width="500px"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="240dp"
-                        android:text="Philippines"
-                        android:textColor="@color/white"
-                        android:textSize="6pt"
-                        tools:ignore="HardcodedText,PxUsage">
-                    </TextView>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:id="@+id/explore_layout5"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp">
 
                     <ImageView
-                        android:layout_width="500px"
-                        android:layout_height="603px"
-                        android:layout_marginStart="60dp"
-                        android:src="@drawable/room2"
+                        android:id="@+id/explore_pic5"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/explore_hotel5"
                         tools:ignore="ContentDescription,PxUsage" />
+
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="220dp"
-                        android:text="More than Blue Hotel"
+                        android:layout_above="@id/explore_ph5"
+                        android:layout_alignStart="@id/explore_pic5"
+                        android:text="Orci Varius"
                         android:textColor="@color/white"
-                        android:textSize="8pt"
+                        android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
                         tools:ignore="HardcodedText,PxUsage">
                     </TextView>
+
                     <TextView
+                        android:id="@+id/explore_ph5"
                         android:layout_width="500px"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="240dp"
+                        android:layout_alignStart="@id/explore_pic5"
+                        android:layout_alignParentBottom="true"
                         android:text="Philippines"
                         android:textColor="@color/white"
-                        android:textSize="6pt"
+                        android:textSize="@dimen/_15sdp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
                         tools:ignore="HardcodedText,PxUsage">
                     </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/explore_layout6"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp">
+
+                    <ImageView
+                        android:id="@+id/explore_pic6"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/explore_hotel6"
+                        tools:ignore="ContentDescription,PxUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/explore_ph6"
+                        android:layout_alignStart="@id/explore_pic6"
+                        android:text="Natoque Penatibus"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/explore_ph6"
+                        android:layout_width="500px"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/explore_pic6"
+                        android:layout_alignParentBottom="true"
+                        android:text="Philippines"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
+
                 </RelativeLayout>
             </LinearLayout>
         </HorizontalScrollView>
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp">
+            android:layout_height="@dimen/_350sdp"
+            android:layout_centerHorizontal="true"
+            android:background="#C2D5C9">
 
             <ImageView
                 android:id="@+id/explore_bottomroom"
-                android:layout_width="match_parent"
+                android:layout_width="@dimen/_200sdp"
                 android:layout_height="@dimen/_200sdp"
-                android:src="@drawable/room"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:src="@drawable/explore_hotel7"
                 tools:ignore="ContentDescription" />
 
             <TextView
@@ -355,27 +433,35 @@
                 android:layout_width="80dp"
                 android:layout_height="35dp"
                 android:layout_below="@+id/explore_bottomroom"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:drawableStart="@drawable/bed"
                 android:gravity="center"
                 android:text="3 Beds"
                 android:textColor="@color/white"
-                android:textSize="6pt"
+                android:textSize="@dimen/_10sdp"
                 android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText"></TextView>
 
             <TextView
                 android:id="@+id/explore_door"
                 android:layout_width="90dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:layout_below="@+id/explore_bed"
                 android:drawableStart="@drawable/door"
                 android:gravity="center"
                 android:text="5 Rooms"
                 android:textColor="@color/white"
-                android:textSize="6pt"
+                android:textSize="@dimen/_10sdp"
                 android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -383,28 +469,34 @@
                 android:layout_width="110dp"
                 android:layout_height="35dp"
                 android:layout_below="@+id/explore_bottomroom"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="110dp"
+                android:layout_alignStart="@id/ratingBar"
                 android:drawableStart="@drawable/bathtub"
                 android:gravity="center"
                 android:text="2 Bathrooms"
                 android:textColor="@color/white"
-                android:textSize="6pt"
+                android:textSize="@dimen/_10sdp"
                 android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText"></TextView>
 
             <TextView
-                android:id="@+id/explore_surigao"
+                android:id="@+id/explore_location"
                 android:layout_width="200dp"
                 android:layout_height="50dp"
-                android:layout_alignParentEnd="true"
                 android:layout_below="@+id/explore_tub"
-                android:layout_marginEnd="20dp"
-                android:drawableStart="@drawable/location"
+                android:layout_alignStart="@id/ratingBar"
+                android:drawableStart="@drawable/explore_pin"
                 android:gravity="center"
-                android:text="San Pablo, Sean, Surigao del Norte"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
+                android:text="Et Magnis, Dis Parturient Montes"
                 android:textColor="@color/white"
-                android:textSize="6pt"
+                android:textSize="@dimen/_10sdp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -412,13 +504,16 @@
                 android:id="@+id/explore_price"
                 android:layout_width="110dp"
                 android:layout_height="35dp"
-                android:layout_marginStart="30dp"
                 android:layout_below="@+id/explore_door"
-                android:gravity="center"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:text="P7,500 per night"
                 android:textColor="@color/white"
-                android:textSize="6pt"
+                android:textSize="@dimen/_10sdp"
                 android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText"></TextView>
 
             <RatingBar
@@ -426,20 +521,13 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignTop="@id/explore_price"
-                android:layout_alignParentEnd="true"
+                android:layout_toRightOf="@id/explore_price"
                 android:numStars="5"
+                android:progressTint="#ffd700"
                 android:scaleX="0.5"
                 android:scaleY="0.5"
-                android:stepSize="0.5"
-                android:progressTint="#ffd700"/>
+                android:stepSize="0.5" />
         </RelativeLayout>
-
-        <!--<ImageView
-            android:layout_width="500px"
-            android:layout_height="500px"
-            android:layout_marginStart="60dp"
-            android:src="@drawable/room1"
-            tools:ignore="ContentDescription,PxUsage" />-->
     </LinearLayout>
 
 </ScrollView>
