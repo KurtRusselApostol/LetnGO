@@ -16,13 +16,14 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginTop="@dimen/_38sdp">
+            android:layout_height="@dimen/_100sdp"
+            android:layout_marginTop="@dimen/_30sdp">
 
             <TextView
+                android:id="@+id/explore_find"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/_23sdp"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:text="Find Your Best Hotel"
                 android:textColor="@color/white"
                 android:textSize="20pt"
@@ -34,14 +35,14 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_38sdp"
-            android:layout_marginTop="@dimen/_15sdp">
+            android:layout_height="@dimen/_40sdp"
+            android:layout_below="@+id/explore_find">
 
             <androidx.appcompat.widget.SearchView
-                android:layout_width="match_parent"
+                android:id="@+id/explore_search"
+                android:layout_width="@dimen/_225sdp"
                 android:layout_height="match_parent"
-                android:layout_marginStart="@dimen/_23sdp"
-                android:layout_marginEnd="@dimen/_54sdp"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:background="@drawable/btn_background"
                 android:clickable="true"
                 android:focusable="true">
@@ -49,10 +50,11 @@
             </androidx.appcompat.widget.SearchView>
 
             <ImageView
-                android:layout_width="@dimen/_38sdp"
+                android:id="@+id/explore_filter"
+                android:layout_width="@dimen/_40sdp"
                 android:layout_height="match_parent"
-                android:layout_alignParentEnd="true"
-                android:layout_marginEnd="@dimen/_8sdp"
+                android:layout_toEndOf="@id/explore_search"
+                android:layout_marginStart="@dimen/_5sdp"
                 android:background="@drawable/settings_round_bg"
                 android:clickable="true"
                 android:focusable="true"
@@ -61,14 +63,15 @@
         </RelativeLayout>
 
         <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="@dimen/_77sdp">
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_50sdp">
 
             <TextView
+                android:id="@+id/explore_mostpopular"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_23sdp"
-                android:layout_marginTop="@dimen/_19sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:text="Most Popular"
                 android:textColor="@color/white"
                 android:textSize="16pt"
@@ -80,122 +83,130 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="1dp"
-            android:layout_marginTop="@dimen/_23sdp"
-            android:layout_marginEnd="1dp"
+            android:layout_below="@+id/explore_mostpopular"
             android:layout_marginBottom="1dp">
 
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/_8sdp"
+                android:layout_margin="@dimen/_5sdp"
                 android:orientation="horizontal">
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:id="@+id/explore_layout1"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp">
 
                     <ImageView
-                        android:layout_width="500px"
-                        android:layout_height="603px"
-                        android:layout_marginStart="@dimen/_46sdp"
-                        android:src="@drawable/beach"
+                        android:id="@+id/explore_pic1"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/explore_hotel1"
                         tools:ignore="ContentDescription,PxUsage" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="220dp"
-                        android:text="More than Blue Hotel"
+                        android:layout_above="@id/explore_ph1"
+                        android:layout_alignStart="@id/explore_pic1"
+                        android:text="Phasellus Aliquet"
                         android:textColor="@color/white"
-                        android:textSize="8pt"
+                        android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText,PxUsage">
-
                     </TextView>
 
                     <TextView
+                        android:id="@+id/explore_ph1"
                         android:layout_width="500px"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="240dp"
+                        android:layout_alignStart="@id/explore_pic1"
+                        android:layout_alignParentBottom="true"
                         android:text="Philippines"
                         android:textColor="@color/white"
-                        android:textSize="6pt"
+                        android:textSize="@dimen/_15sdp"
                         tools:ignore="HardcodedText,PxUsage">
-
                     </TextView>
 
-                    <ImageView
-                        android:layout_width="500px"
-                        android:layout_height="603px"
-                        android:layout_marginStart="60dp"
-                        android:src="@drawable/beach_1"
-                        tools:ignore="ContentDescription,PxUsage" />
                 </RelativeLayout>
 
                 <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="220dp"
-                        android:text="More than Blue Hotel"
-                        android:textColor="@color/white"
-                        android:textSize="8pt"
-                        android:textStyle="bold"
-                        tools:ignore="HardcodedText,PxUsage">
-                    </TextView>
-
-                    <TextView
-                        android:layout_width="500px"
-                        android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="240dp"
-                        android:text="Philippines"
-                        android:textColor="@color/white"
-                        android:textSize="6pt"
-                        tools:ignore="HardcodedText,PxUsage">
-
-                    </TextView>
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content">
+                    android:id="@+id/explore_layout2"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp">
 
                     <ImageView
-                        android:layout_width="500px"
-                        android:layout_height="603px"
-                        android:layout_marginStart="60dp"
-                        android:src="@drawable/beach_2"
+                        android:id="@+id/explore_pic2"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/explore_hotel2"
                         tools:ignore="ContentDescription,PxUsage" />
 
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="220dp"
-                        android:text="More than Blue Hotel"
+                        android:layout_above="@id/explore_ph2"
+                        android:layout_alignStart="@id/explore_pic2"
+                        android:text="Phendrerit Ullamcorper"
                         android:textColor="@color/white"
-                        android:textSize="8pt"
+                        android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
                         tools:ignore="HardcodedText,PxUsage">
                     </TextView>
+
                     <TextView
+                        android:id="@+id/explore_ph2"
                         android:layout_width="500px"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="60dp"
-                        android:layout_marginTop="240dp"
+                        android:layout_alignStart="@id/explore_pic2"
+                        android:layout_alignParentBottom="true"
                         android:text="Philippines"
                         android:textColor="@color/white"
-                        android:textSize="6pt"
+                        android:textSize="@dimen/_15sdp"
                         tools:ignore="HardcodedText,PxUsage">
                     </TextView>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/explore_layout3"
+                    android:layout_width="@dimen/_200sdp"
+                    android:layout_height="@dimen/_200sdp">
+
+                    <ImageView
+                        android:id="@+id/explore_pic3"
+                        android:layout_width="@dimen/_150sdp"
+                        android:layout_height="@dimen/_150sdp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/explore_hotel3"
+                        tools:ignore="ContentDescription,PxUsage" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_above="@id/explore_ph3"
+                        android:layout_alignStart="@id/explore_pic3"
+                        android:text="Phasellus Aliquet"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        android:textStyle="bold"
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
+
+                    <TextView
+                        android:id="@+id/explore_ph3"
+                        android:layout_width="500px"
+                        android:layout_height="wrap_content"
+                        android:layout_alignStart="@id/explore_pic3"
+                        android:layout_alignParentBottom="true"
+                        android:text="Philippines"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
+
                 </RelativeLayout>
             </LinearLayout>
         </HorizontalScrollView>
@@ -210,7 +221,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="52dp"
-                android:text="Recently Visit"
+                android:text="Recently Visited"
                 android:textColor="@color/white"
                 android:textSize="16pt"
                 android:textStyle="bold"
@@ -330,33 +341,35 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="@dimen/_350sdp">
 
             <ImageView
+                android:id="@+id/explore_bottomroom"
                 android:layout_width="match_parent"
-                android:layout_height="183dp"
+                android:layout_height="@dimen/_200sdp"
                 android:src="@drawable/room"
                 tools:ignore="ContentDescription" />
 
             <TextView
+                android:id="@+id/explore_bed"
                 android:layout_width="80dp"
-                android:layout_height="100dp"
+                android:layout_height="35dp"
+                android:layout_below="@+id/explore_bottomroom"
                 android:layout_marginStart="30dp"
-                android:text="3 Beds"
                 android:drawableStart="@drawable/bed"
                 android:gravity="center"
+                android:text="3 Beds"
                 android:textColor="@color/white"
                 android:textSize="6pt"
-                android:layout_marginTop="170dp"
                 android:textStyle="bold"
-                tools:ignore="HardcodedText">
-            </TextView>
+                tools:ignore="HardcodedText"></TextView>
 
             <TextView
+                android:id="@+id/explore_door"
                 android:layout_width="90dp"
-                android:layout_height="100dp"
+                android:layout_height="35dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="200dp"
+                android:layout_below="@+id/explore_bed"
                 android:drawableStart="@drawable/door"
                 android:gravity="center"
                 android:text="5 Rooms"
@@ -366,25 +379,26 @@
                 tools:ignore="HardcodedText" />
 
             <TextView
+                android:id="@+id/explore_tub"
                 android:layout_width="110dp"
-                android:layout_height="100dp"
-                android:text="2 Bathrooms"
-                android:drawableStart="@drawable/bathtub"
-                android:gravity="center"
-                android:textColor="@color/white"
-                android:textSize="6pt"
-                android:layout_marginTop="170dp"
-                android:textStyle="bold"
+                android:layout_height="35dp"
+                android:layout_below="@+id/explore_bottomroom"
                 android:layout_alignParentEnd="true"
                 android:layout_marginEnd="110dp"
-                tools:ignore="HardcodedText">
-            </TextView>
+                android:drawableStart="@drawable/bathtub"
+                android:gravity="center"
+                android:text="2 Bathrooms"
+                android:textColor="@color/white"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText"></TextView>
 
             <TextView
+                android:id="@+id/explore_surigao"
                 android:layout_width="200dp"
-                android:layout_height="100dp"
+                android:layout_height="50dp"
                 android:layout_alignParentEnd="true"
-                android:layout_marginTop="210dp"
+                android:layout_below="@+id/explore_tub"
                 android:layout_marginEnd="20dp"
                 android:drawableStart="@drawable/location"
                 android:gravity="center"
@@ -395,35 +409,37 @@
                 tools:ignore="HardcodedText" />
 
             <TextView
+                android:id="@+id/explore_price"
                 android:layout_width="110dp"
-                android:layout_height="100dp"
+                android:layout_height="35dp"
                 android:layout_marginStart="30dp"
-                android:layout_marginTop="230dp"
+                android:layout_below="@+id/explore_door"
                 android:gravity="center"
                 android:text="P7,500 per night"
                 android:textColor="@color/white"
                 android:textSize="6pt"
                 android:textStyle="bold"
-                tools:ignore="HardcodedText">
-            </TextView>
+                tools:ignore="HardcodedText"></TextView>
 
             <RatingBar
-                style="@style/rating_bar"
+                android:id="@+id/ratingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:numStars="5"
-                android:rating="4.5"
-                android:layout_marginTop="280dp"
+                android:layout_alignTop="@id/explore_price"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="110dp"/>
+                android:numStars="5"
+                android:scaleX="0.5"
+                android:scaleY="0.5"
+                android:stepSize="0.5"
+                android:progressTint="#ffd700"/>
         </RelativeLayout>
 
-        <ImageView
+        <!--<ImageView
             android:layout_width="500px"
-            android:layout_height="603px"
+            android:layout_height="500px"
             android:layout_marginStart="60dp"
             android:src="@drawable/room1"
-            tools:ignore="ContentDescription,PxUsage" />
+            tools:ignore="ContentDescription,PxUsage" />-->
     </LinearLayout>
 
 </ScrollView>
