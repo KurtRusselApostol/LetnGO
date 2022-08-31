@@ -217,6 +217,10 @@
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
                         tools:ignore="HardcodedText,PxUsage"></TextView>
 
                     <TextView
@@ -228,6 +232,10 @@
                         android:text="Philippines"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
                         tools:ignore="HardcodedText,PxUsage">
                     </TextView>
 
