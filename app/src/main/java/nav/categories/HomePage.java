@@ -2,9 +2,12 @@ package nav.categories;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
+import android.os.Looper;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -102,4 +105,23 @@ public class HomePage extends AppCompatActivity {
     private void replaceFragment(Fragment fragment){
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentlayout,fragment).commit();
     }
+
+    boolean DoublePressToExit=false;
+    @Override
+    public void onBackPressed() {
+        if (DoublePressToExit){
+            finishAffinity();
+        }else{
+            DoublePressToExit=true;
+            Toast.makeText(this,"Press again to exit", Toast.LENGTH_SHORT).show();
+            Handler handler=new Handler(Looper.getMainLooper());
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    DoublePressToExit=false;
+                }
+            },2000);
+        }
+    }
+
 }

@@ -1,11 +1,13 @@
 package com.example.letngo;
 
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.WindowManager;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -15,6 +17,7 @@ import nav.categories.HomePage;
 public class MainActivity extends AppCompatActivity {
 
     private static final int SPLASH_SCREEN = 3000;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,6 +50,10 @@ public class MainActivity extends AppCompatActivity {
         super.onStop();
         FirebaseAuth.getInstance().signOut();
     }
+
+
+
+
 }
 
 
