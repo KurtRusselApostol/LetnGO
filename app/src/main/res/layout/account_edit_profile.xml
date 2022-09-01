@@ -52,6 +52,27 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
+                <!-- Pa edit po ito -->
+
+                <Button
+                    android:id="@+id/gallery_Pick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:padding="10dp"
+                    android:text="Image picker"
+                    android:textSize="18sp"
+                    />
+                <ImageView
+                    android:id="@+id/my_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="@dimen/_5sdp"
+                    android:elevation="1dp"
+                    app:cardCornerRadius="@dimen/_10sdp"
+                    android:padding="@dimen/_20sdp"/>
+
+
             </RelativeLayout>
 
             <ImageButton
