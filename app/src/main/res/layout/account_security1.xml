@@ -24,10 +24,10 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:background="#DEE1DD"
-        android:src="@drawable/arrow_back"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/back_arrow"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck">
 
     </ImageButton>
@@ -47,10 +47,13 @@
     <TextView
         android:layout_width="200dp"
         android:layout_height="65dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
         android:layout_marginTop="300dp"
-        android:text="@string/login_alerts"
+        android:layout_marginEnd="191dp"
         android:textAlignment="center"
+        android:text="@string/login_alerts"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
         android:textSize="35sp" />
@@ -94,9 +97,9 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="230dp"
         android:layout_marginTop="530dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="40dp"
         android:background="#DEE1DD"
-        android:backgroundTint="@color/Light_grey"
+        android:backgroundTint="#00FFFFFF"
         android:padding="@dimen/cardview_default_radius"
         android:src="@drawable/next"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck">

@@ -8,24 +8,11 @@
     android:background="#DDDDDD"
     >
 
-    <TextView
-        android:id="@+id/homepage21"
-        android:layout_width="76dp"
-        android:layout_height="30dp"
-        android:text="Login Alert - 1"
-        android:textSize="12sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.018"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.008" />
 
     <TextView
         android:id="@+id/textView61"
         android:layout_width="390dp"
         android:layout_height="681dp"
-        android:background="@drawable/rectangle_gray"
         android:fontFamily="sans-serif-medium"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,22 +24,23 @@
 
     <ImageButton
         android:id="@+id/img_back"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:background="@drawable/arrow_back"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/back_arrow"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="0.024"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.083" />
+        app:layout_constraintVertical_bias="0.008" />
 
     <TextView
         android:id="@+id/textView60"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Notification"
-        android:textColor="#000000"
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#7BAA98"
         android:textSize="22sp"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -151,7 +139,7 @@
         android:id="@+id/textView81"
         android:layout_width="224dp"
         android:layout_height="48dp"
-        android:background="@drawable/roundrctangle"
+        android:background="@drawable/button_gradient"
         app:layout_constraintBottom_toBottomOf="@+id/textView61"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.54"
@@ -164,9 +152,10 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Save"
-        android:textColor="@color/white"
+        android:textColor="#2F575D"
+        android:fontFamily="@font/poppins_medium"
         android:textStyle="bold"
-        android:textSize="@dimen/_25sdp"
+        android:textSize="@dimen/_20sdp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.513"

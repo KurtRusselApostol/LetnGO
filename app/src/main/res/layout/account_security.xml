@@ -22,19 +22,19 @@
         android:contentDescription="TODO"
         app:srcCompat="@drawable/logo1" />
 
+
     <ImageButton
         android:id="@+id/back"
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:background="#DEE1DD"
-        android:src="@drawable/arrow_back"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/back_arrow"
         tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck">
 
     </ImageButton>
-
 
     <ImageView
         android:id="@+id/imageView16"
@@ -68,7 +68,7 @@
         android:paddingStart="75dp"
         android:paddingEnd="75dp"
         android:text="@string/setting_up_extra_security"
-        android:textColor="@color/black"
+        android:textColor="#2F575D"
         android:textSize="23sp" />
 
     <TextView
@@ -89,9 +89,9 @@
         android:layout_alignParentEnd="true"
         android:layout_marginStart="230dp"
         android:layout_marginTop="530dp"
-        android:layout_marginEnd="80dp"
+        android:layout_marginEnd="40dp"
         android:background="#DEE1DD"
-        android:backgroundTint="@color/Light_grey"
+        android:backgroundTint="#00FFFFFF"
         android:onClick="security2"
         android:padding="@dimen/cardview_default_radius"
         android:src="@drawable/next"

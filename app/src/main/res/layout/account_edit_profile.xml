@@ -56,9 +56,10 @@
 
             <ImageButton
                 android:id="@+id/editprofile_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/arrow_back" />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/back_arrow" />
 
         </RelativeLayout>
 

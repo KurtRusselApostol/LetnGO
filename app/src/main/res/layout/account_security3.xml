@@ -23,10 +23,10 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:background="#DEE1DD"
-        android:src="@drawable/arrow_back"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#00fffff"
+        android:src="@drawable/back_arrow"
         tools:ignore="SpeakableTextPresentCheck">
 
     </ImageButton>
@@ -60,7 +60,7 @@
         android:layout_marginStart="110dp"
         android:layout_marginTop="560dp"
         android:layout_marginEnd="110dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/button_gradient"
         android:text="@string/continue_1"
         android:textAlignment="center"
         android:textAllCaps="false"
