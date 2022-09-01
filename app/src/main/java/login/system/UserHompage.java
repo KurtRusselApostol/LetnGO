@@ -34,7 +34,7 @@ public class UserHompage extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
 
-        replaceFragment(new FragmentNewsfeed());
+        replaceFragment(new FragmentExplore());
         bottomNavigationView.setSelectedItemId(R.id.fragmentNewsfeed);
 
 

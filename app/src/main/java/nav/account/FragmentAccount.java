@@ -1,11 +1,7 @@
 package nav.account;
 
-import static android.content.Context.MODE_PRIVATE;
-
 import android.annotation.SuppressLint;
-import android.content.Context;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -179,11 +175,6 @@ public class FragmentAccount extends Fragment {
             case R.id.btn_logout:
                 Intent intent13 = new Intent(getActivity(), HomePage.class);
                 FirebaseAuth.getInstance().signOut();
-                //Clearing login data from local storage, Following code will be commented temporarily
-                //SharedPreferences sp = this.getActivity().getSharedPreferences("Login", MODE_PRIVATE);
-
-                //String ema = sp.getString("ema", null);
-                //String pass = sp.getString("pass", null);
                 startActivity(intent13);
                 break;
 

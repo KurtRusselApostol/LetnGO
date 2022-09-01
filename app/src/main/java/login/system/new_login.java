@@ -2,7 +2,6 @@ package login.system;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.text.method.HideReturnsTransformationMethod;
@@ -48,8 +47,7 @@ public class new_login extends AppCompatActivity {
     Button google;
     ImageButton back;
     private GoogleSignInClient googleSignInClient;
-    private FirebaseAuth mAuth;
-
+    private FirebaseAuth mAuth = FirebaseAuth.getInstance();
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,7 +57,6 @@ public class new_login extends AppCompatActivity {
         email = findViewById(R.id.ed_username);
         password = findViewById(R.id.ed_password);
 
-        mAuth = FirebaseAuth.getInstance();
 
         back = findViewById(R.id.imageCancel);
 
@@ -191,22 +188,25 @@ public class new_login extends AppCompatActivity {
 
 
     //METHODS STARTS HERE
-    private void LoginUser(String mail, String passw) {
+    public void LoginUser(String mail, String passw) {
 
         mAuth.signInWithEmailAndPassword(mail, passw).addOnCompleteListener(new_login.this, task -> {
             if (task.isSuccessful()) {
-                Toast.makeText(new_login.this, "Logged in successfully!", Toast.LENGTH_SHORT).show();
-
-                //SharedPreference is used here to store login information
-                //TODO For this to be effectively used, there should be a way to auto login at the start.
-                //Following code will be commented at first since this is useless without a way of getting the data at app start
-
-                //SharedPreferences sp = getSharedPreferences("Login", MODE_PRIVATE);
-                //SharedPreferences.Editor spe = sp.edit();
-                //spe.putString("ema", mail);
-                //spe.putString("pass", passw);
-                //spe.putString("status", loginStatus);
-                //spe.commit();
+                try {
+                    Toast.makeText(new_login.this, "Logged in successfully!", Toast.LENGTH_SHORT).show();
+                }
+                catch (Exception e) {
+                    //do nothing
+                }
+                User user = new User (mail, passw);
+                try {
+                    LoginInfoLocal loginInfoLocal = new LoginInfoLocal(new_login.this);
+                    loginInfoLocal.storeLogin(user);
+                    loginInfoLocal.logStatus(true);
+                }
+                catch (Exception e) {
+                    //do nothing
+                }
 
                 //get instance of the current user
                 FirebaseUser firebaseUser = mAuth.getCurrentUser();
@@ -214,7 +214,12 @@ public class new_login extends AppCompatActivity {
                 //Check if email is verified before user can access their profile
                 assert firebaseUser != null;
                 if (firebaseUser.isEmailVerified()) {
-                    Toast.makeText(new_login.this, "Logged in successfully!", Toast.LENGTH_SHORT).show();
+                    try {
+                        Toast.makeText(new_login.this, "Logged in successfully!", Toast.LENGTH_SHORT).show();
+                    }
+                    catch (Exception e) {
+                        //do nothing
+                    }
                     Intent intent = new Intent(new_login.this, UserHompage.class);
                     startActivity(intent);
                 } else {

@@ -13,6 +13,7 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import login.system.LoginInfoLocal;
 import nav.explore.FragmentExplore;
 import nav.account.Fragment_GuestAccount;
 import com.example.letngo.Fragment_GuestNewsfeed;
@@ -36,6 +37,10 @@ public class HomePage extends AppCompatActivity {
         setContentView(R.layout.categories_home_page);
 
         bottomNavigationView = findViewById(R.id.bottomNavView);
+
+        //Clearing user login info
+        LoginInfoLocal logout = new LoginInfoLocal(HomePage.this);
+        logout.clearLogin();
 
         replaceFragment(new FragmentExplore());
         bottomNavigationView.setSelectedItemId(R.id.fragmentExplore);
