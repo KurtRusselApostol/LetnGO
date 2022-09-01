@@ -13,6 +13,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
+import androidx.appcompat.app.AppCompatActivity;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
@@ -21,6 +23,9 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 
 
+import login.system.LoginInfoLocal;
+import login.system.Logout;
+import login.system.new_login;
 import nav.account.help.GetHelp;
 import nav.account.hosting.Manage_Hosting;
 import nav.account.hosting.start_hosting;
@@ -179,11 +184,6 @@ public class FragmentAccount extends Fragment {
             case R.id.btn_logout:
                 Intent intent13 = new Intent(getActivity(), HomePage.class);
                 FirebaseAuth.getInstance().signOut();
-                //Clearing login data from local storage, Following code will be commented temporarily
-                //SharedPreferences sp = this.getActivity().getSharedPreferences("Login", MODE_PRIVATE);
-
-                //String ema = sp.getString("ema", null);
-                //String pass = sp.getString("pass", null);
                 startActivity(intent13);
                 break;
 
