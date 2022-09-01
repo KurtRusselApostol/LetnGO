@@ -6,13 +6,9 @@ import android.content.SharedPreferences;
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
 
-import java.lang.reflect.Array;
 import java.lang.reflect.Type;
 import java.util.ArrayList;
 import java.util.List;
-
-import nav.account.FragmentAccount;
-
 
 //This class stores login information in the device locally.
 public class LoginInfoLocal {
