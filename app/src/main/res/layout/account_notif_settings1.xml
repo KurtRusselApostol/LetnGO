@@ -42,10 +42,10 @@
         android:background="@drawable/arrow_back"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintHorizontal_bias="0.091"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.083" />
+        app:layout_constraintVertical_bias="0.074" />
 
     <TextView
         android:id="@+id/textView60"
@@ -63,7 +63,6 @@
         app:layout_constraintVertical_bias="0.092" />
 
 
-
     <TextView
         android:id="@+id/textView62"
         android:layout_width="wrap_content"
@@ -74,76 +73,51 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.374"
+        app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.24" />
+        app:layout_constraintVertical_bias="0.174" />
 
-    <TextView
-        android:id="@+id/textView77"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Get notifications"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView61"
-        app:layout_constraintHorizontal_bias="0.184"
-        app:layout_constraintStart_toStartOf="@+id/textView61"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.37" />
 
-    <TextView
-        android:id="@+id/textView79"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Don't get notification"
-        android:textColor="#000000"
-        android:textSize="24sp"
-        android:textStyle="bold"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/textView61"
-        app:layout_constraintHorizontal_bias="0.234"
-        app:layout_constraintStart_toStartOf="@+id/textView61"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.434" />
 
-    <RadioGroup
+
+
+
+    <!--<RadioGroup
         android:id="@+id/notifRadioGroup"
         android:layout_width="83dp"
         android:layout_height="117dp"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView61"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.984"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.395"
+        app:layout_constraintVertical_bias="0.789"
         tools:ignore="MissingConstraints">
 
         <RadioButton
             android:id="@+id/radioButton"
             android:layout_width="55dp"
             android:layout_height="55dp"
+            android:onClick="onRadioButtonClicked"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.912"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:onClick="onRadioButtonClicked"
             app:layout_constraintVertical_bias="0.363" />
 
         <RadioButton
             android:id="@+id/radioButton2"
             android:layout_width="55dp"
             android:layout_height="55dp"
+            android:onClick="onRadioButtonClicked"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.912"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:onClick="onRadioButtonClicked"
             app:layout_constraintVertical_bias="0.463" />
     </RadioGroup>
 
@@ -154,10 +128,10 @@
         android:background="@drawable/roundrctangle"
         app:layout_constraintBottom_toBottomOf="@+id/textView61"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.54"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.599" />
+        app:layout_constraintVertical_bias="0.776" />
 
     <TextView
         android:id="@+id/textView80"
@@ -165,14 +139,135 @@
         android:layout_height="wrap_content"
         android:text="Save"
         android:textColor="@color/white"
-        android:textStyle="bold"
         android:textSize="@dimen/_25sdp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.584" />
+        app:layout_constraintVertical_bias="0.752" />-->
+
+    <TableLayout
+        android:layout_width="344dp"
+        android:layout_height="356dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="MissingConstraints">
+        <TableRow
+            android:id="@+id/allNotif"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/allNotifText"
+                android:layout_width="244dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text="Notifications"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <Switch
+                android:id="@+id/allNotifSwitch"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/accActivity"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/accActivityText"
+                android:layout_width="261dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text="Account Activity"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <Switch
+                android:id="@+id/accActivitySwitch"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/guessPolicies"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/guessPoliciesText"
+                android:layout_width="261dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text="Guest Policies"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <Switch
+                android:id="@+id/guessPoliciesSwitch"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/offersUpdates"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/offersUpdatesText"
+                android:layout_width="261dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text="Offers And Updates"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <Switch
+                android:id="@+id/offersUpdatesSwitch"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+        <TableRow
+            android:id="@+id/reminder"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/reminderText"
+                android:layout_width="261dp"
+                android:layout_height="match_parent"
+                android:layout_column="1"
+                android:text="Reminders"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+            <Switch
+                android:id="@+id/reminderSwitch"
+                android:layout_width="78dp"
+                android:layout_height="match_parent"
+                android:layout_column="2"
+                tools:ignore="MissingConstraints,UseSwitchCompatOrMaterialXml"
+                tools:layout_editor_absoluteX="25dp"
+                tools:layout_editor_absoluteY="205dp" />
+        </TableRow>
+    </TableLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
