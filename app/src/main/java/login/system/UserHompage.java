@@ -2,8 +2,10 @@ package login.system;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.os.Handler;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -32,7 +34,7 @@ public class UserHompage extends AppCompatActivity {
         bottomNavigationView = findViewById(R.id.bottomNavigationView);
 
 
-        replaceFragment(new FragmentNewsfeed());
+        replaceFragment(new FragmentExplore());
         bottomNavigationView.setSelectedItemId(R.id.fragmentNewsfeed);
 
 
@@ -76,5 +78,22 @@ public class UserHompage extends AppCompatActivity {
 
     private void replaceFragment(Fragment fragment){
         getSupportFragmentManager().beginTransaction().replace(R.id.fragmentlayout,fragment).commit();
+    }
+    boolean DoublePressToExit=false;
+    @Override
+    public void onBackPressed() {
+        if (DoublePressToExit){
+            finishAffinity();
+        }else{
+            DoublePressToExit=true;
+            Toast.makeText(this,"Press again to exit", Toast.LENGTH_SHORT).show();
+            Handler handler=new Handler(getMainLooper());
+            handler.postDelayed(new Runnable() {
+                @Override
+                public void run() {
+                    DoublePressToExit=false;
+                }
+            },2000);
+        }
     }
 }

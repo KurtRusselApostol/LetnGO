@@ -18,8 +18,8 @@
             android:id="@+id/linearLayout_Terms_of_Service"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="30dp"
-            android:layout_marginEnd="20dp"
+            android:layout_marginStart="@dimen/_25sdp"
+            android:layout_marginEnd="@dimen/_25sdp"
             android:orientation="vertical"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -27,152 +27,147 @@
 
             <ImageButton
                 android:id="@+id/terms_back"
-                android:layout_width="50dp"
-                android:layout_height="50dp"
-                android:layout_marginTop="20dp"
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginTop="25dp"
                 android:background="#D3D3D3"
                 app:srcCompat="@drawable/black_arrow_btn"
                 tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
 
             <TextView
-                android:id="@+id/terms_of_services_title"
+                android:id="@+id/account_termstitle1"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="30dp"
-                android:layout_marginBottom="10dp"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerInParent="true"
                 android:text="Terms of Services "
                 android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textColor="#658B6F"
+                android:textSize="@dimen/_20sdp"
                 android:textStyle="bold"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText" />
 
             <TextView
-                android:id="@+id/textView95"
+                android:id="@+id/account_termstitle2"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_height="@dimen/_25sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:text="Terms of Services and Privacy Policy"
-                android:textSize="18sp"
-                android:textStyle="bold"
                 android:textColor="@color/black"
+                android:textSize="@dimen/_15sdp"
                 tools:ignore="HardcodedText" />
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/terms_first_bullet"
+            <TextView
+                android:id="@+id/account_terms1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginBottom="5dp"
-                android:text="•	Purpose of personal data collection and usage, types of personal data to be gathered, and how to collect.                               "
-                android:textAlignment="center"
-                android:textColor="@color/black"
-                android:textSize="16sp" />
-
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/terms_second_bullet"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
-                android:text="•	When shared with a third party, the recipient's identity, purpose of use, and objects delivered are all included.                       "
-                android:textAlignment="gravity"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-
+                android:text="Purpose of personal data collection and usage, types of personal data to be gathered, and how to collect."
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/terms_third_bullet"
+            <TextView
+                android:id="@+id/account_terms2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
+                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
-                android:text="•	The duration of personal information holding and use, as well as the procedure and mechanism for ending personal information                                    "
-                android:textAlignment="gravity"
-                android:textColor="@color/black"
-                android:textSize="16sp"
+                android:text="When shared with a third party, the recipient's identity, purpose of use, and objects delivered are all included."
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/terms_fourth_bullet"
+            <TextView
+                android:id="@+id/account_terms3"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
+                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
-                android:text="•	Consignment of personal information to the trustee.                                              "
-                android:textAlignment="gravity"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-
+                android:text="The duration of personal information holding and use, as well as the procedure and mechanism for ending personal information"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/terms_fifth_bullet"
+            <TextView
+                android:id="@+id/account_terms4"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
+                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
-                android:text="•	Rights of legal and user representatives, and how to exercise them.                                  "
-                android:textAlignment="gravity"
-                android:textColor="@color/black"
-                android:textSize="16sp"
-
+                android:text="Consignment of personal information to the trustee.                                              "
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/terms_first_paragraph"
+            <TextView
+                android:id="@+id/account_terms5"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginBottom="5dp"
+                android:drawableStart="@drawable/account_dot"
+                android:justificationMode="inter_word"
+                android:text="Rights of legal and user representatives, and how to exercise them.                                  "
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
+                tools:ignore="HardcodedText" />
+
+            <TextView
+                android:id="@+id/account_terms6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
                 android:text="These Terms of Service (Terms) are a legally binding agreement between you and Let n' Go that govern your use of the applications (the Let n' Go Platform). Let n' Go, we, us, or our refers to the Let n' Go when used in these Terms.                                             "
-                android:textAlignment="gravity"
-                android:textColor="@color/black"
-                android:textSize="16sp"
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/terms_second_paragraph"
+            <TextView
+                android:id="@+id/account_terms7"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginBottom="5dp"
                 android:justificationMode="inter_word"
-                android:text="The Let n' Go Platform is an online marketplace where users (referred to as Members) can post, provide, search for, and book services. Hosts offer accommodations (Accommodations), activities, excursions, and events (Experiences), and a variety of travel and other services (collectively, Host Services and each Host Service offering, a Listing). Guests search for, book, or use services. To access and use many aspects of the Let n' Go Platform, you must create an account and maintain your account details up to date. Let n' Go does not own, control, offer, or manage any Listings or Host Services as the provider of the Let n' Go Platform. Let n' Go is not a party to any agreements made directly between Hosts and Guests, nor is it a real estate broker, travel agency, or insurance company. Except as indicated in the Payments Terms of Service (Payment Terms), Let n' Go is not acting as an agent in any manner for any member.                                    "
-                android:textAlignment="gravity"
-                android:textColor="@color/black"
-                android:textSize="16sp"
+                android:text="  The Let n' Go Platform is an online marketplace where users (referred to as Members) can post, provide, search for, and book services. Hosts offer accommodations (Accommodations), activities, excursions, and events (Experiences), and a variety of travel and other services (collectively, Host Services and each Host Service offering, a Listing). Guests search for, book, or use services. To access and use many aspects of the Let n' Go Platform, you must create an account and maintain your account details up to date. Let n' Go does not own, control, offer, or manage any Listings or Host Services as the provider of the Let n' Go Platform. Let n' Go is not a party to any agreements made directly between Hosts and Guests, nor is it a real estate broker, travel agency, or insurance company. Except as indicated in the Payments Terms of Service (Payment Terms), Let n' Go is not acting as an agent in any manner for any member.                                    "
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/terms_third_paragraph"
+            <TextView
+                android:id="@+id/account_terms8"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
-                android:layout_marginBottom="10dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="5dp"
                 android:justificationMode="inter_word"
-                android:text="Other terms and policies, such as our Privacy Policy, which defines how we collect and handle personal data, and our Payments Terms, which govern any payment services provided to Members by the Let n' Go payment organizations (collectively Let n' Go Payments),  are available to supplement these Terms.                                                          "
-                android:textAlignment="gravity"
-                android:textColor="@color/black"
-                android:textSize="16sp"
+                android:text="  Other terms and policies, such as our Privacy Policy, which defines how we collect and handle personal data, and our Payments Terms, which govern any payment services provided to Members by the Let n' Go payment organizations (collectively Let n' Go Payments),  are available to supplement these Terms.                                                          "
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/terms_fourth_paragraph"
+            <TextView
+                android:id="@+id/account_terms9"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="50dp"
-                android:layout_marginBottom="50dp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:layout_marginBottom="100dp"
                 android:justificationMode="inter_word"
-                android:text="If you are a Host, you are responsible for understanding and adhering to all applicable laws, rules, regulations, and contracts with third parties.                                                 "
-                android:textAlignment="gravity"
-                android:textColor="@color/black"
-                android:textSize="16sp"
+                android:text="  If you are a Host, you are responsible for understanding and adhering to all applicable laws, rules, regulations, and contracts with third parties.                                                 "
+                android:textColor="#000000"
+                android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
         </LinearLayout>
