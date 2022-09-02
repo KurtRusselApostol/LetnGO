@@ -7,6 +7,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Spinner;
@@ -16,6 +17,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.letngo.R;
+import com.github.drjacky.imagepicker.ImagePicker;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.hbb20.CountryCodePicker;
@@ -23,6 +25,8 @@ import com.hbb20.CountryCodePicker;
 import java.util.HashMap;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import nav.account.Edit_Profile;
 
 public class start_hosting extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -33,6 +37,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
     TextView next;
     ImageView host_photo,back;
     CountryCodePicker countryCodePicker;
+    private Button img_host_id;
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -130,6 +135,18 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         // CALLING SPINNER METHOD
         dropdownSpinner();
 
+        // gets the picture
+        /** DONT UPDATE THE DEPENDECY OF IMAGEPICKER! */
+        img_host_id.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                ImagePicker.Companion.with(start_hosting.this)
+                        .crop()
+                        .galleryOnly()
+                        .maxResultSize(1000, 1000)
+                        .start(101);
+            }
+        });
     }
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -197,3 +214,4 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         return matcher.matches();
     }
 }
+
