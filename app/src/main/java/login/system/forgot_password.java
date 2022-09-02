@@ -9,6 +9,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.letngo.R;
@@ -52,6 +53,7 @@ public class forgot_password extends AppCompatActivity {
                 }
                 else{
                     forgotPassword();
+                    showResetPasswordAlert();
                 }
             }
         });
@@ -68,15 +70,35 @@ public class forgot_password extends AppCompatActivity {
                 if (task.isSuccessful()){
                     Toast.makeText(forgot_password.this, "Check your Email", Toast.LENGTH_LONG).show();
 //                    startActivity(new Intent(forgot_password.this, Change_password.class));
-                    startActivity(new Intent(forgot_password.this, new_signup.class));
-                    finish();
+
                 }
                 else {
-                    Toast.makeText(forgot_password.this, "Error : "+ task.getException().getMessage(), Toast.LENGTH_LONG).show();
+                    Toast.makeText(forgot_password.this, "Error: "+ task.getException().getMessage(), Toast.LENGTH_LONG).show();
                 }
             }
         });
 
+    }
+    private void showResetPasswordAlert() {
+        //Setup the Alert Builder
+        AlertDialog.Builder builder = new AlertDialog.Builder(forgot_password.this);
+        builder.setTitle("Reset Your Password");
+        builder.setMessage("You may now set a new password. Kindly check your email.");
+
+        //open email app when "continue" button is clicked
+        builder.setPositiveButton("Open Gmail", (dialog, which) -> {
+            startActivity(new Intent(forgot_password.this, new_login.class));
+            finish();
+            Intent intent = new Intent(Intent.ACTION_MAIN);
+            intent.addCategory(Intent.CATEGORY_APP_EMAIL);
+            intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK); //To email app
+            startActivity(intent);
+        });
+        //Create the AlertDialog
+        AlertDialog alertDialog = builder.create();
+
+        /*Show AlertDialog*/
+        alertDialog.show();
 
     }
 }
