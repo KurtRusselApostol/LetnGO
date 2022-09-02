@@ -82,13 +82,13 @@ public class new_signup extends AppCompatActivity {
                         int selection = password.getSelectionEnd();
                         if (passwordVisible){
                             //set drawable image here
-                            password.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.hidden, 0);
+                            password.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.hidden_eyeee, 0);
                             //for hide password
                             password.setTransformationMethod(PasswordTransformationMethod.getInstance());
                             passwordVisible = false;
                         }else {
                             //set drawable image here
-                            password.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.eye_1, 0);
+                            password.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.open_eye, 0);
                             //for show password
                             password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                             passwordVisible = true;
@@ -111,13 +111,13 @@ public class new_signup extends AppCompatActivity {
                         int selection = password.getSelectionEnd();
                         if (passwordVisible){
                             //set drawable image here
-                            confirmPass.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.hidden, 0);
+                            confirmPass.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.hidden_eyeee, 0);
                             //for hide password
                             confirmPass.setTransformationMethod(PasswordTransformationMethod.getInstance());
                             passwordVisible = false;
                         }else {
                             //set drawable image here
-                            confirmPass.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.eye_1, 0);
+                            confirmPass.setCompoundDrawablesRelativeWithIntrinsicBounds(0, 0, R.drawable.open_eye, 0);
                             //for show password
                             confirmPass.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
                             passwordVisible = true;
