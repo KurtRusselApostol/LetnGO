@@ -85,7 +85,7 @@ public class Create_post extends AppCompatActivity {
         if(requestCode==PICK_IMAGE_REQUEST && resultCode == RESULT_OK && data != null && data.getData() != null)
         {
             mImageUri = data.getData();
-            Picasso.with(this).load(mImageUri).into(showimage);
+            Picasso.get().load(mImageUri).into(showimage);
         }
 
     }
