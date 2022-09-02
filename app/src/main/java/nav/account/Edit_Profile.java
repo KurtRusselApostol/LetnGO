@@ -34,7 +34,7 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
-import com.squareup.picasso.Picasso;
+
 
 import java.util.HashMap;
 
@@ -114,8 +114,8 @@ public class Edit_Profile extends AppCompatActivity {
                 if (task.getResult().exists()) {
 
                     DataSnapshot dataSnapshot = task.getResult();
-                    databaseReference = FirebaseDatabase.getInstance().getReference().child("User");
-                    storageProfilePic = FirebaseStorage.getInstance().getReference().child("Profile Pic");
+                    databaseReference = FirebaseDatabase.getInstance().getReference().child("User_account");
+                    storageProfilePic = FirebaseStorage.getInstance().getReference().child("Profile Picture");
                     String firstname = String.valueOf(dataSnapshot.child("FirstName").getValue());
                     String lastname = String.valueOf(dataSnapshot.child("LastName").getValue());
                     String email = String.valueOf(dataSnapshot.child("Email").getValue());
@@ -261,10 +261,6 @@ public class Edit_Profile extends AppCompatActivity {
     }
 
     private void uploadProfileImage() {
-        final ProgressDialog progressDialog = new ProgressDialog(this);
-        progressDialog.setTitle("Profile Picture");
-        progressDialog.setMessage("Loading");
-        progressDialog.show();
 
         if(uri != null){
             final StorageReference fileRef = storageProfilePic
@@ -289,13 +285,12 @@ public class Edit_Profile extends AppCompatActivity {
                         userMap.put("image",path);
 
                         databaseReference.child(mAuth.getCurrentUser().getUid()).updateChildren(userMap);
-                        progressDialog.dismiss();
                     }
                 }
             });
         }
         else{
-            progressDialog.dismiss();
+
             Toast.makeText(this, "Image not selected", Toast.LENGTH_SHORT).show();
         }
     }
