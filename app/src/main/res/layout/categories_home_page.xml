@@ -128,7 +128,7 @@
         app:itemIconSize="@dimen/_30sdp"
         app:labelVisibilityMode="unlabeled"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:menu="@menu/navigation_menu"
+        app:menu="@menu/navigation_menuguest"
         android:background="#FFFFFF"
         app:itemRippleColor="@android:color/transparent"
         app:itemIconTint="@drawable/item_selector"
