@@ -93,7 +93,7 @@
                     app:layout_constraintHorizontal_bias="0.498"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/textView2" />
-                    />
+
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -181,7 +181,7 @@
                     android:layout_below="@+id/layout_last_name"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -208,8 +208,8 @@
                     android:layout_height="80dp"
                     android:layout_below="@+id/layout_email"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_17sdp"
                     android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -237,8 +237,8 @@
                     android:layout_height="@dimen/_61sdp"
                     android:layout_below="@+id/layout_birthday"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_17sdp"
                     android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -265,7 +265,7 @@
                     android:layout_height="@dimen/_61sdp"
                     android:layout_below="@+id/layout_contact"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
@@ -294,7 +294,7 @@
                     android:layout_height="@dimen/_61sdp"
                     android:layout_below="@+id/layout_age"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
@@ -304,31 +304,21 @@
                     app:layout_constraintWidth_percent="0.7">
 
                     <!--
-                    <TextView
-                        android:id="@+id/tv_gender"
-                        android:layout_width="match_parent"
-                        android:layout_height="20dp"
-                        android:layout_weight="1"
-                        android:layout_marginTop="10dp"
-                        android:text="Gender"
-                        android:paddingLeft="25dp"
-                        android:textColor="#808080"
-                        android:textSize="15sp"/>
-
                     <Spinner
                         android:id="@+id/spinner_gender"
                         android:layout_width="match_parent"
                         android:layout_height="40dp"/>
-                    -->
-                    <EditText
+ -->
+
+                    <Spinner
                         android:id="@+id/ed_Gender"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
-                        android:hint="Gender"
                         android:padding="@dimen/_19sdp"
                         android:textColor="#000000"
                         android:textColorHint="#808080"
                         android:textSize="15sp" />
+
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!--Address Begin-->
@@ -338,7 +328,7 @@
                     android:layout_height="@dimen/_61sdp"
                     android:layout_below="@+id/layout_gender"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
@@ -365,7 +355,7 @@
                     android:layout_height="@dimen/_61sdp"
                     android:layout_below="@+id/layout_address"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
@@ -415,7 +405,7 @@
                     android:layout_height="@dimen/_61sdp"
                     android:layout_below="@+id/line_view"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
@@ -442,7 +432,7 @@
                     android:layout_height="@dimen/_61sdp"
                     android:layout_below="@+id/layout_bank_account"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_17sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"

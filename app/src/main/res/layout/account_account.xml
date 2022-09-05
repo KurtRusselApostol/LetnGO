@@ -45,13 +45,20 @@
                 android:layout_height="@dimen/_95sdp"
                 android:background="@color/Light_grey">
 
-                <ImageView
-                    android:id="@+id/up_profilePic"
-                    android:layout_width="@dimen/_64sdp"
-                    android:layout_height="@dimen/_64sdp"
+<!--                <ImageView-->
+<!--                    android:id="@+id/up_profilePic"-->
+<!--                    android:layout_width="@dimen/_64sdp"-->
+<!--                    android:layout_height="@dimen/_64sdp"-->
+<!--                    android:layout_marginStart="@dimen/_8sdp"-->
+<!--                    android:layout_marginTop="@dimen/_8sdp"-->
+<!--                    app:srcCompat="@drawable/account_user_icon" />-->
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/my_avatar"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
                     android:layout_marginStart="@dimen/_8sdp"
-                    android:layout_marginTop="@dimen/_8sdp"
-                    app:srcCompat="@drawable/account_user_icon" />
+                    android:layout_marginTop="@dimen/_8sdp" />
+<!--                    app:srcCompat="@drawable/account_user_icon" />-->
 
                 <TextView
                     android:id="@+id/up_fullName"

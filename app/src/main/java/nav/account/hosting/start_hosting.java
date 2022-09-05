@@ -1,6 +1,8 @@
 package nav.account.hosting;
 
+import android.app.ProgressDialog;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.util.Patterns;
@@ -14,15 +16,27 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.letngo.R;
 import com.github.drjacky.imagepicker.ImagePicker;
+import com.github.drjacky.imagepicker.constant.ImageProvider;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
+import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.OnProgressListener;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.UploadTask;
 import com.hbb20.CountryCodePicker;
 
+import java.net.URI;
 import java.util.HashMap;
+import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -37,7 +51,12 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
     TextView next;
     ImageView host_photo,back;
     CountryCodePicker countryCodePicker;
-    private Button img_host_id;
+    private ImageView img_host_id;
+    private Button upload_pic;
+    public Uri imageURI;
+    private FirebaseStorage storage;
+    private StorageReference storageReference;
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -51,6 +70,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         super.onCreate(savedInstanceState);
         setContentView(R.layout.account_hosting_start_hosting);
 
+
         //SETTING INITIALIZATIONS
         full_name = findViewById(R.id.ed_host_full_name);
         email = findViewById(R.id.ed_host_email);
@@ -61,6 +81,12 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         host_photo = findViewById(R.id.img_host_id);
         back = findViewById(R.id.img_Cancel);
         next = findViewById(R.id.tv_next);
+        storage = FirebaseStorage.getInstance();
+        storageReference = storage.getReference();
+
+        img_host_id = findViewById(R.id.img_host_id);
+        upload_pic = findViewById(R.id.upload_pic);
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -135,21 +161,82 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         // CALLING SPINNER METHOD
         dropdownSpinner();
 
-        // gets the picture
-        /** DONT UPDATE THE DEPENDECY OF IMAGEPICKER! */
-        img_host_id.setOnClickListener(new View.OnClickListener() {
+//        upload_pic.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                choosepicture();
+//            }
+//        });
+        upload_pic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 ImagePicker.Companion.with(start_hosting.this)
                         .crop()
+//                        .provider(ImageProvider.BOTH)
                         .galleryOnly()
                         .maxResultSize(1000, 1000)
                         .start(101);
             }
         });
+
     }
 
-/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//    private void choosepicture() {
+//        Intent intent= new Intent();
+//        intent.setType("image/*");
+//        intent.setAction(Intent.ACTION_GET_CONTENT);
+//        startActivityForResult(intent, 1);
+//    }
+
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode==101 && resultCode==RESULT_OK && data!=null && data.getData()!=null){
+            imageURI = data.getData();
+            img_host_id.setImageURI(imageURI);
+            uploadPicture();
+        }
+        else {
+            Toast.makeText(getApplicationContext(), "No image selected!", Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    private void uploadPicture() {
+        final ProgressDialog pd = new ProgressDialog(this);
+        pd.setTitle("Uploading Image...");
+        pd.show();
+
+        final String randomkey = UUID.randomUUID().toString();
+
+        StorageReference mountainsRef = storageReference.child("image/*" + randomkey);
+
+        mountainsRef.putFile(imageURI)
+                .addOnSuccessListener(new OnSuccessListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onSuccess(UploadTask.TaskSnapshot taskSnapshot) {
+                        pd.dismiss();
+                        Snackbar.make(findViewById(android.R.id.content),"Image Uploaded",Snackbar.LENGTH_LONG).show();
+                    }
+                })
+                .addOnFailureListener(new OnFailureListener() {
+                    @Override
+                    public void onFailure(@NonNull Exception exception) {
+                        pd.dismiss();
+                        Toast.makeText(getApplicationContext(),"Failed to Upload", Toast.LENGTH_LONG).show();;
+                    }
+                })
+                .addOnProgressListener(new OnProgressListener<UploadTask.TaskSnapshot>() {
+                    @Override
+                    public void onProgress(@NonNull UploadTask.TaskSnapshot taskSnapshot) {
+                        double progressPercent = (100* taskSnapshot.getBytesTransferred() / taskSnapshot.getTotalByteCount());
+                        pd.setMessage("Percentage" + (int)progressPercent + "%");
+                    }
+                });
+
+
+
+    }
+    /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     public void host_Registration()
     {
@@ -213,5 +300,6 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         Matcher matcher = pattern.matcher(email);
         return matcher.matches();
     }
+
 }
 

@@ -21,10 +21,8 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.letngo.R;
-import com.google.android.gms.auth.api.identity.SignInCredential;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
-import com.google.android.gms.auth.api.signin.GoogleSignInApi;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
@@ -100,7 +98,7 @@ public class new_login extends AppCompatActivity {
         });
 
 
-        //For  show and hide password
+        //For show and hide password
         password.setOnTouchListener((v, event) -> {
             final int Right = 2;
             if (event.getAction() == MotionEvent.ACTION_UP) {
@@ -127,7 +125,7 @@ public class new_login extends AppCompatActivity {
 
         });
 
-        google = findViewById(R.id.btn_google);
+        google = findViewById(R.id.btn_google); //Google Sign In button
 
 
         //configure google sign in
@@ -140,18 +138,20 @@ public class new_login extends AppCompatActivity {
 
             Log.d(TAG, "onClick: begin Google SignIn");
             Intent intent = googleSignInClient.getSignInIntent();
-            startActivityForResult(intent, RC_SIGN_IN);
+            startActivityForResult(intent, RC_SIGN_IN); //deprecated code yet still working
         });
 
     }
 
-    //NOTICE!!!
-    //For future developers: If Continue with Google failed with error "Something went WRONG",
-    //that means that your SHA-1 key is not registered to the Firebase. Line 158 will return
-    //DEVELOPER_ERROR APIException: 10 if you don't have SHA-1 key.
-    //To be able to debug and test Continue with Google, go to Terminal and type
-    //'./gradlew.bat signingReport' without the quotations. Then, grab the SHA-1 key and go to
-    //Firebase -> Project Settings the scroll down to Your apps and paste the SHA-1 key from the terminal.
+    /*
+    NOTICE!!!
+    For future developers: If Continue with Google failed with error "Something went WRONG",
+    that means that your SHA-1 key of your debugger is not registered to the Firebase. Line 163 will
+    return DEVELOPER_ERROR APIException: 10 if you don't have SHA-1 key registered.
+    To be able to debug and test Continue with Google, go to Terminal and type
+    './gradlew.bat signingReport' without the quotations. Then, grab the SHA-1 key and go to
+    Firebase -> Project Settings then scroll down to Your apps and paste the SHA-1 key from the terminal.
+    */
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
@@ -168,6 +168,7 @@ public class new_login extends AppCompatActivity {
         }
     }
 
+    //When Google Sign In Succeeds
     private void firebaseAuthWithGoogle(GoogleSignInAccount account) {
 
         Log.d(TAG, "firebaseAuthWithGoogle: begin fireeeeee");
@@ -189,6 +190,11 @@ public class new_login extends AppCompatActivity {
                         Toast.makeText(new_login.this, "Account Created...\n" + email, Toast.LENGTH_LONG).show();
                     } else {
                         Toast.makeText(new_login.this, "Login Successfully\n" + email, Toast.LENGTH_LONG).show();
+
+                        //Marking Google Sign In True for class GLoginChecker using SharedPreference
+                        GLoginChecker gLoginChecker = new GLoginChecker(new_login.this);
+                        gLoginChecker.onGLogin();
+
                         Intent intent = new Intent(new_login.this, UserHompage.class);
                         startActivity(intent);
                     }
@@ -208,6 +214,8 @@ public class new_login extends AppCompatActivity {
                 catch (Exception e) {
                     //do nothing
                 }
+
+                //This stores login information for persistent login/session saving
                 User user = new User (mail, passw);
                 try {
                     LoginInfoLocal loginInfoLocal = new LoginInfoLocal(new_login.this);

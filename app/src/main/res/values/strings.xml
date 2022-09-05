@@ -374,15 +374,6 @@
     <string name="contact_us">Contact us</string>
     <string name="submit">Submit</string>
     <string name="content_desc_image">image</string>
-    
-    <!--privacy policy spinner-->
-    <string-array name="ppolicy_feedback">
-        <item>Please Select</item>
-        <item>b</item>
-        <item>c</item>
-        <item>d</item>
-    </string-array>
-    <string name ="Please_select">please select</string>
 
 
 </resources>
