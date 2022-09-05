@@ -21,8 +21,10 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.letngo.R;
+import com.google.android.gms.auth.api.identity.SignInCredential;
 import com.google.android.gms.auth.api.signin.GoogleSignIn;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
+import com.google.android.gms.auth.api.signin.GoogleSignInApi;
 import com.google.android.gms.auth.api.signin.GoogleSignInClient;
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions;
 import com.google.android.gms.common.api.ApiException;
@@ -47,7 +49,7 @@ public class new_login extends AppCompatActivity {
     Button google;
     ImageButton back;
     private GoogleSignInClient googleSignInClient;
-    private FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    private FirebaseAuth mAuth;
     @SuppressLint("ClickableViewAccessibility")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +59,7 @@ public class new_login extends AppCompatActivity {
         email = findViewById(R.id.ed_username);
         password = findViewById(R.id.ed_password);
 
+        mAuth = FirebaseAuth.getInstance();
 
         back = findViewById(R.id.imageCancel);
 
@@ -142,6 +145,13 @@ public class new_login extends AppCompatActivity {
 
     }
 
+    //NOTICE!!!
+    //For future developers: If Continue with Google failed with error "Something went WRONG",
+    //that means that your SHA-1 key is not registered to the Firebase. Line 158 will return
+    //DEVELOPER_ERROR APIException: 10 if you don't have SHA-1 key.
+    //To be able to debug and test Continue with Google, go to Terminal and type
+    //'./gradlew.bat signingReport' without the quotations. Then, grab the SHA-1 key and go to
+    //Firebase -> Project Settings the scroll down to Your apps and paste the SHA-1 key from the terminal.
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
