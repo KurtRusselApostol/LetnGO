@@ -374,6 +374,11 @@
     <string name="contact_us">Contact us</string>
     <string name="submit">Submit</string>
     <string name="content_desc_image">image</string>
+    <string-array name="gender">
+        <item> Male </item>
+        <item> Female </item>
+        <item> Others </item>
+    </string-array>
 
 
 </resources>
