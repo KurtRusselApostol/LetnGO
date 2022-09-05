@@ -216,7 +216,6 @@ public class Edit_Profile extends AppCompatActivity {
                 }
 
             });
-
         });
 
         // gets the picture
