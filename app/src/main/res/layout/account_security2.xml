@@ -25,10 +25,10 @@
         android:layout_width="48dp"
         android:layout_height="48dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="30dp"
-        android:layout_marginTop="40dp"
-        android:background="#DEE1DD"
-        android:src="@drawable/arrow_back"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#00FFFFFF"
+        android:src="@drawable/back_arrow"
         tools:ignore="SpeakableTextPresentCheck">
 
     </ImageButton>
@@ -67,7 +67,7 @@
         android:paddingStart="80dp"
         android:paddingEnd="80dp"
         android:text="@string/login_message1"
-        android:textColor="@color/black"
+        android:textColor="#2F575D"
         android:textSize="18sp" />
 
     <RadioButton
@@ -98,7 +98,7 @@
         android:layout_marginStart="110dp"
         android:layout_marginTop="530dp"
         android:layout_marginEnd="110dp"
-        android:background="@drawable/custom_button"
+        android:background="@drawable/button_gradient"
         android:text="@string/save"
         android:textAlignment="center"
         android:textAllCaps="false"

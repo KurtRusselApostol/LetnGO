@@ -23,6 +23,8 @@ import com.example.letngo.R;
 import com.github.drjacky.imagepicker.ImagePicker;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.OnFailureListener;
+import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -34,6 +36,8 @@ import com.google.firebase.database.ValueEventListener;
 import com.google.firebase.storage.FirebaseStorage;
 import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.StorageTask;
+import com.google.firebase.storage.UploadTask;
+import com.squareup.picasso.Picasso;
 
 
 import java.util.HashMap;
@@ -67,7 +71,8 @@ public class Edit_Profile extends AppCompatActivity {
     FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
     FirebaseStorage storage = FirebaseStorage.getInstance();
-    StorageReference storageRef = storage.getReference();
+    StorageReference storageRef = FirebaseStorage.getInstance().getReference();
+
 
     String userUid;
     {
@@ -84,8 +89,6 @@ public class Edit_Profile extends AppCompatActivity {
 
         back = findViewById(R.id.editprofile_back);
         update = findViewById(R.id.btn_update);
-
-
         mAuth = FirebaseAuth.getInstance();
 
 
@@ -112,10 +115,17 @@ public class Edit_Profile extends AppCompatActivity {
                 Log.e("firebase", "Error getting data", task.getException());
             } else {
                 if (task.getResult().exists()) {
-
                     DataSnapshot dataSnapshot = task.getResult();
+
                     databaseReference = FirebaseDatabase.getInstance().getReference().child("User_account");
                     storageProfilePic = FirebaseStorage.getInstance().getReference().child("Profile Picture");
+                    String profilePic = String.valueOf(dataSnapshot.child("image").getValue());
+
+
+
+
+
+
                     String firstname = String.valueOf(dataSnapshot.child("FirstName").getValue());
                     String lastname = String.valueOf(dataSnapshot.child("LastName").getValue());
                     String email = String.valueOf(dataSnapshot.child("Email").getValue());
@@ -148,13 +158,10 @@ public class Edit_Profile extends AppCompatActivity {
 
 
         back.setOnClickListener(v -> onBackPressed());
-
         update.setOnClickListener(view -> {
-
             reference = FirebaseDatabase.getInstance().getReference("User_account");
             reference.child(userUid).get().addOnCompleteListener(task -> {
                 task.getResult();
-
                 /**
                  * can only show one result!
                  */
@@ -225,19 +232,17 @@ public class Edit_Profile extends AppCompatActivity {
             }
         });
 
-
+        getUserPic();
     }
-    private void getUserinfo(){
-        databaseReference.child(mAuth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
+
+    private void getUserPic(){
+        reference.child(mAuth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists() && snapshot.getChildrenCount() > 0){
-
-                    String name = snapshot.child("name").getValue().toString();
-
-                    if (snapshot.hasChild("image")){
+                    if(snapshot.hasChild("image")){
                         String image = snapshot.child("image").getValue().toString();
-
+                        Picasso.get().load(image).into(captureImage);
                     }
                 }
             }
@@ -248,6 +253,8 @@ public class Edit_Profile extends AppCompatActivity {
             }
         });
     }
+
+
     // sets the picture
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
@@ -283,7 +290,6 @@ public class Edit_Profile extends AppCompatActivity {
 
                         HashMap<String, Object> userMap = new HashMap<>();
                         userMap.put("image",path);
-
                         databaseReference.child(mAuth.getCurrentUser().getUid()).updateChildren(userMap);
                     }
                 }

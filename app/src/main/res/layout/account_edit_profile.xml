@@ -15,73 +15,97 @@
         android:background="#DEE1DD">
 
 
+
         <RelativeLayout
             android:id="@+id/rl_one_login"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            >
+            android:layout_height="wrap_content">
 
-            <View
-                android:id="@+id/v_one_login"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_154sdp" />
 
-            <RelativeLayout
-                android:layout_marginTop="@dimen/_69sdp"
+            <androidx.constraintlayout.widget.ConstraintLayout
                 android:id="@+id/rl_two_login"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_50sdp">
 
                 <TextView
-                    android:textStyle="bold"
                     android:id="@+id/tv_one_login"
-                    android:textSize="28sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="EDIT YOUR PROFILE"
                     android:textAlignment="center"
                     android:textColor="@color/black"
-                    android:text="E D I T Y O U R P R O F I L E"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
-
-                <TextView
-                    android:layout_below="@+id/tv_one_login"
-                    android:textSize="15sp"
-                    android:textAlignment="center"
-                    android:textColor="@color/black"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:text="FILL OUT YOUR INFORMATION"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content" />
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    tools:ignore="MissingConstraints" />
 
                 <!-- Pa edit po ito -->
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tv_one_login"
+                    android:text="FILL OUT YOUR INFORMATION"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
+                    app:layout_constraintTop_toBottomOf="@+id/tv_one_login"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="0dp" />
 
                 <Button
                     android:id="@+id/gallery_Pick"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-
+                    android:layout_height="40dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/button_gradient"
                     android:padding="10dp"
-                    android:text="Image picker"
-                    android:textSize="18sp"
-                    />
-                <ImageView
+                    android:text="Choose Image"
+                    android:textSize="15sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/my_avatar" />
+
+<!--                <ImageView-->
+<!--                    android:id="@+id/my_avatar"-->
+<!--                    android:layout_width="100dp"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:layout_marginTop="16dp"-->
+<!--                    android:elevation="1dp"-->
+<!--                    android:padding="@dimen/_20sdp"-->
+<!--                    app:cardCornerRadius="@dimen/_10sdp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintHorizontal_bias="0.498"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
+                <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/my_avatar"
-                    android:layout_width="100dp"
-                    android:layout_height="100dp"
-                    android:layout_margin="@dimen/_5sdp"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_marginTop="16dp"
                     android:elevation="1dp"
+                    android:padding="@dimen/_20sdp"
                     app:cardCornerRadius="@dimen/_10sdp"
-                    android:padding="@dimen/_20sdp"/>
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.498"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView2" />
+                    />
 
-
-            </RelativeLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
             <ImageButton
                 android:id="@+id/editprofile_back"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:srcCompat="@drawable/arrow_back" />
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:backgroundTint="#00FFFFFF"
+                android:src="@drawable/back_arrow" />
 
         </RelativeLayout>
+
 
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent"
@@ -102,8 +126,8 @@
                     android:layout_height="@dimen/_61sdp"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_5sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -115,7 +139,7 @@
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
                         android:hint="First Name"
-                        android:padding="@dimen/_19sdp"
+                        android:padding="@dimen/_18sdp"
                         android:textColor="#000000"
                         android:textColorHint="#808080"
                         android:textSize="15sp" />
@@ -128,8 +152,8 @@
                     android:layout_height="@dimen/_61sdp"
                     android:layout_below="@+id/layout_first_name"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_4sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
                     app:layout_constraintEnd_toEndOf="parent"
@@ -156,8 +180,8 @@
                     android:layout_height="@dimen/_61sdp"
                     android:layout_below="@+id/layout_last_name"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_17sdp"
                     android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_marginTop="@dimen/_17sdp"
                     android:layout_marginEnd="@dimen/_15sdp"
                     android:textColorHint="#808080"
                     app:layout_constraintEnd_toEndOf="parent"
