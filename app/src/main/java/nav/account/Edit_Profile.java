@@ -217,7 +217,7 @@ public class Edit_Profile extends AppCompatActivity {
 
             });
             //testing
-
+            //test2
         });
 
         // gets the picture
