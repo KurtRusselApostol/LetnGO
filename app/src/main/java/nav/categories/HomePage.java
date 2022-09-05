@@ -13,12 +13,15 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
+import login.system.GLoginChecker;
 import login.system.LoginInfoLocal;
 import nav.explore.FragmentExplore;
 import nav.account.Fragment_GuestAccount;
 import com.example.letngo.Fragment_GuestNewsfeed;
 import com.example.letngo.Fragment_GuestNotification;
 import com.example.letngo.R;
+import com.google.android.gms.auth.api.signin.GoogleSignIn;
+import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationBarView;
 
@@ -38,9 +41,14 @@ public class HomePage extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottomNavView);
 
+        //Lines 46-51 initializes accounts since this is the no-login version of Homepage. These will always run.
         //Clearing user login info
         LoginInfoLocal logout = new LoginInfoLocal(HomePage.this);
         logout.clearLogin();
+
+        //Marking Google Sign In False for class GLoginChecker using SharedPreference
+        GLoginChecker gLogOut = new GLoginChecker(HomePage.this);
+        gLogOut.offGLogin();
 
         replaceFragment(new FragmentExplore());
         bottomNavigationView.setSelectedItemId(R.id.fragmentExplore);
