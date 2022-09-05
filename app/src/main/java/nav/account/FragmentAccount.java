@@ -7,14 +7,26 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.TextView;
 
+import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
 import com.example.letngo.R;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.storage.FirebaseStorage;
+import com.google.firebase.storage.StorageReference;
+import com.google.firebase.storage.StorageTask;
+import com.squareup.picasso.Picasso;
+
 
 
 import nav.account.help.GetHelp;
@@ -31,7 +43,11 @@ public class FragmentAccount extends Fragment {
 
     public CardView start, manage, edit, how, logout, notif_settings,
             terms_services, safety, get_help, payment, security, feedback,privacy;
-
+    DatabaseReference reference;
+    private DatabaseReference databaseReference;
+    private StorageReference storageProfilePic;
+    private FirebaseAuth mAuth;
+    private ImageView captureImage;
     public FragmentAccount() {
         // Required empty public constructor
 
@@ -44,6 +60,9 @@ public class FragmentAccount extends Fragment {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        reference = FirebaseDatabase.getInstance().getReference("User_account");
+        mAuth = FirebaseAuth.getInstance();
+        getUserPic();
 
     }
 
@@ -57,8 +76,9 @@ public class FragmentAccount extends Fragment {
         View v = inflater.inflate(R.layout.account_account, container, false);
 
         ///////////////Button Id Layout//////////////////////
-        TextView fullName = v.findViewById(R.id.up_fullName);
+        TextView fullName = v.findViewById(R.id.up_fullName); //edit
         TextView timeline = v.findViewById(R.id.btn_timeline);
+        captureImage = v.findViewById(R.id.my_avatar);
         start = v.findViewById(R.id.btn_list_space);
         manage = v.findViewById(R.id.btn_host_exp);
         edit = v.findViewById(R.id.btn_personal_info);
@@ -180,5 +200,22 @@ public class FragmentAccount extends Fragment {
 
         }
     }
+    private void getUserPic(){
+        reference.child(mAuth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                if(snapshot.exists() && snapshot.getChildrenCount() > 0){
+                    if(snapshot.hasChild("image")){
+                        String image = snapshot.child("image").getValue().toString();
+                        Picasso.get().load(image).into(captureImage);
+                    }
+                }
+            }
 
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+    }
 }
