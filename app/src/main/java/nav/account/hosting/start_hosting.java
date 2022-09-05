@@ -22,6 +22,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.letngo.R;
 import com.github.drjacky.imagepicker.ImagePicker;
+import com.github.drjacky.imagepicker.constant.ImageProvider;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
@@ -50,8 +51,8 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
     TextView next;
     ImageView host_photo,back;
     CountryCodePicker countryCodePicker;
-    private Button img_host_id;
-    private ImageView upload_pic;
+    private ImageView img_host_id;
+    private Button upload_pic;
     public Uri imageURI;
     private FirebaseStorage storage;
     private StorageReference storageReference;
@@ -82,6 +83,10 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         next = findViewById(R.id.tv_next);
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
+
+        img_host_id = findViewById(R.id.img_host_id);
+        upload_pic = findViewById(R.id.upload_pic);
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -156,29 +161,43 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         // CALLING SPINNER METHOD
         dropdownSpinner();
 
+//        upload_pic.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                choosepicture();
+//            }
+//        });
         upload_pic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                choosepicture();
+                ImagePicker.Companion.with(start_hosting.this)
+                        .crop()
+//                        .provider(ImageProvider.BOTH)
+                        .galleryOnly()
+                        .maxResultSize(1000, 1000)
+                        .start(101);
             }
         });
 
     }
 
-    private void choosepicture() {
-        Intent intent= new Intent();
-        intent.setType("image/*");
-        intent.setAction(Intent.ACTION_GET_CONTENT);
-        startActivityForResult(intent, 1);
-    }
+//    private void choosepicture() {
+//        Intent intent= new Intent();
+//        intent.setType("image/*");
+//        intent.setAction(Intent.ACTION_GET_CONTENT);
+//        startActivityForResult(intent, 1);
+//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==1 && resultCode==RESULT_OK && data!=null && data.getData()!=null){
+        if(requestCode==101 && resultCode==RESULT_OK && data!=null && data.getData()!=null){
             imageURI = data.getData();
-            upload_pic.setImageURI(imageURI);
+            img_host_id.setImageURI(imageURI);
             uploadPicture();
+        }
+        else {
+            Toast.makeText(getApplicationContext(), "No image selected!", Toast.LENGTH_SHORT).show();
         }
     }
 
