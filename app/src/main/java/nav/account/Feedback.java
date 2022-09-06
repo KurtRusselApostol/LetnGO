@@ -30,7 +30,7 @@ public class Feedback extends AppCompatActivity {
         //Spinners
         Spinner spinner = findViewById(R.id.spinner_topic);
         ArrayAdapter<CharSequence> adapter = ArrayAdapter.createFromResource(this,
-                R.array.ppolicy_feedback, android.R.layout.simple_spinner_item);
+                R.array.ppolicyy, android.R.layout.simple_spinner_item);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner.setPrompt("Please select");
         spinner.setAdapter(adapter);
@@ -50,7 +50,7 @@ public class Feedback extends AppCompatActivity {
 
         Spinner spinner1 = findViewById(R.id.spinner_subtopic);
         ArrayAdapter<CharSequence> adapter1 = ArrayAdapter.createFromResource(this,
-                R.array.ppolicy_feedback, android.R.layout.simple_spinner_item);
+                R.array.ppolicyy, android.R.layout.simple_spinner_item);
         adapter1.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         spinner1.setPrompt("Please select");
         spinner1.setAdapter(adapter1);

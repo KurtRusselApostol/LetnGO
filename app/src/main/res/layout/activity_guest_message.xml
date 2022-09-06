@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -10,89 +11,91 @@
 
     <RelativeLayout
         android:id="@+id/responsiveText"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:textAlignment="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         tools:ignore="MissingConstraints">
 
+        <ImageButton
+            android:id="@+id/imageCancel"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#00FFFFFF"
+            android:src="@drawable/back_arrow"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/activity_messages"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="@dimen/_50sdp"
             android:layout_marginEnd="32dp"
+            android:fontFamily="@font/poppins_bold"
             android:text="Messages"
-            android:textColor="@color/colorTrendingEnd"
-            android:textSize="40sp"
+            android:textColor="#7BAA98"
+            android:textSize="@dimen/_40sdp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.061"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.083"
             tools:ignore="HardcodedText" />
 
-
-        <TextView
-            android:id="@+id/newsfeedGuestNote"
+        <View
+            android:id="@+id/activity_line"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="185dp"
-            android:layout_marginRight="20dp"
-            android:gravity="fill_horizontal"
-            android:text="Once you log in, you'll can create and view your messages here."
-            android:textColor="@color/black"
-            android:textSize="20dp" />
+            android:layout_height="3dp"
+            android:layout_alignStart="@id/activity_messages"
+            android:layout_marginEnd="@dimen/_15sdp"
+            android:layout_below="@id/activity_messages"
+            android:background="#2F575D" />
 
         <TextView
-            android:id="@+id/newsfeedGuest"
+            android:id="@+id/activity_logintoview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="40dp"
-            android:layout_marginTop="140dp"
-            android:layout_marginRight="20dp"
-            android:text="Log in to view your messages"
-            android:textColor="@color/black"
-            android:textSize="25dp"
+            android:layout_below="@id/activity_line"
+            android:layout_alignStart="@id/activity_messages"
+            android:layout_alignEnd="@id/activity_line"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_medium"
+            android:justificationMode="inter_word"
+            android:text="Log in to view your messages."
+            android:textColor="#000000"
+            android:textSize="@dimen/_18sdp"
             android:textStyle="bold"
             tools:ignore="MissingConstraints" />
 
-        <View
-            android:id="@+id/view"
+        <TextView
+            android:id="@+id/activity_onceyou"
             android:layout_width="wrap_content"
-            android:layout_height="1dp"
-            android:layout_marginStart="32dp"
-            android:layout_marginTop="130dp"
-            android:layout_marginEnd="32dp"
-            android:background="@color/colorTrendingEnd"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.5"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/textView" />
+            android:layout_height="wrap_content"
+            android:layout_below="@id/activity_logintoview"
+            android:layout_alignStart="@id/activity_messages"
+            android:layout_alignEnd="@id/activity_logintoview"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:fontFamily="@font/poppins_light"
+            android:justificationMode="inter_word"
+            android:text="Once you log in, you'll can create and view your messages here."
+            android:textColor="#2F575D"
+            android:textSize="@dimen/_15sdp" />
 
         <Button
-            android:id="@+id/buttonLogin"
+            android:id="@+id/activity_loginbutton"
             android:layout_width="139dp"
             android:layout_height="54dp"
-            android:layout_marginStart="35dp"
-            android:layout_marginTop="250dp"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:layout_below="@id/activity_onceyou"
             android:background="@drawable/rounded_button"
+            android:layout_alignStart="@id/activity_messages"
             android:text="Log in"
-            android:textColor="@color/white"
+            android:textColor="#FFFFFF"
             tools:ignore="MissingConstraints,TextContrastCheck"
             tools:layout_editor_absoluteX="340dp"
-            tools:layout_editor_absoluteY="250dp"
-            android:layout_marginBottom="100dp"/>
+            tools:layout_editor_absoluteY="250dp" />
 
     </RelativeLayout>
 
-</ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

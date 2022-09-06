@@ -22,7 +22,6 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.letngo.R;
 import com.github.drjacky.imagepicker.ImagePicker;
-import com.github.drjacky.imagepicker.constant.ImageProvider;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
@@ -34,13 +33,10 @@ import com.google.firebase.storage.StorageReference;
 import com.google.firebase.storage.UploadTask;
 import com.hbb20.CountryCodePicker;
 
-import java.net.URI;
 import java.util.HashMap;
 import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-
-import nav.account.Edit_Profile;
 
 public class start_hosting extends AppCompatActivity implements AdapterView.OnItemSelectedListener {
 
@@ -266,7 +262,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 
     public  void movetoNextPage()
     {
-        startActivity(new Intent(getApplicationContext(), com.example.letngo.hosting_next.class));
+        startActivity(new Intent(getApplicationContext(), hosting_next.class));
         finish();
     }
 
