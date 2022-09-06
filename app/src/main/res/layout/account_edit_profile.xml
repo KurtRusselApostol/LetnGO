@@ -202,40 +202,41 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <!--Birthday Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_birthday"
-                    android:layout_width="match_parent"
+                <TextView
+                    android:id="@+id/account_birthday"
+                    android:layout_width="@dimen/_200sdp"
                     android:layout_height="80dp"
                     android:layout_below="@+id/layout_email"
-                    android:layout_alignParentEnd="true"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:hint="Birthday"
+                    android:padding="@dimen/_19sdp"
                     android:textColorHint="#808080"
+                    android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
                     app:layout_constraintWidth_percent="0.7">
 
+                </TextView>
 
-                    <EditText
-                        android:id="@+id/ed_birthday"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:hint="Birthday"
-                        android:inputType="date"
-                        android:padding="@dimen/_19sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                <Button
+                    android:id="@+id/account_calendar"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_below="@id/layout_email"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@id/account_birthday"
+                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:drawableTop="@drawable/account_calendar">
 
+                </Button>
                 <!--Contact Begin-->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/layout_contact"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/layout_birthday"
+                    android:layout_below="@+id/account_birthday"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_4sdp"
