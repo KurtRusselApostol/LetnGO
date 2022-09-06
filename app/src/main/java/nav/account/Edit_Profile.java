@@ -1,6 +1,7 @@
 package nav.account;
 
 import android.app.Activity;
+import android.app.DatePickerDialog;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
@@ -8,6 +9,7 @@ import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -40,6 +42,7 @@ import com.google.firebase.storage.UploadTask;
 import com.squareup.picasso.Picasso;
 
 
+import java.util.Calendar;
 import java.util.HashMap;
 
 public class Edit_Profile extends AppCompatActivity {
@@ -47,7 +50,7 @@ public class Edit_Profile extends AppCompatActivity {
     EditText Firstname;
     EditText Lastname;
     EditText Email;
-    EditText Birthday;
+    TextView Birthday;
     EditText ContactNo;
     EditText Age;
     EditText Gender;
@@ -86,6 +89,7 @@ public class Edit_Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.account_edit_profile);
+        DatePickerDialog.OnDateSetListener setListener;
 
         back = findViewById(R.id.editprofile_back);
         update = findViewById(R.id.btn_update);
@@ -98,17 +102,37 @@ public class Edit_Profile extends AppCompatActivity {
         Firstname = findViewById(R.id.ed_Fname);
         Lastname = findViewById(R.id.ed_Lname);
         Email = findViewById(R.id.ed_email);
-        Birthday = findViewById(R.id.ed_birthday);
+        Birthday = findViewById(R.id.account_birthday);
         ContactNo = findViewById(R.id.ed_contact_no);
         Age = findViewById(R.id.ed_Age);
-        Gender = findViewById(R.id.ed_Gender);
+        //Gender = findViewById(R.id.ed_Gender);
         Address = findViewById(R.id.ed_Address);
         Description = findViewById(R.id.ed_Description);
         BankAccount = findViewById(R.id.ed_bank_account);
         BankNumber = findViewById(R.id.ed_bank_number);
 
+        //BIRTH DATE
+        Calendar calendar = Calendar.getInstance();
+        final int year = calendar.get(Calendar.YEAR);
+        final int month = calendar.get(Calendar.MONTH);
+        final int day = calendar.get(Calendar.DAY_OF_MONTH);
+        Birthday.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                DatePickerDialog datePickerDialog = new DatePickerDialog(
+                        Edit_Profile.this, new DatePickerDialog.OnDateSetListener() {
+                    @Override
+                    public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                        month = month+1;
+                        String date = month+"/"+day+"/"+year;
+                        Birthday.setText(date);
+                    }
+                }, year, month, day);
+                datePickerDialog.show();
+            }
+        });
 
-
+        //FIREBASE FETCHING DATA
         reference = FirebaseDatabase.getInstance().getReference("User_account");
         reference.child(userUid).get().addOnCompleteListener(task -> {
             if (!task.isSuccessful()) {
@@ -122,10 +146,6 @@ public class Edit_Profile extends AppCompatActivity {
                     String profilePic = String.valueOf(dataSnapshot.child("image").getValue());
 
 
-
-
-
-
                     String firstname = String.valueOf(dataSnapshot.child("FirstName").getValue());
                     String lastname = String.valueOf(dataSnapshot.child("LastName").getValue());
                     String email = String.valueOf(dataSnapshot.child("Email").getValue());
@@ -133,7 +153,7 @@ public class Edit_Profile extends AppCompatActivity {
 
                     String mobile = String.valueOf(dataSnapshot.child("Mobile").getValue());
                     String age = String.valueOf(dataSnapshot.child("Age").getValue());
-                    String gender = String.valueOf(dataSnapshot.child("Gender").getValue());
+                    //String gender = String.valueOf(dataSnapshot.child("Gender").getValue());
                     String address = String.valueOf(dataSnapshot.child("Address").getValue());
 
                     String description = String.valueOf(dataSnapshot.child("Description").getValue());
@@ -146,7 +166,7 @@ public class Edit_Profile extends AppCompatActivity {
                     Birthday.setText(birthday);
                     ContactNo.setText(mobile);
                     Age.setText(age);
-                    Gender.setText(gender);
+                    //Gender.setText(gender);
                     Address.setText(address);
                     Description.setText(description);
 
@@ -193,10 +213,10 @@ public class Edit_Profile extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Age must be equal or greater than 18", Toast.LENGTH_LONG).show();
                     Age.requestFocus();
                 }
-                else if (Gender.getText().toString().equals("")) {
+                /*else if (Gender.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(), "Gender must not be empty", Toast.LENGTH_LONG).show();
                     Gender.requestFocus();
-                }
+                }*/
                 else if (Description.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(), "Description must not be empty", Toast.LENGTH_LONG).show();
                     Description.requestFocus();
@@ -205,7 +225,7 @@ public class Edit_Profile extends AppCompatActivity {
                     reference.child(userUid).child("LastName").setValue(Lastname.getText().toString());
                     reference.child(userUid).child("Birthday").setValue(Birthday.getText().toString());
                     reference.child(userUid).child("Age").setValue(Age.getText().toString());
-                    reference.child(userUid).child("Gender").setValue(Gender.getText().toString());
+//                    reference.child(userUid).child("Gender").setValue(Gender.getText().toString());
                     reference.child(userUid).child("Address").setValue(Address.getText().toString());
                     reference.child(userUid).child("Description").setValue(Description.getText().toString());
                     uploadProfileImage();
