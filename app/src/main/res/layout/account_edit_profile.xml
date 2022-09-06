@@ -69,18 +69,18 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/my_avatar" />
 
-<!--                <ImageView-->
-<!--                    android:id="@+id/my_avatar"-->
-<!--                    android:layout_width="100dp"-->
-<!--                    android:layout_height="100dp"-->
-<!--                    android:layout_marginTop="16dp"-->
-<!--                    android:elevation="1dp"-->
-<!--                    android:padding="@dimen/_20sdp"-->
-<!--                    app:cardCornerRadius="@dimen/_10sdp"-->
-<!--                    app:layout_constraintEnd_toEndOf="parent"-->
-<!--                    app:layout_constraintHorizontal_bias="0.498"-->
-<!--                    app:layout_constraintStart_toStartOf="parent"-->
-<!--                    app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/my_avatar"-->
+                <!--                    android:layout_width="100dp"-->
+                <!--                    android:layout_height="100dp"-->
+                <!--                    android:layout_marginTop="16dp"-->
+                <!--                    android:elevation="1dp"-->
+                <!--                    android:padding="@dimen/_20sdp"-->
+                <!--                    app:cardCornerRadius="@dimen/_10sdp"-->
+                <!--                    app:layout_constraintEnd_toEndOf="parent"-->
+                <!--                    app:layout_constraintHorizontal_bias="0.498"-->
+                <!--                    app:layout_constraintStart_toStartOf="parent"-->
+                <!--                    app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/my_avatar"
                     android:layout_width="150dp"
@@ -204,11 +204,10 @@
                 <!--Birthday Begin-->
                 <TextView
                     android:id="@+id/account_birthday"
-                    android:layout_width="wrap_content"
-                    android:layout_height="@dimen/_60sdp"
+                    android:layout_width="314dp"
+                    android:layout_height="74dp"
                     android:layout_below="@+id/layout_email"
                     android:layout_alignStart="@id/layout_email"
-                    android:layout_toLeftOf="@id/account_calendar"
                     android:layout_marginTop="@dimen/_4sdp"
                     android:hint="Birthday"
                     android:padding="@dimen/_19sdp"
@@ -231,7 +230,7 @@
                     android:background="@color/colorTrendingEnd"
                     android:layout_below="@id/account_birthday"/>
 
-                <Button
+                <!--<Button
                     android:id="@+id/account_calendar"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
@@ -240,7 +239,7 @@
                     android:layout_alignRight="@id/layout_email"
                     android:drawableTop="@drawable/account_calendar">
 
-                </Button>
+                </Button>-->
 
                 <!--Contact Begin-->
                 <com.google.android.material.textfield.TextInputLayout
