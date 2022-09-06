@@ -58,7 +58,7 @@
             android:layout_below="@id/activity_line"
             android:layout_alignStart="@id/activity_messages"
             android:layout_alignEnd="@id/activity_line"
-            android:layout_marginTop="@dimen/_15sdp"
+            android:layout_marginTop="@dimen/_5sdp"
             android:fontFamily="@font/poppins_medium"
             android:justificationMode="inter_word"
             android:text="Log in to view your messages."
@@ -74,8 +74,7 @@
             android:layout_below="@id/activity_logintoview"
             android:layout_alignStart="@id/activity_messages"
             android:layout_alignEnd="@id/activity_logintoview"
-            android:layout_marginTop="@dimen/_15sdp"
-            android:layout_marginEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_25sdp"
             android:fontFamily="@font/poppins_light"
             android:justificationMode="inter_word"
             android:text="Once you log in, you'll can create and view your messages here."
@@ -86,15 +85,15 @@
             android:id="@+id/activity_loginbutton"
             android:layout_width="139dp"
             android:layout_height="54dp"
-            android:layout_marginTop="@dimen/_30sdp"
             android:layout_below="@id/activity_onceyou"
-            android:background="@drawable/rounded_button"
-            android:layout_alignStart="@id/activity_messages"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/_25sdp"
+            android:background="@drawable/button_round_gradient"
             android:text="Log in"
-            android:textColor="#FFFFFF"
-            tools:ignore="MissingConstraints,TextContrastCheck"
-            tools:layout_editor_absoluteX="340dp"
-            tools:layout_editor_absoluteY="250dp" />
+            android:textColor="#2F575D"
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold"
+            tools:ignore="MissingConstraints,TextContrastCheck" />
 
     </RelativeLayout>
 
