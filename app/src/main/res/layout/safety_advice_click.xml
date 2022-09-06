@@ -21,15 +21,15 @@
 
             <ImageButton
                 android:id="@+id/back_btn1"
-                android:layout_width="@dimen/_37sdp"
-                android:layout_height="@dimen/_37sdp"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="@dimen/_23sdp"
-                android:layout_marginTop="@dimen/_15sdp"
-                android:background="@drawable/round_back_btn"
-                android:paddingStart="@dimen/_8sdp"
-                android:paddingEnd="@dimen/_4sdp"
-                android:src="@drawable/white_back_btn" />
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:backgroundTint="#00FFFFFF"
+                android:paddingStart="10dp"
+                android:paddingEnd="5dp"
+                android:src="@drawable/back_arrow" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -43,7 +43,7 @@
                 android:layout_marginEnd="@dimen/_23sdp"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/guest_advice"
-                android:textColor="@color/black"
+                android:textColor="#658B6F"
                 android:textSize="23sp"
                 android:textStyle="bold" />
 
@@ -53,7 +53,6 @@
                 android:layout_marginStart="@dimen/_38sdp"
                 android:layout_marginTop="@dimen/_35sdp"
                 android:layout_marginEnd="@dimen/_38sdp"
-                android:fontFamily="sans-serif-medium"
                 android:justificationMode="inter_word"
                 android:text="@string/your_let_n_go_experience_begins_the_moment_you_embrace_adventure_it_will_only_be_possible_when_you_trust_our_community_and_feel_safe"
                 android:textColor="@color/black"
@@ -84,7 +83,6 @@
                 android:layout_marginStart="@dimen/_23sdp"
                 android:layout_marginTop="@dimen/_46sdp"
                 android:layout_marginEnd="@dimen/_23sdp"
-                android:fontFamily="sans-serif-medium"
                 android:justificationMode="inter_word"
                 android:text="@string/do_not_commit"
                 android:textColor="@color/black"
@@ -114,7 +112,6 @@
                 android:layout_marginStart="@dimen/_23sdp"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:layout_marginEnd="@dimen/_23sdp"
-                android:fontFamily="sans-serif-medium"
                 android:justificationMode="inter_word"
                 android:text="@string/do_not_convey"
                 android:textColor="@color/black"
@@ -146,7 +143,6 @@
                 android:layout_marginStart="@dimen/_23sdp"
                 android:layout_marginTop="@dimen/_30sdp"
                 android:layout_marginEnd="@dimen/_23sdp"
-                android:fontFamily="sans-serif-medium"
                 android:justificationMode="inter_word"
                 android:text="@string/do_not_keep"
                 android:textColor="@color/black"
