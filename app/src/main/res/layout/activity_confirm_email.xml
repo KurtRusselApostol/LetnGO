@@ -11,23 +11,26 @@
         android:id="@+id/tool_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="@dimen/_13sdp"
-        android:background="#DDDDDD">
-        <ImageView
+        android:background="#DDDDDD"
+        android:padding="@dimen/_13sdp">
+
+        <Button
             android:id="@+id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
             android:layout_centerVertical="true"
-            android:background="@drawable/arrow_back"/>
+            android:background="@drawable/back_arrow" />
 
         <TextView
             android:id="@+id/Email_confirmation"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginStart="@dimen/_77sdp"
+            android:textAlignment="center"
             android:text="Email Address"
-            android:textColor="@color/black"
+            android:textColor="#2F575D"
             android:textSize="20sp"
             android:textStyle="bold" />
     </RelativeLayout>
@@ -39,22 +42,26 @@
 
         <TextView
             android:id="@+id/confiad"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginTop="@dimen/_38sdp"
             android:text="Confirm your email address"
+            android:textAlignment="center"
             android:textSize="20sp"
             android:textStyle="bold" />
 
         <TextView
             android:id="@+id/conficontent"
-            android:layout_width="@dimen/_231sdp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_below="@+id/confiad"
-            android:layout_marginStart="@dimen/_38sdp"
-            android:layout_marginTop="@dimen/_38sdp"
-            android:text="By clicking the button, you are confirming your email address and agreeing to terms of services."
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:text="By clicking the button, you are confirming your\n   email address and agreeing to terms of services."
+            android:textAlignment="center"
             android:textSize="15sp"
             android:textStyle="bold" />
 
@@ -64,7 +71,7 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/conficontent"
             android:layout_marginStart="@dimen/_38sdp"
-            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginTop="20dp"
             android:text="This ensures we have the right email in case we need to contact you."
             android:textSize="15sp"
             android:textStyle="bold" />
@@ -74,10 +81,15 @@
             android:layout_width="@dimen/_231sdp"
             android:layout_height="@dimen/_46sdp"
             android:layout_below="@+id/confiensure"
-            android:layout_marginStart="@dimen/_38sdp"
-            android:layout_marginTop="@dimen/_38sdp"
-            android:backgroundTint="#658B6F"
-            android:text="confirm" />
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="53dp"
+            android:layout_marginTop="47dp"
+            android:layout_marginEnd="57dp"
+            android:background="@drawable/button_gradient"
+            android:text="confirm"
+            android:textColor="#2F575D"
+            android:textSize="20sp" />
 
     </RelativeLayout>
 
