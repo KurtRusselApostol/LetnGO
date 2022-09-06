@@ -77,8 +77,9 @@
             android:layout_marginTop="@dimen/_25sdp"
             android:fontFamily="@font/poppins_light"
             android:justificationMode="inter_word"
-            android:text="Once you log in, you'll can create and view your messages here."
+            android:text="Once you log in, you can create and view your messages here."
             android:textColor="#2F575D"
+            android:textStyle="bold"
             android:textSize="@dimen/_15sdp" />
 
         <Button
