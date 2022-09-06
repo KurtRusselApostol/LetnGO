@@ -204,10 +204,11 @@
                 <!--Birthday Begin-->
                 <TextView
                     android:id="@+id/account_birthday"
-                    android:layout_width="@dimen/_200sdp"
-                    android:layout_height="80dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/_60sdp"
                     android:layout_below="@+id/layout_email"
-                    android:layout_marginStart="@dimen/_15sdp"
+                    android:layout_alignStart="@id/layout_email"
+                    android:layout_toLeftOf="@id/account_calendar"
                     android:layout_marginTop="@dimen/_4sdp"
                     android:hint="Birthday"
                     android:padding="@dimen/_19sdp"
@@ -220,23 +221,33 @@
 
                 </TextView>
 
+                <View
+                    android:id="@+id/account_line"
+                    android:layout_width="wrap_content"
+                    android:layout_height="1dp"
+                    android:layout_alignStart="@id/account_birthday"
+                    android:layout_marginStart="@dimen/_3sdp"
+                    android:layout_alignEnd="@id/account_birthday"
+                    android:background="@color/colorTrendingEnd"
+                    android:layout_below="@id/account_birthday"/>
+
                 <Button
                     android:id="@+id/account_calendar"
                     android:layout_width="50dp"
                     android:layout_height="50dp"
                     android:layout_below="@id/layout_email"
                     android:layout_marginTop="15dp"
-                    android:layout_toRightOf="@id/account_birthday"
-                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_alignRight="@id/layout_email"
                     android:drawableTop="@drawable/account_calendar">
 
                 </Button>
+
                 <!--Contact Begin-->
                 <com.google.android.material.textfield.TextInputLayout
                     android:id="@+id/layout_contact"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/account_birthday"
+                    android:layout_below="@+id/account_line"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_4sdp"
