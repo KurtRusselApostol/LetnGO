@@ -1,4 +1,4 @@
-package com.example.letngo;
+package nav.account.hosting;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -7,7 +7,7 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import nav.account.hosting.Manage_Hosting;
+import com.example.letngo.R;
 
 public class hosting_success extends AppCompatActivity {
 

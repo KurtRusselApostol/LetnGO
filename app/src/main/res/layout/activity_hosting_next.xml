@@ -10,7 +10,7 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".hosting_next"
+        tools:context="nav.account.hosting.hosting_next"
         android:orientation="vertical"
         android:background="#658B6F">
 

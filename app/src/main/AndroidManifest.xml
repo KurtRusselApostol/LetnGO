@@ -197,10 +197,10 @@
             android:name="nav.account.payment.payment"
             android:exported="false" />
         <activity
-            android:name=".hosting_success"
+            android:name="nav.account.hosting.hosting_success"
             android:exported="false" />
         <activity
-            android:name=".hosting_checking_description"
+            android:name="nav.account.hosting.hosting_checking_description"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -209,10 +209,10 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name=".hosting_final_description"
+            android:name="nav.account.hosting.hosting_final_description"
             android:exported="false" />
         <activity
-            android:name=".hosting_next"
+            android:name="nav.account.hosting.hosting_next"
             android:exported="false">
 
             <!-- <intent-filter> -->

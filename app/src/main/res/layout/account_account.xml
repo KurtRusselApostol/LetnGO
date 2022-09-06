@@ -36,29 +36,27 @@
             android:layout_marginLeft="@dimen/_30sdp"
             android:layout_marginRight="@dimen/_30sdp"
             android:layout_marginBottom="@dimen/_100sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:background="@color/Light_grey">
+            android:layout_marginTop="@dimen/_8sdp">
 
             <RelativeLayout
                 android:id="@+id/account_name"
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/_95sdp"
-                android:background="@color/Light_grey">
+                android:layout_height="@dimen/_95sdp">
 
-<!--                <ImageView-->
-<!--                    android:id="@+id/up_profilePic"-->
-<!--                    android:layout_width="@dimen/_64sdp"-->
-<!--                    android:layout_height="@dimen/_64sdp"-->
-<!--                    android:layout_marginStart="@dimen/_8sdp"-->
-<!--                    android:layout_marginTop="@dimen/_8sdp"-->
-<!--                    app:srcCompat="@drawable/account_user_icon" />-->
+                <!--                <ImageView-->
+                <!--                    android:id="@+id/up_profilePic"-->
+                <!--                    android:layout_width="@dimen/_64sdp"-->
+                <!--                    android:layout_height="@dimen/_64sdp"-->
+                <!--                    android:layout_marginStart="@dimen/_8sdp"-->
+                <!--                    android:layout_marginTop="@dimen/_8sdp"-->
+                <!--                    app:srcCompat="@drawable/account_user_icon" />-->
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/my_avatar"
                     android:layout_width="100dp"
                     android:layout_height="100dp"
                     android:layout_marginStart="@dimen/_8sdp"
                     android:layout_marginTop="@dimen/_8sdp" />
-<!--                    app:srcCompat="@drawable/account_user_icon" />-->
+                <!--                    app:srcCompat="@drawable/account_user_icon" />-->
 
                 <TextView
                     android:id="@+id/up_fullName"
@@ -77,11 +75,11 @@
                     android:id="@+id/btn_timeline"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_75sdp"
                     android:text="View Profile"
                     android:textColor="@color/black"
-                    android:textSize="12sp" />
+                    android:textSize="12sp"
+                    android:layout_marginStart="@dimen/_75sdp"
+                    android:layout_marginTop="@dimen/_50sdp"/>
 
             </RelativeLayout>
 
@@ -96,19 +94,16 @@
                     android:id="@+id/up_accountSettings"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_11sdp"
                     android:text="Account Settings"
-                    android:textColor="@color/black"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_personal_info"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_30sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_personalAndAccountText"
@@ -123,17 +118,17 @@
                         android:id="@+id/up_personalAndAccountIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_user_icon" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/securityButton"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_65sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_security"
@@ -149,17 +144,17 @@
                         android:id="@+id/up_securityIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_security" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_notification"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_100sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_notification"
@@ -175,17 +170,17 @@
                         android:id="@+id/up_notificationIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_notification" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_payment_payout"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_135sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_paymentAndPayout"
@@ -201,6 +196,7 @@
                         android:id="@+id/up_paymentAndPayoutIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_wallet" />
 
                 </androidx.cardview.widget.CardView>
@@ -220,18 +216,16 @@
                     android:id="@+id/up_hostingSection"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
                     android:text="Hosting"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_host_exp"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_30sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_manageHosting"
@@ -247,17 +241,17 @@
                         android:id="@+id/up_manageHostingIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_manage_host" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_list_space"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_65sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_startHosting"
@@ -273,6 +267,7 @@
                         android:id="@+id/up_startHostingIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_start_host" />
 
                 </androidx.cardview.widget.CardView>
@@ -291,18 +286,16 @@
                     android:id="@+id/textView102"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
                     android:text="Support"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_how_works"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_30sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_LetNGo"
@@ -312,23 +305,23 @@
                         android:layout_marginTop="@dimen/_6sdp"
                         android:layout_marginEnd="@dimen/_63sdp"
                         android:text="How Let 'n Go Works"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                     <ImageView
                         android:id="@+id/up_LetNGoIcon"
                         android:layout_width="@dimen/_29sdp"
                         android:layout_height="@dimen/_29sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/logo1" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_safety_center"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_65sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_safetyCenter"
@@ -338,23 +331,23 @@
                         android:layout_marginTop="@dimen/_6sdp"
                         android:layout_marginEnd="@dimen/_97sdp"
                         android:text="Safety Center"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                     <ImageView
                         android:id="@+id/up_safetyCenterIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_safety" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_get_help"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_100sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_getHelp"
@@ -364,23 +357,23 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginEnd="@dimen/_121sdp"
                         android:text="Get Help"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                     <ImageView
                         android:id="@+id/up_getHelpIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_customer_service" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_feedback"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_135sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_feedBack"
@@ -390,12 +383,13 @@
                         android:layout_marginTop="@dimen/_5sdp"
                         android:layout_marginEnd="@dimen/_78sdp"
                         android:text="Give us Feedback"
-                        android:textColor="@color/black"/>
+                        android:textColor="@color/black" />
 
                     <ImageView
                         android:id="@+id/up_feedBackIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_feedback" />
 
                 </androidx.cardview.widget.CardView>
@@ -413,18 +407,16 @@
                     android:id="@+id/up_legal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
                     android:text="Legal"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_terms"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_30sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_termOfService"
@@ -440,17 +432,17 @@
                         android:id="@+id/up_termOfServiceIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_terms" />
 
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/btn_privacyPolicy"
-                    android:layout_width="@dimen/_205sdp"
+                    android:layout_width="match_parent"
                     android:layout_height="@dimen/_30sdp"
-                    android:layout_marginStart="@dimen/_23sdp"
                     android:layout_marginTop="@dimen/_65sdp"
-                    app:cardBackgroundColor="@color/Light_grey">
+                    app:cardBackgroundColor="#DEE1DD">
 
                     <TextView
                         android:id="@+id/up_privacyPolicy"
@@ -466,6 +458,7 @@
                         android:id="@+id/up_privacyPolicyIcon"
                         android:layout_width="@dimen/_30sdp"
                         android:layout_height="@dimen/_30sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_privacy_policy" />
 
                 </androidx.cardview.widget.CardView>
@@ -474,7 +467,6 @@
                     android:id="@+id/btn_logout"
                     android:layout_width="@dimen/_75sdp"
                     android:layout_height="@dimen/_25sdp"
-                    android:layout_marginStart="@dimen/_8sdp"
                     android:layout_marginTop="@dimen/_125sdp"
                     app:cardBackgroundColor="@color/Light_grey">
 
@@ -493,6 +485,7 @@
                         android:id="@+id/imageView7"
                         android:layout_width="@dimen/_28sdp"
                         android:layout_height="@dimen/_23sdp"
+                        android:padding="@dimen/_2sdp"
                         app:srcCompat="@drawable/account_logout" />
 
                 </androidx.cardview.widget.CardView>

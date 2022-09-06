@@ -40,11 +40,11 @@
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/explore_search"
-                android:layout_width="@dimen/_225sdp"
+                android:layout_width="match_parent"
                 android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/_15sdp"
                 android:layout_toLeftOf="@id/explore_filter"
-                android:layout_centerVertical="true"
                 android:background="@drawable/btn_background"
                 android:clickable="true"
                 android:focusable="true">
