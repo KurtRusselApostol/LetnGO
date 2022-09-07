@@ -298,8 +298,8 @@ public class new_signup extends AppCompatActivity {
                         password.setError("Your password is too weak. Kindly use a mix of alphabets, numbers and special characters");
                         password.requestFocus();
                     }catch (FirebaseAuthInvalidCredentialsException e){
-                        password.setError("Your email is invalid or already in use. Kindly re-enter.");
-                        password.requestFocus();
+                        email.setError("Your email is invalid or already in use. Kindly re-enter.");
+                        email.requestFocus();
                     }catch (FirebaseAuthUserCollisionException e){
                         email.setError("User is already registered with this email. Use another email");
                         email.requestFocus();
