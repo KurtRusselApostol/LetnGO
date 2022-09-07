@@ -144,7 +144,8 @@
                         android:shadowDx="3"
                         android:shadowDy="3"
                         android:shadowRadius="5"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                 </RelativeLayout>
 
