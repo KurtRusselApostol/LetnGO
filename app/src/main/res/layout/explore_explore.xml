@@ -144,7 +144,8 @@
                         android:shadowDx="3"
                         android:shadowDy="3"
                         android:shadowRadius="5"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                 </RelativeLayout>
 
@@ -423,7 +424,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
+            android:layout_height="@dimen/_375sdp"
             android:layout_centerHorizontal="true"
             android:background="#C2D5C9">
 
