@@ -7,78 +7,142 @@
     android:background="#DDDDDD"
     tools:context=".MainActivity">
 
-    <RelativeLayout
-        android:id="@+id/tool_bar"
-        android:layout_width="match_parent"
+    <ImageButton
+        android:id="@+id/activity_back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="#00FFFFFF"
+        android:src="@drawable/back_arrow" />
+
+    <TextView
+        android:id="@+id/activity_confirmation"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:padding="@dimen/_13sdp"
-        android:background="#DDDDDD">
-        <ImageView
-            android:id="@+id/back"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:background="@drawable/arrow_back"/>
+        android:layout_below="@id/activity_back"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginEnd="32dp"
+        android:fontFamily="@font/poppins_bold"
+        android:text="Confirmation"
+        android:textColor="#7BAA98"
+        android:textSize="@dimen/_37sdp"
+        android:textStyle="bold"
+        tools:ignore="HardcodedText" />
 
-        <TextView
-            android:id="@+id/Email_confirmation"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginStart="@dimen/_61sdp"
-            android:text=" Confirm Phone Number"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-    </RelativeLayout>
-
-    <RelativeLayout
+    <View
+        android:id="@+id/activity_line"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_below="@+id/tool_bar">
+        android:layout_height="3dp"
+        android:layout_below="@id/activity_confirmation"
+        android:layout_alignStart="@id/activity_confirmation"
+        android:layout_marginEnd="@dimen/_15sdp"
+        android:background="#2F575D" />
 
-        <TextView
-            android:id="@+id/confiPnumber"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_38sdp"
-            android:layout_marginTop="@dimen/_38sdp"
-            android:text="+69 ***********"
-            android:textSize="20sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/activity_confirmyourphonenum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_line"
+        android:layout_alignStart="@id/activity_confirmation"
+        android:layout_alignEnd="@id/activity_line"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:justificationMode="inter_word"
+        android:text="Confirm your phone number."
+        android:textColor="#000000"
+        android:textSize="@dimen/_18sdp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints" />
 
-        <TextView
-            android:id="@+id/conficontent"
-            android:layout_width="@dimen/_231sdp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/confiPnumber"
-            android:layout_marginStart="@dimen/_38sdp"
-            android:layout_marginTop="@dimen/_38sdp"
-            android:text="By clicking the button, you are confirming your phone number and agreeing to terms of services"
-            android:textSize="15sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/activity_639"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_confirmyourphonenum"
+        android:layout_alignStart="@id/activity_confirmation"
+        android:layout_alignEnd="@id/activity_confirmyourphonenum"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/poppins_light"
+        android:justificationMode="inter_word"
+        android:text="+63 9** **** ***"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
 
-        <TextView
-            android:id="@+id/confiensure"
-            android:layout_width="@dimen/_231sdp"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/conficontent"
-            android:layout_marginStart="@dimen/_38sdp"
-            android:layout_marginTop="@dimen/_8sdp"
-            android:text="This ensures we have the right email in case we need to contact you."
-            android:textSize="15sp"
-            android:textStyle="bold" />
+    <TextView
+        android:id="@+id/activity_byclicking"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/activity_639"
+        android:layout_alignStart="@id/activity_confirmation"
+        android:layout_alignEnd="@id/activity_confirmyourphonenum"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:fontFamily="@font/poppins_light"
+        android:justificationMode="inter_word"
+        android:text="By clicking the button, you are confirming your phone number and agreeing to terms of services.\n
+\nThis ensures we have the right email in case we need to contact you."
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold" />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="@dimen/_231sdp"
-            android:layout_height="@dimen/_46sdp"
-            android:layout_below="@+id/confiensure"
-            android:layout_marginStart="@dimen/_38sdp"
-            android:layout_marginTop="@dimen/_38sdp"
-            android:backgroundTint="#658B6F"
-            android:text="confirm" />
+    <Button
+        android:id="@+id/activity_loginbutton"
+        android:layout_width="@dimen/_225sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@id/activity_byclicking"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_25sdp"
+        android:background="@drawable/button_gradient"
+        android:text="Confirm"
+        android:textColor="#2F575D"
+        android:textSize="@dimen/_15sdp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints,TextContrastCheck" />
 
-    </RelativeLayout>
+<!--
+    <TextView
+        android:id="@+id/confiPnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_38sdp"
+        android:layout_marginTop="@dimen/_38sdp"
+        android:text="+69 ***********"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/conficontent"
+        android:layout_width="@dimen/_231sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/confiPnumber"
+        android:layout_marginStart="@dimen/_38sdp"
+        android:layout_marginTop="@dimen/_38sdp"
+        android:text="By clicking the button, you are confirming your phone number and agreeing to terms of services"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/confiensure"
+        android:layout_width="@dimen/_231sdp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/conficontent"
+        android:layout_marginStart="@dimen/_38sdp"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="This ensures we have the right email in case we need to contact you."
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="@dimen/_231sdp"
+        android:layout_height="@dimen/_46sdp"
+        android:layout_below="@+id/confiensure"
+        android:layout_marginStart="@dimen/_38sdp"
+        android:layout_marginTop="@dimen/_38sdp"
+        android:backgroundTint="#658B6F"
+        android:text="confirm" />
+        -->
 
 </RelativeLayout>
