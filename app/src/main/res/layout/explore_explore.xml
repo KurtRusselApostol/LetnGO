@@ -423,7 +423,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_350sdp"
+            android:layout_height="@dimen/_375sdp"
             android:layout_centerHorizontal="true"
             android:background="#C2D5C9">
 
