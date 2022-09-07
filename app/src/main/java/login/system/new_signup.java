@@ -123,7 +123,11 @@ public class new_signup extends AppCompatActivity {
                             passwordVisible = true;
 
                         }
-                        confirmPass.setSelection(selection);
+                        try {
+                        confirmPass.setSelection(selection);}
+                        catch (Exception e) {
+                            //do nothing
+                        }
                         return true;
                     }
                 }
