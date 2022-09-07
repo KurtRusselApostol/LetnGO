@@ -15,9 +15,7 @@ public class Post {
     private int rooms;
     private String user;
 
-    public Post(){
 
-    }
 
     public Post(int bathrooms, int beds, String country, Uri imageUri, String price, int rooms, String user){
         this.bathrooms = bathrooms;

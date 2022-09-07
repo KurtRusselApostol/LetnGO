@@ -31,15 +31,17 @@ public class Postlist extends AppCompatActivity {
         databaseReference = FirebaseDatabase.getInstance().getReference("post");
         list = new ArrayList<>();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        adapter = new MyAdapter(this, list);
+//        adapter = new MyAdapter(this, list);
         recyclerView.setAdapter(adapter);
 
         databaseReference.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for(DataSnapshot dataSnapshot: snapshot.getChildren()){
-                    Post post;
+                    Post post = dataSnapshot.getValue(Post.class);
+//                    list.add(Post);
                 }
+                adapter.notifyDataSetChanged();
             }
 
             @Override
