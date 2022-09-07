@@ -45,6 +45,7 @@
                 android:textSize="28sp"
                 android:textStyle="bold" />
 
+<!--
             <RelativeLayout
                 android:id="@+id/cardviewCointainer_hosting"
                 android:layout_width="match_parent"
@@ -191,8 +192,11 @@
                 </com.google.android.material.card.MaterialCardView>
 
             </RelativeLayout>
-
-
+-->
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/account_recyclerview"/>
         </LinearLayout>
 
     </RelativeLayout>
