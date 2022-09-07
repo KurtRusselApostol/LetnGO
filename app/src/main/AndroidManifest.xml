@@ -361,6 +361,9 @@
             android:exported="false" /> <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
         <!-- </intent-filter> -->
         <activity
+            android:name="nav.account.hosting.start_hosting"
+            android:exported="false" />
+        <activity
             android:name="login.system.forgot_password"
             android:exported="false" />
         <activity
