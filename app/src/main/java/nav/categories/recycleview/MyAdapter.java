@@ -32,15 +32,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
 
     @NonNull
     @Override
-    public MyAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
         View v = LayoutInflater.from(context).inflate(R.layout.categories_description,parent, false);
         return new MyViewHolder(v);
     }
 
     @Override
-    public void onBindViewHolder(@NonNull MyAdapter.MyViewHolder holder, int position) {
-        reference = FirebaseDatabase.getInstance().getReference("User_account");
+    public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
+//        reference = FirebaseDatabase.getInstance().getReference("post");
         Post post = list.get(position);
         mAuth = FirebaseAuth.getInstance();
 
@@ -50,6 +50,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.country.setText(post.getCountry());
         holder.price.setText(post.getPrice());
         holder.rooms.setText(post.getRooms());
+        holder.image.setImageURI(post.getImageUri());
 
     }
 
