@@ -27,11 +27,13 @@
             android:id="@+id/textView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginStart="35dp"
             android:layout_marginTop="70dp"
-            android:layout_marginEnd="32dp"
+            android:layout_marginEnd="133dp"
             android:text="Your Account"
-            android:textColor="@color/colorTrendingEnd"
+            android:textColor="#7BAA98"
             android:textSize="40sp"
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -46,6 +48,8 @@
             android:id="@+id/newsfeedGuestNote"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="35dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="185dp"
             android:layout_marginRight="20dp"
@@ -58,14 +62,18 @@
             android:id="@+id/newsfeedGuest"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="35dp"
             android:layout_marginLeft="40dp"
             android:layout_marginTop="140dp"
+            android:layout_marginEnd="118dp"
             android:layout_marginRight="20dp"
             android:text="Log in to your Account"
+            android:textColor="@color/black"
             android:textSize="25dp"
             android:textStyle="bold"
-            tools:ignore="MissingConstraints"
-            android:textColor="@color/black"/>
+            tools:ignore="MissingConstraints" />
 
         <RelativeLayout
             android:id="@+id/relative2"
@@ -83,12 +91,14 @@
                 android:layout_marginTop="3dp"
                 android:background="#DEE1DD"
                 android:drawableLeft="@drawable/safetyyy"
+                android:drawablePadding="20dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="160dp"
-                android:text="      Safety Center"
+                android:text="Safety Center"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
 
             <Button
                 android:id="@+id/btn_contact_support"
@@ -98,12 +108,14 @@
                 android:layout_marginTop="3dp"
                 android:background="#DEE1DD"
                 android:drawableLeft="@drawable/contactsup"
+                android:drawablePadding="20dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="140dp"
-                android:text="     Contact Support"
+                android:text="Contact Support"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
 
             <Button
                 android:id="@+id/btn_get_help"
@@ -114,12 +126,14 @@
                 android:layout_marginBottom="100dp"
                 android:background="#DEE1DD"
                 android:drawableLeft="@drawable/gethelp"
+                android:drawablePadding="20dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="190dp"
-                android:text="    Get Help"
+                android:text="Get Help"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="15dp"/>
 
             <!--Legal Starts-->
             <View
@@ -137,12 +151,14 @@
                 android:layout_marginTop="15dp"
                 android:background="#DEE1DD"
                 android:drawableLeft="@drawable/terms"
+                android:drawablePadding="20dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="120dp"
-                android:text="     Terms of Service"
+                android:text="Terms of Service"
                 android:textAlignment="textStart"
                 android:textAllCaps="false"
-                android:textColor="@color/black" />
+                android:textColor="@color/black"
+                android:textSize="15dp" />
 
         </RelativeLayout>
 
@@ -163,11 +179,16 @@
             android:id="@+id/buttonLogin"
             android:layout_width="139dp"
             android:layout_height="54dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
             android:layout_marginStart="35dp"
             android:layout_marginTop="250dp"
-            android:background="@drawable/rounded_button"
+            android:layout_marginEnd="237dp"
+            android:background="@drawable/bg_button"
             android:text="Log in"
-            android:textColor="@color/white"
+            android:textColor="#2F575D"
+            android:textSize="17sp"
+            android:textStyle="bold"
             tools:ignore="MissingConstraints,TextContrastCheck"
             tools:layout_editor_absoluteX="340dp"
             tools:layout_editor_absoluteY="250dp" />
