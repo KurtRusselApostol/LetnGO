@@ -21,6 +21,16 @@
         android:theme="@style/Theme.LetnGo"
         tools:targetApi="31">
         <activity
+            android:name=".Hostinglist"
+            android:exported="false" />
+        <activity
+            android:name="nav.account.hosting.new_Hosting"
+            android:exported="false" />
+
+        <activity
+            android:name=".Postlist"
+            android:exported="false" />
+        <activity
             android:name=".PersonalInfo1Activity"
             android:exported="false" />
         <activity
@@ -102,6 +112,9 @@
         </activity>
         <activity
             android:name="nav.account.hosting.Manage_Hosting"
+            android:exported="false" />
+        <activity
+            android:name="nav.account.hosting.Hostinglist"
             android:exported="false" />
         <activity
             android:name="nav.account.support.Terms_Services"
@@ -199,10 +212,10 @@
             android:name="nav.account.payment.payment"
             android:exported="false" />
         <activity
-            android:name="nav.account.hosting.hosting_success"
+            android:name=".hosting_success"
             android:exported="false" />
         <activity
-            android:name="nav.account.hosting.hosting_checking_description"
+            android:name=".hosting_checking_description"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -211,10 +224,10 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name="nav.account.hosting.hosting_final_description"
+            android:name=".hosting_final_description"
             android:exported="false" />
         <activity
-            android:name="nav.account.hosting.hosting_next"
+            android:name=".hosting_next"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -245,7 +258,7 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name="nav.account.hosting.start_hosting"
+            android:name=".start_hosting"
             android:exported="false">
 
             <!-- <intent-filter> -->
@@ -349,6 +362,9 @@
         <!-- </intent-filter> -->
         <activity
             android:name="login.system.forgot_password"
+            android:exported="false" />
+        <activity
+            android:name=".new_Hosting"
             android:exported="false" />
         <activity android:name="nav.newsfeed.messages" /> <!-- android:exported="false" -->
         <activity android:name="nav.categories.HomePage" /> <!-- android:exported="true" -->

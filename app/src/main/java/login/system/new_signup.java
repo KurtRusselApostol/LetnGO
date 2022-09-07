@@ -44,11 +44,13 @@ public class new_signup extends AppCompatActivity {
 
 
     // defining our own password pattern
-    private static final Pattern PASSWORD_PATTERN = Pattern.compile("^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$"); //Minimum eight characters, at least one letter and one number
-//            Pattern.compile("^" +
-//                    "(?=.*[@#$%^&+=])" +     // at least 1 special character
-//                    "(?=\\S+$)" +            // no white spaces
-//                    ".{6,}" +                // at least 6 characters
+    private static final Pattern PASSWORD_PATTERN = Pattern.compile("^(?=.*[A-Za-z])(?=.*\\d)(?=.*[@$!%*#?&])[A-Za-z\\d@$!%*#?&]{8,}$"); //Minimum eight characters, at least one letter, one special character, and one number
+//            Pattern.compile("^" +            // line start
+//                    "(?=.*[A-Za-z])" +       // greedy search for at least one character
+//                    "(?=.*\d)" +             // greedy search for at least one number
+//                    "(?=.*[@$!%*#?&])" +     // greedy search for at least one special character
+//                    "[A-Za-z\d@$!%*#?&]" +   // match the following characters in the set itself
+//                    ".{8,}" +                // at least 8 characters
 //                    "$");
 
 
@@ -123,7 +125,11 @@ public class new_signup extends AppCompatActivity {
                             passwordVisible = true;
 
                         }
-                        confirmPass.setSelection(selection);
+                        try {
+                        confirmPass.setSelection(selection);}
+                        catch (Exception e) {
+                            //do nothing
+                        }
                         return true;
                     }
                 }
@@ -208,7 +214,7 @@ public class new_signup extends AppCompatActivity {
                     password.requestFocus();
                 }
                 else if (!PASSWORD_PATTERN.matcher(pass).matches()){
-                    Toast.makeText(new_signup.this, "Password should be at least 8 characters with at least one letter and one number", Toast.LENGTH_LONG).show();
+                    Toast.makeText(new_signup.this, "Password should be at least 8 characters with at least one letter, one number and one special character. ^><)( and slashes are prohibited.", Toast.LENGTH_LONG).show();
                     password.setError("Password too weak");
                     password.requestFocus();
                 }
@@ -292,8 +298,8 @@ public class new_signup extends AppCompatActivity {
                         password.setError("Your password is too weak. Kindly use a mix of alphabets, numbers and special characters");
                         password.requestFocus();
                     }catch (FirebaseAuthInvalidCredentialsException e){
-                        password.setError("Your email is invalid or already in use. Kindly re-enter.");
-                        password.requestFocus();
+                        email.setError("Your email is invalid or already in use. Kindly re-enter.");
+                        email.requestFocus();
                     }catch (FirebaseAuthUserCollisionException e){
                         email.setError("User is already registered with this email. Use another email");
                         email.requestFocus();
