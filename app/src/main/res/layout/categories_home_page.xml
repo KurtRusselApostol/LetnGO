@@ -123,10 +123,10 @@
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavView"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/_50sdp"
         android:backgroundTint="@color/colorWhite"
-        app:itemIconSize="@dimen/_30sdp"
-        app:labelVisibilityMode="unlabeled"
+        app:itemIconSize="@dimen/_25sdp"
+        app:labelVisibilityMode="labeled"
         app:layout_constraintBottom_toBottomOf="parent"
         app:menu="@menu/navigation_menuguest"
         android:background="#FFFFFF"
