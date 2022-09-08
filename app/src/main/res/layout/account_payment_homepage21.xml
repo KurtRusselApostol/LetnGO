@@ -190,7 +190,7 @@
                         android:layout_alignStart="@id/account_YourDetails"
                         android:layout_alignEnd="@id/account_emailAddressTxt"
                         android:fontFamily="sans-serif-light"
-                        android:text="A confirmation email will be sent within minutes to inform you if your booking is confirmed."
+                        android:text="A confirmation email will be sent within minutes."
                         android:textColor="#FF0000"
                         android:textSize="@dimen/_10sdp" />
 
