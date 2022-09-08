@@ -1,8 +1,6 @@
 package nav.account.hosting;
 
 import android.Manifest;
-import android.app.Activity;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -22,32 +20,22 @@ import android.widget.Spinner;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
 import androidx.core.content.ContextCompat;
 
-import com.example.letngo.MainActivity;
 import com.example.letngo.R;
-import com.github.drjacky.imagepicker.ImagePicker;
-import com.github.drjacky.imagepicker.constant.ImageProvider;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
-import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
-import com.google.firebase.storage.OnProgressListener;
 import com.google.firebase.storage.StorageReference;
-import com.google.firebase.storage.UploadTask;
 import com.hbb20.CountryCodePicker;
 
 import java.util.HashMap;
-import java.util.UUID;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -63,14 +51,16 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
     CountryCodePicker countryCodePicker;
     private ImageView img_host_id;
     private Button upload_pic;
-    public Uri imageURI;
+    //public Uri imageURI;
+    private Uri filepath;
     private FirebaseStorage storage;
     private StorageReference storageReference;
-
+    private FirebaseAuth mAuth;
+    //private StorageReference storageIdPic;
     protected static final int CAMERA_REQUEST = 0;
     protected static final int GALLERY_PICTURE = 1;
     private Intent pictureActionIntent = null;
-    Bitmap bitmap;
+    Bitmap capturedImage;
 
     String selectedImagePath;
 
@@ -87,6 +77,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference reference = database.getReference().child("Host_Account").child("Host_Profile");
+    StorageReference storageIdPic = FirebaseStorage.getInstance().getReference().child("ID Picture");
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -114,6 +105,8 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 
 
         System.out.println(userUid);
+
+        mAuth = FirebaseAuth.getInstance();
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //GETTING THE DATA OF THE CURRENT USER USING HIS/HER ID
         reference = FirebaseDatabase.getInstance().getReference("User_account");
@@ -137,7 +130,11 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
                     phone.setText(contactnumber_user);
 
                     //SET THE FIELD UNEDITABLE
-                    full_name.setEnabled(false);
+
+                    String full_name_editText = full_name.getText().toString();
+                    if(!full_name_editText.matches("")) {
+                        full_name.setEnabled(false);
+                    }
                     email.setEnabled(false);
 
                 } else {
@@ -210,7 +207,8 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
                     phone.requestFocus();
                 }
                 else {
-                    host_Registration();
+                    //host_Registration();
+                    movetoNextPage();
                 }
 
             }
@@ -231,13 +229,15 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
                     new String[]{
                             Manifest.permission.CAMERA
                     },
-                        100);
+                    100);
         }
 
         upload_pic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                choosepicture();
+                //OPENS CAMERA
+                Intent intent= new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+                startActivityForResult(intent, 101);
             }
         });
 //        upload_pic.setOnClickListener(new View.OnClickListener() {
@@ -253,22 +253,23 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 //        });
 
     }
-    //OPENS CAMERA
-    private void choosepicture() {
-        Intent intent= new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-        startActivityForResult(intent, 1);
-    }
-
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode == 1){
+        if(requestCode == 101){
             //DISPLAYS THE PICTURE
-            Bitmap captureImage = (Bitmap) data.getExtras().get("data");
-//            imageURI = data.getData();
-//            img_host_id.setImageURI(imageURI);
-            img_host_id.setImageBitmap(captureImage);
+
+            //Using imageURI
+            //imageURI = data.getData();
+            //img_host_id.setImageURI(imageURI);
+
+            filepath = data.getData();
+
+            //Using bitmap
+            capturedImage = (Bitmap) data.getExtras().get("data");
+            img_host_id.setImageBitmap(capturedImage);
+
             //uploadPicture();
         }
         else {
@@ -276,7 +277,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         }
     }
 
-    private void uploadPicture() {
+    /*private void uploadPicture() {
         final ProgressDialog pd = new ProgressDialog(this);
         pd.setTitle("Uploading Image...");
         pd.show();
@@ -310,9 +311,44 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 
 
 
-    }
+    }*/
     /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    /*private void uploadProfileImage() {
+
+        if(capturedImage != null){
+            final StorageReference fileRef = storageIdPic
+                    .child(mAuth.getCurrentUser().getUid()+".jpg");
+            uploadTask = fileRef.putFile(capturedImage);
+            uploadTask.continueWithTask(new Continuation() {
+                @Override
+                public Object then(@NonNull Task task) throws Exception {
+                    if (!task.isSuccessful()){
+                        throw  task.getException();
+                    }
+                    return fileRef.getDownloadUrl();
+                }
+            }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+                @Override
+                public void onComplete(@NonNull Task task) {
+                    if (task.isSuccessful()){
+                        Uri downloadUrl = (Uri) task.getResult();
+                        path = downloadUrl.toString();
+
+                        HashMap<String, Object> userMap = new HashMap<>();
+                        userMap.put("image",path);
+                        databaseReference.child(mAuth.getCurrentUser().getUid()).updateChildren(userMap);
+                    }
+                }
+            });
+        }
+        else{
+
+            Toast.makeText(this, "Image not selected", Toast.LENGTH_SHORT).show();
+        }
+    }*/
+
+    ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
     public void host_Registration()
     {
         String h_fn = full_name.getText().toString();
