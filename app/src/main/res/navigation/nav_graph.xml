@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/fragmentNewsfeed"
-        android:name="nav.newsfeed.FragmentNewsfeed"
+        android:name="nav.newsfeed.FragmentWishlist"
         android:label="fragment_newsfeed"
         tools:layout="@layout/newsfeed_newsfeed" />
     <fragment

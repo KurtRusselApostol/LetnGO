@@ -20,7 +20,7 @@ public class payment_homepage21 extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.account_payment_homepage21);
 
-        back = findViewById(R.id.btn_backButtonPaymentDetails);
+//        back = findViewById(R.id.btn_backButtonPaymentDetails);
         select = findViewById(R.id.account_btn_nextStep);
 
         select.setOnClickListener(new View.OnClickListener() {
