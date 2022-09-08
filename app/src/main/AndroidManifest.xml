@@ -19,7 +19,7 @@
         android:theme="@style/Theme.LetnGo"
         tools:targetApi="31">
         <activity
-            android:name=".Postlist"
+            android:name="nav.categories.recycleview.Postlist"
             android:exported="false" />
         <activity
             android:name=".PersonalInfo1Activity"
