@@ -31,12 +31,12 @@
 
         <ImageButton
             android:id="@+id/account_backButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
             android:layout_width="@dimen/_25sdp"
             android:layout_height="@dimen/_25sdp"
             android:layout_marginStart="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_15sdp"
-            android:background="@drawable/roundbtn"
-            android:src="@drawable/arrow_back" />
+            android:src="@drawable/back_arrow_white" />
 
 
         <TextView
@@ -158,7 +158,7 @@
                         android:fontFamily="sans-serif-light"
                         android:text="On arrival, the guest will need a photo ID that matches this name. You cannot change this later."
                         android:textColor="#FF0000"
-                        android:textSize="@dimen/_7sdp" />
+                        android:textSize="@dimen/_10sdp" />
 
 
                     <TextView
@@ -192,7 +192,7 @@
                         android:fontFamily="sans-serif-light"
                         android:text="Witihn 2 minutes we'll send an email here to let you know if your booking is confirmed."
                         android:textColor="#FF0000"
-                        android:textSize="@dimen/_7sdp" />
+                        android:textSize="@dimen/_10sdp" />
 
                     <TextView
                         android:id="@+id/account_contactNumber"
