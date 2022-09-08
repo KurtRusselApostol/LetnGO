@@ -164,7 +164,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
                         android:layout_marginTop="36dp"
-                        android:hint="Match your Password here"
+                        android:inputType="textPassword"
+                        android:hint="Password"
                         android:padding="25dp"
                         android:textColor="#000000"
                         android:textColorHint="#808080"
@@ -188,7 +189,7 @@
                         android:layout_height="wrap_content"
                         android:layout_below="@+id/layout_host_email"
                         android:layout_marginStart="20dp"
-                        app:ccp_defaultLanguage="ENGLISH" />
+                        app:ccp_defaultNameCode="PH" />
 
                     <EditText
                         android:id="@+id/ed_host_mobile"
@@ -261,7 +262,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginBottom="10dp"
                     android:padding="@dimen/_20sdp"
-                    android:text="Choose photo"
+                    android:text="Take photo"
                     app:cardCornerRadius="@dimen/_10sdp" />
 
             </RelativeLayout>
@@ -273,17 +274,17 @@
                 android:layout_below="@+id/host_fill_up"
                 android:background="#658B6F">
 
-                <TextView
-                    android:id="@+id/tv_back"
-                    android:layout_width="wrap_content"
-                    android:layout_height="100dp"
-                    android:paddingTop="40dp"
-                    android:layout_weight="1"
-                    android:text="Back"
-                    android:textAlignment="center"
-                    android:textSize="20sp"
-                    android:textStyle="bold"
-                    android:textColor="#8AB294"/>
+<!--                <TextView-->
+<!--                    android:id="@+id/tv_back"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="100dp"-->
+<!--                    android:paddingTop="40dp"-->
+<!--                    android:layout_weight="1"-->
+<!--                    android:text="Back"-->
+<!--                    android:textAlignment="center"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:textStyle="bold"-->
+<!--                    android:textColor="#8AB294"/>-->
 
                 <TextView
                     android:id="@+id/tv_next"

@@ -1,10 +1,16 @@
 package nav.account.hosting;
 
+import android.Manifest;
+import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.content.pm.PackageManager;
+import android.graphics.Bitmap;
 import android.net.Uri;
 import android.os.Bundle;
+import android.provider.MediaStore;
 import android.text.TextUtils;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.AdapterView;
@@ -19,12 +25,19 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.app.ActivityCompat;
+import androidx.core.content.ContextCompat;
 
+import com.example.letngo.MainActivity;
 import com.example.letngo.R;
 import com.github.drjacky.imagepicker.ImagePicker;
+import com.github.drjacky.imagepicker.constant.ImageProvider;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.material.snackbar.Snackbar;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
+import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.storage.FirebaseStorage;
@@ -43,9 +56,10 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
     private EditText full_name, email, phone, password;
+    String firstname_user, lastname_user, fullname_user, email_user, password_user, contactnumber_user;
     Spinner spinner;
     TextView next;
-    ImageView host_photo,back;
+    ImageView host_photo, cancel;
     CountryCodePicker countryCodePicker;
     private ImageView img_host_id;
     private Button upload_pic;
@@ -53,8 +67,23 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
     private FirebaseStorage storage;
     private StorageReference storageReference;
 
+    protected static final int CAMERA_REQUEST = 0;
+    protected static final int GALLERY_PICTURE = 1;
+    private Intent pictureActionIntent = null;
+    Bitmap bitmap;
+
+    String selectedImagePath;
+
+
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+    FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
+    String userUid;
+    {
+        assert currentUser != null;
+        userUid = currentUser.getUid();
+    }
+
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference reference = database.getReference().child("Host_Account").child("Host_Profile");
@@ -67,7 +96,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         setContentView(R.layout.account_hosting_start_hosting);
 
 
-        //SETTING INITIALIZATIONS
+        //SETTING INITIALIZATIONS FOR XML
         full_name = findViewById(R.id.ed_host_full_name);
         email = findViewById(R.id.ed_host_email);
         password = findViewById(R.id.ed_host_matchPass);
@@ -75,7 +104,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         countryCodePicker = findViewById(R.id.ccp_host);
         spinner = findViewById(R.id.spinner_government_id);
         host_photo = findViewById(R.id.img_host_id);
-        back = findViewById(R.id.img_Cancel);
+        cancel = findViewById(R.id.img_Cancel);
         next = findViewById(R.id.tv_next);
         storage = FirebaseStorage.getInstance();
         storageReference = storage.getReference();
@@ -84,8 +113,42 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         upload_pic = findViewById(R.id.upload_pic);
 
 
+        System.out.println(userUid);
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        //GETTING THE DATA OF THE CURRENT USER USING HIS/HER ID
+        reference = FirebaseDatabase.getInstance().getReference("User_account");
+        reference.child(userUid).get().addOnCompleteListener(task -> {
+            if (!task.isSuccessful()) {
+                Log.e("firebase", "Error getting data", task.getException());
+            } else {
+                if (task.getResult().exists()) {
+                    DataSnapshot dataSnapshot = task.getResult();
 
+                    firstname_user = String.valueOf(dataSnapshot.child("FirstName").getValue());
+                    lastname_user = String.valueOf(dataSnapshot.child("LastName").getValue());
+                    fullname_user = firstname_user + " " + lastname_user;
+                    email_user = String.valueOf(dataSnapshot.child("Email").getValue());
+                    password_user = String.valueOf(dataSnapshot.child("Password").getValue());
+                    contactnumber_user = String.valueOf(dataSnapshot.child("Mobile").getValue());
+
+                    //SETTING THE DEFAULT VALUES FOR EDITTEXT THAT CAME FROM USER FETCHED DATA
+                    full_name.setText(fullname_user);
+                    email.setText(email_user);
+                    phone.setText(contactnumber_user);
+
+                    //SET THE FIELD UNEDITABLE
+                    full_name.setEnabled(false);
+                    email.setEnabled(false);
+
+                } else {
+                    Toast.makeText(getApplicationContext(), "ERROR", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //SAVING FIRST PART OF HOSTING
         next.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,6 +159,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 
                 String h_fn = full_name.getText().toString();
                 String h_em = email.getText().toString();
+                String h_pass = password.getText().toString();
                 String h_mb = phone.getText().toString();
                 String h_id = spinner.getSelectedItem().toString();
                 //String h_ccp = countryCodePicker.getSelectedCountryCodeWithPlus().toString();
@@ -108,8 +172,12 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
                 h_fullnameMatcher = mobilePattern.matcher(h_fn);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-                if (TextUtils.isEmpty(h_fn)){
+                if (!h_pass.equals(password_user)){
+                    Toast.makeText(start_hosting.this, "Your password is incorrect", Toast.LENGTH_LONG).show();
+                    password.setError("Password is incorrect");
+                    password.requestFocus();
+                }
+                else if (TextUtils.isEmpty(h_fn)){
                     Toast.makeText(start_hosting.this, "Please enter your Full Name", Toast.LENGTH_LONG).show();
                     full_name.setError("Full Name is required");
                     full_name.requestFocus();
@@ -150,47 +218,58 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        back.setOnClickListener(v -> onBackPressed());
+        cancel.setOnClickListener(v -> onBackPressed());
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
         // CALLING SPINNER METHOD
         dropdownSpinner();
 
-//        upload_pic.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                choosepicture();
-//            }
-//        });
+        //REQUEST FOR CAMERA PERMISSION
+        if (ContextCompat.checkSelfPermission(start_hosting.this, Manifest.permission.CAMERA) != PackageManager.PERMISSION_GRANTED){
+            ActivityCompat.requestPermissions(start_hosting.this,
+                    new String[]{
+                            Manifest.permission.CAMERA
+                    },
+                        100);
+        }
+
         upload_pic.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ImagePicker.Companion.with(start_hosting.this)
-                        .crop()
-//                        .provider(ImageProvider.BOTH)
-                        .galleryOnly()
-                        .maxResultSize(1000, 1000)
-                        .start(101);
+                choosepicture();
             }
         });
+//        upload_pic.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                ImagePicker.Companion.with(start_hosting.this)
+//                        .crop()
+//                        .provider(ImageProvider.BOTH)
+//                        //.galleryOnly()
+//                        .maxResultSize(1000, 1000)
+//                        .start(101);
+//            }
+//        });
 
     }
+    //OPENS CAMERA
+    private void choosepicture() {
+        Intent intent= new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+        startActivityForResult(intent, 1);
+    }
 
-//    private void choosepicture() {
-//        Intent intent= new Intent();
-//        intent.setType("image/*");
-//        intent.setAction(Intent.ACTION_GET_CONTENT);
-//        startActivityForResult(intent, 1);
-//    }
 
     @Override
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data) {
         super.onActivityResult(requestCode, resultCode, data);
-        if(requestCode==101 && resultCode==RESULT_OK && data!=null && data.getData()!=null){
-            imageURI = data.getData();
-            img_host_id.setImageURI(imageURI);
-            uploadPicture();
+        if(requestCode == 1){
+            //DISPLAYS THE PICTURE
+            Bitmap captureImage = (Bitmap) data.getExtras().get("data");
+//            imageURI = data.getData();
+//            img_host_id.setImageURI(imageURI);
+            img_host_id.setImageBitmap(captureImage);
+            //uploadPicture();
         }
         else {
             Toast.makeText(getApplicationContext(), "No image selected!", Toast.LENGTH_SHORT).show();
@@ -260,7 +339,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 //--------------------------------------ALL METHODS STARTS HERE------------------------------------------------------//
 
 
-    public  void movetoNextPage()
+    public void movetoNextPage()
     {
         startActivity(new Intent(getApplicationContext(), hosting_next.class));
         finish();
