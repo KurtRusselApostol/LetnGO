@@ -156,7 +156,7 @@
                         android:layout_alignStart="@id/account_YourDetails"
                         android:layout_alignEnd="@id/account_firstNameTxt"
                         android:fontFamily="sans-serif-light"
-                        android:text="On arrival, the guest will need a photo ID that matches this name. You cannot change this later."
+                        android:text="The photo ID must match this name. You cannot change this later."
                         android:textColor="#FF0000"
                         android:textSize="@dimen/_10sdp" />
 
@@ -190,7 +190,7 @@
                         android:layout_alignStart="@id/account_YourDetails"
                         android:layout_alignEnd="@id/account_emailAddressTxt"
                         android:fontFamily="sans-serif-light"
-                        android:text="Witihn 2 minutes we'll send an email here to let you know if your booking is confirmed."
+                        android:text="A confirmation email will be sent within minutes to inform you if your booking is confirmed."
                         android:textColor="#FF0000"
                         android:textSize="@dimen/_10sdp" />
 
