@@ -70,7 +70,7 @@ public class new_Hosting extends AppCompatActivity {
         String id=databaseUser.push().getKey();
 
         Hosting hosting= new Hosting(title,description,highlights,offer_description,others,price,price_discount);
-        databaseUser.child("Host_Account/Host_Description").child(id).setValue(hosting)
+        databaseUser.child("Host_Description").child(id).setValue(hosting)
                 .addOnCompleteListener(new OnCompleteListener<Void>() {
                     @Override
                     public void onComplete(@NonNull Task<Void> task) {
