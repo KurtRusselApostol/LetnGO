@@ -45,10 +45,11 @@
             android:layout_marginStart="-1dp"
             android:layout_marginTop="24dp"
             android:layout_marginEnd="1dp"
-            android:text="Confirm your email address"
+            android:fontFamily="@font/poppins_medium"
+            android:text="Confirm your email address."
             android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:textSize="24sp"
+            android:textSize="@dimen/_18sdp"
             android:textStyle="bold" />
 
         <View
@@ -70,9 +71,10 @@
             android:layout_alignParentEnd="true"
             android:layout_marginTop="14dp"
             android:layout_marginEnd="-17dp"
-            android:text="By clicking the button, you are confirming your\nemail address and agreeing to terms of services."
+            android:text="By clicking the button, you are confirming your email address and agreeing to terms of services."
             android:textAlignment="textStart"
-            android:textSize="15sp"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_light"
             android:textStyle="bold" />
 
         <TextView
@@ -83,13 +85,14 @@
             android:layout_alignStart="@+id/conficontent"
             android:layout_marginTop="10dp"
             android:text="This ensures we have the right email in case we need to contact you."
-            android:textSize="15sp"
+            android:textSize="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_light"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/button"
-            android:layout_width="@dimen/_231sdp"
-            android:layout_height="@dimen/_46sdp"
+            android:layout_width="@dimen/_225sdp"
+            android:layout_height="@dimen/_50sdp"
             android:layout_below="@+id/confiensure"
             android:layout_alignParentStart="true"
             android:layout_alignParentEnd="true"

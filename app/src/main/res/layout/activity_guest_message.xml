@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".GuestMessage"
     android:scrollbars="none"
-    android:background="#DEE1DD">
+    android:background="#DDDDDD">
 
     <RelativeLayout
         android:id="@+id/responsiveText"
@@ -16,24 +16,23 @@
         tools:ignore="MissingConstraints">
 
         <ImageButton
-            android:id="@+id/imageCancel"
+            android:id="@+id/activity_back"
             android:layout_width="50dp"
             android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             android:backgroundTint="#00FFFFFF"
-            android:src="@drawable/back_arrow"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0" />
+            android:src="@drawable/back_arrow" />
 
         <TextView
             android:id="@+id/activity_messages"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="35dp"
-            android:layout_marginTop="@dimen/_50sdp"
+            android:layout_below="@id/activity_back"
+            android:layout_marginTop="@dimen/_10sdp"
             android:layout_marginEnd="32dp"
             android:fontFamily="@font/poppins_bold"
             android:text="Messages"
@@ -78,18 +77,17 @@
             android:fontFamily="@font/poppins_light"
             android:justificationMode="inter_word"
             android:text="Once you log in, you can create and view your messages here."
-            android:textColor="#2F575D"
-            android:textStyle="bold"
-            android:textSize="@dimen/_15sdp" />
+            android:textSize="@dimen/_15sdp"
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/activity_loginbutton"
-            android:layout_width="139dp"
-            android:layout_height="54dp"
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_50sdp"
             android:layout_below="@id/activity_onceyou"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="@dimen/_25sdp"
-            android:background="@drawable/button_round_gradient"
+            android:background="@drawable/button_gradient"
             android:text="Log in"
             android:textColor="#2F575D"
             android:textSize="@dimen/_15sdp"

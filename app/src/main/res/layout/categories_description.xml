@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardElevation="12dp"
+    app:cardCornerRadius="12dp"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal">
+
+
+                <RelativeLayout android:layout_height="1500dp" android:layout_width="match_parent">
+
+                    <androidx.cardview.widget.CardView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="200dp"
+                        app:cardCornerRadius="15dp"
+                        android:layout_margin="21dp"
+                        android:elevation="20dp">
+
+                        <!--             PICTURE WILL BE ADDED FROM HOST-->
+
+                        <ImageButton
+                            android:id="@+id/image_info"
+                            android:layout_width="match_parent"
+                            android:layout_height="200dp"
+                            android:background="@drawable/beach_1"
+                            android:clickable="true"
+                            android:scaleType="centerCrop" />
+
+                    </androidx.cardview.widget.CardView>
+
+
+                    <Button
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:clickable="true"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginEnd="40dp"
+                        android:background="@drawable/ic_blue_favorite_24"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+                    <!--         BEDS INFO     -->
+
+                    <TextView
+                        android:id="@+id/beds_info"
+                        android:layout_width="72dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="60dp"
+                        android:layout_marginTop="230dp"
+                        android:drawableStart="@drawable/ic_bed1"
+                        android:gravity="center"
+                        android:text="2 Beds"
+                        android:textColor="#2F575D"
+                        android:textSize="13sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <!--         ROOMS INFO     -->
+
+                    <TextView
+                        android:id="@+id/rooms_info"
+                        android:layout_width="85dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="54dp"
+                        android:layout_marginTop="260dp"
+                        android:drawableStart="@drawable/door_2"
+                        android:gravity="center"
+                        android:text="3 Rooms"
+                        android:textColor="#2F575D"
+                        android:textSize="13sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <!--         BATHROOMS INFO     -->
+
+                    <TextView
+                        android:id="@+id/bathrooms_info"
+                        android:layout_width="110dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="230dp"
+                        android:layout_marginEnd="80dp"
+                        android:drawableLeft="@drawable/bath"
+                        android:gravity="center"
+                        android:text="2 Bathrooms"
+                        android:textColor="#2F575D"
+                        android:textSize="13sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <!--         COUNTRY INFO     -->
+
+                    <TextView
+                        android:id="@+id/country_info"
+                        android:layout_width="90dp"
+                        android:layout_height="48dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="260dp"
+                        android:layout_marginEnd="100dp"
+                        android:drawableLeft="@drawable/ic_baseline_location_on_24"
+                        android:gravity="center"
+                        android:text="Malaysia"
+                        android:textColor="#2F575D"
+                        android:textSize="13sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <!--         PRICING INFO -->
+
+                    <TextView
+                        android:id="@+id/price_info"
+                        android:layout_width="130dp"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="295dp"
+                        android:gravity="center"
+                        android:text="P7,500 per night"
+                        android:textColor="#2F575D"
+                        android:textSize="15sp"
+                        android:textStyle="bold">
+
+                    </TextView>
+
+                    <!--         Beach Text RATING ONE-->
+
+                    <RatingBar
+                        style="@style/Widget.AppCompat.RatingBar.Small"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginTop="310dp"
+                        android:layout_marginEnd="40dp"
+                        android:layout_marginBottom="10dp"
+                        android:progressTint="#FFC107"
+                        android:rating="5"
+                        tools:ignore="SpeakableTextPresentCheck" />
+
+
+                </RelativeLayout>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+
+</androidx.cardview.widget.CardView>
