@@ -52,7 +52,7 @@
             android:textStyle="bold" />
 
 
-        <ImageButton
+        <ImageView
             android:id="@+id/account_whiteBtnOne"
             android:layout_width="5dp"
             android:layout_height="5dp"
@@ -60,7 +60,7 @@
             android:layout_alignLeft="@id/account_fillin"
             android:background="@drawable/roundbtn" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/account_greyBtnTwo"
             android:layout_width="5dp"
             android:layout_height="5dp"
@@ -69,7 +69,7 @@
             android:layout_toRightOf="@id/account_whiteBtnOne"
             android:background="@drawable/graybtn" />
 
-        <ImageButton
+        <ImageView
             android:id="@+id/account_greyBtnThree"
             android:layout_width="5dp"
             android:layout_height="5dp"

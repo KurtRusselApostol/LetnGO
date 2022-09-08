@@ -23,60 +23,60 @@
             app:layout_constraintTop_toTopOf="parent" />
 
         <ImageView
-            android:id="@+id/iv_letNGoLogo"
-            android:layout_width="44dp"
-            android:layout_height="45dp"
+            android:id="@+id/account_letNGoLogo"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="350dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/letngologo" />
 
-        <ImageView
-            android:id="@+id/btn_backButtonPaymentDetails"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/roundbtn"
-            android:clickable="true"
-            android:src="@drawable/arrow_back" />
-
-
+        <ImageButton
+            android:id="@+id/account_backButton"
+            style="@style/Widget.AppCompat.Button.Borderless"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:src="@drawable/back_arrow_white" />
 
         <TextView
-            android:id="@+id/tv_finishBooking"
-            android:layout_width="192dp"
-            android:layout_height="31dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="20dp"
-            android:text="@string/finish_booking"
+            android:id="@+id/account_finishbooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Finish booking"
             android:textColor="@color/white"
-            android:textSize="19sp"
+            android:textSize="@dimen/_18sdp"
             android:textStyle="bold" />
 
 
-        <ImageButton
-            android:id="@+id/btn_greyBtnOne"
+        <ImageView
+            android:id="@+id/account_whiteBtnOne"
             android:layout_width="5dp"
             android:layout_height="5dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/graybtn" />
-
-        <ImageButton
-            android:id="@+id/btn_greyBtnTwo"
-            android:layout_width="5dp"
-            android:layout_height="5dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/graybtn" />
-
-        <ImageButton
-            android:id="@+id/btn_greyBtnThree"
-            android:layout_width="5dp"
-            android:layout_height="5dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="50dp"
+            android:layout_below="@id/account_finishbooking"
+            android:layout_alignLeft="@id/account_finishbooking"
             android:background="@drawable/roundbtn" />
+
+        <ImageView
+            android:id="@+id/account_greyBtnTwo"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_below="@id/account_finishbooking"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toRightOf="@id/account_whiteBtnOne"
+            android:background="@drawable/graybtn" />
+
+        <ImageView
+            android:id="@+id/account_greyBtnThree"
+            android:layout_width="5dp"
+            android:layout_height="5dp"
+            android:layout_below="@id/account_finishbooking"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toRightOf="@id/account_greyBtnTwo"
+            android:background="@drawable/graybtn" />
 
         <RelativeLayout
             android:layout_width="match_parent"
@@ -144,7 +144,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="205dp"
                     android:layout_marginTop="32dp"
-                    android:drawableLeft="@drawable/person" />
+                    android:drawableLeft="@drawable/account_cash" />
 
                 <TextView
                     android:id="@+id/textView56"
