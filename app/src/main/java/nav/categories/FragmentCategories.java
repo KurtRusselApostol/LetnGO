@@ -12,6 +12,10 @@ import androidx.fragment.app.Fragment;
 
 import com.example.letngo.R;
 
+import java.util.ArrayList;
+
+import nav.categories.recycleview.Location;
+import nav.categories.recycleview.Post;
 import nav.categories.recycleview.Postlist;
 
 /**
@@ -20,6 +24,12 @@ import nav.categories.recycleview.Postlist;
  * create an instance of this fragment.
  */
 public class FragmentCategories extends Fragment implements View.OnClickListener {
+
+    // initialize variables for recycler view
+    Location location = new Location();
+    Postlist postlist = new Postlist();
+
+
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -90,35 +100,73 @@ public class FragmentCategories extends Fragment implements View.OnClickListener
 
         switch (v.getId()){
             case R.id.beach:
+                resetLocation();
+                location.setPost_beach(true);
+
+                postlist.postlist(location);
                 Intent intent = new Intent(getActivity(), Postlist.class);
                 startActivity(intent);
                 break;
             case R.id.tree_house:
-                Intent intent1 = new Intent(getActivity(), sub_treehouse.class);
+                resetLocation();
+                location.setPost_treehouse(true);
+                postlist.postlist(location);
+                Intent intent1 = new Intent(getActivity(), Postlist.class);
                 startActivity(intent1);
                 break;
             case R.id.camping:
+                resetLocation();
+                location.setPost_camping(true);
+                postlist.postlist(location);
                 Intent intent2 = new Intent(getActivity(), sub_camping.class);
                 startActivity(intent2);
                 break;
             case R.id.caves:
+                resetLocation();
+                location.setPost_caves(true);
+                postlist.postlist(location);
                 Intent intent3 = new Intent(getActivity(), sub_caves.class);
                 startActivity(intent3);
                 break;
             case R.id.country_side:
+                resetLocation();
+                location.setPost_countryside(true);
+                postlist.postlist(location);
                 Intent intent4 = new Intent(getActivity(), sub_countryside.class);
                 startActivity(intent4);
                 break;
             case R.id.cabin:
+                resetLocation();
+                location.setPost_cabin(true);
+                postlist.postlist(location);
                 Intent intent5 = new Intent(getActivity(), sub_cabin.class);
                 startActivity(intent5);
                 break;
             case R.id.island:
+                resetLocation();
+                location.setPost_island(true);
+                postlist.postlist(location);
                 Intent intent6 = new Intent(getActivity(), sub_island.class);
                 startActivity(intent6);
                 break;
         }
 
     }
+
+    private void resetLocation(){
+
+        location.setPost_beach(false);
+        location.setPost_treehouse(false);
+        location.setPost_camping(false);
+        location.setPost_caves(false);
+        location.setPost_countryside(false);
+        location.setPost_cabin(false);
+        location.setPost_island(false);
+
+    }
+
+
+
+
 
 }
