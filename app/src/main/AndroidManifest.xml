@@ -215,6 +215,10 @@
             android:name="nav.account.hosting.hosting_final_description"
             android:exported="false" />
         <activity
+            android:name="nav.account.hosting.new_Hosting"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
             android:name="nav.account.hosting.hosting_next"
             android:exported="false">
 
