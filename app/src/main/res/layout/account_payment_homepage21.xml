@@ -22,57 +22,60 @@
 
 
         <ImageView
-            android:id="@+id/iv_letNGoLogo"
-            android:layout_width="44dp"
-            android:layout_height="45dp"
+            android:id="@+id/account_letNGoLogo"
+            android:layout_width="@dimen/_30sdp"
+            android:layout_height="@dimen/_30sdp"
             android:layout_marginStart="350dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/letngologo" />
 
         <ImageButton
-            android:id="@+id/btn_backButtonPaymentDetails"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="15dp"
-            android:layout_marginTop="20dp"
+            android:id="@+id/account_backButton"
+            android:layout_width="@dimen/_25sdp"
+            android:layout_height="@dimen/_25sdp"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_15sdp"
             android:background="@drawable/roundbtn"
             android:src="@drawable/arrow_back" />
 
 
         <TextView
-            android:id="@+id/tv_fillYourDetails"
-            android:layout_width="192dp"
-            android:layout_height="31dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="20dp"
-            android:text="Fill your Details"
+            android:id="@+id/account_fillin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_50sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Fill in your Details"
             android:textColor="@color/white"
-            android:textSize="19sp"
+            android:textSize="@dimen/_18sdp"
             android:textStyle="bold" />
 
 
         <ImageButton
-            android:id="@+id/btn_whiteBtnOne"
+            android:id="@+id/account_whiteBtnOne"
             android:layout_width="5dp"
             android:layout_height="5dp"
-            android:layout_marginStart="60dp"
-            android:layout_marginTop="50dp"
+            android:layout_below="@id/account_fillin"
+            android:layout_alignLeft="@id/account_fillin"
             android:background="@drawable/roundbtn" />
 
         <ImageButton
-            android:id="@+id/btn_greyBtnTwo"
+            android:id="@+id/account_greyBtnTwo"
             android:layout_width="5dp"
             android:layout_height="5dp"
-            android:layout_marginStart="70dp"
-            android:layout_marginTop="50dp"
+            android:layout_below="@id/account_fillin"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toRightOf="@id/account_whiteBtnOne"
             android:background="@drawable/graybtn" />
 
         <ImageButton
-            android:id="@+id/btn_greyBtnThree"
+            android:id="@+id/account_greyBtnThree"
             android:layout_width="5dp"
             android:layout_height="5dp"
-            android:layout_marginStart="80dp"
-            android:layout_marginTop="50dp"
+            android:layout_below="@id/account_fillin"
+            android:layout_marginStart="@dimen/_3sdp"
+            android:layout_toRightOf="@id/account_greyBtnTwo"
             android:background="@drawable/graybtn" />
 
         <RelativeLayout
@@ -83,121 +86,132 @@
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
-                android:layout_height="710dp"
+                android:layout_height="wrap_content"
                 android:background="@color/white">
 
                 <RelativeLayout
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
 
                     <TextView
-                        android:id="@+id/tv_YourDetails"
+                        android:id="@+id/account_YourDetails"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="50dp"
-                        android:fontFamily="sans-serif"
+                        android:layout_marginStart="@dimen/_15sdp"
+                        android:layout_marginTop="@dimen/_15sdp"
+                        android:fontFamily="@font/poppins_bold"
                         android:text="Your Details"
-                        android:textColor="#658B6F"
-                        android:textSize="20sp"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/_18sdp"
                         android:textStyle="bold" />
 
 
                     <TextView
-                        android:id="@+id/tv_lastname"
+                        android:id="@+id/account_lastname"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="100dp"
+                        android:layout_below="@id/account_YourDetails"
+                        android:layout_alignStart="@id/account_YourDetails"
+                        android:layout_marginTop="@dimen/_15sdp"
                         android:text="Last Name"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_15sdp" />
 
                     <EditText
-                        android:id="@+id/et_lastnametxt"
-                        android:layout_width="341dp"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="120dp"
-                        android:layout_marginStart="20dp"
+                        android:id="@+id/account_lastnametxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_below="@id/account_lastname"
+                        android:layout_alignStart="@id/account_YourDetails"
+                        android:layout_marginEnd="@dimen/_40sdp"
                         android:ems="10"
                         android:inputType="textPersonName"
                         android:textColor="#658B6F" />
 
                     <TextView
-                        android:id="@+id/tv_firstName"
+                        android:id="@+id/account_firstName"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="180dp"
+                        android:layout_below="@id/account_lastnametxt"
+                        android:layout_alignStart="@id/account_YourDetails"
+                        android:layout_marginTop="@dimen/_15sdp"
                         android:text="First Name"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_15sdp" />
 
                     <EditText
-                        android:id="@+id/ed_firstNameTxt"
-                        android:layout_width="341dp"
-                        android:layout_height="45dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="200dp"
+                        android:id="@+id/account_firstNameTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_below="@id/account_firstName"
+                        android:layout_alignStart="@id/account_YourDetails"
+                        android:layout_marginEnd="@dimen/_40sdp"
                         android:ems="10"
                         android:inputType="textPersonName"
                         android:textColor="#658B6F" />
 
                     <TextView
-                        android:id="@+id/tv_reminderOne"
+                        android:id="@+id/account_reminderOne"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="240dp"
+                        android:layout_below="@id/account_firstNameTxt"
+                        android:layout_alignStart="@id/account_YourDetails"
+                        android:layout_alignEnd="@id/account_firstNameTxt"
                         android:fontFamily="sans-serif-light"
-                        android:text="on arrival the guest will need a photo ID that matches this name. You cannot change this later."
+                        android:text="On arrival, the guest will need a photo ID that matches this name. You cannot change this later."
                         android:textColor="#FF0000"
-                        android:textSize="8sp" />
+                        android:textSize="@dimen/_7sdp" />
 
 
                     <TextView
-                        android:id="@+id/tv_emailAddress"
+                        android:id="@+id/account_emailAddress"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="280dp"
+                        android:layout_below="@id/account_reminderOne"
+                        android:layout_alignStart="@id/account_YourDetails"
+                        android:layout_marginTop="@dimen/_15sdp"
                         android:text="Email Address"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_15sdp" />
 
                     <EditText
-                        android:id="@+id/ed_emailAddressTxt"
-                        android:layout_width="341dp"
-                        android:layout_height="45dp"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="300dp"
+                        android:id="@+id/account_emailAddressTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_below="@id/account_emailAddress"
+                        android:layout_alignStart="@id/account_YourDetails"
+                        android:layout_marginEnd="@dimen/_40sdp"
                         android:ems="10"
                         android:inputType="textEmailAddress"
                         android:textColor="#658B6F" />
 
                     <TextView
-                        android:id="@+id/tv_reminderTwo"
+                        android:id="@+id/account_reminderTwo"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="340dp"
+                        android:layout_below="@id/account_emailAddressTxt"
+                        android:layout_alignStart="@id/account_YourDetails"
+                        android:layout_alignEnd="@id/account_emailAddressTxt"
                         android:fontFamily="sans-serif-light"
                         android:text="Witihn 2 minutes we'll send an email here to let you know if your booking is confirmed."
                         android:textColor="#FF0000"
-                        android:textSize="8sp" />
+                        android:textSize="@dimen/_7sdp" />
 
                     <TextView
-                        android:id="@+id/tv_contactNumber"
+                        android:id="@+id/account_contactNumber"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="370dp"
+                        android:layout_below="@id/account_reminderTwo"
+                        android:layout_alignStart="@id/account_YourDetails"
+                        android:layout_marginTop="@dimen/_15sdp"
                         android:text="Contact Number"
-                        android:textSize="14sp" />
+                        android:textSize="@dimen/_15sdp" />
 
                     <EditText
-                        android:id="@+id/ed_contactNumberTxt"
-                        android:layout_width="341dp"
-                        android:layout_height="45dp"
-                        android:layout_marginTop="390dp"
-                        android:layout_marginStart="20dp"
+                        android:id="@+id/account_contactNumberTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_35sdp"
+                        android:layout_below="@id/account_contactNumber"
+                        android:layout_alignStart="@id/account_YourDetails"
+                        android:layout_marginEnd="@dimen/_40sdp"
+                        android:layout_marginBottom="@dimen/_25sdp"
                         android:ems="10"
                         android:inputType="textEmailAddress"
                         android:textColor="#658B6F" />
@@ -223,48 +237,48 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:id="@+id/layoutHeader2"
             android:layout_width="match_parent"
-            android:layout_height="101dp"
+            android:layout_height="@dimen/_100sdp"
             android:background="@drawable/rectangle"
             android:padding="40dp"
             app:layout_constraintTop_toTopOf="parent" />
 
 
         <Button
-            android:id="@+id/btn_nextStep"
-            android:layout_width="120dp"
-            android:layout_height="40dp"
-            android:layout_marginStart="250dp"
-            android:layout_marginTop="30dp"
+            android:id="@+id/account_btn_nextStep"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="@dimen/_30sdp"
             android:background="@drawable/edit_background"
-            android:fontFamily="sans-serif"
             android:foregroundTint="#658B6F"
             android:text="Next Step"
             android:textAllCaps="false"
             android:textColor="#658B6F"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            app:cornerRadius="20dp" />
+            android:textSize="@dimen/_12sdp"
+            android:textStyle="bold" />
 
 
         // Total prices of the booking//
+
         <TextView
-            android:id="@+id/tv_tolalPrice"
-            android:layout_width="192dp"
-            android:layout_height="31dp"
+            android:id="@+id/account_totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_30sdp"
+            android:layout_marginTop="@dimen/_20sdp"
             android:fontFamily="sans-serif"
             android:text="PHP 00000.00"
             android:textColor="@color/white"
             android:textSize="16sp"
-            android:textStyle="bold"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"/>
+            android:textStyle="bold" />
 
         <TextView
-            android:id="@+id/textView27"
+            android:id="@+id/account_includes"
             android:layout_width="192dp"
             android:layout_height="31dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginTop="50dp"
+            android:layout_below="@id/account_totalPrice"
+            android:layout_alignStart="@id/account_totalPrice"
             android:text="Includes taxes and charges"
             android:textColor="@color/white"
             android:textSize="13sp" />
