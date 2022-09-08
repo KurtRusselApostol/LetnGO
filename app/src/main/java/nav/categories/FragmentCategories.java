@@ -1,5 +1,6 @@
 package nav.categories;
 
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,6 +11,8 @@ import android.widget.RelativeLayout;
 import androidx.fragment.app.Fragment;
 
 import com.example.letngo.R;
+
+import nav.categories.recycleview.Postlist;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -87,7 +90,7 @@ public class FragmentCategories extends Fragment implements View.OnClickListener
 
         switch (v.getId()){
             case R.id.beach:
-                Intent intent = new Intent(getActivity(), sub_beach.class);
+                Intent intent = new Intent(getActivity(), Postlist.class);
                 startActivity(intent);
                 break;
             case R.id.tree_house:

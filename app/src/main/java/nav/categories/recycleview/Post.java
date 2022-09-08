@@ -7,52 +7,77 @@ import com.google.firebase.database.IgnoreExtraProperties;
 
 @IgnoreExtraProperties
 public class Post {
-    private int bathrooms;
-    private int beds;
+
+    private String bathrooms;
+    private String beds;
     private String country;
-    private Uri imageUri;
+    private String image;
     private String price;
-    private int rooms;
-    private String user;
+    private String rooms;
 
 
+    public Post(){
 
-    public Post(int bathrooms, int beds, String country, Uri imageUri, String price, int rooms, String user){
+    }
+
+    public Post(String bathrooms, String beds, String country, String image, String price, String rooms){
         this.bathrooms = bathrooms;
         this.beds = beds;
         this.country = country;
-        this.imageUri = imageUri;
+        this.image = image;
         this.price = price;
         this.rooms = rooms;
-        this.user = user;
+
 
     }
 
-    public int getBathrooms() {
+    public String getBathrooms() {
         return bathrooms;
     }
 
-    public int getBeds() {
+    public String getBeds() {
         return beds;
     }
 
-    public String getCountry() {
-        return country;
-    }
+    public String getCountry() {return country;}
 
-    public Uri getImageUri() {
-        return imageUri;
+    public String getImage() {
+        return image;
     }
 
     public String getPrice() {
         return price;
     }
 
-    public int getRooms() {
+    public String getRooms() {
         return rooms;
     }
 
-    public String getUser() {
-        return user;
+
+
+    public void setBathrooms(String bathrooms) {
+        this.bathrooms = bathrooms;
     }
+
+    public void setBeds(String beds) {
+        this.beds = beds;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
+    }
+
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public void setPrice(String price) {
+        this.price = price;
+    }
+
+    public void setRooms(String rooms) {
+        this.rooms = rooms;
+    }
+
+
 }

@@ -58,11 +58,11 @@ tools:context="nav.categories.sub_beach"
                 app:tint="@color/colorWhite" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
+
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycleview"
+        android:id="@+id/recycleview_info"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
+        android:layout_height="match_parent" />
 
 
 

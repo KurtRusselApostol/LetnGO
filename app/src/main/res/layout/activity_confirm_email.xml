@@ -12,7 +12,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="#DDDDDD"
-        android:padding="@dimen/_13sdp">
+        android:padding="@dimen/_13sdp"
+        app:layout_constraintTop_toTopOf="parent">
 
         <Button
             android:id="@+id/back"
@@ -27,6 +28,7 @@
     </RelativeLayout>
 
     <RelativeLayout
+        android:id="@+id/relativeLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/tool_bar"
