@@ -219,6 +219,10 @@
             android:exported="false"
             tools:ignore="DuplicateActivity" />
         <activity
+            android:name="nav.account.hosting.Hostinglist"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
             android:name="nav.account.hosting.hosting_next"
             android:exported="false">
 

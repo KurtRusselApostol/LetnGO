@@ -7,13 +7,27 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.letngo.R;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
+
+import java.util.ArrayList;
 
 public class Manage_Hosting extends AppCompatActivity {
 
     ImageView back;
+    RecyclerView recyclerview;
+    ArrayList<Hosting> list;
+    DatabaseReference databaseReference;
+    hostingListAdapter adapter;
 
 
     @Override
@@ -28,6 +42,30 @@ public class Manage_Hosting extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent=new Intent(Manage_Hosting.this,new_Hosting.class);
                 startActivity(intent);
+            }
+        });
+
+        recyclerview=findViewById(R.id.recycleview);
+        databaseReference = FirebaseDatabase.getInstance().getReference("Host_Description");
+        list = new ArrayList<>();
+        recyclerview.setLayoutManager(new LinearLayoutManager(this));
+        adapter = new hostingListAdapter(this,list);
+        recyclerview.setAdapter(adapter);
+
+        databaseReference.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot snapshot) {
+                for (DataSnapshot dataSnapshot: snapshot.getChildren())
+                {
+                    Hosting hosting = dataSnapshot.getValue(Hosting.class);
+                    list.add(hosting);
+                }
+                adapter.notifyDataSetChanged();
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
             }
         });
 

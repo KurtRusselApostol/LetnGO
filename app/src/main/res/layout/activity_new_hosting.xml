@@ -1,108 +1,114 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="nav.account.hosting.new_Hosting">
 
-    <ImageView
-        android:id="@+id/img_Cancel"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_marginTop="25dp"
-        android:layout_weight="1"
-        app:srcCompat="@drawable/remove_button" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-    <TextView
-        android:id="@+id/newText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/img_Cancel"
-        android:layout_marginTop="10dp"
-        android:gravity="center_horizontal"
-        android:text="Add New Hosting"
-        android:textSize="26sp"
-         />
-    <EditText
-        android:id="@+id/editPlaceTitle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/newText"
-        android:hint="Enter Place Title"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        />
-    <EditText
-        android:id="@+id/editDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editPlaceTitle"
-        android:hint="Add Description"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        />
-    <EditText
-        android:id="@+id/editHighlights"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editDescription"
-        android:hint="Highlights of the Place"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        />
-    <EditText
-        android:id="@+id/editOfferDescription"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editHighlights"
-        android:hint="Any offers"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        />
-    <EditText
-        android:id="@+id/editOthers"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editOfferDescription"
-        android:hint="Other Amenities"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        />
-    <EditText
-        android:id="@+id/editPrice"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editOthers"
-        android:hint="Price"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        />
-    <EditText
-        android:id="@+id/editPriceDiscount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editPrice"
-        android:hint="Price Discount"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        />
-    <Button
-        android:id="@+id/btnInsert"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/editPriceDiscount"
-        android:layout_marginTop="20dp"
-        android:text="Add Hosting"
-        />
-    <Button
-        android:id="@+id/btnView"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/btnInsert"
-        android:layout_marginTop="20dp"
-        android:text="View Hosting"
-        />
+        <ImageView
+            android:id="@+id/img_Cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/remove_button" />
 
-</RelativeLayout>
+        <TextView
+            android:id="@+id/newText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/img_Cancel"
+            android:layout_marginTop="10dp"
+            android:gravity="center_horizontal"
+            android:text="Add New Hosting"
+            android:textSize="26sp"
+            />
+        <EditText
+            android:id="@+id/editPlaceTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/newText"
+            android:hint="Enter Place Title"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/editDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editPlaceTitle"
+            android:hint="Add Description"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/editHighlights"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editDescription"
+            android:hint="Highlights of the Place"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/editOfferDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editHighlights"
+            android:hint="Any offers"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/editOthers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editOfferDescription"
+            android:hint="Other Amenities"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/editPrice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editOthers"
+            android:hint="Price"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            />
+        <EditText
+            android:id="@+id/editPriceDiscount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editPrice"
+            android:hint="Price Discount"
+            android:layout_marginTop="20dp"
+            android:textSize="20dp"
+            />
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/editPriceDiscount"
+            android:layout_marginTop="20dp"
+            android:text="Add Hosting"
+            />
+        <Button
+            android:id="@+id/btnView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnInsert"
+            android:layout_marginTop="20dp"
+            android:text="View Hosting"
+            />
+
+    </RelativeLayout>
+
+</ScrollView>
