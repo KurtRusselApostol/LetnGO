@@ -65,8 +65,15 @@ The repository in Java side is divided into packages (folders). Previously, all 
   * nav.wishlist
   * nav.notifications
 
+#### Note on Firebase Database
+It is good to assign one data analyst to maintain and apply security rules for the database. <br />
+
+As you can observe in the database, the rules are inadequate and public. For data analyst, you can apply security rules in the database once the database is finalized and ready to be deployed. Do this before the app launch. <br />
+
+What's more is that the database was used is Realtime Database. It is structured using JSON and it is unstructured. It is older compared to Firestore. Firestore Database, on the other hand, is way more structured database that includes the support of arrays and more. If you feel that you need to switch from Realtime Database to Firestore Database, you need to discuss it to developers as it requires major overhaul in coding side of things, especially in Java classes that uses Firebase. A [lengthy detail here](https://firebase.google.com/docs/firestore/rtdb-vs-firestore) explains the differences of two databases that you might want to read. [A helpful video by Chris Esplin](https://www.youtube.com/watch?v=TmXct7seeBY) might also help!
+
 ### For Code Commeting and Documentarians
-It is a good practice to comment your code in order for the future programmers who will be working in this project to understand the flow and functionality of the codebases. Refer to the *Java documentation* for code commenting. <br /> <br />
+It is a good practice to comment your code in order for the future programmers who will be working in this project understand the flow and functionality of the codebases. Refer to the *Java documentation* for code commenting. <br /> <br />
 As per instruction of the Officer-In-Charge (OIC), for progress reports, front-end and back-end leaders, post those in MCC Discord Thread 'Updates' in 'rental-listing-website' channel and in Trello LetnGo Main Board. <br /> <br />
 It is recommended to assign a documentarian to manage and track the project progress, document changes and additions and modify this README file. If you want to add something in this README file, you are free to do so as long as:
 * It would help future programmers to get the gist about this project.
