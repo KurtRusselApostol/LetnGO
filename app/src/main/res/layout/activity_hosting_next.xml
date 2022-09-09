@@ -328,6 +328,7 @@
                         android:hint="Enter zip code"
                         android:textColor="#000000"
                         android:textColorHint="#808080"
+                        android:inputType="numberDecimal"
                         android:textSize="15sp" />
                 </com.google.android.material.textfield.TextInputLayout>
             </LinearLayout>
@@ -359,7 +360,7 @@
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
                     android:layout_marginStart="20dp"
-                    app:ccp_defaultLanguage="ENGLISH" />
+                    app:ccp_defaultNameCode="PH"/>
             </LinearLayout>
 
             <!--APPROACH LINE-->
@@ -618,7 +619,7 @@
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="5dp"
                 android:text="Pool"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
             <!--JACCUZI-->
             <CheckBox
@@ -661,8 +662,8 @@
                 android:layout_below="@+id/chk_grill"
                 android:layout_marginStart="40dp"
                 android:layout_marginTop="5dp"
-                android:text="Fire Fit"
-                android:textSize="20sp"/>
+                android:text="Fire Pit"
+                android:textSize="20sp" />
 
             <!--POOL TABLE-->
             <CheckBox
