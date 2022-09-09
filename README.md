@@ -1,5 +1,5 @@
 ### For new interns, please read this first and ask questions later.
-# About LetnGO
+# About LetnGo
 Letn'Go is an Android booking and reservation app similar to Airbnb and Booking.com. The app aims to:
 * Service clients for easy bookings to their preferred location.
 * Give hosts a platform for easy and convinient booking creation and management.
@@ -48,3 +48,31 @@ Here are some guidelines when developing the app:
 * Tasks should be properly distributed by team leaders according to the development timeline. Use Trello to keep on track.
 * Bugs and issues discovered in the app should be listed and addressed to each members and leaders.
 * **IMPORTANT!!!** When working on a certain XML or Java file, tell your members exactly the file you are working on. Pushing your code in a same file that your other member worked on will cause merging issues and will reject the push. It is suggested to use Pull Request and review the codes together or alternatively, talk to your fellow member that is working with the same file you are working on to review and compare codes before pushing and merging.
+* Caution when updating your repository in Android Studio: Before updating, view committed changes first. Updating the project may lose your work. If a member pushed a file you are working on, talk to him/her about merging the file.
+* If you don't want to apply your changes, simply shelf the changes.
+
+Note that changes can be easily tracked by looking at commits. It is logged and whatever you pushed in the repository can be reviewed by the project leader and officers-in-charge (OIC). <br />
+
+The repository in Java side is divided into packages (folders). Previously, all Java files are grouped in one package and it made the development more confusing. Now, it has a structure.
+* com.example.letngo - the main package.
+* login.system - where login and sign-up-related classes are.
+* nav - where the main 5 fragments are. They are group by each fragments which are:
+  * nav.account
+  * nav.categories
+  * nav.explore
+  * nav.wishlist
+  * nav.notifications
+
+### For Code Commeting and Documentarians
+It is a good practice to comment your code in order for the future programmers who will be working in this project to understand the flow and functionality of the codebases. Refer to the *Java documentation* for code commenting. <br />
+As per instruction of the Officer-In-Charge (OIC), for progress reports, front-end and back-end leaders, post those in MCC Discord Thread 'Updates' in 'rental-listing-website' channel and in Trello LetnGo Main Board. <br />
+It is recommended to assign a documentarian to manage and track the project progress, document changes and additions and modify this README file. If you want to add something in this README file, you are free to do so as long as:
+* It would help future programmers to get the gist about this project.
+* Informs future project leaders about the project.
+* It is presentable to the higher-ups.
+* Keep the repository viewers engaged about the project progress (since this is public).
+
+Project progress is visible in Trello and Attendance Tracker. <br />
+For questions, do not hestitate to ask the project leader, front-end leader, back-end leader, OIC, other contributors, and former interns. <br />
+<br />
+Good luck!!!
