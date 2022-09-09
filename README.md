@@ -30,8 +30,8 @@ If you are a new intern and already joined as a contributor, you will need to in
 * [Java](https://www.oracle.com/java/technologies/downloads/)
 * [OpenJDK version 18](https://jdk.java.net/18/) (optional - might be required if generating SHA-1 key) <br />
 
-You will also need to join the Discord server of Front-End and Back-End teams, Facebook group chat for MCC Rental Listing Team and our Trello workspace. You will need to ask your team leaders for links.<br />
-For Firebase database access, ask the team leader or back-end leader for Firebase account. <br />
+You will also need to join the Discord server of Front-End and Back-End teams, Facebook group chat for MCC Rental Listing Team and our Trello workspace. You will need to ask your team leaders for links.<br /> <br />
+For Firebase database access, ask the team leader or back-end leader for Firebase account. <br /> <br />
 Working with the repository in the Android Studio requires repository cloning. To do that:
 * Launch your Android Studio.
 * Click 'Get from VCS'.
@@ -64,8 +64,8 @@ The repository in Java side is divided into packages (folders). Previously, all 
   * nav.notifications
 
 ### For Code Commeting and Documentarians
-It is a good practice to comment your code in order for the future programmers who will be working in this project to understand the flow and functionality of the codebases. Refer to the *Java documentation* for code commenting. <br />
-As per instruction of the Officer-In-Charge (OIC), for progress reports, front-end and back-end leaders, post those in MCC Discord Thread 'Updates' in 'rental-listing-website' channel and in Trello LetnGo Main Board. <br />
+It is a good practice to comment your code in order for the future programmers who will be working in this project to understand the flow and functionality of the codebases. Refer to the *Java documentation* for code commenting. <br /> <br />
+As per instruction of the Officer-In-Charge (OIC), for progress reports, front-end and back-end leaders, post those in MCC Discord Thread 'Updates' in 'rental-listing-website' channel and in Trello LetnGo Main Board. <br /> <br />
 It is recommended to assign a documentarian to manage and track the project progress, document changes and additions and modify this README file. If you want to add something in this README file, you are free to do so as long as:
 * It would help future programmers to get the gist about this project.
 * Informs future project leaders about the project.
