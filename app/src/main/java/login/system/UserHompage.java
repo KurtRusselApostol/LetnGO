@@ -1,9 +1,7 @@
 package login.system;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -13,7 +11,7 @@ import androidx.fragment.app.Fragment;
 import nav.account.FragmentAccount;
 import nav.categories.FragmentCategories;
 import nav.explore.FragmentExplore;
-import nav.newsfeed.FragmentWishlist;
+import nav.wishlist.FragmentWishlist;
 import nav.notifications.FragmentNotification;
 import com.example.letngo.R;
 //import nav.newsfeed.messages;
