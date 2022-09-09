@@ -75,8 +75,8 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
     }
 
 
-    FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference reference = database.getReference().child("Host_Account").child("Host_Profile");
+//    FirebaseDatabase database = FirebaseDatabase.getInstance();
+//    DatabaseReference reference = database.getReference().child("Host_Account").child("Host_Profile");
     StorageReference storageIdPic = FirebaseStorage.getInstance().getReference().child("ID Picture");
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -109,7 +109,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         mAuth = FirebaseAuth.getInstance();
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //GETTING THE DATA OF THE CURRENT USER USING HIS/HER ID
-        reference = FirebaseDatabase.getInstance().getReference("User_account");
+        DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User_account");
         reference.child(userUid).get().addOnCompleteListener(task -> {
             if (!task.isSuccessful()) {
                 Log.e("firebase", "Error getting data", task.getException());
@@ -159,7 +159,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
                 String h_pass = password.getText().toString();
                 String h_mb = phone.getText().toString();
                 String h_id = spinner.getSelectedItem().toString();
-                //String h_ccp = countryCodePicker.getSelectedCountryCodeWithPlus().toString();
+                String h_ccp = countryCodePicker.getSelectedCountryCodeWithPlus().toString();
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -173,6 +173,9 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
                     Toast.makeText(start_hosting.this, "Your password is incorrect", Toast.LENGTH_LONG).show();
                     password.setError("Password is incorrect");
                     password.requestFocus();
+                }
+                else if(capturedImage == null){
+                    Toast.makeText(start_hosting.this, "ID picture is required. Please take a photo of your valid ID.", Toast.LENGTH_LONG).show();
                 }
                 else if (TextUtils.isEmpty(h_fn)){
                     Toast.makeText(start_hosting.this, "Please enter your Full Name", Toast.LENGTH_LONG).show();
@@ -207,7 +210,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
                     phone.requestFocus();
                 }
                 else {
-                    //host_Registration();
+                    host_Registration(h_fn, h_em, h_mb, h_ccp, h_id);
                     movetoNextPage();
                 }
 
@@ -240,17 +243,6 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
                 startActivityForResult(intent, 101);
             }
         });
-//        upload_pic.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                ImagePicker.Companion.with(start_hosting.this)
-//                        .crop()
-//                        .provider(ImageProvider.BOTH)
-//                        //.galleryOnly()
-//                        .maxResultSize(1000, 1000)
-//                        .start(101);
-//            }
-//        });
 
     }
 
@@ -349,21 +341,18 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
     }*/
 
     ////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-    public void host_Registration()
+    public void host_Registration(String h_fname, String h_email, String h_mobile, String h_code, String h_govId)
     {
-        String h_fn = full_name.getText().toString();
-        String h_em = email.getText().toString();
-        String h_mb = phone.getText().toString();
-        String h_ccp = countryCodePicker.getSelectedCountryName();
-        String h_id = spinner.getSelectedItem().toString();
+        FirebaseDatabase database = FirebaseDatabase.getInstance();
+        DatabaseReference reference = database.getReference().child("Host_Account").child("Host_Profile");
 
         //HASH MAP
         HashMap<String, String> hostMap = new HashMap<>();
-        hostMap.put("Full_Name", h_fn);
-        hostMap.put("Email", h_em);
-        hostMap.put("Mobile", h_mb);
-        hostMap.put("Country", h_ccp);
-        hostMap.put("Gov_ID", h_id);
+        hostMap.put("Full_Name", h_fname);
+        hostMap.put("Email", h_email);
+        hostMap.put("Mobile", h_mobile);
+        hostMap.put("CountryCode", h_code);
+        hostMap.put("Gov_ID", h_govId);
 
         reference.push().setValue(hostMap);
         Toast.makeText(start_hosting.this, "Host Profile Created!", Toast.LENGTH_SHORT).show();
