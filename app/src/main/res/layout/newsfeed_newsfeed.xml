@@ -67,24 +67,23 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent">
 
-                    <Button
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/sad"/>
+
+                    <TextView
                         android:id="@+id/createpost"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_46sdp"
-                        android:layout_marginStart="@dimen/_8sdp"
-                        android:layout_marginTop="@dimen/_38sdp"
-                        android:layout_marginEnd="@dimen/_8sdp"
+                        android:layout_marginTop="-80dp"
                         android:layout_marginBottom="@dimen/_1sdp"
-                        android:background="@drawable/tab_rect"
                         android:bottomLeftRadius="@dimen/_4sdp"
-                        android:drawableStart="@drawable/user"
-                        android:hint="    What's on your mind?"
+                        android:hint="    Your wishlist is empty. Start hearting now."
                         android:inputType="text"
-                        android:paddingStart="@dimen/_17sdp"
-                        android:textAlignment="textStart"
+                        android:textAlignment="center"
                         android:textColor="@color/black"
-                        android:textColorHint="#999999"
-                        tools:ignore="RtlSymmetry,TextViewEdits" />
+                        android:textColorHint="#999999" />
 
                     <RelativeLayout
                         android:layout_width="@dimen/_292sdp"

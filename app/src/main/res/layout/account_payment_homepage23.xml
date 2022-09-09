@@ -82,7 +82,7 @@
             android:id="@+id/account_firsthalf"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_below="@id/layoutHeaderOne">
+            android:layout_marginTop="78dp">
 
             <RelativeLayout
                 android:id="@+id/account_paymentlayout"
@@ -107,7 +107,7 @@
                     android:layout_height="30dp"
                     android:layout_below="@id/account_payment"
                     android:layout_alignStart="@id/account_payment"
-                    android:layout_marginStart="@dimen/_12sdp"
+                    android:layout_marginStart="@dimen/_10sdp"
                     android:background="@drawable/account_add" />
 
                 <TextView
@@ -176,214 +176,178 @@
                 android:textSize="16sp">
 
                 <TextView
-                    android:id="@+id/account_name"
+                    android:id="@+id/userName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:fontFamily="@font/poppins_bold"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:fontFamily="sans-serif"
                     android:text="@string/mercado_bella"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_15sdp" />
+                    android:textSize="19sp"
+                    android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/account_email"
+                    android:id="@+id/gmailAddress"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_name"
-                    android:layout_alignStart="@id/account_name"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="30dp"
                     android:text="@string/bllmrcd0913_gmail_com"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="15sp" />
 
                 <TextView
-                    android:id="@+id/account_contactnum"
+                    android:id="@+id/contactNo."
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_email"
-                    android:layout_alignStart="@id/account_name"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="50dp"
                     android:text="@string/_63_951_9589527"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="14sp" />
 
 
                 <View
-                    android:id="@+id/account_lineone"
+                    android:id="@+id/divider3"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_1sdp"
-                    android:layout_below="@id/account_contactnum"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="70dp"
                     android:background="@color/black" />
 
                 <TextView
-                    android:id="@+id/account_hotelname"
+                    android:id="@+id/textView63"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_lineone"
-                    android:layout_centerHorizontal="true"
-                    android:text="Let N' Go Hotel Cebu - Multiple Use Hotel"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="75dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/let_n_go_hotel_cebu_multiple_use_hotel"
                     android:textColor="#658B6F"
-                    android:textSize="@dimen/_15sdp"
+                    android:textSize="19sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/account_checkIn"
+                    android:id="@+id/checkIn"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_hotelname"
-                    android:layout_marginTop="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_50sdp"
-                    android:layout_toLeftOf="@id/account_linetwo"
-                    android:text="Check In:"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="120dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/check_in"
+                    android:textColor="#658B6F"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/account_checkInDate"
+                    android:id="@+id/checkInDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_checkIn"
-                    android:layout_alignStart="@id/account_checkIn"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginTop="143dp"
+                    android:fontFamily="sans-serif"
                     android:text="@string/sat_28_may"
                     android:textColor="#658B6F"
-                    android:textSize="@dimen/_15sdp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <View
-                    android:id="@+id/account_linetwo"
-                    android:layout_width="@dimen/_1sdp"
+                    android:id="@+id/divider6"
+                    android:layout_width="1dp"
                     android:layout_height="80dp"
-                    android:layout_below="@id/account_hotelname"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginTop="@dimen/_1sdp"
-                    android:layout_marginBottom="@dimen/_1sdp"
+                    android:layout_marginStart="200dp"
+                    android:layout_marginTop="105dp"
                     android:background="@color/black" />
 
                 <TextView
-                    android:id="@+id/account_checkOut"
+                    android:id="@+id/checkOut"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_hotelname"
-                    android:layout_marginStart="@dimen/_40sdp"
-                    android:layout_marginTop="@dimen/_15sdp"
-                    android:layout_toRightOf="@id/account_linetwo"
-                    android:text="Check Out:"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/_13sdp"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="120dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/check_out"
+                    android:textColor="#658B6F"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
 
                 <TextView
-                    android:id="@+id/account_checkOutDate"
+                    android:id="@+id/checkOutDate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_checkOut"
-                    android:layout_alignStart="@id/account_checkOut"
+                    android:layout_marginStart="240dp"
+                    android:layout_marginTop="143dp"
+                    android:fontFamily="sans-serif"
                     android:text="@string/sun_29_may"
                     android:textColor="#658B6F"
-                    android:textSize="@dimen/_15sdp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/account_rooms"
+                    android:id="@+id/no.Rooms"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_linetwo"
-                    android:layout_alignStart="@id/account_hotelname"
-                    android:text="Room/s:"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/_13sdp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/account_roomnum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/account_rooms"
-                    android:layout_toRightOf="@id/account_rooms"
-                    android:text=" 1"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="195dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/rooms_1"
                     android:textColor="#658B6F"
-                    android:textSize="@dimen/_15sdp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/account_maxguest"
+                    android:id="@+id/max_guest"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_linetwo"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_toRightOf="@id/account_roomnum"
-                    android:text="Max Guest/s:"
-                    android:textColor="#000000"
-                    android:textSize="@dimen/_13sdp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/account_maxguestnum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/account_maxguest"
-                    android:layout_toRightOf="@id/account_maxguest"
-                    android:text=" 2"
+                    android:layout_marginStart="110dp"
+                    android:layout_marginTop="195dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/max_guest_2"
                     android:textColor="#658B6F"
-                    android:textSize="@dimen/_15sdp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <View
-                    android:id="@+id/account_linethree"
+                    android:id="@+id/divider5"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_1sdp"
-                    android:layout_below="@id/account_rooms"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:layout_marginBottom="@dimen/_3sdp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="230dp"
                     android:background="@color/black" />
 
                 //Receipt Information//
 
                 <TextView
-                    android:id="@+id/account_price"
+                    android:id="@+id/totalPrice"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_linethree"
-                    android:layout_alignStart="@id/account_name"
-                    android:text="PHP"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="240dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/php_7_500"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_13sdp"
+                    android:textSize="18sp"
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/account_pricenum"
+                    android:id="@+id/textView71"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_alignBottom="@id/account_price"
-                    android:layout_toRightOf="@id/account_price"
-                    android:text=" 7,500.00"
-                    android:textColor="#658B6F"
-                    android:textSize="@dimen/_15sdp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/account_includes"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/account_price"
-                    android:layout_alignStart="@id/account_price"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="270dp"
                     android:text="@string/includes_taxes_and_charges"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="13sp" />
 
                 <TextView
-                    android:id="@+id/account_freecancel"
+                    android:id="@+id/textView72"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_includes"
-                    android:layout_alignStart="@id/account_price"
+                    android:layout_marginStart="15dp"
+                    android:layout_marginTop="290dp"
                     android:text="@string/free_cancellation_until_12_00_am_28_may"
                     android:textColor="@color/black"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="13sp" />
             </RelativeLayout>
 
             //Reminders//
@@ -394,83 +358,45 @@
                 android:layout_height="wrap_content"
                 android:layout_below="@id/account_paymentlayoutwhite">
 
-                <ImageView
-                    android:id="@+id/account_dot1"
-                    android:layout_width="@dimen/_25sdp"
-                    android:layout_height="@dimen/_25sdp"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    app:srcCompat="@drawable/account_dot" />
-
                 <TextView
-                    android:id="@+id/account_sentenceone"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textView73"
+                    android:layout_width="388dp"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:layout_toRightOf="@id/account_dot1"
-                    android:drawableLeft="dot"
-                    android:text="Your booking is with Let N' Go Hotel Cebu - Multiple Use Hotel, facilitated by our partnering company."
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/your_booking_is_with_let_n_go_hotel_cebu_multiple_use_hotel_facilitated_by_by_our_partner_company"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-
-                <ImageView
-                    android:id="@+id/account_dot2"
-                    android:layout_width="@dimen/_25sdp"
-                    android:layout_height="@dimen/_25sdp"
-                    android:layout_below="@id/account_sentenceone"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    app:srcCompat="@drawable/account_dot" />
+                    android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/account_sentencetwo"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textView74"
+                    android:layout_width="378dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_sentenceone"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:layout_toRightOf="@id/account_dot2"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="45dp"
                     android:text="@string/by_completing_this_booking_you_agree_to_the_booking_conditions_general_terms_and_privacy_policy"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-
-                <ImageView
-                    android:id="@+id/account_dot3"
-                    android:layout_width="@dimen/_25sdp"
-                    android:layout_height="@dimen/_25sdp"
-                    android:layout_below="@id/account_sentencetwo"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    app:srcCompat="@drawable/account_dot" />
+                    android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/account_sentencethree"
-                    android:layout_width="wrap_content"
+                    android:id="@+id/textView75"
+                    android:layout_width="388dp"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_sentencetwo"
-                    android:layout_toRightOf="@id/account_dot3"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:text="Let N' Go's only role is to provide a platform between the travel company and the customer."
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="80dp"
+                    android:text="@string/letn_go_com_s_role_is_solely_provide_the_platform_between_the_relevant_travel_company_and_the_customer"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
-
-                <ImageView
-                    android:id="@+id/account_dot4"
-                    android:layout_width="@dimen/_25sdp"
-                    android:layout_height="@dimen/_25sdp"
-                    android:layout_below="@id/account_sentencethree"
-                    android:layout_marginStart="@dimen/_10sdp"
-                    app:srcCompat="@drawable/account_dot" />
+                    android:textSize="12sp" />
 
                 <TextView
-                    android:id="@+id/account_sentencefour"
+                    android:id="@+id/textView76"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/account_sentencethree"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:layout_marginBottom="@dimen/_5sdp"
-                    android:layout_toRightOf="@id/account_dot4"
-                    android:text="Let N' Go's customer service support will always be available regarding booking concerns, etc."
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="115dp"
+                    android:text="@string/letn_go_com_s_customer_service_support_will_be_available_to_you_for_this_booking"
                     android:textColor="@color/black"
-                    android:textSize="@dimen/_10sdp" />
+                    android:textSize="12sp" />
             </RelativeLayout>
         </RelativeLayout>
 
@@ -491,35 +417,25 @@
                 android:background="@drawable/rectangle">
 
                 <TextView
-                    android:id="@+id/account_totalPrice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="@dimen/_30sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:text="PHP"
+                    android:id="@+id/tv_tolalPrice"
+                    android:layout_width="192dp"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/php_7_500"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_13sdp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:id="@+id/account_totalPriceNum"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_toRightOf="@id/account_totalPrice"
-                    android:text=" 7,500.00"
-                    android:layout_marginTop="@dimen/_3sdp"
-                    android:textColor="@color/white"
-                    android:textSize="@dimen/_15sdp"
+                    android:textSize="17sp"
                     android:textStyle="bold" />
 
                 <Button
                     android:id="@+id/btn_bookNow"
                     android:layout_width="120dp"
                     android:layout_height="40dp"
-                    android:layout_centerVertical="true"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginEnd="@dimen/_30sdp"
+                    android:layout_marginStart="260dp"
+                    android:layout_marginTop="25dp"
                     android:background="@drawable/edit_background"
+                    android:fontFamily="sans-serif"
                     android:foregroundTint="#658B6F"
                     android:text="@string/book_now"
                     android:textAllCaps="false"
@@ -531,13 +447,12 @@
                 <TextView
                     android:id="@+id/textView27"
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@id/account_totalPriceNum"
-                    android:layout_alignStart="@id/account_totalPrice"
+                    android:layout_height="31dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="45dp"
                     android:text="@string/includes_taxes_and_charges"
                     android:textColor="@color/white"
-                    android:textSize="@dimen/_10sdp"
-                    android:layout_marginBottom="@dimen/_5sdp"/>
+                    android:textSize="16sp" />
             </RelativeLayout>
 
         </RelativeLayout>

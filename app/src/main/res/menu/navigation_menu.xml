@@ -3,8 +3,8 @@
 
     <item
         android:id="@+id/fragmentNewsfeed"
-        android:icon="@drawable/nav_home"
-        android:title="@string/newsfeed"/>
+        android:icon="@drawable/ic_fave"
+        android:title="Favorites"/>
 
     <item
         android:id="@+id/fragmentCategories"
