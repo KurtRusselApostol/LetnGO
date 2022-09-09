@@ -119,8 +119,8 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginRight="56dp"
                 android:text="•Privacy Policy for "
-                android:textSize="15sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
 
             <me.biubiubiu.justifytext.library.JustifyTextView
@@ -143,8 +143,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="56dp"
                 android:text="•Privacy Policy for "
-                android:textSize="15sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/privacy2_btn"
@@ -165,8 +165,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="51dp"
                 android:text="•Privacy for outside "
-                android:textSize="15sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/privacy3_btn"
@@ -176,9 +176,9 @@
                 android:layout_marginTop="-19dp"
                 android:layout_marginBottom="5dp"
                 android:text="US(French)"
-                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="15sp"
+                android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -198,8 +198,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="56dp"
                 android:text="•Privacy Policy for "
-                android:textSize="15sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/privacy4_btn"
@@ -209,10 +209,10 @@
                 android:layout_marginTop="-3dp"
                 android:layout_marginEnd="35dp"
                 android:layout_marginBottom="5dp"
-                android:textStyle="bold"
                 android:text="Latin America(English)                          "
                 android:textAlignment="center"
                 android:textSize="15sp"
+                android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -221,8 +221,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="56dp"
                 android:text="•Privacy Policy for "
-                android:textSize="15sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/privacy5_btn"
@@ -234,8 +234,8 @@
                 android:layout_marginBottom="5dp"
                 android:text="Latin America(Spanish)"
                 android:textAlignment="center"
-                android:textStyle="bold"
                 android:textSize="15sp"
+                android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -244,8 +244,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="56dp"
                 android:text="•Privacy Policy for "
-                android:textSize="15sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/privacy6_btn"
@@ -256,9 +256,9 @@
                 android:layout_marginEnd="35dp"
                 android:layout_marginBottom="5dp"
                 android:text="Latin America(Portuguese)                     "
-                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="15sp"
+                android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -278,8 +278,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="56dp"
                 android:text="•Privacy Policy for "
-                android:textSize="15sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/privacy7_btn"
@@ -291,8 +291,8 @@
                 android:layout_marginBottom="5dp"
                 android:text="Europe, Middle East, Africa and \nother countries                        "
                 android:textAlignment="center"
-                android:textStyle="bold"
                 android:textSize="15sp"
+                android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -311,8 +311,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="56dp"
                 android:text="•Privacy Policy for "
-                android:textSize="15sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/privacy8_btn"
@@ -345,8 +345,8 @@
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="56dp"
                 android:text="•Privacy Policy for "
-                android:textSize="15sp"
-                android:textAlignment="center"/>
+                android:textAlignment="center"
+                android:textSize="15sp" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
                 android:id="@+id/privacy9_btn"
@@ -357,10 +357,10 @@
                 android:layout_marginEnd="-15dp"
                 android:layout_marginBottom="5dp"
                 android:text="China                  "
-                android:textStyle="bold"
                 android:textAlignment="center"
-
                 android:textSize="15sp"
+
+                android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
@@ -396,8 +396,8 @@
                 android:layout_marginBottom="5dp"
                 android:text=" •Outside of United States                  "
                 android:textAlignment="center"
-                android:textStyle="bold"
                 android:textSize="15sp"
+                android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
@@ -410,8 +410,8 @@
                 android:layout_marginBottom="5dp"
                 android:text=" •California Vermont                  "
                 android:textAlignment="center"
-                android:textStyle="bold"
                 android:textSize="15sp"
+                android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
@@ -423,9 +423,9 @@
                 android:layout_marginEnd="35dp"
                 android:layout_marginBottom="5dp"
                 android:text=" •Cookie Policy                    "
-                android:textStyle="bold"
                 android:textAlignment="center"
                 android:textSize="15sp"
+                android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
