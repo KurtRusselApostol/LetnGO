@@ -12,6 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.letngo.R;
 
+import nav.categories.recycleview.Post;
 import nav.categories.recycleview.Postlist;
 
 /**
@@ -118,31 +119,31 @@ public class FragmentCategories extends Fragment implements View.OnClickListener
             case R.id.camping:
                 resetLocation();
                 camping = true;
-                Intent intent2 = new Intent(getActivity(), sub_camping.class);
+                Intent intent2 = new Intent(getActivity(), Postlist.class);
                 startActivity(intent2);
                 break;
             case R.id.caves:
                 resetLocation();
                 caves = true;
-                Intent intent3 = new Intent(getActivity(), sub_caves.class);
+                Intent intent3 = new Intent(getActivity(), Postlist.class);
                 startActivity(intent3);
                 break;
             case R.id.country_side:
                 resetLocation();
                 countryside = true;
-                Intent intent4 = new Intent(getActivity(), sub_countryside.class);
+                Intent intent4 = new Intent(getActivity(), Postlist.class);
                 startActivity(intent4);
                 break;
             case R.id.cabin:
                 resetLocation();
                 cabin = true;
-                Intent intent5 = new Intent(getActivity(), sub_cabin.class);
+                Intent intent5 = new Intent(getActivity(), Postlist.class);
                 startActivity(intent5);
                 break;
             case R.id.island:
                 resetLocation();
                 island = true;
-                Intent intent6 = new Intent(getActivity(), sub_island.class);
+                Intent intent6 = new Intent(getActivity(), Postlist.class);
                 startActivity(intent6);
                 break;
         }
