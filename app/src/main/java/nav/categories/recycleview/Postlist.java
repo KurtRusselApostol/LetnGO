@@ -28,17 +28,21 @@ public class Postlist extends AppCompatActivity {
 
     RecyclerView recyclerView;
 
+
+
     // Variables
     private ArrayList<Post> list;
-    //private String currentLocation;
-    private boolean beach;
-    private boolean treehouse;
-    private boolean camping;
-    private boolean caves;
-    private boolean countryside;
-    private boolean cabin;
-    private boolean island;
+    boolean beach;
+    boolean treehouse;
+    boolean camping;
+    boolean caves;
+    boolean countryside;
+    boolean cabin;
+    boolean island;
     String location;
+
+
+    FragmentCategories fragmentCategories = new FragmentCategories();
 
 
     // Firebase
@@ -46,27 +50,9 @@ public class Postlist extends AppCompatActivity {
     String userUid;
     FirebaseUser currentUser = FirebaseAuth.getInstance().getCurrentUser();
 
-    {
-        assert currentUser != null;
-        userUid = currentUser.getUid();
-    }
 
     MyAdapter adapter;
     ImageButton back;
-
-
-    public void postlist(Location location) {
-        beach = location.isPost_beach();
-        treehouse = location.isPost_treehouse();
-        camping = location.isPost_camping();
-        caves = location.isPost_caves();
-        countryside = location.isPost_countryside();
-        cabin = location.isPost_cabin();
-        island = location.isPost_island();
-
-        // checks the location
-
-    }
 
 
     @Override
@@ -79,6 +65,15 @@ public class Postlist extends AppCompatActivity {
         back = findViewById(R.id.beach_back);
         back.setOnClickListener(v -> onBackPressed());
 
+        //initialize
+        this.beach = fragmentCategories.beach;
+        this.treehouse = fragmentCategories.treehouse;
+        this.camping = fragmentCategories.camping;
+        this.caves = fragmentCategories.caves;
+        this.countryside = fragmentCategories.countryside;
+        this.cabin = fragmentCategories.cabin;
+        this.island = fragmentCategories.island;
+
         // Array list
         list = new ArrayList<>();
 
@@ -89,10 +84,12 @@ public class Postlist extends AppCompatActivity {
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
 
+        // Checks the location in firebase
+        locationChecker(beach, treehouse, camping, caves, countryside, cabin, island);
+
         // Firebase
         databaseReference = FirebaseDatabase.getInstance().getReference();
-        locationChecker(beach, treehouse, camping, caves, countryside, cabin, island);
-        getDataFromFirebase("beach");
+        getDataFromFirebase(location);
 
     }
 
@@ -112,7 +109,7 @@ public class Postlist extends AppCompatActivity {
                     posts.setImage(dataSnapShot.child("info").child("image").getValue().toString());
                     posts.setPrice(dataSnapShot.child("info").child("price").getValue().toString());
                     posts.setRooms(dataSnapShot.child("info").child("rooms").getValue().toString());
-                    posts.setRooms(dataSnapShot.child("user").getValue().toString());
+
                     list.add(posts);
                 }
                 adapter = new MyAdapter(getApplicationContext(), list);

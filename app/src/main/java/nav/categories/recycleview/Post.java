@@ -19,21 +19,18 @@ public class Post {
 
 
 
-    private String uuid;
-
-
     public Post(){
 
     }
 
-    public Post(String bathrooms, String beds, String country, String image, String price, String rooms, String uuid){
+    public Post(String bathrooms, String beds, String country, String image, String price, String rooms){
         this.bathrooms = bathrooms;
         this.beds = beds;
         this.country = country;
         this.image = image;
         this.price = price;
         this.rooms = rooms;
-        this.uuid = uuid;
+
 
     }
 
@@ -61,7 +58,6 @@ public class Post {
         return rooms;
     }
 
-    public String getUuid() {return uuid;}
 
     // Setter
 
@@ -89,5 +85,4 @@ public class Post {
         this.rooms = rooms;
     }
 
-    public void setUuid(String uuid) {this.uuid = uuid;}
 }
