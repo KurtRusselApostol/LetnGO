@@ -1,4 +1,4 @@
-### For new interns, please read this first and ask questions later!!!
+### For new interns, please read this first and ask questions later.
 # About LetnGO
 Letn'Go is an Android booking and reservation app similar to Airbnb and Booking.com. The app aims to:
 * Service clients for easy bookings to their preferred location.
@@ -17,7 +17,7 @@ This app is actively being worked on by interns of Rental Listing App team of [M
 
 ### Overview
 This project is being worked on **Android Studio** using **Java** (back-end, middle-end), **XML** (front-end, UI/UX)
-and **Firebase Realtime Database** (back-end). New interns, if you have little-to-know experience to one or more of
+and **Firebase Realtime Database** (back-end). New interns, if you have little-to-no experience to one or more of
 those, you can view the following resources:
 * [Java Documentation](https://docs.oracle.com/en/java/)
 * [Official Firebase Guide](https://firebase.google.com/docs/guides)
