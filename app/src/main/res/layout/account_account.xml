@@ -111,7 +111,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_38sdp"
                         android:layout_marginTop="@dimen/_6sdp"
-                        android:text="Personal and Account Information"
+                        android:text="@string/account_personal"
                         android:textColor="@color/black" />
 
                     <ImageView

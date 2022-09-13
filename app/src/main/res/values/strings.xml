@@ -375,6 +375,7 @@
     <string name="submit">Submit</string>
     <string name="content_desc_image">image</string>
     <string name="manage_hosting">Manage Hosting</string>
+    <string name="account_personal">Personal and Account Information</string>
 
     <string-array name="ppolicyy">
         <item>Please select</item>

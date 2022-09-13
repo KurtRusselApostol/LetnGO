@@ -41,8 +41,8 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-35dp"
-                android:textAlignment="center"
                 android:text="Finding a stay that's\nright for you"
+                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18sdp"
                 android:textStyle="bold" />
@@ -67,13 +67,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_34sdp"
-                android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
-                android:textAlignment="center"
                 android:text="Want help finding a great place to stay? Here are the top areas that guests have questions about when they’re searching for their next trip.                                                     "
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -90,13 +90,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_36sdp"
-                android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
-                android:textAlignment="center"
                 android:text="As long as you enter your destination travel dates, and number of guests when searching on Let N' Go, all listings that show up should be available. To make sure the space is just right, use the search filters to find a place entirely to yourself, or other options if you’d prefer some shared spaces. Once you find a place you like, you may still have questions about it. While you can’t visit the property before booking, you can contact the Host to find out more. Also ask them about specific amenities, the neighborhood, or the location since they are the best source for all details. They may even send you a pre-approval or special offer to entice you to  book their place."
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
 
             <TextView
                 android:layout_width="match_parent"
@@ -113,13 +113,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_36sdp"
-                android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginBottom="@dimen/_36sdp"
-                android:textAlignment="center"
                 android:text="Enter your destination (you can include neighborhoods!), travel dates, and number of guests to help narrow down your search. You canalso use the search filters, like accessibility or amenities, to help you find stays that match what you’re looking for.   "
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="17sp"/>
+                android:textSize="17sp" />
 
         </LinearLayout>
 
