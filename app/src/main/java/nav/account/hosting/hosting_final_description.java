@@ -1,35 +1,58 @@
 package nav.account.hosting;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
 import android.widget.CheckBox;
 import android.widget.EditText;
+import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import androidx.activity.result.ActivityResult;
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
+import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.example.letngo.R;
+import com.github.drjacky.imagepicker.ImagePicker;
+import com.github.drjacky.imagepicker.constant.ImageProvider;
+import com.google.android.gms.tasks.Continuation;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.annotations.NotNull;
+import com.google.firebase.storage.StorageReference;
 
 import java.util.HashMap;
+import java.util.Objects;
+
+import kotlin.Unit;
+import kotlin.jvm.functions.Function1;
+import kotlin.jvm.internal.Intrinsics;
+import nav.account.FragmentAccount;
 
 public class hosting_final_description extends AppCompatActivity {
 
     EditText title, description, offer, price, discount;
-    CheckBox peaceful, family, central, unique, stylish, spacious,
-            cctv, weapon, animal;
+    CheckBox peaceful, family, central, unique, stylish, spacious;
     TextView back, review;
     ImageView pAdd, pMinus, dAdd, dMinus;
+    ImageView uploadPhoto1, uploadPhoto2;
+    Uri uri1, uri2;
+    String highlights = "";
 
     int countPrice = 0, countDiscount = 0;
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
-    DatabaseReference reference = database.getReference().child("Host_Account").child("Host_Description");
+    DatabaseReference reference = database.getReference().child("Host_Description");
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -48,9 +71,9 @@ public class hosting_final_description extends AppCompatActivity {
         unique = findViewById(R.id.chk_unique);
         stylish = findViewById(R.id.chk_stylish);
         spacious = findViewById(R.id.chk_spacious);
-        cctv = findViewById(R.id.chk_CCTV);
-        weapon = findViewById(R.id.chk_weapon);
-        animal = findViewById(R.id.chk_animals);
+
+        uploadPhoto1 = findViewById(R.id.img_upload);
+        uploadPhoto2 = findViewById(R.id.img_new_photo);
 
         back = findViewById(R.id.tv_back);
         review = findViewById(R.id.tv_next);
@@ -87,26 +110,96 @@ public class hosting_final_description extends AppCompatActivity {
                 {
                     Toast.makeText(hosting_final_description.this, "You haven't selected any Highlights.", Toast.LENGTH_LONG).show();
                 }
-                else if(!cctv.isChecked() && !weapon.isChecked() && !animal.isChecked())
-                {
-                    Toast.makeText(hosting_final_description.this, "You haven't selected any of these.", Toast.LENGTH_LONG).show();
-                }
                 else
                 {
                     hostDescriptions();
-
-                    Intent intent = new Intent(hosting_final_description.this, hosting_checking_description.class);
-                    startActivity(intent);
+                    Toast.makeText(hosting_final_description.this, "Your Place was successfully saved.", Toast.LENGTH_LONG).show();
+//                    Intent intent = new Intent(hosting_final_description.this, hosting_checking_description.class);
+//                    startActivity(intent);
                 }
 
+            }
+        });
+        // PICTURES ARE NOT YET BEING SAVED IN THE DATABASE
+        uploadPhoto1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                OpenGallery(101);
+            }
+        });
+
+        uploadPhoto2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                OpenGallery(1);
             }
         });
 
 
         back.setOnClickListener(v -> onBackPressed());
+
+    }
+    //----------------------------------ALL METHODS STARTS HERE-------------------------------------//
+    private void OpenGallery(int reqCode){
+        ImagePicker.Companion.with(hosting_final_description.this)
+                .crop()	//Crop image(Optional), Check Customization for more option
+                .galleryOnly()
+                .compress(1024)   //Final image size will be less than 1 MB(Optional)
+                .maxResultSize(1080, 1080)	//Final image resolution will be less than 1080 x 1080(Optional)
+                .start(reqCode);
+    }
+    @Override
+    protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
+        super.onActivityResult(requestCode, resultCode, data);
+        if(requestCode == 101 && resultCode == Activity.RESULT_OK){
+            uri1 = data.getData();
+            uploadPhoto1.setImageURI(uri1);
+        }
+        else if(requestCode == 1 && resultCode == Activity.RESULT_OK){
+            uri2 = data.getData();
+            uploadPhoto2.setImageURI(uri2);
+        }
+        else {
+            Toast.makeText(getApplicationContext(), "No image selected!", Toast.LENGTH_SHORT).show();
+        }
     }
 
-    //----------------------------------ALL METHODS STARTS HERE-------------------------------------//
+//    private void uploadProfileImage(Uri uri) {
+//
+//        if(uri != null){
+//            final StorageReference fileRef = storageProfilePic
+//                    .child(mAuth.getCurrentUser().getUid()+".jpg");
+//            uploadTask = fileRef.putFile(uri);
+//            uploadTask.continueWithTask(new Continuation() {
+//                @Override
+//                public Object then(@NonNull Task task) throws Exception {
+//                    if (!task.isSuccessful()){
+//                        throw  task.getException();
+//                    }
+//                    return fileRef.getDownloadUrl();
+//                }
+//            }).addOnCompleteListener(new OnCompleteListener<Uri>() {
+//                @Override
+//                public void onComplete(@NonNull Task task) {
+//                    if (task.isSuccessful()){
+//                        Uri downloadUrl = (Uri) task.getResult();
+//                        path = downloadUrl.toString();
+//
+//                        HashMap<String, Object> userMap = new HashMap<>();
+//                        userMap.put("image",path);
+//                        databaseReference.child(mAuth.getCurrentUser().getUid()).updateChildren(userMap);
+//                    }
+//                }
+//            });
+//        }
+//        else{
+//
+//            Toast.makeText(this, "Image not selected", Toast.LENGTH_SHORT).show();
+//        }
+//    }
+
+
+
 
     //HOST PLACE DESCRIPTION REGISTRATION METHOD
     public void hostDescriptions()
@@ -125,10 +218,6 @@ public class hosting_final_description extends AppCompatActivity {
         String h_stylish = stylish.getText().toString();
         String h_spacious = spacious.getText().toString();
 
-        String h_cctv = cctv.getText().toString();
-        String h_weapon = weapon.getText().toString();
-        String h_animal = animal.getText().toString();
-
         //HASH MAP
         HashMap<String, String> hostMap = new HashMap<>();
         hostMap.put("Title", h_title);
@@ -138,43 +227,22 @@ public class hosting_final_description extends AppCompatActivity {
         hostMap.put("Price Discount", h_discount);
 
         //IF-ELSE STATEMENT FOR HIGHLIGHTS CHECK BOX
-        if(peaceful.isChecked())
-        {
-            hostMap.put("Highlights", h_peace);
+        if(peaceful.isChecked()) highlights += ", " + h_peace;
+        if(family.isChecked()) highlights += ", " + h_family;
+        if(central.isChecked()) highlights += ", " + h_central;
+        if(unique.isChecked()) highlights += ", " + h_unique;
+        if(stylish.isChecked()) highlights += ", " + h_stylish;
+        if(spacious.isChecked()) highlights += ", " + h_spacious;
+
+        if (!Objects.equals(highlights, "")){
+            highlights = highlights.substring(2);
+            hostMap.put("Highlights", highlights);
         }
-        else if(family.isChecked())
-        {
-            hostMap.put("Highlights", h_family);
+        else{
+            hostMap.put("Highlights", "None");
         }
-        else if(central.isChecked())
-        {
-            hostMap.put("Highlights", h_central);
-        }
-        else if(unique.isChecked())
-        {
-            hostMap.put("Highlights", h_unique);
-        }
-        else if(stylish.isChecked())
-        {
-            hostMap.put("Highlights", h_stylish);
-        }
-        else if(spacious.isChecked())
-        {
-            hostMap.put("Highlights", h_spacious);
-        }
+
         //
-        else if(cctv.isChecked())
-        {
-            hostMap.put("Others", h_cctv);
-        }
-        else if(weapon.isChecked())
-        {
-            hostMap.put("Others", h_weapon);
-        }
-        else if(animal.isChecked())
-        {
-            hostMap.put("Others", h_animal);
-        }
 
         reference.push().setValue(hostMap);
         Toast.makeText(hosting_final_description.this, "SAVED!", Toast.LENGTH_SHORT).show();

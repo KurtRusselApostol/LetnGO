@@ -262,7 +262,8 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
             capturedImage = (Bitmap) data.getExtras().get("data");
             img_host_id.setImageBitmap(capturedImage);
 
-            //uploadPicture();
+            //ID PICTURE IS NOT YET BEING SAVED IN THE DATABASE
+            //uploadPicture(); //FUNCTION DOES NOT WORK AND CAUSE CRASH
         }
         else {
             Toast.makeText(getApplicationContext(), "No image selected!", Toast.LENGTH_SHORT).show();

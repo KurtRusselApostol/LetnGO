@@ -87,7 +87,7 @@
                 <ImageView
                     android:id="@+id/img_upload"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="300dp"
                     android:layout_below="@+id/tv_sub_header"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
@@ -110,7 +110,7 @@
                 <ImageView
                     android:id="@+id/img_new_photo"
                     android:layout_width="match_parent"
-                    android:layout_height="100dp"
+                    android:layout_height="300dp"
                     android:layout_below="@+id/tv_upload"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="20dp"
@@ -138,7 +138,7 @@
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
-                    android:text="Add at least 5 photos."
+                    android:text="Add at least 2 photos."
                     android:textColor="@color/white"
                     android:textSize="20sp" />
 
@@ -187,7 +187,7 @@
                     android:layout_marginStart="25dp"
                     android:layout_marginTop="50dp"
                     android:layout_marginEnd="20dp"
-                    android:text="Choose up to 2 highlights!"
+                    android:text="Highlights of the place:"
                     android:textAlignment="center"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
@@ -477,67 +477,7 @@
                         android:src="@drawable/add" />
                 </LinearLayout>
 
-                <TextView
-                    android:id="@+id/tv_any"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/ll_price_discount"
-                    android:layout_marginStart="25dp"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginEnd="20dp"
-                    android:text="DO YOU HAVE ANY OF THESE AT YOUR PLACE?"
-                    android:textAlignment="center"
-                    android:textColor="@color/white"
-                    android:textSize="25sp"
-                    android:textStyle="bold" />
 
-                <CheckBox
-                    android:id="@+id/chk_CCTV"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/tv_any"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="30dp"
-                    android:layout_marginEnd="20dp"
-                    android:text="Security Camera(s)"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-                <CheckBox
-                    android:id="@+id/chk_weapon"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/chk_CCTV"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="20dp"
-                    android:text="Weapon"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-                <CheckBox
-                    android:id="@+id/chk_animals"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_below="@+id/chk_weapon"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="15dp"
-                    android:layout_marginEnd="20dp"
-                    android:text="Dangerous Animals"
-                    android:textColor="@color/white"
-                    android:textSize="20sp" />
-
-                <View
-                    android:id="@+id/line"
-                    android:layout_width="match_parent"
-                    android:layout_height="2dp"
-                    android:layout_below="@id/chk_animals"
-                    android:layout_centerHorizontal="true"
-                    android:layout_marginStart="20dp"
-                    android:layout_marginTop="20dp"
-                    android:layout_marginEnd="20dp"
-                    android:layout_marginBottom="50dp"
-                    android:background="@color/white" />
 
             </RelativeLayout>
 

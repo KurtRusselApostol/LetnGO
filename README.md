@@ -51,7 +51,7 @@ Here are some guidelines when developing the app:
 * Bugs and issues discovered in the app should be listed and addressed to each members and leaders.
 * **IMPORTANT!!!** When working on a certain XML or Java file, tell your members exactly the file you are working on. Pushing your code in a same file that your other member worked on will cause merging issues and will reject the push. It is suggested to use Pull Request and review the codes together or alternatively, talk to your fellow member that is working with the same file you are working on to review and compare codes before pushing and merging.
 * Caution when updating your repository in Android Studio: Before updating, view committed changes first. Updating the project may lose your work. If a member pushed a file you are working on, talk to him/her about merging the file.
-* If you don't want to apply your changes, simply shelf the changes.
+* If you don't want to apply your changes while you have not committed yet, simply shelf the changes.
 
 Note that changes can be easily tracked by looking at commits. It is logged and whatever you pushed in the repository can be reviewed by the project leader and officers-in-charge (OIC). <br />
 
@@ -65,8 +65,17 @@ The repository in Java side is divided into packages (folders). Previously, all 
   * nav.wishlist
   * nav.notifications
 
+#### Note on Firebase Database
+It is good to assign one data analyst to maintain and apply security rules for the database. <br />
+
+As you can observe in the database, the rules are inadequate and public. For data analyst, you can apply security rules in the database once the database is finalized and ready to be deployed. Do this before the app launch. <br />
+
+The database used is Realtime Database. It is structured using JSON and it is unstructured and older compared to Firestore. Firestore Database, on the other hand, is way more structured database that includes the support of arrays and more. If you feel that you need to switch from Realtime Database to Firestore Database, you need to discuss it to developers as it requires major overhaul in coding side of things, especially in Java classes that uses Firebase. A [lengthy detail here](https://firebase.google.com/docs/firestore/rtdb-vs-firestore) explains the differences of two databases that you might want to read. [A helpful video by Chris Esplin](https://www.youtube.com/watch?v=TmXct7seeBY) might also help! Do take note that changing from Realtime Database to Firestore Database **can be lengthy** and **slow down the development process** as you will restructure the database and codebase. <br />
+
+Our current database is somewhat unstructured. There are some old data that remains in there. Fortunately, there are two parents (which name 'Hostings' and 'User_Acct') that were provided as a basis for the structure of our database. You can check it out and maybe improve on it.
+
 ### For Code Commeting and Documentarians
-It is a good practice to comment your code in order for the future programmers who will be working in this project to understand the flow and functionality of the codebases. Refer to the *Java documentation* for code commenting. <br /> <br />
+It is a good practice to comment your code in order for the future programmers who will be working in this project understand the flow and functionality of the codebases. Refer to the *Java documentation* for code commenting. <br /> <br />
 As per instruction of the Officer-In-Charge (OIC), for progress reports, front-end and back-end leaders, post those in MCC Discord Thread 'Updates' in 'rental-listing-website' channel and in Trello LetnGo Main Board. <br /> <br />
 It is recommended to assign a documentarian to manage and track the project progress, document changes and additions and modify this README file. If you want to add something in this README file, you are free to do so as long as:
 * It would help future programmers to get the gist about this project.
