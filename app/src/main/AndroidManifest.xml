@@ -215,6 +215,14 @@
             android:name="nav.account.hosting.hosting_final_description"
             android:exported="false" />
         <activity
+            android:name="nav.account.hosting.new_Hosting"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
+            android:name="nav.account.hosting.Hostinglist"
+            android:exported="false"
+            tools:ignore="DuplicateActivity" />
+        <activity
             android:name="nav.account.hosting.hosting_next"
             android:exported="false">
 
@@ -257,43 +265,10 @@
             <!-- </intent-filter> -->
         </activity>
         <activity
-            android:name="nav.newsfeed.Create_post"
-            android:exported="false">
-
-            <!-- <intent-filter> -->
-            <!-- <action android:name="android.intent.action.MAIN" /> -->
-
-
-            <!-- <category android:name="android.intent.category.LAUNCHER" /> -->
-            <!-- </intent-filter> -->
-
-        </activity>
-        <activity
             android:name=".Change_password"
             android:exported="false" />
         <activity
-            android:name="nav.categories.sub_island"
-            android:exported="false" />
-        <activity
-            android:name="nav.categories.sub_cabin"
-            android:exported="false" />
-        <activity
-            android:name="nav.categories.sub_countryside"
-            android:exported="false" />
-        <activity
-            android:name="nav.categories.sub_caves"
-            android:exported="false" />
-        <activity
-            android:name="nav.categories.sub_camping"
-            android:exported="false" />
-        <activity
-            android:name="nav.categories.sub_treehouse"
-            android:exported="false" />
-        <activity
             android:name=".GuestMessage"
-            android:exported="false" />
-        <activity
-            android:name="nav.categories.sub_beach"
             android:exported="false" />
         <activity
             android:name="nav.account.support.letngo_support"
@@ -351,7 +326,7 @@
         <activity
             android:name="login.system.forgot_password"
             android:exported="false" />
-        <activity android:name="nav.newsfeed.messages" /> <!-- android:exported="false" -->
+        <!--<activity android:name="nav.newsfeed.messages" /> android:exported="false" -->
         <activity android:name="nav.categories.HomePage" /> <!-- android:exported="true" -->
         <activity
             android:name=".MainActivity"

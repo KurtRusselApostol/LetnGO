@@ -65,6 +65,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.MyViewHolder> {
         holder.price.setText(post.getPrice());
         holder.rooms.setText(post.getRooms());
 
+
         //ImageView : Glide Library
 
         Glide.with(context)

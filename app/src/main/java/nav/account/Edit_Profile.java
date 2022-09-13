@@ -131,7 +131,7 @@ public class Edit_Profile extends AppCompatActivity {
                 datePickerDialog.show();
             }
         });
-
+        //test commit and push
         //FIREBASE FETCHING DATA
         reference = FirebaseDatabase.getInstance().getReference("User_account");
         reference.child(userUid).get().addOnCompleteListener(task -> {

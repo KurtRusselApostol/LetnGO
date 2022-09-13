@@ -16,6 +16,9 @@ public class Post {
     private String rooms;
 
 
+
+
+
     public Post(){
 
     }
@@ -30,6 +33,8 @@ public class Post {
 
 
     }
+
+    // Getter
 
     public String getBathrooms() {
         return bathrooms;
@@ -54,6 +59,7 @@ public class Post {
     }
 
 
+    // Setter
 
     public void setBathrooms(String bathrooms) {
         this.bathrooms = bathrooms;
@@ -78,6 +84,5 @@ public class Post {
     public void setRooms(String rooms) {
         this.rooms = rooms;
     }
-
 
 }

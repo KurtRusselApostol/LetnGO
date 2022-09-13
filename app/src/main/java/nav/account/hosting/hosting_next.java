@@ -20,7 +20,11 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.hbb20.CountryCodePicker;
 
+import java.util.Arrays;
+import java.util.Dictionary;
 import java.util.HashMap;
+import java.util.Hashtable;
+import java.util.Objects;
 
 public class hosting_next extends AppCompatActivity implements AdapterView.OnItemSelectedListener{
 
@@ -28,12 +32,18 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
     EditText street, city, state, zipCode;
     TextView guest, bed, room, bathroom, back, next;
     CountryCodePicker country;
-    CheckBox pool, jaccuzi,patio, bbq, fit, table, indoor, outdoor,exercise,
+    CheckBox pool, jaccuzi, patio, bbq, pit, table, indoor, outdoor, exercise,
             wifi, tv, aircon, kitchen, washer, freePark, paidPark, workspace, shower,
             kit, extinguisher, alarm, carbon;
 
     ImageView gMinus, gAdd,bMinus, bAdd,rMinus, rAdd, brMinus, brAdd;
     int countGuest = 0, countBed = 0, countRoom = 0, countBathroom = 0;
+
+
+    String amenities = "";
+    String otherAmenities = "";
+    String safetyItems = "";
+
 
     FirebaseDatabase database = FirebaseDatabase.getInstance();
     DatabaseReference reference = database.getReference().child("Host_Account").child("Host_Place");
@@ -57,17 +67,18 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
         bed = findViewById(R.id.tv_bed_result);
         room = findViewById(R.id.tv_room_result);
         bathroom = findViewById(R.id.tv_bathroom_result);
-        //1ST SET CHECKBOX
+        //DICTIONARIES FOR AMENITIES AND SAFETY ITEMS SELECTION
+        //AMENITIES CHECKBOX
         pool = findViewById(R.id.chk_pool);
         jaccuzi = findViewById(R.id.chk_jaccuzi);
         patio = findViewById(R.id.chk_patio);
         bbq = findViewById(R.id.chk_grill);
-        fit = findViewById(R.id.chk_fire_fit);
+        pit = findViewById(R.id.chk_fire_fit);
         table = findViewById(R.id.chk_pool_table);
         indoor = findViewById(R.id.chk_fire_place);
         outdoor = findViewById(R.id.chk_dining);
         exercise = findViewById(R.id.chk_equipment);
-        //2ND SET CHECKBOX
+        //OTHER AMENITIES CHECKBOX
         wifi = findViewById(R.id.chk_wifi);
         tv = findViewById(R.id.chk_tv);
         aircon = findViewById(R.id.chk_air_con);
@@ -77,7 +88,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
         paidPark = findViewById(R.id.chk_paid_parking);
         workspace = findViewById(R.id.chk_workspace);
         shower = findViewById(R.id.chk_shower);
-        //3RD SET CHECKBOX
+        //SAFETY ITEMS CHECKBOX
         kit = findViewById(R.id.chk_kit);
         extinguisher = findViewById(R.id.chk_extinguisher);
         alarm = findViewById(R.id.chk_alarm);
@@ -127,7 +138,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
                     zipCode.setError("Zip Code is required");
                     zipCode.requestFocus();
                 }
-                else if(!pool.isChecked() && !jaccuzi.isChecked() && !patio.isChecked() && !bbq.isChecked() && !fit.isChecked() && !table.isChecked() && !indoor.isChecked() && !outdoor.isChecked() && !exercise.isChecked())
+                else if(!pool.isChecked() && !jaccuzi.isChecked() && !patio.isChecked() && !bbq.isChecked() && !pit.isChecked() && !table.isChecked() && !indoor.isChecked() && !outdoor.isChecked() && !exercise.isChecked())
                 {
                     Toast.makeText(hosting_next.this, "You haven't selected any Amenities.", Toast.LENGTH_LONG).show();
                 }
@@ -175,7 +186,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
         String h_jaccuzi = jaccuzi.getText().toString();
         String h_patio = patio.getText().toString();
         String h_bbq = bbq.getText().toString();
-        String h_fit = fit.getText().toString();
+        String h_pit = pit.getText().toString();
         String h_table = table.getText().toString();
         String h_indoor = indoor.getText().toString();
         String h_outdoor = outdoor.getText().toString();
@@ -215,101 +226,73 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
         hostMap.put("Room", h_room);
         hostMap.put("Bathroom", h_bathroom);
 
-        //HashMap<String, String> amenities = new HashMap<>();
+        // IF STATEMENTS FOR AMENITIES CHECK BOX
+        // USED STRING CONCATENATION 'CAUSE FIREBASE (REALTIME DATABASE) CAN'T STORE ARRAYS OR DICTIONARIES
+        if(pool.isChecked()) amenities += ", " + h_pool;
+        if(jaccuzi.isChecked()) amenities += ", " + h_jaccuzi;
+        if(patio.isChecked()) amenities += ", " + h_patio;
+        if(bbq.isChecked()) amenities += ", " + h_bbq;
+        if(pit.isChecked()) amenities += ", " + h_pit;
+        if(table.isChecked()) amenities += ", " + h_table;
+        if(indoor.isChecked()) amenities += ", " + h_indoor;
+        if(outdoor.isChecked()) amenities += ", " + h_outdoor;
+        if(exercise.isChecked()) amenities += ", " + h_ex;
 
-        //IF-ELSE STATEMENT FOR AMENITIES CHECK BOX
-        if(pool.isChecked())
-        {
-            hostMap.put("Amenities", h_pool);
+        if (!Objects.equals(amenities, "")){
+            amenities = amenities.substring(2);
+            hostMap.put("Amenities", amenities);
         }
-        else if(jaccuzi.isChecked())
-        {
-            hostMap.put("Amenities", h_jaccuzi);
-        }
-        else if(patio.isChecked())
-        {
-            hostMap.put("Amenities", h_patio);
-        }
-        else if(bbq.isChecked())
-        {
-            hostMap.put("Amenities", h_bbq);
-        }
-        else if(fit.isChecked())
-        {
-            hostMap.put("Amenities", h_fit);
-        }
-        else if(table.isChecked())
-        {
-            hostMap.put("Amenities", h_table);
-        }
-        else if(indoor.isChecked())
-        {
-            hostMap.put("Amenities", h_indoor);
-        }
-        else if(outdoor.isChecked())
-        {
-            hostMap.put("Amenities", h_outdoor);
-        }
-        else if(exercise.isChecked())
-        {
-            hostMap.put("Amenities", h_ex);
-        }
-        //IF-ELSE STATEMENT FOR OTHER SET CHECK BOX
-        else if(wifi.isChecked())
-        {
-            hostMap.put("Appliances", h_wifi);
-        }
-        else if(tv.isChecked())
-        {
-            hostMap.put("Appliances", h_tv);
-        }
-        else if(aircon.isChecked())
-        {
-            hostMap.put("Appliances", h_ac);
-        }
-        else if(kitchen.isChecked())
-        {
-            hostMap.put("Appliances", h_kitchen);
-        }
-        else if(washer.isChecked())
-        {
-            hostMap.put("Appliances", h_washer);
-        }
-        else if(freePark.isChecked())
-        {
-            hostMap.put("Appliances", h_free);
-        }
-        else if(paidPark.isChecked())
-        {
-            hostMap.put("Appliances", h_paid);
-        }
-        else if(workspace.isChecked())
-        {
-            hostMap.put("Appliances", h_workspace);
-        }
-        else if(shower.isChecked())
-        {
-            hostMap.put("Appliances", h_shower);
-        }
-        //IF-ELSE STATEMENT FOR SAFETY ITEMS CHECK BOX
-        else if(kit.isChecked())
-        {
-            hostMap.put("Appliances", h_kit);
-        }
-        else if(extinguisher.isChecked())
-        {
-            hostMap.put("Appliances", h_exting);
-        }
-        else if(alarm.isChecked())
-        {
-            hostMap.put("Appliances", h_alarm);
-        }
-        else if(carbon.isChecked())
-        {
-            hostMap.put("Appliances", h_carbon);
+        else{
+            hostMap.put("Amenities", "None");
         }
 
-        reference.push().setValue(hostMap);
+        // USE THE CODE BELOW TO CONVERT CONCATENATED 'amenities' STRING INTO AN ARRAY
+        //String[] amenitiesArray = amenities.split(", ");
+        //System.out.println(Arrays.toString(amenitiesArray));
+
+        // IF STATEMENTS FOR OTHER AMENITIES CHECK BOX
+        if(wifi.isChecked()) otherAmenities += ", " + h_wifi ;
+        if(tv.isChecked()) otherAmenities += ", " + h_tv;
+        if(aircon.isChecked()) otherAmenities += ", " + h_ac;
+        if(kitchen.isChecked()) otherAmenities += ", " + h_kitchen;
+        if(washer.isChecked()) otherAmenities += ", " + h_washer;
+        if(freePark.isChecked()) otherAmenities += ", " + h_free;
+        if(paidPark.isChecked()) otherAmenities += ", " + h_paid;
+        if(workspace.isChecked()) otherAmenities += ", " + h_workspace;
+        if(shower.isChecked()) otherAmenities += ", " + h_shower;
+
+        if (!Objects.equals(otherAmenities, "")){
+            otherAmenities = otherAmenities.substring(2);
+            hostMap.put("Other Amenities", otherAmenities);
+        }
+        else{
+            hostMap.put("Other Amenities", "None");
+        }
+
+        // USE THE CODE BELOW TO CONVERT CONCATENATED 'otherAmenities' STRING INTO AN ARRAY
+        //String[] otherAmenitiesArray = otherAmenities.split(", ");
+        //System.out.println(Arrays.toString(otherAmenitiesArray));
+
+
+        //IF STATEMENTS FOR SAFETY ITEMS CHECK BOX
+        if(kit.isChecked()) safetyItems += ", " + h_kit;
+        if(extinguisher.isChecked()) safetyItems += ", " + h_exting;
+        if(alarm.isChecked()) safetyItems += ", " + h_alarm;
+        if(carbon.isChecked()) safetyItems += ", " + h_carbon;
+
+        if (!Objects.equals(safetyItems, "")){
+            safetyItems = safetyItems.substring(2);
+            hostMap.put("Safety Items", safetyItems);
+        }
+        else{
+            hostMap.put("Safety Items", "None");
+        }
+
+        // USE THE CODE BELOW TO CONVERT CONCATENATED 'safetyItems' STRING INTO AN ARRAY
+        //String[] safetyItemsArray = safetyItems.split(", ");
+        //System.out.println(Arrays.toString(safetyItemsArray));
+
+        reference.push().setValue(hostMap); //UPLOAD THE DATA TO THE  DATABASE
         Toast.makeText(hosting_next.this, "SAVED!", Toast.LENGTH_SHORT).show();
 
 

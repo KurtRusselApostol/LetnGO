@@ -22,40 +22,42 @@
             android:background="@drawable/rectangle">
 
 
-            <ImageView
-                android:layout_width="53dp"
-                android:layout_height="52dp"
-                android:layout_marginStart="340dp"
-                android:layout_marginTop="15dp"
-                android:background="@drawable/letngologo" />
-
             <TextView
                 android:id="@+id/textView4"
                 android:layout_width="192dp"
                 android:layout_height="31dp"
-                android:layout_marginStart="70dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="111dp"
                 android:layout_marginTop="25dp"
+                android:layout_marginEnd="108dp"
                 android:text="Choose your stay"
+                android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="20sp" />
+                android:textSize="20sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="70dp"
-                android:layout_marginTop="50dp"
+                android:layout_below="@+id/textView4"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="160dp"
+                android:layout_marginTop="-7dp"
+                android:layout_marginEnd="163dp"
                 android:text="Request to book"
                 android:textColor="@color/white"
                 android:textSize="12sp" />
 
             <ImageButton
                 android:id="@+id/activity_paymentback"
-                android:layout_width="30dp"
-                android:layout_height="30dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="25dp"
-                android:background="@drawable/roundbtn"
-                android:src="@drawable/arrow_back" />
+                android:layout_width="@dimen/_30sdp"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/back_arrow_white"
+                style="@style/Widget.AppCompat.Button.Borderless"/>
 
         </RelativeLayout>
 
@@ -87,7 +89,7 @@
             android:layout_width="match_parent"
             android:layout_height="155dp"
             android:layout_marginTop="115dp"
-            android:background="@drawable/rectangle_white">
+            android:background="@color/Light_grey">
 
 
             <TextView
@@ -208,25 +210,21 @@
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="303dp"
-            android:layout_marginTop="270dp"
-            android:background="@drawable/rectangle">
+            android:layout_marginTop="270dp">
 
             <TextView
                 android:id="@+id/textView7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="5dp"
-                android:text="Your Trip Summary:"
-                android:textColor="@color/white"
-                android:textSize="20dp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.094"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.459" />
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Your Trip Summary"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView8"
@@ -235,7 +233,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="35dp"
                 android:text="Superior Queen Room"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -251,7 +249,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="60dp"
                 android:text="Price for:"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -268,7 +266,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="85dp"
                 android:text="1 Double Bed"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -285,7 +283,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="130dp"
                 android:text="Non-Refundable"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -302,7 +300,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="150dp"
                 android:text="Pay in Advance"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -319,7 +317,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="170dp"
                 android:text="Breakfast Included"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -336,7 +334,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="105dp"
                 android:text="Flexible to reschedule if plans change"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
@@ -352,7 +350,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="205dp"
                 android:text="Amenities"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp"
                 android:textStyle="bold" />
 
@@ -362,7 +360,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="235dp"
                 android:text="Free WI-FI"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp" />
 
             <TextView
@@ -371,7 +369,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginTop="260dp"
                 android:text="Air conditioning"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp" />
 
             <TextView
@@ -380,7 +378,7 @@
                 android:layout_marginStart="180dp"
                 android:layout_marginTop="235dp"
                 android:text="Dryer"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp" />
 
             <TextView
@@ -389,7 +387,7 @@
                 android:layout_marginStart="180dp"
                 android:layout_marginTop="260dp"
                 android:text="Kitchen"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="15sp" />
 
             <ImageView
@@ -410,52 +408,63 @@
             android:background="@color/white"
             tools:ignore="MissingConstraints">
 
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="10dp"
+                android:text="Payment Summary"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="15dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="250dp"
+                android:layout_marginEnd="264dp"
                 android:text="Enter your Coupon"
                 android:textSize="15sp" />
-
 
             <ImageView
                 android:id="@+id/imageView8"
                 android:layout_width="150dp"
                 android:layout_height="20dp"
                 android:layout_marginStart="15dp"
-                android:layout_marginTop="45dp"
+                android:layout_marginTop="270dp"
                 android:clickable="true"
                 app:srcCompat="@drawable/edit_text_border" />
 
             <TextView
                 android:id="@+id/textView17"
-                android:layout_width="wrap_content"
+                android:layout_width="76dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="110dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="310dp"
+                android:layout_marginTop="50dp"
+                android:layout_marginEnd="25dp"
                 android:text="PHP 9,065"
                 android:textColor="#658B6F"
                 android:textSize="13sp"
-                android:textStyle="bold"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.036"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintVertical_bias="0.863" />
+                android:textStyle="bold" />
 
             <TextView
                 android:id="@+id/textView16"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="10dp"
-                android:layout_marginTop="85dp"
-                android:text="Price for 1 night"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="50dp"
+                android:text="Subtotal"
                 android:textColor="#658B6F"
                 android:textSize="13sp"
-                android:textStyle="bold"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.038"

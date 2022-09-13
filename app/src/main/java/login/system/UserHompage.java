@@ -1,9 +1,7 @@
 package login.system;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
-import android.view.View;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -13,10 +11,10 @@ import androidx.fragment.app.Fragment;
 import nav.account.FragmentAccount;
 import nav.categories.FragmentCategories;
 import nav.explore.FragmentExplore;
-import nav.newsfeed.FragmentNewsfeed;
+import nav.wishlist.FragmentWishlist;
 import nav.notifications.FragmentNotification;
 import com.example.letngo.R;
-import nav.newsfeed.messages;
+//import nav.newsfeed.messages;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class UserHompage extends AppCompatActivity {
@@ -41,7 +39,7 @@ public class UserHompage extends AppCompatActivity {
         bottomNavigationView.setOnItemSelectedListener(item -> {
             switch (item.getItemId()){
                 case R.id.fragmentNewsfeed:
-                    replaceFragment(new FragmentNewsfeed());
+                    replaceFragment(new FragmentWishlist());
                     break;
                 case R.id.fragmentCategories:
                     replaceFragment(new FragmentCategories());
@@ -59,21 +57,23 @@ public class UserHompage extends AppCompatActivity {
             return true;
         });
 
-        imageView = findViewById(R.id.imageMessage);
-        imageView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                show_Message();
-            }
-        });
+        //This block of code directs to messages.java class which can be repurposed. For now, it is commented
+        //out since it serves no purpose.
+        //imageView = findViewById(R.id.imageMessage);
+        //imageView.setOnClickListener(new View.OnClickListener() {
+            //@Override
+            //public void onClick(View v) {
+                //show_Message();
+            //}
+        //});
 
     }
 
 
-    private void show_Message() {
-        Intent intent = new Intent(UserHompage.this, messages.class);
-        startActivity(intent);
-    }
+//    private void show_Message() {
+//        Intent intent = new Intent(UserHompage.this, messages.class);
+//        startActivity(intent);
+//    }
 
 
     private void replaceFragment(Fragment fragment){

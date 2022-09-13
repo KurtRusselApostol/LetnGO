@@ -44,7 +44,7 @@
         <View
             android:id="@+id/activity_line"
             android:layout_width="match_parent"
-            android:layout_height="3dp"
+            android:layout_height="@dimen/_3sdp"
             android:layout_below="@id/activity_messages"
             android:layout_alignStart="@id/activity_messages"
             android:layout_marginEnd="@dimen/_15sdp"
