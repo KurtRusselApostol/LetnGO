@@ -8,6 +8,8 @@
     android:background="#D3D3D3"
     android:fillViewport="true">
 
+
+
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -50,6 +52,7 @@
                 android:shadowRadius="5"
                 tools:ignore="HardcodedText" />
 
+
             <TextView
                 android:id="@+id/account_termstitle2"
                 android:layout_width="match_parent"
@@ -58,8 +61,11 @@
                 android:layout_marginTop="@dimen/_10sdp"
                 android:text="Terms of Services and Privacy Policy"
                 android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="@dimen/_15sdp"
                 tools:ignore="HardcodedText" />
+
+
 
             <TextView
                 android:id="@+id/account_terms1"
@@ -67,69 +73,63 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_15sdp"
                 android:layout_marginBottom="5dp"
-                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
-                android:text="Purpose of personal data collection and usage, types of personal data to be gathered, and how to collect."
+                android:text="• Purpose of personal data collection and usage, types of personal data to be gathered, and how to collect."
                 android:textColor="#000000"
                 android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/account_terms2"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
-                android:text="When shared with a third party, the recipient's identity, purpose of use, and objects delivered are all included."
+                android:text="• When shared with a third party, the recipient's identity, purpose of use, and objects delivered are all included."
                 android:textColor="#000000"
                 android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/account_terms3"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
-                android:text="The duration of personal information holding and use, as well as the procedure and mechanism for ending personal information"
+                android:text="• The duration of personal information holding and use, as well as the procedure and mechanism for ending personal information"
                 android:textColor="#000000"
                 android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/account_terms4"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
-                android:text="Consignment of personal information to the trustee.                                              "
+                android:text="• Consignment of personal information to the trustee.                                              "
                 android:textColor="#000000"
                 android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/account_terms5"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
-                android:text="Rights of legal and user representatives, and how to exercise them.                                  "
+                android:text="• Rights of legal and user representatives, and how to exercise them.                                  "
                 android:textColor="#000000"
                 android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:id="@+id/account_terms6"
-                android:layout_width="match_parent"
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="5dp"
-                android:drawableStart="@drawable/account_dot"
                 android:justificationMode="inter_word"
-                android:text="These Terms of Service (Terms) are a legally binding agreement between you and Let n' Go that govern your use of the applications (the Let n' Go Platform). Let n' Go, we, us, or our refers to the Let n' Go when used in these Terms.                                             "
+                android:text="• These Terms of Service (Terms) are a legally binding agreement between you and Let n' Go that govern your use of the applications (the Let n' Go Platform). Let n' Go, we, us, or our refers to the Let n' Go when used in these Terms.                                             "
                 android:textColor="#000000"
                 android:textSize="@dimen/_12sdp"
                 tools:ignore="HardcodedText" />

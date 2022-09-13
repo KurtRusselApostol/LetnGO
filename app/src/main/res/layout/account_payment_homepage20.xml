@@ -323,7 +323,7 @@
                 android:layout_alignStart="@id/textView8"
                 android:layout_alignTop="@+id/group_icon"
                 android:layout_toRightOf="@+id/group_icon"
-                android:text="Passengers"
+                android:text="Guest"
                 android:textColor="@color/white"
                 android:textSize="15dp"
                 android:textStyle="bold" />

@@ -30,20 +30,20 @@
 
             <ImageButton
                 android:id="@+id/btn_back_guest_4"
-                android:layout_width="@dimen/_36sdp"
-                android:layout_height="wrap_content"
+                android:layout_width="45.5dp"
+                android:layout_height="45.5dp"
                 android:layout_marginTop="@dimen/_46sdp"
                 android:layout_marginEnd="@dimen/_123sdp"
                 android:background="#DEE1DD"
-                android:src="@drawable/arrow_back" />
+                android:src="@drawable/back_arrow" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_18sdp"
-                android:layout_marginTop="@dimen/_30sdp"
+                android:gravity="center"
+                android:layout_marginTop="-40dp"
                 android:layout_marginBottom="1dp"
-                android:text="Getting protected through Let n' Cover"
+                android:text="Getting protected through \nLet n' Cover"
                 android:textColor="@color/black"
                 android:textSize="24sp"
                 android:textStyle="bold" />
