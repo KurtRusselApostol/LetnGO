@@ -40,9 +40,13 @@
 
             <TextView
                 android:id="@+id/textViewWelcome"
+                style="@style/Widget.AppCompat.TextView"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
+                android:layout_marginStart="-1dp"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#00FFFFFF"
                 android:fontFamily="@font/poppins_bold"
                 android:text="Welcome,"
                 android:textAlignment="viewStart"
@@ -56,6 +60,8 @@
                 android:layout_below="@+id/textViewWelcome"
                 android:layout_alignParentStart="true"
                 android:layout_marginTop="-20dp"
+                android:background="#00FFFFFF"
+                android:backgroundTint="#00FFFFFF"
                 android:fontFamily="@font/poppins_bold"
                 android:text="SIGN UP "
                 android:textAlignment="textStart"
