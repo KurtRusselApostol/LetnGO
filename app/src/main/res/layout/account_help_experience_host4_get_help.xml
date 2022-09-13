@@ -35,17 +35,16 @@
                 android:layout_marginTop="@dimen/_35sdp"
                 android:layout_marginEnd="@dimen/_123sdp"
                 android:background="#DEE1DD"
-                android:src="@drawable/arrow_back" />
+                android:src="@drawable/back_arrow" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_18sdp"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:layout_marginBottom="@dimen/_1sdp"
+                android:layout_marginTop="-35dp"
                 android:text="How co-hosting works"
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_18ssp"
+                android:textSize="@dimen/_17ssp"
                 android:textStyle="bold" />
 
 
@@ -54,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_169sdp"
                 android:layout_marginStart="@dimen/_27sdp"
-                android:layout_marginTop="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginBottom="0dp"
                 app:cardBackgroundColor="@color/white"

@@ -35,15 +35,14 @@
                 android:layout_marginTop="@dimen/_35sdp"
                 android:layout_marginEnd="@dimen/_123sdp"
                 android:background="#DEE1DD"
-                android:src="@drawable/arrow_back" />
+                android:src="@drawable/back_arrow"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_18sdp"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:layout_marginBottom="@dimen/_1sdp"
+                android:layout_marginTop="-35dp"
                 android:text="Getting paid"
+                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_18ssp"
                 android:textStyle="bold" />
@@ -54,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_169sdp"
                 android:layout_marginStart="@dimen/_27sdp"
-                android:layout_marginTop="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginBottom="0dp"
                 app:cardBackgroundColor="@color/white"
@@ -69,13 +68,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_34sdp"
-                android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginBottom="@dimen/_4sdp"
-                android:textAlignment="center"
                 android:text="Congrats! You’ve earned it (literally). Now, when will you get it? Here’s important info on all things payment, and how to make sure you get paid the way you want to.        "
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="@dimen/_13ssp"/>
+                android:textSize="@dimen/_13ssp" />
 
 
             <TextView
@@ -116,15 +115,13 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_34sdp"
-                android:layout_marginEnd="@dimen/_25sdp"
                 android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginEnd="@dimen/_25sdp"
                 android:layout_marginBottom="@dimen/_34sdp"
-                android:textAlignment="center"
                 android:text="Let N' Go typically releases your payout 24 hours after your guest’s scheduled check-in time. The time it takes for the funds to arrive in your account depends on your payout method and any bank holidays or weekends. Also, if you have a minimum payout amount set, or you’re hosting a longer stay, it might take longer or the payouts might be on a different schedule."
+                android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="17sp"/>
-
-
+                android:textSize="17sp" />
 
 
         </LinearLayout>

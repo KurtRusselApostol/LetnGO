@@ -35,17 +35,16 @@
                 android:layout_marginTop="@dimen/_46sdp"
                 android:layout_marginEnd="@dimen/_123sdp"
                 android:background="#DEE1DD"
-                android:src="@drawable/arrow_back" />
+                android:src="@drawable/back_arrow" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:layout_marginBottom="1dp"
-                android:text="Finding a stay that's right for you"
+                android:layout_marginTop="-35dp"
+                android:textAlignment="center"
+                android:text="Finding a stay that's\nright for you"
                 android:textColor="@color/black"
-                android:textSize="24sp"
+                android:textSize="@dimen/_18sdp"
                 android:textStyle="bold" />
 
 
@@ -56,7 +55,6 @@
                 android:layout_marginStart="@dimen/_27sdp"
                 android:layout_marginTop="@dimen/_38sdp"
                 android:layout_marginEnd="@dimen/_27sdp"
-                android:layout_marginBottom="0dp"
                 app:cardBackgroundColor="@color/white"
                 app:cardCornerRadius="@dimen/_20sdp"
                 app:cardElevation="@dimen/_8sdp"
