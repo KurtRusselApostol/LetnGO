@@ -35,16 +35,15 @@
                 android:layout_marginTop="@dimen/_46sdp"
                 android:layout_marginEnd="@dimen/_123sdp"
                 android:background="#DEE1DD"
-                android:src="@drawable/arrow_back" />
+                android:src="@drawable/back_arrow" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/_18sdp"
-                android:layout_marginTop="@dimen/_30sdp"
-                android:layout_marginBottom="1dp"
-                android:text="Getting protected through Let n' Cover"
+                android:layout_marginTop="-35dp"
+                android:text="Getting protected\nthrough Let n' Cover"
                 android:textColor="@color/black"
+                android:textAlignment="center"
                 android:textSize="24sp"
                 android:textStyle="bold" />
 
@@ -54,7 +53,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_169sdp"
                 android:layout_marginStart="@dimen/_34sdp"
-                android:layout_marginTop="@dimen/_38sdp"
+                android:layout_marginTop="@dimen/_20sdp"
                 android:layout_marginEnd="@dimen/_27sdp"
                 android:layout_marginBottom="0dp"
                 app:cardBackgroundColor="@color/white"
