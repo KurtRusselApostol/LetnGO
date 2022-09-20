@@ -18,7 +18,5 @@ public class Experience_Host1_Get_Help extends AppCompatActivity {
         back = findViewById(R.id.btn_back_experience_host_1);
 
         back.setOnClickListener(v -> onBackPressed());
-
-        //example commit and push
     }
 }
