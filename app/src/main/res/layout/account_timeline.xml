@@ -38,7 +38,7 @@
                     android:layout_width="30dp"
                     android:layout_height="30dp"
                     android:background="#658B6F"
-                    android:src="@drawable/backback" />
+                    android:src="@drawable/back_arrow_white" />
 
                 <Button
                     android:id="@+id/EditButton"
@@ -96,24 +96,12 @@
                     android:textStyle="bold" />
 
                 <TextView
-                    android:id="@+id/last_name"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="240dp"
-                    android:layout_marginTop="30dp"
-                    android:text=""
-                    android:textColor="#ffffff"
-                    android:textColorHint="#ffffff"
-                    android:textSize="20sp"
-                    android:textStyle="bold" />
-
-                <TextView
                     android:id="@+id/emailAdd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="120dp"
                     android:layout_marginTop="60dp"
-                    android:hint="email"
+                    android:hint="Email"
                     android:text=""
                     android:textColor="#ffffff"
                     android:textColorHint="#ffffff"

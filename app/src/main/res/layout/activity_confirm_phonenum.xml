@@ -80,6 +80,7 @@
         android:layout_alignStart="@id/activity_confirmation"
         android:layout_alignEnd="@id/activity_confirmyourphonenum"
         android:layout_marginTop="@dimen/_25sdp"
+        android:layout_marginEnd="15dp"
         android:fontFamily="@font/poppins_light"
         android:justificationMode="inter_word"
         android:text="By clicking the button, you are confirming your phone number and agreeing to terms of services.\n

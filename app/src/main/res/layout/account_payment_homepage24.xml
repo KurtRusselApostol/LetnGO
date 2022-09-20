@@ -23,12 +23,11 @@
         android:layout_width="327dp"
         android:layout_height="355dp"
         android:background="@drawable/letngo"
+        android:contentDescription="@string/letngologo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/textView57"
         app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.401"
-        android:contentDescription="@string/letngologo" />
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

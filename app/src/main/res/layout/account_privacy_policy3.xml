@@ -42,7 +42,7 @@
                 android:layout_marginEnd="160dp"
                 android:background="@drawable/btn_background"
                 android:minHeight="48dp"
-                android:src="@drawable/arrow_back"
+                android:src="@drawable/back_arrow"
                 tools:ignore="ContentDescription,ImageContrastCheck,SpeakableTextPresentCheck" />
 
             <TextView
@@ -50,7 +50,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="24dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="25dp"
                 android:text="Legal Terms"
                 tools:ignore="HardcodedText" />
 

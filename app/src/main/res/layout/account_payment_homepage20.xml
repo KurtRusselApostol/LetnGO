@@ -68,12 +68,12 @@
         android:id="@+id/activity_payment_homepage20_back"
         android:layout_width="40dp"
         android:layout_height="40dp"
-        android:layout_marginStart="3dp"
+        android:layout_marginStart="16dp"
         android:background="@drawable/ic_baseline_arrow_back_24"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.017" />
+        app:layout_constraintVertical_bias="0.025" />
 
     <ImageButton
         android:layout_width="28dp"
@@ -142,9 +142,11 @@
             android:id="@+id/clckbleLearnMore"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toRightOf="@+id/button3"
             android:layout_alignTop="@+id/button3"
             android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/button3"
             android:clickable="true"
             android:text="Learn More"
             android:textSize="@dimen/_11ssp" />
@@ -232,7 +234,7 @@
                 android:background="@drawable/button_gradient"
                 android:text="CHANGE"
                 android:textColor="#2F575D"
-                android:textSize="18dp" />
+                android:textSize="16dp" />
 
             <ImageView
                 android:id="@+id/packageD"
@@ -469,9 +471,9 @@
             android:layout_width="20dp"
             android:layout_height="20dp"
             android:layout_alignTop="@+id/paymentSum"
-            android:layout_toRightOf="@id/paymentSum"
             android:layout_marginStart="12dp"
             android:layout_marginTop="3dp"
+            android:layout_toRightOf="@id/paymentSum"
             app:srcCompat="@drawable/info" />
 
         <Button

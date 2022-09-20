@@ -45,7 +45,7 @@
                 android:background="@drawable/btn_background"
                 android:contentDescription="TODO"
                 android:minHeight="48dp"
-                android:src="@drawable/arrow_back"
+                android:src="@drawable/back_arrow"
                 tools:ignore="ContentDescription,HardcodedText,SpeakableTextPresentCheck" />
 
             <TextView

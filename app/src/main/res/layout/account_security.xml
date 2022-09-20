@@ -53,13 +53,13 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="20dp"
-        android:layout_marginTop="270dp"
+        android:layout_marginTop="300dp"
         android:layout_marginEnd="200dp"
         android:text="@string/security"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
-        android:textSize="50sp" />
+        android:textSize="35sp" />
 
     <TextView
         android:layout_width="match_parent"
@@ -83,13 +83,13 @@
 
     <ImageButton
         android:id="@+id/button"
-        android:layout_width="60dp"
-        android:layout_height="50dp"
+        android:layout_width="108dp"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="230dp"
-        android:layout_marginTop="530dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginStart="269dp"
+        android:layout_marginTop="555dp"
+        android:layout_marginEnd="30dp"
         android:background="#DEE1DD"
         android:backgroundTint="#00FFFFFF"
         android:onClick="security2"

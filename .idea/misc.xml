@@ -45,55 +45,61 @@
         <entry key="..\:/Users/Mike/AndroidStudioProjects/LetnGO/app/src/main/res/layout/activity_sign_up.xml" value="0.3828125" />
         <entry key="..\:/Users/Mike/AndroidStudioProjects/LetnGO/app/src/main/res/layout/login_system_forgot_password.xml" value="0.38697916666666665" />
         <entry key="..\:/Users/Mike/AndroidStudioProjects/LetnGO/app/src/main/res/layout/login_system_login.xml" value="0.33" />
+        <entry key="..\:/Users/i am/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_account.xml" value="0.18426678067550234" />
         <entry key="..\:/Users/i am/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_edit_profile.xml" value="0.17074275362318841" />
+        <entry key="..\:/Users/i am/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_hosting_manage_hosting.xml" value="0.18426678067550234" />
         <entry key="..\:/Users/i am/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_hosting_start_hosting.xml" value="0.17074275362318841" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/drawable/ic_fave.xml" value="0.2285" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/drawable/item_selector.xml" value="0.267" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_account.xml" value="0.264" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_edit_profile.xml" value="0.264" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_feedback.xml" value="0.2" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_guest_account.xml" value="0.18614130434782608" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host1_get_help.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host2_get_help.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host3_get_help.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host4_get_help.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host_get_help.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_help_get_help.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_help_guest1_get_help.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_help_guest2_get_help.xml" value="0.264" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_hosting_manage_hosting.xml" value="0.18614130434782608" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_hosting_start_hosting.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_payment.xml" value="0.264" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage20.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage21.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage22.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage23.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage24.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_support_letngo_support.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_support_letngo_support2.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_support_terms_services.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/activity_new_signup.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/activity_payment_homepage19.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/activity_postlist.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/activity_user_hompage.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/activity_whats_new.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_beach_info.xml" value="0.25833333333333336" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_home_page.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_island_info.xml" value="0.25833333333333336" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_sub_beach.xml" value="0.25833333333333336" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_sub_cabin.xml" value="0.25833333333333336" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_sub_camping.xml" value="0.25833333333333336" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_sub_caves.xml" value="0.25833333333333336" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_sub_countryside.xml" value="0.25833333333333336" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_sub_island.xml" value="0.25833333333333336" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_sub_treehouse.xml" value="0.25833333333333336" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/categories_treehouse_info.xml" value="0.25833333333333336" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/login_system_login.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/newsfeed_create_post.xml" value="0.18614130434782608" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/newsfeed_messages.xml" value="0.18614130434782608" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/newsfeed_newsfeed.xml" value="0.264" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/layout/payment_homepage19.xml" value="0.26197916666666665" />
-        <entry key="..\:/Users/katelene Grace/AndroidStudioProjects/LetnGO/app/src/main/res/menu/navigation_menu.xml" value="0.26197916666666665" />
+        <entry key="..\:/Users/i am/AndroidStudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage23.xml" value="0.1" />
+        <entry key="..\:/Users/i am/AndroidStudioProjects/LetnGO/app/src/main/res/layout/activity_hostinglist.xml" value="0.18426678067550234" />
+        <entry key="..\:/Users/i am/AndroidStudioProjects/LetnGO/app/src/main/res/layout/activity_new_hosting.xml" value="0.18426678067550234" />
+        <entry key="..\:/Users/i am/AndroidStudioProjects/LetnGO/app/src/main/res/layout/hostingentry.xml" value="0.1834117144078666" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_account.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_edit_profile.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_feedback.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_guest_account.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host1_get_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host2_get_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_get_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_guest1_get_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_guest2_get_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_guest3_get_help.xml" value="0.17708333333333334" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_host1_get_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_host3_get_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_host4_get_help.xml" value="0.18673883626522328" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_host_get_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_hosting_manage_hosting.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_hosting_start_hosting.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_notif_settings1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_notif_settings2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_notif_settings3.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_notif_settings4.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_notif_settings5.xml" value="0.264" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_payment.xml" value="0.264" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage20.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage21.xml" value="0.2" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage22.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage23.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_payment_homepage24.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_privacy_policy.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_privacy_policy2.xml" value="0.2" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_privacy_policy3.xml" value="0.264" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_privacy_policy4.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_security.xml" value="0.264" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_security1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_support_letngo_support.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_support_letngo_support2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_support_terms_services.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_timeline.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_change_pass.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_change_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_chat.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_confirm_email.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_confirm_phonenum.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_guest_message.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_hosting_final_description.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_hosting_next.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_hosting_success.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_hostinglist.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
