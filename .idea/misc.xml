@@ -59,6 +59,8 @@
         <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_guest_account.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host1_get_help.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host2_get_help.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host4_get_help.xml" value="0.11197916666666667" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_experience_host_get_help.xml" value="0.11302083333333333" />
         <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_get_help.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_guest1_get_help.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/account_help_guest2_get_help.xml" value="0.25416666666666665" />
@@ -100,6 +102,42 @@
         <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_hosting_next.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_hosting_success.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/activity_hostinglist.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/categories_beach_info.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/categories_cabin_info.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/categories_caves_info.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/categories_countryside_info.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/categories_description.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/content_notif_settings1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/dialog_searchable_spinner.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/explore_explore.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/fragment__guest_newsfeed.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/fragment__guest_notification.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/fragment_chat_box.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/fragment_enter_coupon.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/fragment_first.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/fragment_first2.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/hostingentry.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/login_system_forgot_password.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/login_system_login.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/newsfeed_create_post.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/notifications_all_reservation.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/notifications_arriving_soon.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/notifications_checking_out.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/notifications_currently_hosting.xml" value="0.1875" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/notifications_notification.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/notifications_notification_traveller.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/notifications_safety_notice.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/notifications_travel_offers.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/notifications_travel_tips.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/notifications_upcoming.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/payment_homepage19.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/personal_info_1.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/postlist_item.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/safety_advice_click.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/safety_guidance_click.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/safety_safety_center.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/wishlist.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/trizb/StudioProjects/LetnGO/app/src/main/res/layout/your_payment_homepage.xml" value="0.25416666666666665" />
       </map>
     </option>
   </component>
