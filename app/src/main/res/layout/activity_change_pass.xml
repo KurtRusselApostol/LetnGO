@@ -17,7 +17,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:background="@drawable/arrow_back"/>
+            android:background="@drawable/back_arrow" />
 
         <TextView
             android:id="@+id/name_set"
@@ -27,8 +27,8 @@
             android:layout_marginStart="@dimen/_77sdp"
             android:text="Change Password"
             android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold"/>
+            android:textSize="23sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
@@ -43,7 +43,7 @@
             android:id="@+id/Cpass"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_38sdp"
             android:text="Current Password"
             android:textSize="20sp"
@@ -54,7 +54,7 @@
             android:layout_width="@dimen/_231sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_below="@+id/Cpass"
-            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_8sdp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="@dimen/_8sdp" />
@@ -64,7 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/fieldCpas"
-            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_15sdp"
             android:text="New password"
             android:textSize="20sp"
@@ -75,7 +75,7 @@
             android:layout_width="@dimen/_231sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_below="@+id/Newpass"
-            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_8sdp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="@dimen/_8sdp" />
@@ -85,7 +85,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@+id/fieldNpas"
-            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_15sdp"
             android:text="Re-Type password"
             android:textSize="20sp"
@@ -96,7 +96,7 @@
             android:layout_width="@dimen/_231sdp"
             android:layout_height="@dimen/_30sdp"
             android:layout_below="@+id/Re_pass"
-            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_8sdp"
             app:cardBackgroundColor="@color/white"
             app:cardCornerRadius="@dimen/_8sdp" />
@@ -106,7 +106,7 @@
             android:layout_width="@dimen/_231sdp"
             android:layout_height="@dimen/_46sdp"
             android:layout_below="@+id/fieldRpas"
-            android:layout_marginStart="@dimen/_38sdp"
+            android:layout_marginStart="@dimen/_35sdp"
             android:layout_marginTop="@dimen/_38sdp"
             android:backgroundTint="#658B6F"
             android:text="Button" />

@@ -33,25 +33,25 @@
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginTop="25dp"
                 android:background="#D3D3D3"
-                app:srcCompat="@drawable/black_arrow_btn"
+                app:srcCompat="@drawable/back_arrow"
                 tools:ignore="RtlHardcoded,SpeakableTextPresentCheck" />
+
 
             <TextView
                 android:id="@+id/account_termstitle1"
                 android:layout_width="match_parent"
                 android:layout_height="@dimen/_25sdp"
                 android:layout_centerInParent="true"
+                android:shadowColor="#FFFFFF"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 android:text="Terms of Services "
                 android:textAlignment="center"
                 android:textColor="#658B6F"
                 android:textSize="@dimen/_20sdp"
                 android:textStyle="bold"
-                android:shadowColor="#FFFFFF"
-                android:shadowDx="3"
-                android:shadowDy="3"
-                android:shadowRadius="5"
                 tools:ignore="HardcodedText" />
-
 
             <TextView
                 android:id="@+id/account_termstitle2"

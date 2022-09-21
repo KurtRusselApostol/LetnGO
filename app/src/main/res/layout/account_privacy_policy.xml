@@ -42,7 +42,7 @@
                 android:id="@+id/btn_privacy"
                 android:layout_width="48dp"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="-65dp"
+                android:layout_marginTop="-75dp"
                 android:layout_marginEnd="180dp"
                 android:backgroundTint="#00FFFFFF"
                 android:minHeight="48dp"
@@ -53,16 +53,16 @@
                 android:id="@+id/textView96"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="60dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="40dp"
                 android:text="Legal Terms"
                 tools:ignore="HardcodedText" />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="24dp"
-                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="5dp"
                 android:layout_marginBottom="1dp"
                 android:text="Let n'Go Privacy"
                 android:textColor="@color/black"
@@ -82,7 +82,7 @@
                 android:id="@+id/textView97"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="20dp"
                 android:layout_marginTop="20dp"
                 android:text="Privacy Policy"
                 android:textSize="17sp"
@@ -90,10 +90,10 @@
                 tools:ignore="HardcodedText" />
 
             <me.biubiubiu.justifytext.library.JustifyTextView
-                android:layout_width="262dp"
+                android:layout_width="290dp"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginEnd="35dp"
                 android:layout_marginBottom="5dp"
                 android:text="Our Privacy Policy explains what personal information we collect, how we use personal information, how personal information is shared, and privacy rights.                             "
@@ -105,8 +105,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="1dp"
                 android:text="North America (Excluding Mexico)"
                 android:textSize="17sp"
@@ -116,7 +116,7 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="10dp"
                 android:layout_marginRight="56dp"
                 android:text="•Privacy Policy for "
                 android:textAlignment="center"
@@ -184,8 +184,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginBottom="1dp"
                 android:text="Latin America(Including Mexico, Central and \n South America and Caribbean)"
                 android:textSize="17sp"
@@ -264,7 +264,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="1dp"
                 android:text="Europe, Middle East and Africa"
@@ -298,7 +298,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="1dp"
                 android:text="Asia Pacific"
@@ -331,7 +331,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="1dp"
                 android:text="China"
@@ -378,7 +378,7 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="33dp"
+                android:layout_marginStart="25dp"
                 android:layout_marginTop="-15dp"
                 android:layout_marginBottom="1dp"
                 android:text="Supplemental Privacy Policy Documents:"

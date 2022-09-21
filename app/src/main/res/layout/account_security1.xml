@@ -52,8 +52,8 @@
         android:layout_marginStart="20dp"
         android:layout_marginTop="300dp"
         android:layout_marginEnd="191dp"
-        android:textAlignment="center"
         android:text="@string/login_alerts"
+        android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
         android:textSize="35sp" />

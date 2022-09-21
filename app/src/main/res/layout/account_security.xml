@@ -12,16 +12,16 @@
 
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="100dp"
-        android:layout_height="200dp"
+        android:layout_width="232dp"
+        android:layout_height="430dp"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="49dp"
+        android:layout_marginTop="-50dp"
         android:layout_marginEnd="100dp"
         android:contentDescription="TODO"
         app:srcCompat="@drawable/logo1" />
+
 
     <ImageButton
         android:id="@+id/back"
@@ -37,35 +37,49 @@
     </ImageButton>
 
     <ImageView
-
         android:id="@+id/imageView16"
         android:layout_width="300dp"
         android:layout_height="240dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="54dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="360dp"
-        android:layout_marginEnd="55dp"
         android:background="@drawable/beach_1"
         android:backgroundTint="@color/white"
         android:contentDescription="TODO"
         tools:ignore="ContentDescription,HardcodedText" />
 
     <TextView
-        android:layout_width="249dp"
-        android:layout_height="80dp"
-        android:layout_below="@+id/imageView15"
+        android:layout_width="200dp"
+        android:layout_height="65dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="80dp"
-        android:layout_marginTop="22dp"
-        android:layout_marginEnd="80dp"
-        android:gravity="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginEnd="200dp"
         android:text="@string/security"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
-        android:textColor="#FFF"
+        android:textColor="@color/white"
         android:textSize="50sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="380dp"
+        android:paddingStart="75dp"
+        android:paddingEnd="75dp"
+        android:text="@string/setting_up_extra_security"
+        android:textColor="#2F575D"
+        android:textSize="23sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="430dp"
+        android:paddingStart="75dp"
+        android:paddingEnd="75dp"
+        android:text="@string/get_alerts"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
     <ImageButton
         android:id="@+id/button"
@@ -73,9 +87,9 @@
         android:layout_height="50dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="229dp"
+        android:layout_marginStart="230dp"
         android:layout_marginTop="530dp"
-        android:layout_marginEnd="41dp"
+        android:layout_marginEnd="40dp"
         android:background="#DEE1DD"
         android:backgroundTint="#00FFFFFF"
         android:onClick="security2"
@@ -84,43 +98,6 @@
         tools:ignore="ContentDescription,SpeakableTextPresentCheck,ImageContrastCheck">
 
     </ImageButton>
-
-    <TextView
-        android:id="@+id/textView18"
-        android:layout_width="260dp"
-        android:layout_height="47dp"
-        android:layout_alignStart="@+id/imageView16"
-        android:layout_alignTop="@+id/imageView16"
-        android:layout_alignEnd="@+id/imageView16"
-        android:layout_alignBottom="@+id/imageView16"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="19dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="175dp"
-        android:textColor="#000"
-        android:gravity="center"
-        android:text="SETTING UP SECURITY"
-        android:textSize="20sp"
-
-        android:textStyle="bold" />
-
-    <TextView
-        android:id="@+id/textView19"
-        android:layout_width="260dp"
-        android:layout_height="47dp"
-        android:layout_alignStart="@+id/imageView16"
-        android:layout_alignTop="@+id/imageView16"
-        android:layout_alignEnd="@+id/imageView16"
-        android:layout_alignBottom="@+id/imageView16"
-        android:layout_marginStart="18dp"
-        android:layout_marginTop="85dp"
-        android:layout_marginEnd="24dp"
-        android:layout_marginBottom="109dp"
-        android:gravity="center"
-        android:text="Get alerts about unrecognized logins"
-        android:textSize="15sp"
-
-       />
 
 
 </RelativeLayout>

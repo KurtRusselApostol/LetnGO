@@ -24,13 +24,13 @@
                 android:id="@+id/back_btn"
                 android:layout_width="40dp"
                 android:layout_height="40dp"
-                android:layout_marginStart="40dp"
+                android:layout_marginStart="35dp"
                 android:layout_marginTop="35dp"
                 android:background="@drawable/round_back_btn"
                 android:backgroundTint="@color/colorPrimary"
                 android:paddingStart="35dp"
                 android:paddingEnd="30dp"
-                android:src="@drawable/white_back_btn"
+                android:src="@drawable/back_arrow"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 />
@@ -41,31 +41,20 @@
             android:layout_width="200dp"
             android:layout_height="30dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="1dp"
             android:layout_marginBottom="1dp"
-            android:text="@string/you_are_three"
+            android:text="You are 3 Steps away"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
 
         <TextView
-            android:layout_width="220dp"
-            android:layout_height="30dp"
+            android:layout_width="267dp"
+            android:layout_height="42dp"
             android:layout_marginStart="40dp"
             android:layout_marginTop="1dp"
             android:layout_marginBottom="1dp"
-            android:text="@string/away_from_your"
-            android:textColor="@color/black"
-            android:textSize="24sp"
-            android:textStyle="bold" />
-
-        <TextView
-            android:layout_width="220dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="1dp"
-            android:layout_marginBottom="1dp"
-            android:text="@string/getaway"
+            android:text="from your next getaway"
             android:textColor="@color/black"
             android:textSize="24sp"
             android:textStyle="bold" />
@@ -75,7 +64,7 @@
             android:layout_width="330dp"
             android:layout_height="2dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="15dp"
+            android:layout_marginTop="1dp"
             android:layout_marginBottom="15dp"
             android:background="#808080" />
 
@@ -85,7 +74,7 @@
             android:layout_width="220dp"
             android:layout_height="20dp"
             android:layout_marginStart="40dp"
-            android:layout_marginTop="5dp"
+            android:layout_marginTop="1dp"
             android:layout_marginBottom="1dp"
             android:text="@string/one_start_exploring"
             android:textColor="@color/black"

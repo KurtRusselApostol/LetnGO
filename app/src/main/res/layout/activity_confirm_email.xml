@@ -70,11 +70,12 @@
             android:layout_alignStart="@+id/confiad"
             android:layout_alignParentEnd="true"
             android:layout_marginTop="14dp"
-            android:layout_marginEnd="-17dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/poppins_light"
+            android:justificationMode="inter_word"
             android:text="By clicking the button, you are confirming your email address and agreeing to terms of services."
             android:textAlignment="textStart"
             android:textSize="@dimen/_15sdp"
-            android:fontFamily="@font/poppins_light"
             android:textStyle="bold" />
 
         <TextView
@@ -83,10 +84,13 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/conficontent"
             android:layout_alignStart="@+id/conficontent"
-            android:layout_marginTop="10dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="30dp"
+            android:fontFamily="@font/poppins_light"
+            android:justificationMode="inter_word"
             android:text="This ensures we have the right email in case we need to contact you."
             android:textSize="@dimen/_15sdp"
-            android:fontFamily="@font/poppins_light"
             android:textStyle="bold" />
 
         <Button

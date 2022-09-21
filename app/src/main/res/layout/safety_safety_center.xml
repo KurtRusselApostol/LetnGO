@@ -36,7 +36,8 @@
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
-                android:layout_marginStart="30dp"
+                android:layout_marginStart="130dp"
+                android:layout_marginEnd="@dimen/_100sdp"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/safety_center"
                 android:textColor="#658B6F"
@@ -44,11 +45,12 @@
                 android:textStyle="bold" />
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="40dp"
-                android:layout_marginEnd="120dp"
+                android:layout_width="298dp"
+                android:layout_height="54dp"
+                android:layout_centerInParent="true"
+                android:layout_marginStart="80dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="80dp"
                 android:fontFamily="sans-serif-medium"
                 android:text="@string/get_the_support"
                 android:textColor="@color/black"

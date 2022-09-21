@@ -52,12 +52,12 @@
 
             <ImageButton
                 android:id="@+id/activity_paymentback"
+                style="@style/Widget.AppCompat.Button.Borderless"
                 android:layout_width="@dimen/_30sdp"
                 android:layout_height="@dimen/_30sdp"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="20dp"
-                android:src="@drawable/back_arrow_white"
-                style="@style/Widget.AppCompat.Button.Borderless"/>
+                android:src="@drawable/back_arrow_white" />
 
         </RelativeLayout>
 
