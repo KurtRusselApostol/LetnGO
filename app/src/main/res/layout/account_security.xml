@@ -10,14 +10,27 @@
     android:name ='.security'
     >
 
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/imageView16"
+        android:layout_marginTop="20dp"
+        android:paddingStart="75dp"
+        android:paddingEnd="75dp"
+        android:text="@string/setting_up_extra_security"
+        android:textColor="#2F575D"
+        android:textSize="23sp" />
+
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="232dp"
-        android:layout_height="430dp"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="-50dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
         android:contentDescription="TODO"
         app:srcCompat="@drawable/logo1" />
@@ -40,8 +53,11 @@
         android:id="@+id/imageView16"
         android:layout_width="300dp"
         android:layout_height="240dp"
-        android:layout_marginStart="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="360dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/beach_1"
         android:backgroundTint="@color/white"
         android:contentDescription="TODO"
@@ -50,21 +66,27 @@
     <TextView
         android:layout_width="200dp"
         android:layout_height="65dp"
+        android:layout_below="@+id/imageView15"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="270dp"
-        android:layout_marginEnd="200dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
         android:text="@string/security"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
-        android:textSize="50sp" />
+        android:textSize="50sp"
+        android:textStyle="bold|italic" />
 
     <TextView
+        android:gravity="center"
+        android:textStyle="bold"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="380dp"
+        android:layout_alignTop="@+id/imageView16"
+        android:layout_marginTop="20dp"
         android:paddingStart="75dp"
         android:paddingEnd="75dp"
         android:text="@string/setting_up_extra_security"
@@ -72,14 +94,21 @@
         android:textSize="23sp" />
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="430dp"
-        android:paddingStart="75dp"
-        android:paddingEnd="75dp"
-        android:text="@string/get_alerts"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:gravity="center"
+        android:layout_width="254dp"
+        android:layout_height="72dp"
+        android:layout_alignStart="@+id/imageView16"
+        android:layout_alignTop="@+id/imageView16"
+        android:layout_alignEnd="@+id/imageView16"
+        android:layout_gravity="center_vertical|end"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="82dp"
+
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+        android:textColor="#2F575D"
+        android:textSize="15sp" />
 
     <ImageButton
         android:id="@+id/button"
