@@ -32,6 +32,10 @@ public class new_Hosting extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_new_hosting);
 
+        back = findViewById(R.id.img_Cancel);
+        back.setOnClickListener(v -> onBackPressed());
+
+        back = findViewById(R.id.img_Cancel);
         btnInsert = findViewById(R.id.btnInsert);
         btnView = findViewById(R.id.btnView);
         PlaceTitle = findViewById(R.id.editPlaceTitle);
@@ -84,8 +88,7 @@ public class new_Hosting extends AppCompatActivity {
                 });
 
 
-        back = findViewById(R.id.img_Cancel);
-        back.setOnClickListener(v -> onBackPressed());
+
     }
 
 }
