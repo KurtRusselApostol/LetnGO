@@ -14,31 +14,31 @@
 
         <ImageView
             android:id="@+id/back"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_centerVertical="true"
             android:layout_marginStart="10dp"
             android:layout_marginTop="40dp"
             android:clickable="true"
-            android:src="@drawable/arrow_back" />
+            android:src="@drawable/back_arrow" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="40dp"
-            android:layout_marginTop="23dp"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="20dp"
             android:text="M E S S A G E S"
-            android:textSize="20sp"
+            android:textSize="23sp"
             android:textStyle="bold" />
 
 
         <ImageView
             android:id="@+id/setting"
-            android:layout_width="25dp"
-            android:layout_height="25dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginTop="20dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="20dp"
             android:clickable="true"
             android:src="@drawable/menu" />
@@ -92,7 +92,7 @@
                 app:cardBackgroundColor="#658B6F"
                 app:cardCornerRadius="540dp">
 
-<!--                 pa change nalang po ng kulay-->
+                <!--                 pa change nalang po ng kulay-->
 
                 <ImageView
                     android:id="@+id/send"

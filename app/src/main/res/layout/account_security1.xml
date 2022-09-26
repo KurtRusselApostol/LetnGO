@@ -7,14 +7,31 @@
     tools:context="nav.account.security.security1"
     android:background="@drawable/normal_background">
 
+    <TextView
+        android:id="@+id/textView18"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:layout_alignStart="@+id/imageView16"
+        android:layout_alignTop="@+id/imageView16"
+        android:layout_alignEnd="@+id/imageView16"
+        android:layout_marginStart="-41dp"
+        android:layout_marginTop="121dp"
+        android:layout_marginEnd="-64dp"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:text="@string/alert_message"
+        android:textColor="@color/black"
+        android:textSize="15sp" />
+
     <ImageView
         android:id="@+id/imageView15"
-        android:layout_width="232dp"
-        android:layout_height="430dp"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="-50dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
         android:contentDescription="TODO"
         app:srcCompat="@drawable/logo1" />
@@ -32,72 +49,75 @@
 
     </ImageButton>
 
+
     <ImageView
         android:id="@+id/imageView16"
         android:layout_width="300dp"
         android:layout_height="240dp"
-        android:layout_marginStart="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="360dp"
+        android:layout_marginEnd="40dp"
         android:background="@drawable/beach_1"
         android:backgroundTint="@color/white"
         android:contentDescription="TODO"
         tools:ignore="ContentDescription,HardcodedText" />
 
-
     <TextView
         android:layout_width="200dp"
         android:layout_height="65dp"
+        android:layout_below="@+id/imageView15"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="20dp"
-        android:layout_marginTop="300dp"
-        android:layout_marginEnd="191dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="Login Alerts"
         android:textAlignment="center"
-        android:text="@string/login_alerts"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:textColor="@color/white"
-        android:textSize="35sp" />
+        android:textSize="35sp"
+        android:textStyle="bold|italic" />
+
 
     <TextView
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        android:layout_marginTop="400dp"
+        android:layout_alignStart="@+id/imageView16"
+        android:layout_alignTop="@+id/imageView16"
+        android:layout_alignEnd="@+id/imageView16"
+        android:layout_marginStart="-41dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="-64dp"
         android:paddingStart="80dp"
         android:paddingEnd="80dp"
         android:text="@string/alert_message"
-        android:textColor="@color/black"
-        android:textSize="20sp" />
+        android:textColor="#2F575D"
+        android:textSize="15sp" />
 
     <TextView
-        android:layout_width="100dp"
-        android:layout_height="48dp"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="530dp"
-        android:paddingTop="8dp"
-        android:text="@string/email"
+        android:layout_width="215dp"
+        android:layout_height="17dp"
+        android:layout_alignTop="@+id/imageView16"
+        android:layout_marginTop="186dp"
+        android:layout_marginEnd="-26dp"
+        android:layout_toStartOf="@+id/button1"
+        android:paddingStart="80dp"
+        android:paddingEnd="10dp"
+        android:text="Click to send to your email"
         android:textColor="@color/black"
-        android:textSize="25sp" />
-
-    <TextView
-        android:layout_width="50dp"
-        android:layout_height="30dp"
-        android:layout_alignParentEnd="true"
-        android:layout_marginTop="545dp"
-        android:layout_marginEnd="170dp"
-        android:text="@string/off"
-        android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textSize="10sp" />
 
     <ImageButton
         android:id="@+id/button1"
         android:layout_width="60dp"
         android:layout_height="50dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="230dp"
+        android:layout_alignEnd="@+id/imageView16"
         android:layout_marginTop="530dp"
-        android:layout_marginEnd="40dp"
+        android:layout_marginEnd="-1dp"
         android:background="#DEE1DD"
         android:backgroundTint="#00FFFFFF"
         android:padding="@dimen/cardview_default_radius"

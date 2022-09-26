@@ -34,7 +34,7 @@
             android:layout_marginStart="15dp"
             android:layout_marginTop="13dp"
             android:background="@drawable/roundbtn"
-            android:src="@drawable/arrow_back" />
+            android:src="@drawable/back_arrow" />
 
         <TextView
             android:id="@+id/bookingoverview"
@@ -360,12 +360,12 @@
             android:id="@+id/textView52"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
+            android:layout_marginStart="110dp"
             android:layout_marginTop="180dp"
             android:fontFamily="sans-serif-thin"
-            android:text="Your booking is complete"
-            android:textColor="@color/black"
-            android:textSize="14sp"
+            android:text="Your booking is complete!"
+            android:textColor="@color/colorRed"
+            android:textSize="16sp"
             android:textStyle="bold" />
 
     </RelativeLayout>

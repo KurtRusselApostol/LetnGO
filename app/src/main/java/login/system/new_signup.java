@@ -170,7 +170,7 @@ public class new_signup extends AppCompatActivity {
                 String dc = "";
                 String ba = "";
                 String bn = "";
-
+                //try
 
                 //Validate Mobile number using matcher and pattern(Regular expression)
                 String mobilenum = "[6-9][0-9]{9}"; //First no. can be {6,8,9} and rest 9 nos. can be any no.

@@ -34,7 +34,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="50dp"
                 android:layout_marginBottom="1dp"
                 android:text="Recommended for you"
                 android:textColor="@color/black"
@@ -47,7 +47,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="220dp"
                 android:layout_marginStart="35dp"
-                android:layout_marginTop="50dp"
+                android:layout_marginTop="20dp"
                 android:layout_marginEnd="35dp"
                 android:layout_marginBottom="0dp"
                 app:cardBackgroundColor="@color/white"
@@ -137,9 +137,7 @@
                     android:textColor="@color/black" />
 
 
-
             </RelativeLayout>
-
 
 
         </LinearLayout>

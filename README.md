@@ -31,6 +31,7 @@ If you are a new intern and already joined as a contributor, you will need to in
 * [Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
 * [OpenJDK version 18](https://jdk.java.net/18/) (optional - might be required if generating SHA-1 key) <br />
 * [Github Desktop](https://desktop.github.com/) (optional)
+* [Emulator]
 
 You will also need to join the Discord server of Front-End and Back-End teams, Facebook group chat for MCC Rental Listing Team and our Trello workspace. You will need to ask your team leaders for links.<br /> <br />
 For Firebase database access, ask the team leader or back-end leader for Firebase account. <br /> <br />
