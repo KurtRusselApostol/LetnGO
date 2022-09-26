@@ -45,6 +45,7 @@ public class Fragment_GuestAccount extends Fragment {
      * @return A new instance of fragment Fragment_GuestAccount.
      */
     // TODO: Rename and change types and number of parameters
+
     public static Fragment_GuestAccount newInstance(String param1, String param2) {
         Fragment_GuestAccount fragment = new Fragment_GuestAccount();
         Bundle args = new Bundle();

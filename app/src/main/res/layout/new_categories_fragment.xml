@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="nav.categories.FragmentCategories"
+    android:background="#DEE1DD"
+    android:scrollbars="none"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/layoutHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/header_background"
+            android:padding="@dimen/_8sdp"
+            app:layout_constraintTop_toTopOf="parent"
+            >
+
+            <TextView
+                android:id="@+id/textWelcome"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:fontFamily="@font/poppins_bold"
+                android:textSize="25sp"
+                android:text="CATEGORIES"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            </TextView>
+
+            <ImageView
+                android:id="@+id/imageMessage"
+                android:layout_width="@dimen/_34sdp"
+                android:layout_height="@dimen/_38sdp"
+                android:layout_marginEnd="@dimen/_8sdp"
+                android:contentDescription="@string/app_name"
+                android:src="@drawable/message1"
+                app:layout_constraintBottom_toBottomOf="@id/textWelcome"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textWelcome"
+                app:layout_constraintVertical_bias="0.0"
+                app:tint="@color/colorWhite" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:layout_marginEnd="@dimen/_11sdp"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:background="@drawable/white_rectangle_background"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/imageMessage"
+                >
+
+                <EditText
+                    android:id="@+id/categories_search"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/_36sdp"
+                    android:layout_weight="1"
+                    android:background="@null"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="@string/search_elements"
+                    android:imeOptions="actionSearch"
+                    android:inputType="text"
+                    android:paddingStart="@dimen/_11sdp"
+                    android:paddingEnd="@dimen/_8sdp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#757575"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/categories_search_btn"
+                    android:layout_width="@dimen/_38sdp"
+                    android:layout_height="@dimen/_38sdp"
+                    android:background="@drawable/search_icon_background"
+                    android:contentDescription="@string/app_name"
+                    android:padding="@dimen/_5sdp"
+                    android:src="@drawable/searchblck"
+                    app:tint="@color/colorPrimary" />
+
+            </LinearLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</ScrollView>

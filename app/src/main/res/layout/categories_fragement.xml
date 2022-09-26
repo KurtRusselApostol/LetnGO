@@ -14,9 +14,9 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
-        <androidx.constraintlayout.widget.ConstraintLayout
-            android:id="@+id/layoutHeader"
-            android:layout_width="match_parent"
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutHeader"
+    android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/header_background"
             android:padding="@dimen/_8sdp"
@@ -65,13 +65,14 @@
                 >
 
                 <EditText
+                    android:id="@+id/categories_search"
                     android:layout_width="0dp"
                     android:layout_height="@dimen/_36sdp"
                     android:layout_weight="1"
                     android:background="@null"
+                    android:fontFamily="@font/poppins_light"
                     android:hint="@string/search_elements"
                     android:imeOptions="actionSearch"
-                    android:fontFamily="@font/poppins_light"
                     android:inputType="text"
                     android:paddingStart="@dimen/_11sdp"
                     android:paddingEnd="@dimen/_8sdp"
@@ -80,6 +81,7 @@
                     android:textSize="16sp" />
 
                 <ImageView
+                    android:id="@+id/categories_search_btn"
                     android:layout_width="@dimen/_38sdp"
                     android:layout_height="@dimen/_38sdp"
                     android:background="@drawable/search_icon_background"

@@ -5,8 +5,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
 import android.widget.ImageButton;
 
 import com.example.letngo.R;
@@ -22,13 +25,13 @@ import com.google.firebase.database.ValueEventListener;
 
 import java.util.ArrayList;
 
+import login.system.UserHompage;
+import login.system.new_login;
 import nav.categories.FragmentCategories;
 
 public class Postlist extends AppCompatActivity {
 
     RecyclerView recyclerView;
-
-
 
     // Variables
     private ArrayList<Post> list;
@@ -55,12 +58,12 @@ public class Postlist extends AppCompatActivity {
     ImageButton back;
 
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.categories_sub_beach);
         recyclerView = findViewById(R.id.recycleview_info);
-
 
         back = findViewById(R.id.beach_back);
         back.setOnClickListener(v -> onBackPressed());
@@ -74,9 +77,9 @@ public class Postlist extends AppCompatActivity {
         this.cabin = fragmentCategories.cabin;
         this.island = fragmentCategories.island;
 
+
         // Array list
         list = new ArrayList<>();
-
 
         // Clear Array list
         clearAll();
@@ -165,4 +168,5 @@ public class Postlist extends AppCompatActivity {
             location = "island";
         }
     }
+
 }

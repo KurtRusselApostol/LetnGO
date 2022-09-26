@@ -1,5 +1,7 @@
 package nav.categories;
 
+import static android.app.PendingIntent.getActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
@@ -15,6 +17,7 @@ import androidx.fragment.app.Fragment;
 
 import login.system.GLoginChecker;
 import login.system.LoginInfoLocal;
+import nav.categories.recycleview.Postlist;
 import nav.explore.FragmentExplore;
 import nav.account.Fragment_GuestAccount;
 import com.example.letngo.Fragment_GuestNewsfeed;
@@ -60,7 +63,7 @@ public class HomePage extends AppCompatActivity {
                             replaceFragment(new Fragment_GuestNewsfeed());
                             break;
                         case R.id.fragmentCategories2:
-                            replaceFragment(new FragmentCategories());
+                            replaceFragment(new FragementCategories2());
                             break;
                         case R.id.fragmentExplore:
                             replaceFragment(new FragmentExplore());
