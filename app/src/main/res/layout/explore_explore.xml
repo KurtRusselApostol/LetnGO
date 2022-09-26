@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    tools:context=".MainActivity"
     android:background="#658B6F"
-    android:fillViewport="true"
-    tools:context=".MainActivity">
+    android:fillViewport="true">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,67 +16,54 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="@dimen/_100sdp"
             android:layout_marginTop="@dimen/_30sdp">
 
             <TextView
                 android:id="@+id/explore_find"
-                android:layout_width="373dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/_15sdp"
                 android:text="Find Your Best Hotel"
                 android:textColor="@color/white"
-                android:textSize="16pt"
+                android:textSize="20pt"
                 android:textStyle="bold">
 
             </TextView>
 
         </RelativeLayout>
 
-        <TextView
-            android:id="@+id/explore_find2"
-            android:layout_width="652dp"
-            android:layout_height="wrap_content"
-            android:layout_marginStart="23dp"
-            android:text="Search hotels and more near you"
-            android:textColor="@color/white"
-            android:textSize="6pt">
-
-        </TextView>
-
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_height="@dimen/_50sdp"
             android:layout_below="@+id/explore_find">
-
-            <ImageView
-                android:id="@+id/explore_filter"
-                android:layout_width="49dp"
-                android:layout_height="48dp"
-                android:layout_alignParentEnd="true"
-                android:layout_marginStart="@dimen/_5sdp"
-                android:layout_marginEnd="43dp"
-                android:background="@drawable/settings_round_bg"
-                android:clickable="true"
-                android:focusable="true"
-                android:src="@drawable/settinglines"
-                tools:ignore="ContentDescription" />
 
             <androidx.appcompat.widget.SearchView
                 android:id="@+id/explore_search"
-                android:layout_width="266dp"
-                android:layout_height="wrap_content"
-                android:layout_alignParentStart="true"
-                android:layout_marginStart="20dp"
-                android:layout_marginEnd="19dp"
-                android:layout_marginRight="5dp"
-                android:layout_toStartOf="@+id/explore_filter"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:layout_toLeftOf="@id/explore_filter"
                 android:background="@drawable/btn_background"
                 android:clickable="true"
                 android:focusable="true">
 
             </androidx.appcompat.widget.SearchView>
+
+            <ImageView
+                android:id="@+id/explore_filter"
+                android:layout_width="@dimen/_40sdp"
+                android:layout_height="@dimen/_40sdp"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginEnd="@dimen/_15sdp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/settings_round_bg"
+                android:clickable="true"
+                android:focusable="true"
+                android:src="@drawable/settinglines"
+                tools:ignore="ContentDescription" />
         </RelativeLayout>
 
         <RelativeLayout
@@ -86,17 +74,16 @@
             <TextView
                 android:id="@+id/explore_mostpopular"
                 android:layout_width="wrap_content"
-                android:layout_height="52dp"
-                android:layout_alignParentBottom="true"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:layout_marginBottom="11dp"
                 android:shadowColor="#000000"
                 android:shadowDx="3"
                 android:shadowDy="3"
                 android:shadowRadius="5"
                 android:text="Most Popular"
                 android:textColor="#FFFFFF"
-                android:textSize="14pt"
+                android:textSize="16pt"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -133,16 +120,16 @@
                         android:layout_height="wrap_content"
                         android:layout_above="@id/explore_ph1"
                         android:layout_alignStart="@id/explore_pic1"
-                        android:shadowColor="#000000"
-                        android:shadowDx="3"
-                        android:shadowDy="3"
-                        android:shadowRadius="5"
                         android:text="Phasellus Aliquet"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
-
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                     <TextView
                         android:id="@+id/explore_ph1"
@@ -150,14 +137,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignStart="@id/explore_pic1"
                         android:layout_alignParentBottom="true"
+                        android:text="Philippines"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
                         android:shadowColor="#000000"
                         android:shadowDx="3"
                         android:shadowDy="3"
                         android:shadowRadius="5"
-                        android:text="Philippines"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_15sdp"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                 </RelativeLayout>
 
@@ -179,15 +167,16 @@
                         android:layout_height="wrap_content"
                         android:layout_above="@id/explore_ph2"
                         android:layout_alignStart="@id/explore_pic2"
-                        android:shadowColor="#000000"
-                        android:shadowDx="3"
-                        android:shadowDy="3"
-                        android:shadowRadius="5"
                         android:text="Phendrerit Ullamcorper"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                     <TextView
                         android:id="@+id/explore_ph2"
@@ -195,14 +184,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignStart="@id/explore_pic2"
                         android:layout_alignParentBottom="true"
+                        android:text="Philippines"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
                         android:shadowColor="#000000"
                         android:shadowDx="3"
                         android:shadowDy="3"
                         android:shadowRadius="5"
-                        android:text="Philippines"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_15sdp"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                 </RelativeLayout>
 
@@ -224,14 +214,14 @@
                         android:layout_height="wrap_content"
                         android:layout_above="@id/explore_ph3"
                         android:layout_alignStart="@id/explore_pic3"
-                        android:shadowColor="#000000"
-                        android:shadowDx="3"
-                        android:shadowDy="3"
-                        android:shadowRadius="5"
                         android:text="Donec Rhoncus"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
                         tools:ignore="HardcodedText,PxUsage"></TextView>
 
                     <TextView
@@ -240,14 +230,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignStart="@id/explore_pic3"
                         android:layout_alignParentBottom="true"
+                        android:text="Philippines"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
                         android:shadowColor="#000000"
                         android:shadowDx="3"
                         android:shadowDy="3"
                         android:shadowRadius="5"
-                        android:text="Philippines"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_15sdp"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                 </RelativeLayout>
             </LinearLayout>
@@ -264,14 +255,14 @@
                 android:layout_height="wrap_content"
                 android:layout_centerVertical="true"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:shadowColor="#000000"
-                android:shadowDx="3"
-                android:shadowDy="3"
-                android:shadowRadius="5"
                 android:text="Recently Visited"
                 android:textColor="@color/white"
                 android:textSize="16pt"
                 android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText" />
 
         </RelativeLayout>
@@ -307,15 +298,16 @@
                         android:layout_height="wrap_content"
                         android:layout_above="@id/explore_ph4"
                         android:layout_alignStart="@id/explore_pic4"
-                        android:shadowColor="#000000"
-                        android:shadowDx="3"
-                        android:shadowDy="3"
-                        android:shadowRadius="5"
                         android:text="Vehicula Tellus"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                     <TextView
                         android:id="@+id/explore_ph4"
@@ -352,15 +344,16 @@
                         android:layout_height="wrap_content"
                         android:layout_above="@id/explore_ph5"
                         android:layout_alignStart="@id/explore_pic5"
-                        android:shadowColor="#000000"
-                        android:shadowDx="3"
-                        android:shadowDy="3"
-                        android:shadowRadius="5"
                         android:text="Orci Varius"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                     <TextView
                         android:id="@+id/explore_ph5"
@@ -368,14 +361,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignStart="@id/explore_pic5"
                         android:layout_alignParentBottom="true"
+                        android:text="Philippines"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
                         android:shadowColor="#000000"
                         android:shadowDx="3"
                         android:shadowDy="3"
                         android:shadowRadius="5"
-                        android:text="Philippines"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_15sdp"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                 </RelativeLayout>
 
@@ -397,15 +391,16 @@
                         android:layout_height="wrap_content"
                         android:layout_above="@id/explore_ph6"
                         android:layout_alignStart="@id/explore_pic6"
-                        android:shadowColor="#000000"
-                        android:shadowDx="3"
-                        android:shadowDy="3"
-                        android:shadowRadius="5"
                         android:text="Natoque Penatibus"
                         android:textColor="@color/white"
                         android:textSize="@dimen/_15sdp"
                         android:textStyle="bold"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        android:shadowColor="#000000"
+                        android:shadowDx="3"
+                        android:shadowDy="3"
+                        android:shadowRadius="5"
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                     <TextView
                         android:id="@+id/explore_ph6"
@@ -413,14 +408,15 @@
                         android:layout_height="wrap_content"
                         android:layout_alignStart="@id/explore_pic6"
                         android:layout_alignParentBottom="true"
+                        android:text="Philippines"
+                        android:textColor="@color/white"
+                        android:textSize="@dimen/_15sdp"
                         android:shadowColor="#000000"
                         android:shadowDx="3"
                         android:shadowDy="3"
                         android:shadowRadius="5"
-                        android:text="Philippines"
-                        android:textColor="@color/white"
-                        android:textSize="@dimen/_15sdp"
-                        tools:ignore="HardcodedText,PxUsage"></TextView>
+                        tools:ignore="HardcodedText,PxUsage">
+                    </TextView>
 
                 </RelativeLayout>
             </LinearLayout>
@@ -449,32 +445,32 @@
                 android:layout_marginStart="@dimen/_15sdp"
                 android:drawableStart="@drawable/bed"
                 android:gravity="center"
-                android:shadowColor="#000000"
-                android:shadowDx="3"
-                android:shadowDy="3"
-                android:shadowRadius="5"
                 android:text="3 Beds"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_10sdp"
                 android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText"></TextView>
 
             <TextView
                 android:id="@+id/explore_door"
                 android:layout_width="90dp"
                 android:layout_height="35dp"
-                android:layout_below="@+id/explore_bed"
                 android:layout_marginStart="@dimen/_15sdp"
+                android:layout_below="@+id/explore_bed"
                 android:drawableStart="@drawable/door"
                 android:gravity="center"
-                android:shadowColor="#000000"
-                android:shadowDx="3"
-                android:shadowDy="3"
-                android:shadowRadius="5"
                 android:text="5 Rooms"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_10sdp"
                 android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText" />
 
             <TextView
@@ -485,14 +481,14 @@
                 android:layout_alignStart="@id/ratingBar"
                 android:drawableStart="@drawable/bathtub"
                 android:gravity="center"
-                android:shadowColor="#000000"
-                android:shadowDx="3"
-                android:shadowDy="3"
-                android:shadowRadius="5"
                 android:text="2 Bathrooms"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_10sdp"
                 android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText"></TextView>
 
             <TextView
@@ -519,14 +515,14 @@
                 android:layout_height="35dp"
                 android:layout_below="@+id/explore_door"
                 android:layout_marginStart="@dimen/_15sdp"
-                android:shadowColor="#000000"
-                android:shadowDx="3"
-                android:shadowDy="3"
-                android:shadowRadius="5"
                 android:text="P7,500 per night"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_10sdp"
                 android:textStyle="bold"
+                android:shadowColor="#000000"
+                android:shadowDx="3"
+                android:shadowDy="3"
+                android:shadowRadius="5"
                 tools:ignore="HardcodedText"></TextView>
 
             <RatingBar
