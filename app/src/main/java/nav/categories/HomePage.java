@@ -32,7 +32,7 @@ import login.system.new_login;
 
 public class HomePage extends AppCompatActivity {
     BottomNavigationView bottomNavigationView;
-
+//testing
 //declaration of everything nice
     ImageView imageView;
 
