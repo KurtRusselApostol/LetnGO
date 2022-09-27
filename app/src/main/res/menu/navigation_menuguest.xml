@@ -7,7 +7,7 @@
         android:title="@string/newsfeed"/>
 
     <item
-        android:id="@+id/fragmentCategories2"
+        android:id="@+id/fragmentCategories"
         android:icon="@drawable/nav_categories"
         android:title="@string/categories"/>
 
