@@ -83,7 +83,8 @@
                 android:paddingEnd="10dp"
                 android:textColor="@color/black"
                 android:textColorHint="#757575"
-                android:textSize="16sp" />
+                android:textSize="16sp"
+                android:autofillHints="" />
 
             <ImageView
                 android:layout_width="50dp"
