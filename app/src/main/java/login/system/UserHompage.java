@@ -33,7 +33,7 @@ public class UserHompage extends AppCompatActivity {
 
 
         replaceFragment(new FragmentExplore());
-        bottomNavigationView.setSelectedItemId(R.id.fragmentNewsfeed);
+        bottomNavigationView.setSelectedItemId(R.id.fragmentExplore);
 
 
         bottomNavigationView.setOnItemSelectedListener(item -> {
