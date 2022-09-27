@@ -4,7 +4,7 @@
     <item
         android:id="@+id/fragmentNewsfeed"
         android:icon="@drawable/ic_fave"
-        android:title="Favorites"/>
+        android:title="Wishlist"/>
 
     <item
         android:id="@+id/fragmentCategories"
