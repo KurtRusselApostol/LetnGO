@@ -8,14 +8,16 @@
     android:background="#DEE1DD">
 
     <ImageView
-        android:layout_width="232dp"
-        android:layout_height="430dp"
+        android:layout_width="100dp"
+        android:layout_height="200dp"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="100dp"
-        android:layout_marginTop="-50dp"
+        android:layout_marginTop="50dp"
         android:layout_marginEnd="100dp"
         android:contentDescription="TODO"
+
         app:srcCompat="@drawable/logo1" />
 
     <ImageButton
@@ -35,7 +37,8 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_marginTop="380dp"
+        android:layout_marginTop="300dp"
+        android:gravity="center"
         android:text="@string/enter_password"
         android:textAlignment="center"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
@@ -43,9 +46,10 @@
         android:textSize="25sp" />
 
     <TextView
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:layout_marginTop="430dp"
+        android:layout_marginTop="340dp"
         android:paddingStart="70dp"
         android:paddingEnd="40dp"
         android:text="@string/for_security"
@@ -57,8 +61,9 @@
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="50dp"
+        android:layout_below="@+id/editTextTextPassword"
         android:layout_marginStart="110dp"
-        android:layout_marginTop="560dp"
+        android:layout_marginTop="22dp"
         android:layout_marginEnd="110dp"
         android:background="@drawable/button_gradient"
         android:text="@string/continue_1"
@@ -68,11 +73,12 @@
         tools:ignore="TextContrastCheck" />
 
     <EditText
+        android:gravity="center"
         android:id="@+id/editTextTextPassword"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_marginStart="70dp"
-        android:layout_marginTop="470dp"
+        android:layout_marginTop="380dp"
         android:layout_marginEnd="70dp"
         android:background="@drawable/edit_background"
         android:ems="13"
