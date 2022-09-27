@@ -62,8 +62,8 @@ public class HomePage extends AppCompatActivity {
                         case R.id.fragment_GuestNewsfeed:
                             replaceFragment(new Fragment_GuestNewsfeed());
                             break;
-                        case R.id.fragmentCategories2:
-                            replaceFragment(new FragementCategories2());
+                        case R.id.fragmentCategories:
+                            replaceFragment(new FragmentCategories());
                             break;
                         case R.id.fragmentExplore:
                             replaceFragment(new FragmentExplore());

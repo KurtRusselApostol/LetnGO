@@ -83,7 +83,6 @@
 
 
     <TextView
-        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_alignStart="@+id/imageView16"
@@ -92,6 +91,7 @@
         android:layout_marginStart="-41dp"
         android:layout_marginTop="14dp"
         android:layout_marginEnd="-64dp"
+        android:gravity="center"
         android:paddingStart="80dp"
         android:paddingEnd="80dp"
         android:text="@string/alert_message"
