@@ -35,7 +35,6 @@ public class HomePage extends AppCompatActivity {
 
 //declaration of everything nice
     ImageView imageView;
-    ImageView imageView1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -55,28 +54,25 @@ public class HomePage extends AppCompatActivity {
 
         replaceFragment(new FragmentExplore());
         bottomNavigationView.setSelectedItemId(R.id.fragmentExplore);
-        bottomNavigationView.setOnItemSelectedListener(new NavigationBarView.OnItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                    switch (item.getItemId()) {
-                        case R.id.fragment_GuestNewsfeed:
-                            replaceFragment(new Fragment_GuestNewsfeed());
-                            break;
-                        case R.id.fragmentCategories:
-                            replaceFragment(new FragmentCategories());
-                            break;
-                        case R.id.fragmentExplore:
-                            replaceFragment(new FragmentExplore());
-                            break;
-                        case R.id.fragment_GuestNotification:
-                            replaceFragment(new Fragment_GuestNotification());
-                            break;
-                        case R.id.fragment_GuestAccount:
-                            replaceFragment(new Fragment_GuestAccount());
-                            break;
-                    }
-                    return true;
+        bottomNavigationView.setOnItemSelectedListener(item -> {
+            switch (item.getItemId()) {
+                case R.id.fragment_GuestNewsfeed:
+                    replaceFragment(new Fragment_GuestNewsfeed());
+                    break;
+                case R.id.fragmentCategories:
+                    replaceFragment(new FragmentCategories());
+                    break;
+                case R.id.fragmentExplore:
+                    replaceFragment(new FragmentExplore());
+                    break;
+                case R.id.fragment_GuestNotification:
+                    replaceFragment(new Fragment_GuestNotification());
+                    break;
+                case R.id.fragment_GuestAccount:
+                    replaceFragment(new Fragment_GuestAccount());
+                    break;
             }
+            return true;
         });
 
 //        replaceFragment(new Fragment_home());
@@ -108,7 +104,7 @@ public class HomePage extends AppCompatActivity {
 
 //    private void replaceFragment()
 //    {
-//        getSupportFragmentManager().beginTransaction().replace(R.id.menuNewsfeed, fragment).comit();
+//        getSupportFragmentManager().beginTransaction().replace(R.id.menuNewsfeed, fragment).commit();
 //    }
 
     //Method for message button
