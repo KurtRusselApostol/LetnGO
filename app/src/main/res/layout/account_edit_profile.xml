@@ -12,7 +12,7 @@
         android:layout_height="match_parent"
         tools:context=".profile_edit"
         android:orientation="vertical"
-        android:background="#DEE1DD">
+        android:background="#fff">
 
 
 
@@ -29,6 +29,7 @@
                 android:layout_marginTop="@dimen/_50sdp">
 
                 <TextView
+                    android:gravity="center"
                     android:id="@+id/tv_one_login"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -42,6 +43,7 @@
                 <!-- Pa edit po ito -->
 
                 <TextView
+                    android:gravity="center"
                     android:id="@+id/textView2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -83,6 +85,7 @@
                 <!--                    app:layout_constraintTop_toBottomOf="@+id/textView2" />-->
                 <de.hdodenhof.circleimageview.CircleImageView
                     android:id="@+id/my_avatar"
+                    android:background="@drawable/ic_baseline_person_pin_24"
                     android:layout_width="150dp"
                     android:layout_height="150dp"
                     android:layout_marginTop="16dp"
@@ -107,13 +110,7 @@
         </RelativeLayout>
 
 
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/_23sdp"
-            android:layout_marginStart="@dimen/_23sdp"
-            android:layout_marginEnd="@dimen/_23sdp"
-            app:cardCornerRadius="@dimen/_30sdp">
+
 
             <RelativeLayout
                 android:layout_width="match_parent"
@@ -135,13 +132,14 @@
                     app:layout_constraintWidth_percent="0.7">
 
                     <EditText
+                        android:background="@drawable/custom_input"
                         android:id="@+id/ed_Fname"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
                         android:hint="First Name"
                         android:padding="@dimen/_18sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/black"
                         android:textSize="15sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
@@ -162,6 +160,7 @@
                     app:layout_constraintWidth_percent="0.7">
 
                     <EditText
+                        android:background="@drawable/custom_input"
                         android:id="@+id/ed_Lname"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
@@ -190,6 +189,7 @@
                     app:layout_constraintWidth_percent="0.7">
 
                     <EditText
+                        android:background="@drawable/custom_input"
                         android:id="@+id/ed_email"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
@@ -201,34 +201,35 @@
                         android:textSize="15sp" />
                 </com.google.android.material.textfield.TextInputLayout>
 
-                <!--Birthday Begin-->
-                <TextView
-                    android:id="@+id/account_birthday"
-                    android:layout_width="314dp"
-                    android:layout_height="74dp"
-                    android:layout_below="@+id/layout_email"
-                    android:layout_alignStart="@id/layout_email"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:hint="Birthday"
-                    android:padding="@dimen/_19sdp"
-                    android:textColorHint="#808080"
-                    android:textSize="15sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
-                    app:layout_constraintWidth_percent="0.7">
 
-                </TextView>
+<!--                <TextView-->
+<!--                    android:background="@drawable/custom_input"-->
+<!--                    android:id="@+id/account_birthday"-->
+<!--                    android:layout_width="314dp"-->
+<!--                    android:layout_height="74dp"-->
+<!--                    android:layout_below="@+id/layout_email"-->
+<!--                    android:layout_alignStart="@id/layout_email"-->
+<!--                    android:layout_marginTop="@dimen/_4sdp"-->
+<!--                    android:hint="Birthday"-->
+<!--                    android:padding="@dimen/_19sdp"-->
+<!--                    android:textColorHint="#808080"-->
+<!--                    android:textSize="15sp"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"-->
+<!--                    app:layout_constraintWidth_percent="0.7">-->
 
-                <View
-                    android:id="@+id/account_line"
-                    android:layout_width="wrap_content"
-                    android:layout_height="1dp"
-                    android:layout_alignStart="@id/account_birthday"
-                    android:layout_marginStart="@dimen/_3sdp"
-                    android:layout_alignEnd="@id/account_birthday"
-                    android:background="@color/colorTrendingEnd"
-                    android:layout_below="@id/account_birthday"/>
+<!--                </TextView>-->
+
+<!--                <View-->
+<!--                    android:id="@+id/account_line"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="1dp"-->
+<!--                    android:layout_alignStart="@id/account_birthday"-->
+<!--                    android:layout_marginStart="@dimen/_3sdp"-->
+<!--                    android:layout_alignEnd="@id/account_birthday"-->
+<!--                    android:background="@color/colorTrendingEnd"-->
+<!--                    android:layout_below="@id/account_birthday"/>-->
 
                 <!--<Button
                     android:id="@+id/account_calendar"
@@ -246,7 +247,7 @@
                     android:id="@+id/layout_contact"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/account_line"
+                    android:layout_below="@+id/layout_email"
                     android:layout_alignParentEnd="true"
                     android:layout_marginStart="@dimen/_15sdp"
                     android:layout_marginTop="@dimen/_4sdp"
@@ -258,6 +259,7 @@
                     app:layout_constraintWidth_percent="0.7">
 
                     <EditText
+                        android:background="@drawable/custom_input"
                         android:id="@+id/ed_contact_no"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
@@ -287,6 +289,7 @@
 
 
                     <EditText
+                        android:background="@drawable/custom_input"
                         android:id="@+id/ed_Age"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
@@ -321,10 +324,13 @@
                         android:layout_height="40dp"/>
  -->
 
-                    <Spinner
-                        android:id="@+id/ed_Gender"
+                    <EditText
+                        android:background="@drawable/custom_input"
+                        android:id="@+id/account_birthday"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
+                        android:hint="DD/MM/YYYY"
+                        android:inputType="date"
                         android:padding="@dimen/_19sdp"
                         android:textColor="#000000"
                         android:textColorHint="#808080"
@@ -349,6 +355,7 @@
                     app:layout_constraintWidth_percent="0.7">
 
                     <EditText
+                        android:background="@drawable/custom_input"
                         android:id="@+id/ed_Address"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
@@ -376,6 +383,7 @@
                     app:layout_constraintWidth_percent="0.7">
 
                     <EditText
+                        android:background="@drawable/custom_input"
                         android:id="@+id/ed_Description"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
@@ -388,6 +396,8 @@
 
                 <!--Bank Account Details Begin-->
                 <TextView
+                    android:textColor="@color/black"
+                    android:gravity="center"
                     android:id="@+id/tv_bank"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -426,6 +436,7 @@
                     app:layout_constraintWidth_percent="0.7">
 
                     <EditText
+                        android:background="@drawable/custom_input"
                         android:id="@+id/ed_bank_account"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
@@ -454,6 +465,7 @@
 
 
                     <EditText
+                        android:background="@drawable/custom_input"
                         android:id="@+id/ed_bank_number"
                         android:layout_width="match_parent"
                         android:layout_height="@dimen/_50sdp"
@@ -466,6 +478,8 @@
                 </com.google.android.material.textfield.TextInputLayout>
 
                 <Button
+                    android:textStyle="bold"
+                    android:background="@drawable/custom_button"
                     android:id="@+id/btn_update"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
@@ -477,16 +491,16 @@
                     android:layout_marginBottom="@dimen/_38sdp"
                     android:elevation="@dimen/_2sdp"
                     android:onClick="performEditProfile"
-                    android:text="Update Profile"
+                    android:text="UPDATE PROFILE"
                     android:textAllCaps="false"
-                    android:textColor="@color/black"
+                    android:textColor="@color/white"
                     android:textSize="15sp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toBottomOf="@+id/layout_bank_number"
                     app:layout_constraintWidth_percent="0.7" />
             </RelativeLayout>
-        </com.google.android.material.card.MaterialCardView>
+
 
 
     </LinearLayout>
