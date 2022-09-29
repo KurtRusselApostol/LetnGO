@@ -17,7 +17,7 @@ public class Second3Fragment extends Fragment {
 
     @Override
     public View onCreateView(
-            LayoutInflater inflater, ViewGroup container,
+            @NonNull LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
 
@@ -29,13 +29,8 @@ public class Second3Fragment extends Fragment {
     public void onViewCreated(@NonNull View view, Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-        binding.buttonSecond.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                NavHostFragment.findNavController(Second3Fragment.this)
-                        .navigate(R.id.action_Second3Fragment_to_First3Fragment);
-            }
-        });
+        binding.buttonSecond.setOnClickListener(view1 -> NavHostFragment.findNavController(Second3Fragment.this)
+                .navigate(R.id.action_Second3Fragment_to_First3Fragment));
     }
 
     @Override

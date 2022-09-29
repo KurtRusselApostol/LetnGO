@@ -75,12 +75,9 @@ public class Fragment_GuestNotification extends Fragment {
 
         View v = inflater.inflate(R.layout.fragment__guest_notification, container, false);
         Button button = v.findViewById(R.id.buttonLogin);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), new_login.class);
-                startActivity(intent);
-            }
+        button.setOnClickListener(v1 -> {
+            Intent intent = new Intent(getActivity(), new_login.class);
+            startActivity(intent);
         });
         return  v;
     }

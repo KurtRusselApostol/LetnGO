@@ -14,7 +14,5 @@ public class ReadWriteUserHostUser {
         this.phone = h_mb;
         this.password = h_pass;
 
-
-        return;
     }
 }

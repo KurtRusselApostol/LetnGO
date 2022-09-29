@@ -22,7 +22,7 @@ import nav.categories.HomePage;
 public class MainActivity extends AppCompatActivity {
 
     private static final int SPLASH_SCREEN = 3000;
-    private FirebaseAuth mAuth = FirebaseAuth.getInstance();
+    private final FirebaseAuth mAuth = FirebaseAuth.getInstance();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
                 //Checks for Google Sign In status
                 GLoginChecker gLoginChecker = new GLoginChecker(MainActivity.this);
                 boolean gLogged = gLoginChecker.getStatGLogin();
-                if (gLogged == true) {
+                if (gLogged) {
                     GoogleSignInAccount lastSignedInAccount = GoogleSignIn.getLastSignedInAccount(this);
                     if (lastSignedInAccount != null) {
                         Intent intent = new Intent(MainActivity.this, UserHompage.class);
