@@ -116,388 +116,399 @@
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
-                <!--First Name Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_first_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_61sdp"
+                <EditText
+                    android:id="@+id/ed_Fname"
+                    style="TextInputLayout"
+                    android:layout_width="333dp"
+                    android:layout_height="47dp"
+                    android:layout_alignParentStart="true"
                     android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textColorHint="#808080"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="69dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/custom_input"
+                    android:backgroundTint="#FBFAFA"
+                    android:drawableEnd="@drawable/custom_user_icon"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Last Name"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintWidth_percent="0.7">
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.331" />
 
-                    <EditText
-                        android:background="@drawable/custom_input"
-                        android:id="@+id/ed_Fname"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:hint="First Name"
-                        android:padding="@dimen/_18sdp"
-                        android:textColor="@color/black"
-                        android:textColorHint="@color/black"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <!--Last Name Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_last_name"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/layout_first_name"
+                <EditText
+                    android:id="@+id/ed_Lname"
+                    style="TextInputLayout"
+                    android:layout_width="333dp"
+                    android:layout_height="47dp"
+                    android:layout_below="@id/ed_Fname"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textColorHint="#808080"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/custom_input"
+                    android:backgroundTint="#FBFAFA"
+                    android:drawableEnd="@drawable/custom_user_icon"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="First Name"
+                    android:inputType="textPersonName"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
-                    app:layout_constraintWidth_percent="0.7">
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.331" />
 
-                    <EditText
-                        android:background="@drawable/custom_input"
-                        android:id="@+id/ed_Lname"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:layout_marginTop="@dimen/_28sdp"
-                        android:hint="Last Name"
-                        android:padding="@dimen/_19sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                <EditText
+                    android:id="@+id/ed_email"
+                    android:layout_width="335dp"
+                    android:layout_height="47dp"
+                    android:layout_below="@id/ed_Lname"
 
-                <!--Email Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_email"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/layout_last_name"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textColorHint="#808080"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="120dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/custom_input"
+                    android:backgroundTint="#FBFAFA"
+                    android:drawableEnd="@drawable/custom_email_icons"
+                    android:drawablePadding="12dp"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
-                    app:layout_constraintWidth_percent="0.7">
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.331"
+                    tools:ignore="TextContrastCheck" />
 
-                    <EditText
-                        android:background="@drawable/custom_input"
-                        android:id="@+id/ed_email"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:hint="Email"
-                        android:inputType="textEmailAddress"
-                        android:padding="@dimen/_19sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                <EditText
+                    android:id="@+id/ed_contact_no"
+                    android:layout_width="230dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="136dp"
+                    android:layout_marginTop="184dp"
+                    android:layout_marginEnd="25dp"
+                    android:autofillHints=""
+                    android:background="@drawable/custom_input"
+                    android:backgroundTint="#FBFAFA"
+                    android:ems="10"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Mobile number"
+                    android:inputType="phone"
+                    android:maxLength="10"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.331" />
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="91dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/ed_password"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginStart="35dp"
+                    android:layout_marginLeft="35dp"
+                    android:layout_marginBottom="72dp"
+                    android:background="@drawable/custom_input"
+                    android:textSize="8sp"
+                    app:ccpDialog_showPhoneCode="false"
+                    app:ccp_defaultNameCode="PH"
+                    app:ccp_showNameCode="false" />
+
+                <EditText
+                    android:id="@+id/ed_password"
+                    android:layout_width="326dp"
+                    android:layout_height="52dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="250dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/custom_input"
+                    android:backgroundTint="#FBFAFA"
+                    android:clickable="true"
+                    android:drawablePadding="12dp"
+                    android:ems="20"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Description"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.331" />
 
 
+                <!--Bank Account Details Begin-->
 <!--                <TextView-->
-<!--                    android:background="@drawable/custom_input"-->
-<!--                    android:id="@+id/account_birthday"-->
-<!--                    android:layout_width="314dp"-->
-<!--                    android:layout_height="74dp"-->
-<!--                    android:layout_below="@+id/layout_email"-->
-<!--                    android:layout_alignStart="@id/layout_email"-->
+<!--                    android:textColor="@color/black"-->
+<!--                    android:gravity="center"-->
+<!--                    android:id="@+id/tv_bank"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginStart="@dimen/_15sdp"-->
+<!--                    android:layout_marginTop="@dimen/_30sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                    android:text="Bank Details"-->
+<!--                    android:textSize="25sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <View-->
+<!--                    android:id="@+id/line_view"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_2sdp"-->
+<!--                    android:layout_marginStart="@dimen/_8sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                    android:layout_below="@id/tv_bank"-->
+<!--                    android:layout_centerHorizontal="true"-->
+<!--                    android:background="#808080" />-->
+
+<!--                &lt;!&ndash;Bank Account Begin&ndash;&gt;-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/layout_bank_account"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_61sdp"-->
+<!--                    android:layout_below="@+id/line_view"-->
+<!--                    android:layout_alignParentEnd="true"-->
 <!--                    android:layout_marginTop="@dimen/_4sdp"-->
-<!--                    android:hint="Birthday"-->
-<!--                    android:padding="@dimen/_19sdp"-->
+<!--                    android:layout_marginStart="@dimen/_15sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_15sdp"-->
 <!--                    android:textColorHint="#808080"-->
-<!--                    android:textSize="15sp"-->
 <!--                    app:layout_constraintEnd_toEndOf="parent"-->
 <!--                    app:layout_constraintStart_toStartOf="parent"-->
 <!--                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"-->
 <!--                    app:layout_constraintWidth_percent="0.7">-->
 
-<!--                </TextView>-->
+<!--                    <EditText-->
+<!--                        android:background="@drawable/custom_input"-->
+<!--                        android:id="@+id/ed_bank_account"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/_50sdp"-->
+<!--                        android:hint="Bank Account"-->
+<!--                        android:padding="@dimen/_19sdp"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textColorHint="#808080"-->
+<!--                        android:textSize="15sp" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
 
-<!--                <View-->
-<!--                    android:id="@+id/account_line"-->
-<!--                    android:layout_width="wrap_content"-->
-<!--                    android:layout_height="1dp"-->
-<!--                    android:layout_alignStart="@id/account_birthday"-->
-<!--                    android:layout_marginStart="@dimen/_3sdp"-->
-<!--                    android:layout_alignEnd="@id/account_birthday"-->
-<!--                    android:background="@color/colorTrendingEnd"-->
-<!--                    android:layout_below="@id/account_birthday"/>-->
+<!--                &lt;!&ndash;Bank Number Begin&ndash;&gt;-->
+<!--                <com.google.android.material.textfield.TextInputLayout-->
+<!--                    android:id="@+id/layout_bank_number"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="@dimen/_61sdp"-->
+<!--                    android:layout_below="@+id/layout_bank_account"-->
+<!--                    android:layout_alignParentEnd="true"-->
+<!--                    android:layout_marginTop="@dimen/_4sdp"-->
+<!--                    android:layout_marginStart="@dimen/_15sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_15sdp"-->
+<!--                    android:textColorHint="#808080"-->
+<!--                    app:layout_constraintEnd_toEndOf="parent"-->
+<!--                    app:layout_constraintStart_toStartOf="parent"-->
+<!--                    app:layout_constraintWidth_percent="0.7">-->
 
-                <!--<Button
-                    android:id="@+id/account_calendar"
-                    android:layout_width="50dp"
+
+<!--                    <EditText-->
+<!--                        android:background="@drawable/custom_input"-->
+<!--                        android:id="@+id/ed_bank_number"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="@dimen/_50sdp"-->
+<!--                        android:hint="Bank Number"-->
+<!--                        android:inputType="number"-->
+<!--                        android:padding="@dimen/_19sdp"-->
+<!--                        android:textColor="#000000"-->
+<!--                        android:textColorHint="#808080"-->
+<!--                        android:textSize="15sp" />-->
+<!--                </com.google.android.material.textfield.TextInputLayout>-->
+
+
+                <EditText
+                    android:id="@+id/ed_birthday"
+                    android:layout_width="328dp"
+                    android:layout_height="61dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="307dp"
+                    android:layout_marginEnd="25dp"
+                    android:inputType="date"
+                    android:background="@drawable/custom_input"
+                    android:backgroundTint="#FBFAFA"
+                    android:clickable="true"
+                    android:drawablePadding="12dp"
+                    android:ems="20"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="DD/MM/YYYY"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.331" />
+
+                <EditText
+                    android:id="@+id/ed_Address"
+                    android:layout_width="333dp"
                     android:layout_height="50dp"
-                    android:layout_below="@id/layout_email"
-                    android:layout_marginTop="15dp"
-                    android:layout_alignRight="@id/layout_email"
-                    android:drawableTop="@drawable/account_calendar">
-
-                </Button>-->
-
-                <!--Contact Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_contact"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/layout_email"
+                    android:layout_below="@id/ed_birthday"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textColorHint="#808080"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="377dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/custom_input"
+                    android:backgroundTint="#FBFAFA"
+                    android:clickable="true"
+                    android:drawablePadding="12dp"
+                    android:ems="20"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Address"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
-                    app:layout_constraintWidth_percent="0.7">
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.331" />
 
-                    <EditText
-                        android:background="@drawable/custom_input"
-                        android:id="@+id/ed_contact_no"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:hint="Contact No"
-                        android:inputType="phone"
-                        android:padding="@dimen/_19sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <!--Age Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_age"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/layout_contact"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textColorHint="#808080"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
-                    app:layout_constraintWidth_percent="0.7">
-
-
-                    <EditText
-                        android:background="@drawable/custom_input"
-                        android:id="@+id/ed_Age"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:hint="Age"
-                        android:inputType="number"
-                        android:padding="@dimen/_19sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <!--Gender Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_gender"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/layout_age"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textColorHint="#808080"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
-                    app:layout_constraintWidth_percent="0.7">
-
-                    <!--
-                    <Spinner
-                        android:id="@+id/spinner_gender"
-                        android:layout_width="match_parent"
-                        android:layout_height="40dp"/>
- -->
-
-                    <EditText
-                        android:background="@drawable/custom_input"
-                        android:id="@+id/account_birthday"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:hint="DD/MM/YYYY"
-                        android:inputType="date"
-                        android:padding="@dimen/_19sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
-                        android:textSize="15sp" />
-
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <!--Address Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_address"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/layout_gender"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textColorHint="#808080"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
-                    app:layout_constraintWidth_percent="0.7">
-
-                    <EditText
-                        android:background="@drawable/custom_input"
-                        android:id="@+id/ed_Address"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:hint="Address"
-                        android:padding="@dimen/_17sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <!--Description Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_description"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/layout_address"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textColorHint="#808080"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
-                    app:layout_constraintWidth_percent="0.7">
-
-                    <EditText
-                        android:background="@drawable/custom_input"
-                        android:id="@+id/ed_Description"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:hint="Description"
-                        android:padding="@dimen/_19sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <!--Bank Account Details Begin-->
                 <TextView
-                    android:textColor="@color/black"
-                    android:gravity="center"
                     android:id="@+id/tv_bank"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/layout_description"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_30sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_below="@id/ed_password"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="150dp"
+                    android:layout_marginEnd="19dp"
+                    android:gravity="center"
                     android:text="Bank Details"
+                    android:textColor="@color/black"
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
-                <View
-                    android:id="@+id/line_view"
+
+                <EditText
+                    android:id="@+id/ed_bank_acc"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/_2sdp"
-                    android:layout_marginStart="@dimen/_8sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_height="50dp"
                     android:layout_below="@id/tv_bank"
-                    android:layout_centerHorizontal="true"
-                    android:background="#808080" />
-
-                <!--Bank Account Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_bank_account"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/line_view"
-                    android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textColorHint="#808080"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginStart="24dp"
+                    android:layout_marginTop="547dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/custom_input"
+                    android:backgroundTint="#FBFAFA"
+                    android:clickable="true"
+                    android:drawablePadding="12dp"
+                    android:ems="20"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Bank Account"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
-                    app:layout_constraintWidth_percent="0.7">
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.331" />
 
-                    <EditText
-                        android:background="@drawable/custom_input"
-                        android:id="@+id/ed_bank_account"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:hint="Bank Account"
-                        android:padding="@dimen/_19sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
-
-                <!--Bank Number Begin-->
-                <com.google.android.material.textfield.TextInputLayout
-                    android:id="@+id/layout_bank_number"
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_61sdp"
-                    android:layout_below="@+id/layout_bank_account"
+                <EditText
+                    android:id="@+id/ed_bank_number"
+                    android:layout_width="349dp"
+                    android:layout_height="46dp"
+                    android:layout_below="@id/ed_bank_acc"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
                     android:layout_alignParentEnd="true"
-                    android:layout_marginTop="@dimen/_4sdp"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
-                    android:textColorHint="#808080"
+                    android:layout_marginStart="25dp"
+                    android:layout_marginTop="491dp"
+                    android:layout_marginEnd="25dp"
+                    android:background="@drawable/custom_input"
+                    android:backgroundTint="#FBFAFA"
+                    android:clickable="true"
+                    android:drawablePadding="12dp"
+                    android:ems="20"
+                    android:fontFamily="@font/poppins_light"
+                    android:hint="Bank Number"
+                    android:paddingStart="12dp"
+                    android:paddingEnd="12dp"
+                    android:textSize="17sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.494"
                     app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_first_name"
-                    app:layout_constraintWidth_percent="0.7">
-
-
-                    <EditText
-                        android:background="@drawable/custom_input"
-                        android:id="@+id/ed_bank_number"
-                        android:layout_width="match_parent"
-                        android:layout_height="@dimen/_50sdp"
-                        android:hint="Bank Number"
-                        android:inputType="number"
-                        android:padding="@dimen/_19sdp"
-                        android:textColor="#000000"
-                        android:textColorHint="#808080"
-                        android:textSize="15sp" />
-                </com.google.android.material.textfield.TextInputLayout>
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintVertical_bias="0.331" />
 
                 <Button
-                    android:textStyle="bold"
-                    android:background="@drawable/custom_button"
                     android:id="@+id/btn_update"
                     style="?android:attr/borderlessButtonStyle"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/_38sdp"
-                    android:layout_below="@+id/layout_bank_number"
-                    android:layout_marginStart="@dimen/_15sdp"
-                    android:layout_marginTop="@dimen/_23sdp"
-                    android:layout_marginEnd="@dimen/_15sdp"
+                    android:layout_below="@id/ed_bank_number"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="19dp"
+                    android:layout_marginTop="88dp"
+                    android:layout_marginEnd="19dp"
                     android:layout_marginBottom="@dimen/_38sdp"
+                    android:background="@drawable/custom_button"
                     android:elevation="@dimen/_2sdp"
                     android:onClick="performEditProfile"
                     android:text="UPDATE PROFILE"
                     android:textAllCaps="false"
                     android:textColor="@color/white"
+
                     android:textSize="15sp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toBottomOf="@+id/layout_bank_number"
+                    android:textStyle="bold"
                     app:layout_constraintWidth_percent="0.7" />
             </RelativeLayout>
 
