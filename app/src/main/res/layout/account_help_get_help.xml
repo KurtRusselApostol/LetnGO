@@ -76,22 +76,23 @@
 
             <TextView
                 android:id="@+id/intro_get_help_2"
-                android:layout_width="match_parent"
+                androi
+                android:layout_width="322dp"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/_1sdp"
-                android:layout_marginBottom="@dimen/_21sdp"
+                android:layout_marginBottom="@dimen/_15sdp"
                 android:text="How can we help you? "
-                android:textAlignment="center"
                 android:textColor="@color/black"
                 android:textSize="@dimen/_23ssp"
-                android:textStyle="bold" />
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <Button
                 android:id="@+id/search_help"
-                android:layout_width="match_parent"
-                android:layout_height="@dimen/_50sdp"
+                android:layout_width="346dp"
+                android:layout_height="wrap_content"
                 android:layout_marginStart="@dimen/_30sdp"
-                android:layout_marginTop="@dimen/_15sdp"
+                android:layout_marginTop="@dimen/_10sdp"
                 android:layout_marginEnd="@dimen/_30sdp"
                 android:background="@drawable/roundbtn"
                 android:bottomLeftRadius="@dimen/_5sdp"
@@ -100,7 +101,8 @@
                 android:inputType="text"
                 android:paddingLeft="@dimen/_1sdp"
                 android:textColor="@color/black"
-                android:textColorHint="#999999" />
+                android:textColorHint="#999999"
+                app:layout_constraintStart_toStartOf="parent" />
 
             <TextView
                 android:id="@+id/recommend"
