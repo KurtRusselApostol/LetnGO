@@ -1,5 +1,5 @@
 package nav.categories;
-
+//Fragment for new Categories Fragment
 import android.os.Bundle;
 
 import androidx.annotation.NonNull;
@@ -9,22 +9,25 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+
+import android.widget.SearchView;
 
 import com.example.letngo.R;
 
 import java.util.ArrayList;
 
-import nav.categories.recycleview.MyAdapter;
+import nav.categories.recycleview.CatLabel;
 import nav.categories.recycleview.MyAdapter2;
 
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link FragementCategories2#newInstance} factory method to
+ * Use the {@link HomeCategories#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class FragementCategories2 extends Fragment {
+public class HomeCategories extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -35,11 +38,12 @@ public class FragementCategories2 extends Fragment {
     private String mParam1;
     private String mParam2;
     private ArrayList<CatLabel> catLabelArrayList;
-    private int[] imageResourceId;
-    private String[] catHeading;
+    private String[] newsHeading;
+    private int[] imageResourceID;
     private RecyclerView recyclerView;
 
-    public FragementCategories2() {
+
+    public HomeCategories() {
         // Required empty public constructor
     }
 
@@ -49,11 +53,11 @@ public class FragementCategories2 extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment FragementCategories2.
+     * @return A new instance of fragment HomeCategories.
      */
     // TODO: Rename and change types and number of parameters
-    public static FragementCategories2 newInstance(String param1, String param2) {
-        FragementCategories2 fragment = new FragementCategories2();
+    public static HomeCategories newInstance(String param1, String param2) {
+        HomeCategories fragment = new HomeCategories();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
@@ -73,8 +77,12 @@ public class FragementCategories2 extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+
+        setHasOptionsMenu(true);
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_fragement_categories2, container, false);
+        return inflater.inflate(R.layout.fragment_home_categories, container, false);
+
+
     }
 
     @Override
@@ -82,41 +90,48 @@ public class FragementCategories2 extends Fragment {
         super.onViewCreated(view, savedInstanceState);
 
         dataInitialize();
-        
+
         recyclerView = view.findViewById(R.id.recyclerView);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
         recyclerView.setHasFixedSize(true);
-        MyAdapter2 myAdapter2 = new MyAdapter2(getContext(),catLabelArrayList);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        MyAdapter2 myAdapter2 = new MyAdapter2(getContext(), catLabelArrayList);
         recyclerView.setAdapter(myAdapter2);
+
         myAdapter2.notifyDataSetChanged();
 
     }
 
+
     private void dataInitialize() {
 
         catLabelArrayList = new ArrayList<>();
-        catHeading = new String[]{
+        newsHeading = new String[]{
                 "Beach",
-                "Treehouse",
+                "TreeHouse",
                 "Camping",
-                "Beach",
-                "Treehouse",
-                "Camping",
-                "Beach",
-                "Treehouse",
-                "Camping"
+                "Caves",
+                "Countryside",
+                "Cabin",
+                "Island"
         };
 
-        imageResourceId = new int[]{
-
+        imageResourceID = new int[]{
+                R.drawable.beach_pic,
+                R.drawable.tree_house,
+                R.drawable.camp_pic,
+                R.drawable.caves_pic,
+                R.drawable.countyside_pic,
+                R.drawable.cabin_pic,
+                R.drawable.island_pic,
         };
 
-        for(int i=0;i<catHeading.length;i++){
+        for(int i=0; i<newsHeading.length; i++){
 
-            CatLabel catlabel = new CatLabel(catHeading[i],imageResourceId[i]);
-            catLabelArrayList.add(catlabel);
+            CatLabel catLabel = new CatLabel(newsHeading[i], imageResourceID[i]);
+            catLabelArrayList.add(catLabel);
 
         }
-        
+
     }
+
 }

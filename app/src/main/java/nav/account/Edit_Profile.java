@@ -102,13 +102,13 @@ public class Edit_Profile extends AppCompatActivity {
         Firstname = findViewById(R.id.ed_Fname);
         Lastname = findViewById(R.id.ed_Lname);
         Email = findViewById(R.id.ed_email);
-        Birthday = findViewById(R.id.account_birthday);
+        Birthday = findViewById(R.id.ed_birthday);
         ContactNo = findViewById(R.id.ed_contact_no);
-        Age = findViewById(R.id.ed_Age);
+//        Age = findViewById(R.id.ed_Age);
         //Gender = findViewById(R.id.ed_Gender);
         Address = findViewById(R.id.ed_Address);
-        Description = findViewById(R.id.ed_Description);
-        BankAccount = findViewById(R.id.ed_bank_account);
+        Description = findViewById(R.id.ed_password);
+        BankAccount = findViewById(R.id.ed_bank_acc);
         BankNumber = findViewById(R.id.ed_bank_number);
 
         //BIRTH DATE

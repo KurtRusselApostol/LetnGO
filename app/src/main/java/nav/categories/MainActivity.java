@@ -1,33 +1,32 @@
 package nav.categories;
-
-import androidx.annotation.Nullable;
+//Main Activity for New Categories Fragment
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
-
 import android.os.Bundle;
-
 import com.example.letngo.R;
-
-import java.util.ArrayList;
-
-import nav.categories.recycleview.MyAdapter2;
 
 public class MainActivity extends AppCompatActivity {
 
+
+
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.new_categories_fragment);
-        replaceFragment(new FragementCategories2());
+        setContentView(R.layout.activity_categories_main);
+        replaceFragment(new HomeCategories());
+
+
+
     }
 
-    private void replaceFragment(FragementCategories2 fragementCategories2) {
+    private void replaceFragment(Fragment fragment) {
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.replace(R.id.frame_layout, fragementCategories2);
+        fragmentTransaction.replace(R.id.frame_layout, fragment);
         fragmentTransaction.commit();
     }
+
 }

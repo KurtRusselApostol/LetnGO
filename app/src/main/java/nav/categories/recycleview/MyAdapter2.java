@@ -1,6 +1,9 @@
 package nav.categories.recycleview;
+//Adapter for CatLabel.java
 
 import android.content.Context;
+import android.graphics.drawable.shapes.Shape;
+import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,32 +16,29 @@ import com.example.letngo.R;
 import com.google.android.material.imageview.ShapeableImageView;
 
 import java.util.ArrayList;
+import java.util.Locale;
 
-import nav.categories.CatLabel;
-
-public class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.MyViewHolder> {
+public class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.MyViewHolder>{
 
     Context context;
     ArrayList<CatLabel> catLabelArrayList;
 
     public MyAdapter2(Context context, ArrayList<CatLabel> catLabelArrayList){
         this.context = context;
-        this.catLabelArrayList = catLabelArrayList;
     }
 
     @NonNull
     @Override
-    public MyAdapter2.MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View v = LayoutInflater.from(context).inflate(R.layout.categories_item,parent,false);
-
+        View v = LayoutInflater.from(context).inflate(R.layout.categories_item, parent, false);
         return new MyViewHolder(v);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 
-        CatLabel catLabel= catLabelArrayList.get(position);
+        CatLabel catLabel = catLabelArrayList.get(position);
         holder.tvHeading.setText(catLabel.heading);
         holder.titleImage.setImageResource(catLabel.titleImage);
 
@@ -46,20 +46,22 @@ public class MyAdapter2 extends RecyclerView.Adapter<MyAdapter2.MyViewHolder> {
 
     @Override
     public int getItemCount() {
-
         return catLabelArrayList.size();
     }
 
+
     public static class MyViewHolder extends RecyclerView.ViewHolder{
 
-        TextView tvHeading;
         ShapeableImageView titleImage;
+        TextView tvHeading;
+
 
         public MyViewHolder(@NonNull View itemView) {
             super(itemView);
-            tvHeading = itemView.findViewById(R.id.tvHeading);
             titleImage = itemView.findViewById(R.id.title_image);
+            tvHeading = itemView.findViewById(R.id.tvHeading);
         }
     }
-}
 
+
+}
