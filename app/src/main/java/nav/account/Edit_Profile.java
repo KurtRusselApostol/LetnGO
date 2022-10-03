@@ -152,7 +152,7 @@ public class Edit_Profile extends AppCompatActivity {
                     String birthday = String.valueOf(dataSnapshot.child("Birthday").getValue());
 
                     String mobile = String.valueOf(dataSnapshot.child("Mobile").getValue());
-                    String age = String.valueOf(dataSnapshot.child("Age").getValue());
+ //                   String age = String.valueOf(dataSnapshot.child("Age").getValue());
                     //String gender = String.valueOf(dataSnapshot.child("Gender").getValue());
                     String address = String.valueOf(dataSnapshot.child("Address").getValue());
 
@@ -165,7 +165,7 @@ public class Edit_Profile extends AppCompatActivity {
                     Email.setEnabled(false); //make email field uneditable
                     Birthday.setText(birthday);
                     ContactNo.setText(mobile);
-                    Age.setText(age);
+//                    Age.setText(age);
                     //Gender.setText(gender);
                     Address.setText(address);
                     Description.setText(description);
@@ -205,10 +205,10 @@ public class Edit_Profile extends AppCompatActivity {
                     Toast.makeText(getApplicationContext(), "Contact No. must be 10 digits", Toast.LENGTH_LONG).show();
                     ContactNo.requestFocus();
                 }
-                else if (Age.getText().toString().equals("")) {
-                    Toast.makeText(getApplicationContext(), "Age must be not be empty", Toast.LENGTH_LONG).show();
-                    Age.requestFocus();
-                }
+                //else if (Age.getText().toString().equals("")) {
+                //    Toast.makeText(getApplicationContext(), "Age must be not be empty", Toast.LENGTH_LONG).show();
+                //    Age.requestFocus();
+                //}
                 else if (Integer.parseInt(Age.getText().toString()) <= 18) {
                     Toast.makeText(getApplicationContext(), "Age must be equal or greater than 18", Toast.LENGTH_LONG).show();
                     Age.requestFocus();
@@ -224,7 +224,7 @@ public class Edit_Profile extends AppCompatActivity {
                     reference.child(userUid).child("FirstName").setValue(Firstname.getText().toString());
                     reference.child(userUid).child("LastName").setValue(Lastname.getText().toString());
                     reference.child(userUid).child("Birthday").setValue(Birthday.getText().toString());
-                    reference.child(userUid).child("Age").setValue(Age.getText().toString());
+ //                   reference.child(userUid).child("Age").setValue(Age.getText().toString());
 //                    reference.child(userUid).child("Gender").setValue(Gender.getText().toString());
                     reference.child(userUid).child("Address").setValue(Address.getText().toString());
                     reference.child(userUid).child("Description").setValue(Description.getText().toString());
