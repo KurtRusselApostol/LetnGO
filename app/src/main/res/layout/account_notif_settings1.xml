@@ -5,10 +5,11 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="nav.account.notif.notif_settings1"
-    android:background="#DDDDDD"
+    android:background="@color/white"
     >
 
     <TextView
+        android:visibility="invisible"
         android:id="@+id/homepage21"
         android:layout_width="76dp"
         android:layout_height="30dp"
@@ -22,10 +23,11 @@
         app:layout_constraintVertical_bias="0.008" />
 
     <TextView
+
         android:id="@+id/textView61"
         android:layout_width="390dp"
         android:layout_height="681dp"
-        android:background="@drawable/rectangle_gray"
+        android:background="@drawable/custom_input"
         android:fontFamily="sans-serif-medium"
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -115,9 +117,11 @@
 
     <TextView
         android:id="@+id/textView60"
+        android:gravity="center"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Notification"
+        android:text="NOTIFICATION"
+        android:fontFamily="@font/poppins_bold"
         android:textColor="#000000"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -129,20 +133,23 @@
 
     <TextView
         android:id="@+id/textView62"
+        android:textColor="@color/black"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
+        android:fontFamily="@font/poppins_bold"
+        android:gravity="center"
         android:text="Choose whether you want to get a \nLet n' Go notification alert."
-        android:textSize="@dimen/_15sdp"
+        android:textSize="20sp"
         android:textStyle="bold"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.3"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.174" />
+        app:layout_constraintVertical_bias="0.172" />
 
     <TableLayout
+        android:layout_marginTop="30sp"
         android:layout_width="344dp"
         android:layout_height="356dp"
         android:orientation="horizontal"
@@ -158,6 +165,7 @@
             <TextView
                 android:id="@+id/allNotifText"
                 android:layout_width="244dp"
+                android:fontFamily="@font/poppins_bold"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:text="Notifications"
@@ -180,6 +188,7 @@
             <TextView
                 android:id="@+id/accActivityText"
                 android:layout_width="261dp"
+                android:fontFamily="@font/poppins_bold"
                 android:layout_height="match_parent"
                 android:layout_column="1"
                 android:text="Account Activity"
@@ -204,6 +213,7 @@
                 android:layout_width="261dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Guest Policies"
                 android:textColor="#000000"
                 android:textSize="23sp"
@@ -226,6 +236,7 @@
                 android:layout_width="261dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Offers And Updates"
                 android:textColor="#000000"
                 android:textSize="23sp"
@@ -243,11 +254,13 @@
             android:id="@+id/reminder"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/reminderText"
                 android:layout_width="261dp"
                 android:layout_height="match_parent"
                 android:layout_column="1"
+                android:fontFamily="@font/poppins_bold"
                 android:text="Reminders"
                 android:textColor="#000000"
                 android:textSize="23dp"
