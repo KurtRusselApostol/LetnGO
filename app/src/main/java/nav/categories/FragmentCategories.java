@@ -124,15 +124,15 @@ public class FragmentCategories extends Fragment implements View.OnClickListener
             case R.id.tree_house:
                 resetLocation();
                 treehouse = true;
-                Intent intent2 = new Intent(getActivity(), Postlist.class);
-                startActivity(intent2);
+                Intent intent1 = new Intent(getActivity(), Postlist.class);
+                startActivity(intent1);
                 break;
 
             case R.id.camping:
                 resetLocation();
                 camping = true;
-                Intent intent1 = new Intent(getActivity(), Postlist.class);
-                startActivity(intent1);
+                Intent intent2 = new Intent(getActivity(), Postlist.class);
+                startActivity(intent2);
                 break;
 
             case R.id.caves:

@@ -58,7 +58,7 @@ public class Postlist extends AppCompatActivity {
     ImageButton back;
 
 
-    @SuppressLint("MissingInflatedId")
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -69,6 +69,7 @@ public class Postlist extends AppCompatActivity {
         back.setOnClickListener(v -> onBackPressed());
 
         //initialize
+
         this.beach = fragmentCategories.beach;
         this.treehouse = fragmentCategories.treehouse;
         this.camping = fragmentCategories.camping;
