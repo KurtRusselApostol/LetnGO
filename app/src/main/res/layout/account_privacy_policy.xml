@@ -5,7 +5,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DEE1DD"
+    android:background="@color/white"
     android:fillViewport="true">
 
 
@@ -17,6 +17,9 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         >
+
+
+
 
         <LinearLayout
             android:id="@+id/linearLayout_get_help_experience_host_1"
@@ -50,6 +53,7 @@
                 tools:ignore="ContentDescription,SpeakableTextPresentCheck" />
 
             <TextView
+                android:layout_gravity="center"
                 android:id="@+id/textView96"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -59,14 +63,15 @@
                 tools:ignore="HardcodedText" />
 
             <TextView
+                android:layout_gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="1dp"
-                android:text="Let n'Go Privacy"
+                android:text="LET N'GO PRIVACY"
                 android:textColor="@color/black"
-                android:textSize="20sp"
+                android:textSize="35sp"
                 android:textStyle="bold"
                 tools:ignore="HardcodedText" />
 
@@ -78,188 +83,137 @@
                 android:layout_marginTop="20dp"
                 app:srcCompat="@drawable/privacy" />
 
-            <TextView
-                android:id="@+id/textView97"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="20dp"
-                android:text="Privacy Policy"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                android:id="@+id/card_view"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="4dp">
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:layout_width="290dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="30dp"
-                android:layout_marginTop="10dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginBottom="5dp"
-                android:text="Our Privacy Policy explains what personal information we collect, how we use personal information, how personal information is shared, and privacy rights.                             "
-                android:textAlignment="center"
-                android:textSize="15sp"
-                tools:ignore="HardcodedText" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/textView97"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Privacy Policy"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:text="Our Privacy Policy explains what personal information we collect, how we use personal information, how personal information is shared, and privacy rights.                             "
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+                />
+            </androidx.cardview.widget.CardView>
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="1dp"
-                android:text="North America (Excluding Mexico)"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                android:id="@+id/card_view1"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="4dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="56dp"
-                android:text="•Privacy Policy for "
-                android:textAlignment="center"
-                android:textSize="15sp" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/textView98"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="North America (Excluding Mexico)"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="50dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy policy for United States"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy policy for US(English)"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+
+                <TextView
+
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="110dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy policy for US(French)"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/privacy1_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="55dp"
-                android:layout_marginTop="-20dp"
-                android:layout_marginBottom="5dp"
-                android:text="United States "
-                android:textAlignment="center"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                />
+            </androidx.cardview.widget.CardView>
 
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="56dp"
-                android:text="•Privacy Policy for "
-                android:textAlignment="center"
-                android:textSize="15sp" />
-
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/privacy2_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="-19dp"
-                android:layout_marginBottom="5dp"
-                android:text=" US(English)"
-                android:textAlignment="center"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="51dp"
-                android:text="•Privacy for outside "
-                android:textAlignment="center"
-                android:textSize="15sp" />
-
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/privacy3_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="53dp"
-                android:layout_marginTop="-19dp"
-                android:layout_marginBottom="5dp"
-                android:text="US(French)"
-                android:textAlignment="center"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
-
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="25dp"
+            <androidx.cardview.widget.CardView
                 android:layout_marginTop="20dp"
-                android:layout_marginBottom="1dp"
-                android:text="Latin America(Including Mexico, Central and \n South America and Caribbean)"
-                android:textSize="17sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                android:id="@+id/card_view2"
+                android:layout_width="400dp"
+                android:layout_height="200dp"
+                app:cardCornerRadius="4dp">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="56dp"
-                android:text="•Privacy Policy for "
-                android:textAlignment="center"
-                android:textSize="15sp" />
+                <TextView
+                    android:textColor="@color/black"
+                    android:id="@+id/textView99"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:text="Latin America(Including Mexico, Central and \n South America and Caribbean)"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/privacy4_btn"
-                android:layout_width="253dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="-3dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginBottom="5dp"
-                android:text="Latin America(English)                          "
-                android:textAlignment="center"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                <TextView
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:text="Latin America(English)"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="56dp"
-                android:text="•Privacy Policy for "
-                android:textAlignment="center"
-                android:textSize="15sp" />
+                <TextView
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/privacy5_btn"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="-3dp"
-                android:layout_marginEnd="85dp"
-                android:layout_marginBottom="5dp"
-                android:text="Latin America(Spanish)"
-                android:textAlignment="center"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="100dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:text="Latin America(Spanish)"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
-                android:layout_marginRight="56dp"
-                android:text="•Privacy Policy for "
-                android:textAlignment="center"
-                android:textSize="15sp" />
+                <TextView
 
-            <me.biubiubiu.justifytext.library.JustifyTextView
-                android:id="@+id/privacy6_btn"
-                android:layout_width="253dp"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="45dp"
-                android:layout_marginTop="-3dp"
-                android:layout_marginEnd="35dp"
-                android:layout_marginBottom="5dp"
-                android:text="Latin America(Portuguese)                     "
-                android:textAlignment="center"
-                android:textSize="15sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="130dp"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:text="Privacy policy for US(French)"
+                    android:textSize="15sp"
+                    tools:ignore="HardcodedText" />
+                />
+            </androidx.cardview.widget.CardView>
 
             <TextView
                 android:layout_width="match_parent"
