@@ -1,5 +1,6 @@
 package com.example.letngo;
 
+import android.annotation.SuppressLint;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -27,13 +28,15 @@ import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.Objects;
+
 public class sharing_privacy extends AppCompatActivity {
     private EditText pass, password;
     private ProgressBar processing;
     private FirebaseAuth authProfile;
     private FirebaseUser firebaseUser;
-    private TextView verification, verification1;
-    private String passs, passwordd;
+    private TextView verification1;
+    private String passwordd;
     Button Verify, verify, Delete_1;
     private static final String TAG = "sharing_privacy";
 
@@ -48,7 +51,7 @@ public class sharing_privacy extends AppCompatActivity {
         password = findViewById(R.id.Password);
         Verify = findViewById(R.id.Verify);
         verify = findViewById(R.id.verify);
-        verification = findViewById(R.id.txtLabel);
+        TextView verification = findViewById(R.id.txtLabel);
         verification1 = findViewById(R.id.txtLabel1);
         Delete_1 = findViewById(R.id.btnDel);
 
@@ -71,7 +74,7 @@ public class sharing_privacy extends AppCompatActivity {
 //        }
 
 
-       if (firebaseUser.equals("")) {
+       if (firebaseUser != null && firebaseUser.equals("")) {
             Toast.makeText(sharing_privacy.this, "Something went wrong!", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(sharing_privacy.this, MainActivity.class);
             startActivity(intent);
@@ -80,56 +83,45 @@ public class sharing_privacy extends AppCompatActivity {
             reAuthenticateUser(firebaseUser);
         }
     }
+    @SuppressLint("SetTextI18n")
     private void reAuthenticateUser(FirebaseUser firebaseUser) {
-        verify.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                passwordd = password.getText().toString();
+        verify.setOnClickListener(v -> {
+            passwordd = password.getText().toString();
 
 
-                //Setting password
+            //Setting password
 
-                AuthCredential Credential = EmailAuthProvider.getCredential(firebaseUser.getEmail(), passwordd);
+            AuthCredential Credential = EmailAuthProvider.getCredential(Objects.requireNonNull(firebaseUser.getEmail()), passwordd);
 
-                firebaseUser.reauthenticate(Credential).addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
+            firebaseUser.reauthenticate(Credential).addOnCompleteListener(task -> {
 
-                        if (task.isSuccessful()) {
+                if (task.isSuccessful()) {
 
 
-                            //Disable edit text for password
-                            pass.setEnabled(false);
+                    //Disable edit text for password
+                    pass.setEnabled(false);
 
-                            //Enable delete button
-                            Delete_1.setEnabled(true);
-                            verify.setEnabled(false);
+                    //Enable delete button
+                    Delete_1.setEnabled(true);
+                    verify.setEnabled(false);
 
-                            //verification for deleting
-                            verification1.setText("You can now delete your account.");
-                            Toast.makeText(sharing_privacy.this, "You can now delete your account.", Toast.LENGTH_SHORT).show();
+                    //verification for deleting
+                    verification1.setText("You can now delete your account.");
+                    Toast.makeText(sharing_privacy.this, "You can now delete your account.", Toast.LENGTH_SHORT).show();
 
-                            Delete_1.setBackgroundTintList(ContextCompat.getColorStateList(sharing_privacy.this, R.color.colorRed));
-                            verify.setBackgroundTintList(ContextCompat.getColorStateList(sharing_privacy.this, R.color.Light_grey));
+                    Delete_1.setBackgroundTintList(ContextCompat.getColorStateList(sharing_privacy.this, R.color.colorRed));
+                    verify.setBackgroundTintList(ContextCompat.getColorStateList(sharing_privacy.this, R.color.Light_grey));
 
-                            Delete_1.setOnClickListener(new View.OnClickListener() {
-                                @Override
-                                public void onClick(View v) {
-                                    showAlertDialog();
-                                }
-                            });
-                        } else {
-                            try {
-                                throw task.getException();
-                            } catch (Exception e) {
-                                Toast.makeText(sharing_privacy.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                            }
-                        }
-                        processing.setVisibility(View.GONE);
+                    Delete_1.setOnClickListener(v1 -> showAlertDialog());
+                } else {
+                    try {
+                        throw Objects.requireNonNull(task.getException());
+                    } catch (Exception e) {
+                        Toast.makeText(sharing_privacy.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                     }
-                });
-            }
-
+                }
+                processing.setVisibility(View.GONE);
+            });
         });
     }
 
@@ -140,77 +132,51 @@ public class sharing_privacy extends AppCompatActivity {
         builder.setMessage("Deleting all activities, wasn't irreversible.");
 
         //going back to the main view apps
-        builder.setPositiveButton("Continue", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                deleteUser(firebaseUser);
-            }
-        });
+        builder.setPositiveButton("Continue", (dialog, which) -> deleteUser(firebaseUser));
 
         //cancel button
-        builder.setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Intent intent = new Intent(sharing_privacy.this, sharing_privacy.class);
-                startActivity(intent);
-                finish();
-            }
+        builder.setNegativeButton("Cancel", (dialog, which) -> {
+            Intent intent = new Intent(sharing_privacy.this, sharing_privacy.class);
+            startActivity(intent);
+            finish();
         });
 
         //Alert dialog box
         androidx.appcompat.app.AlertDialog alertDialog = builder.create();
 
         //change button color
-        alertDialog.setOnShowListener(new DialogInterface.OnShowListener() {
-            @Override
-            public void onShow(DialogInterface dialog) {
-                alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.colorRed));
-
-            }
-
-        });
+        alertDialog.setOnShowListener(dialog -> alertDialog.getButton(AlertDialog.BUTTON_POSITIVE).setTextColor(getResources().getColor(R.color.colorRed)));
 
         //show alert dialog
         alertDialog.show();
     }
 
     private void deleteUser(FirebaseUser firebaseUser) {
-        firebaseUser.delete().addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
-                if (task.isSuccessful()) {
-                    deleteUserData();
-                    authProfile.signOut();
-                    Toast.makeText(sharing_privacy.this, "This account has been cleared", Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(sharing_privacy.this, MainActivity.class);
-                    startActivity(intent);
-                    finish();
-                } else {
-                    try {
-                        throw task.getException();
-                    } catch (Exception e) {
-                        Toast.makeText(sharing_privacy.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-                    }
+        firebaseUser.delete().addOnCompleteListener(task -> {
+            if (task.isSuccessful()) {
+                deleteUserData();
+                authProfile.signOut();
+                Toast.makeText(sharing_privacy.this, "This account has been cleared", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(sharing_privacy.this, MainActivity.class);
+                startActivity(intent);
+                finish();
+            } else {
+                try {
+                    throw Objects.requireNonNull(task.getException());
+                } catch (Exception e) {
+                    Toast.makeText(sharing_privacy.this, e.getMessage(), Toast.LENGTH_SHORT).show();
                 }
-                processing.setVisibility(View.GONE);
             }
+            processing.setVisibility(View.GONE);
         });
     }
 
     //Delete account in realtime database
     private void deleteUserData() {
         DatabaseReference DbReference = FirebaseDatabase.getInstance().getReference("User_account");
-        DbReference.child(firebaseUser.getUid()).removeValue().addOnSuccessListener(new OnSuccessListener<Void>() {
-            @Override
-            public void onSuccess(Void unused) {
-                Log.d(TAG,"OnSuccess: User Data Deleted");
-            }
-        }).addOnFailureListener(new OnFailureListener() {
-            @Override
-            public void onFailure(@NonNull Exception e) {
-                Log.d(TAG, e.getMessage());
-                Toast.makeText(sharing_privacy.this, e.getMessage(), Toast.LENGTH_SHORT).show();
-            }
+        DbReference.child(firebaseUser.getUid()).removeValue().addOnSuccessListener(unused -> Log.d(TAG,"OnSuccess: User Data Deleted")).addOnFailureListener(e -> {
+            Log.d(TAG, e.getMessage());
+            Toast.makeText(sharing_privacy.this, e.getMessage(), Toast.LENGTH_SHORT).show();
         });
     }
 }

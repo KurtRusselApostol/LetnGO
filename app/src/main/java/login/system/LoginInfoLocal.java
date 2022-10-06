@@ -17,8 +17,8 @@ public class LoginInfoLocal {
     String storedDetails;
     String storedJson;
     String storeFetch;
-    List<String> userDetails = new ArrayList<String>();
-    List<String> listFetch = new ArrayList<String>();
+    List<String> userDetails = new ArrayList<>();
+    List<String> listFetch = new ArrayList<>();
 
     //Method that defines context, sp and spe
     public LoginInfoLocal (Context context) {
@@ -48,8 +48,7 @@ public class LoginInfoLocal {
             Type type = new TypeToken<List<String>>(){}.getType();
             listFetch = gson.fromJson(storeFetch, type);
 
-            User user = new User (listFetch.get(0), listFetch.get(1));
-            return user;
+            return new User (listFetch.get(0), listFetch.get(1));
         }
         catch (Exception e) { return null; }
     }

@@ -134,12 +134,7 @@ public class new_login extends AppCompatActivity {
                 .build();
 
         googleSignInClient = GoogleSignIn.getClient(this, googleSignInOptions);
-        google.setOnClickListener(v -> {
-
-            Log.d(TAG, "onClick: begin Google SignIn");
-            Intent intent = googleSignInClient.getSignInIntent();
-            startActivityForResult(intent, RC_SIGN_IN); //deprecated code yet still working
-        });
+        google.setOnClickListener(this::onClick);
 
     }
 
@@ -295,6 +290,13 @@ public class new_login extends AppCompatActivity {
     public void openForgotPassActivity() {
         Intent intent = new Intent(new_login.this, forgot_password.class);
         startActivity(intent);
+    }
+
+    private void onClick(View v) {
+
+        Log.d(TAG, "onClick: begin Google SignIn");
+        Intent intent = googleSignInClient.getSignInIntent();
+        startActivityForResult(intent, RC_SIGN_IN); //deprecated code yet still working
     }
     //OPENING FORGOT PASS METHOD END
 }

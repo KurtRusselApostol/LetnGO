@@ -17,6 +17,8 @@ import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 
+import java.util.Objects;
+
 public class forgot_password extends AppCompatActivity {
 
     TextView forEmail;
@@ -33,28 +35,19 @@ public class forgot_password extends AppCompatActivity {
         forSend = findViewById(R.id.btn_send);
         back = findViewById(R.id.img_exit);
 
-        back.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                onBackPressed();
+        back.setOnClickListener(v -> onBackPressed());
+
+        forSend.setOnClickListener(v -> {
+             email = forEmail.getText().toString();
+
+            if (email.isEmpty()){
+                Toast.makeText(forgot_password.this, "Please provide your email", Toast.LENGTH_LONG).show();
+                forEmail.setError("Email is required");
+                forEmail.requestFocus();
             }
-
-        });
-
-        forSend.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                 email = forEmail.getText().toString();
-
-                if (email.isEmpty()){
-                    Toast.makeText(forgot_password.this, "Please provide your email", Toast.LENGTH_LONG).show();
-                    forEmail.setError("Email is required");
-                    forEmail.requestFocus();
-                }
-                else{
-                    forgotPassword();
-                    showResetPasswordAlert();
-                }
+            else{
+                forgotPassword();
+                showResetPasswordAlert();
             }
         });
     }
@@ -63,18 +56,15 @@ public class forgot_password extends AppCompatActivity {
 
         FirebaseAuth auth = FirebaseAuth.getInstance();
 
-        auth.sendPasswordResetEmail(email).addOnCompleteListener(new OnCompleteListener<Void>() {
-            @Override
-            public void onComplete(@NonNull Task<Void> task) {
+        auth.sendPasswordResetEmail(email).addOnCompleteListener(task -> {
 
-                if (task.isSuccessful()){
-                    Toast.makeText(forgot_password.this, "Check your Email", Toast.LENGTH_LONG).show();
+            if (task.isSuccessful()){
+                Toast.makeText(forgot_password.this, "Check your Email", Toast.LENGTH_LONG).show();
 //                    startActivity(new Intent(forgot_password.this, Change_password.class));
 
-                }
-                else {
-                    Toast.makeText(forgot_password.this, "Error: "+ task.getException().getMessage(), Toast.LENGTH_LONG).show();
-                }
+            }
+            else {
+                Toast.makeText(forgot_password.this, "Error: "+ Objects.requireNonNull(task.getException()).getMessage(), Toast.LENGTH_LONG).show();
             }
         });
 
