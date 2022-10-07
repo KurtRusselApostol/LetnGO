@@ -28,10 +28,6 @@ public class Fragment_GuestAccount extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
     public Fragment_GuestAccount() {
         // Required empty public constructor
     }
@@ -59,8 +55,9 @@ public class Fragment_GuestAccount extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            // TODO: Rename and change types of parameters
+            String mParam1 = getArguments().getString(ARG_PARAM1);
+            String mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
@@ -92,12 +89,9 @@ public View onCreateView(LayoutInflater inflater, ViewGroup container,
     support.setOnClickListener(this::onClick);
     get_help.setOnClickListener(this::onClick);
 
-    button.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            Intent intent = new Intent(getActivity(), new_login.class);
-            startActivity(intent);
-        }
+    button.setOnClickListener(v1 -> {
+        Intent intent = new Intent(getActivity(), new_login.class);
+        startActivity(intent);
     });
 
     return  v;

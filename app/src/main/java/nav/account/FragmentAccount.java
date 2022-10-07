@@ -28,6 +28,7 @@ import com.google.firebase.storage.StorageTask;
 import com.squareup.picasso.Picasso;
 
 
+import java.util.Objects;
 
 import nav.account.help.GetHelp;
 import nav.account.hosting.Manage_Hosting;
@@ -44,8 +45,6 @@ public class FragmentAccount extends Fragment {
     public CardView start, manage, edit, how, logout, notif_settings,
             terms_services, safety, get_help, payment, security, feedback,privacy;
     DatabaseReference reference;
-    private DatabaseReference databaseReference;
-    private StorageReference storageProfilePic;
     private FirebaseAuth mAuth;
     private ImageView captureImage;
     public FragmentAccount() {
@@ -201,12 +200,12 @@ public class FragmentAccount extends Fragment {
         }
     }
     private void getUserPic(){
-        reference.child(mAuth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
+        reference.child(Objects.requireNonNull(mAuth.getCurrentUser()).getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists() && snapshot.getChildrenCount() > 0){
                     if(snapshot.hasChild("image")){
-                        String image = snapshot.child("image").getValue().toString();
+                        String image = Objects.requireNonNull(snapshot.child("image").getValue()).toString();
                         Picasso.get().load(image).into(captureImage);
                     }
                 }

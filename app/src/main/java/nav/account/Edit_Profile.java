@@ -2,14 +2,11 @@ package nav.account;
 
 import android.app.Activity;
 import android.app.DatePickerDialog;
-import android.app.ProgressDialog;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
-import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.ImageButton;
 import android.widget.ImageView;
@@ -25,8 +22,6 @@ import com.example.letngo.R;
 import com.github.drjacky.imagepicker.ImagePicker;
 import com.google.android.gms.tasks.Continuation;
 import com.google.android.gms.tasks.OnCompleteListener;
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
@@ -44,6 +39,7 @@ import com.squareup.picasso.Picasso;
 
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.Objects;
 
 public class Edit_Profile extends AppCompatActivity {
 
@@ -53,7 +49,6 @@ public class Edit_Profile extends AppCompatActivity {
     TextView Birthday;
     EditText ContactNo;
     EditText Age;
-    EditText Gender;
     EditText Address;
     EditText Description;
     EditText BankAccount;
@@ -62,10 +57,8 @@ public class Edit_Profile extends AppCompatActivity {
     Button update;
     DatabaseReference reference;
 
-    private Button captureTxt;
     private String path;
     private Uri uri;
-    private StorageTask uploadTask;
     private ImageView captureImage;
     private FirebaseAuth mAuth;
     private DatabaseReference databaseReference;
@@ -89,7 +82,6 @@ public class Edit_Profile extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.account_edit_profile);
-        DatePickerDialog.OnDateSetListener setListener;
 
         back = findViewById(R.id.editprofile_back);
         update = findViewById(R.id.btn_update);
@@ -98,7 +90,7 @@ public class Edit_Profile extends AppCompatActivity {
 
         //Hooks
         captureImage = findViewById(R.id.my_avatar);
-        captureTxt = findViewById(R.id.gallery_Pick);
+        Button captureTxt = findViewById(R.id.gallery_Pick);
         Firstname = findViewById(R.id.ed_Fname);
         Lastname = findViewById(R.id.ed_Lname);
         Email = findViewById(R.id.ed_email);
@@ -116,20 +108,14 @@ public class Edit_Profile extends AppCompatActivity {
         final int year = calendar.get(Calendar.YEAR);
         final int month = calendar.get(Calendar.MONTH);
         final int day = calendar.get(Calendar.DAY_OF_MONTH);
-        Birthday.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                DatePickerDialog datePickerDialog = new DatePickerDialog(
-                        Edit_Profile.this, new DatePickerDialog.OnDateSetListener() {
-                    @Override
-                    public void onDateSet(DatePicker datePicker, int year, int month, int day) {
-                        month = month+1;
-                        String date = month+"/"+day+"/"+year;
+        Birthday.setOnClickListener(view -> {
+            DatePickerDialog datePickerDialog = new DatePickerDialog(
+                    Edit_Profile.this, (datePicker, year1, month1, day1) -> {
+                        month1 = month1 +1;
+                        String date = month1 +"/"+ day1 +"/"+ year1;
                         Birthday.setText(date);
-                    }
-                }, year, month, day);
-                datePickerDialog.show();
-            }
+                    }, year, month, day);
+            datePickerDialog.show();
         });
         //test commit and push
         //FIREBASE FETCHING DATA
@@ -182,8 +168,8 @@ public class Edit_Profile extends AppCompatActivity {
             reference = FirebaseDatabase.getInstance().getReference("User_account");
             reference.child(userUid).get().addOnCompleteListener(task -> {
                 task.getResult();
-                /**
-                 * can only show one result!
+                /*
+                  can only show one result!
                  */
                 if (Firstname.getText().toString().equals("")) {
                     Toast.makeText(getApplicationContext(), "First Name must not be empty", Toast.LENGTH_LONG).show();
@@ -239,28 +225,23 @@ public class Edit_Profile extends AppCompatActivity {
         });
 
         // gets the picture
-        /** DONT UPDATE THE DEPENDECY OF IMAGEPICKER! */
-        captureTxt.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ImagePicker.Companion.with(Edit_Profile.this)
-                        .crop()
-                        .galleryOnly()
-                        .maxResultSize(1000, 1000)
-                        .start(101);
-            }
-        });
+        /* DONT UPDATE THE DEPENDECY OF IMAGEPICKER! */
+        captureTxt.setOnClickListener(v -> ImagePicker.Companion.with(Edit_Profile.this)
+                .crop()
+                .galleryOnly()
+                .maxResultSize(1000, 1000)
+                .start(101));
 
         getUserPic();
     }
 
     private void getUserPic(){
-        reference.child(mAuth.getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
+        reference.child(Objects.requireNonNull(mAuth.getCurrentUser()).getUid()).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 if(snapshot.exists() && snapshot.getChildrenCount() > 0){
                     if(snapshot.hasChild("image")){
-                        String image = snapshot.child("image").getValue().toString();
+                        String image = Objects.requireNonNull(snapshot.child("image").getValue()).toString();
                         Picasso.get().load(image).into(captureImage);
                     }
                 }
@@ -279,7 +260,7 @@ public class Edit_Profile extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 101 && resultCode == Activity.RESULT_OK){
-            uri = data.getData();
+            uri = Objects.requireNonNull(data).getData();
             captureImage.setImageURI(uri);
         } else {
             Toast.makeText(getApplicationContext(), "No image selected!", Toast.LENGTH_SHORT).show();
@@ -290,27 +271,21 @@ public class Edit_Profile extends AppCompatActivity {
 
         if(uri != null){
             final StorageReference fileRef = storageProfilePic
-                    .child(mAuth.getCurrentUser().getUid()+".jpg");
-            uploadTask = fileRef.putFile(uri);
-            uploadTask.continueWithTask(new Continuation() {
-                @Override
-                public Object then(@NonNull Task task) throws Exception {
-                    if (!task.isSuccessful()){
-                        throw  task.getException();
-                    }
-                    return fileRef.getDownloadUrl();
+                    .child(Objects.requireNonNull(mAuth.getCurrentUser()).getUid()+".jpg");
+            StorageTask<UploadTask.TaskSnapshot> uploadTask = fileRef.putFile(uri);
+            uploadTask.continueWithTask((Continuation) task -> {
+                if (!task.isSuccessful()){
+                    throw  task.getException();
                 }
-            }).addOnCompleteListener(new OnCompleteListener<Uri>() {
-                @Override
-                public void onComplete(@NonNull Task task) {
-                    if (task.isSuccessful()){
-                        Uri downloadUrl = (Uri) task.getResult();
-                        path = downloadUrl.toString();
+                return fileRef.getDownloadUrl();
+            }).addOnCompleteListener((OnCompleteListener<Uri>) task -> {
+                if (task.isSuccessful()){
+                    Uri downloadUrl = (Uri) task.getResult();
+                    path = downloadUrl.toString();
 
-                        HashMap<String, Object> userMap = new HashMap<>();
-                        userMap.put("image",path);
-                        databaseReference.child(mAuth.getCurrentUser().getUid()).updateChildren(userMap);
-                    }
+                    HashMap<String, Object> userMap = new HashMap<>();
+                    userMap.put("image",path);
+                    databaseReference.child(mAuth.getCurrentUser().getUid()).updateChildren(userMap);
                 }
             });
         }
