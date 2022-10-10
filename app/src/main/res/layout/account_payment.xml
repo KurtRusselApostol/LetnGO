@@ -206,11 +206,15 @@
 
         </RelativeLayout>
 
-        <RelativeLayout
+        <androidx.cardview.widget.CardView
+            android:gravity="center_horizontal"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
             android:id="@+id/textView6"
             android:layout_width="match_parent"
             android:layout_height="303dp"
-            android:layout_marginTop="270dp">
+            android:layout_marginTop="300dp">
+
 
             <TextView
                 android:id="@+id/textView7"
@@ -399,14 +403,20 @@
                 app:srcCompat="@drawable/three_people_icn" />
 
 
-        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
 
-        <RelativeLayout
+
+        <androidx.cardview.widget.CardView
+            android:gravity="center_horizontal"
+            android:id="@+id/card_view"
             android:layout_width="match_parent"
-            android:layout_height="316dp"
-            android:layout_marginTop="575dp"
-            android:background="@color/white"
-            tools:ignore="MissingConstraints">
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="650dp"
+
+
+            app:cardCornerRadius="4dp">
 
             <TextView
                 android:layout_width="wrap_content"
@@ -440,6 +450,7 @@
                 android:layout_marginStart="15dp"
                 android:layout_marginTop="270dp"
                 android:clickable="true"
+                android:background="@drawable/relative_layout_design"
                 app:srcCompat="@drawable/edit_text_border" />
 
             <TextView
@@ -509,9 +520,11 @@
                 android:textSize="18dp" />
 
 
-        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
 
     </RelativeLayout>
+
+
 
 
 </ScrollView>
