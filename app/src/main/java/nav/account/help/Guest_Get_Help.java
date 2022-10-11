@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment;
 
 import com.example.letngo.R;
 
+import java.util.Objects;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link Guest_Get_Help#newInstance} factory method to
@@ -22,10 +24,6 @@ public class Guest_Get_Help extends Fragment {
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
-
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
 
     Button guest1, guest2, guest3, guest4;
 
@@ -57,8 +55,9 @@ public class Guest_Get_Help extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            // TODO: Rename and change types of parameters
+            String mParam1 = getArguments().getString(ARG_PARAM1);
+            String mParam2 = getArguments().getString(ARG_PARAM2);
         }
 
     }
@@ -74,43 +73,31 @@ public class Guest_Get_Help extends Fragment {
         guest3 = v.findViewById(R.id.btn_guest_3);
         guest4 = v.findViewById(R.id.btn_guest_4);
 
-        String userhelp = getActivity().getIntent().getStringExtra("user");
+        String userhelp = requireActivity().getIntent().getStringExtra("user");
 
 
-        guest1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), Guest1_Get_Help.class);
-                intent.putExtra("user", userhelp);
-                startActivity(intent);
-            }
+        guest1.setOnClickListener(v1 -> {
+            Intent intent = new Intent(getContext(), Guest1_Get_Help.class);
+            intent.putExtra("user", userhelp);
+            startActivity(intent);
         });
 
-        guest2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), Guest2_Get_Help.class);
-                intent.putExtra("user", userhelp);
-                startActivity(intent);
-            }
+        guest2.setOnClickListener(v12 -> {
+            Intent intent = new Intent(getContext(), Guest2_Get_Help.class);
+            intent.putExtra("user", userhelp);
+            startActivity(intent);
         });
 
-        guest3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), Guest3_Get_Help.class);
-                intent.putExtra("user", userhelp);
-                startActivity(intent);
-            }
+        guest3.setOnClickListener(v13 -> {
+            Intent intent = new Intent(getContext(), Guest3_Get_Help.class);
+            intent.putExtra("user", userhelp);
+            startActivity(intent);
         });
 
-        guest4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), Guest4_Get_Help.class);
-                intent.putExtra("user", userhelp);
-                startActivity(intent);
-            }
+        guest4.setOnClickListener(v14 -> {
+            Intent intent = new Intent(getContext(), Guest4_Get_Help.class);
+            intent.putExtra("user", userhelp);
+            startActivity(intent);
         });
 
         return v;

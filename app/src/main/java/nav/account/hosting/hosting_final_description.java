@@ -1,5 +1,6 @@
 package nav.account.hosting;
 
+import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.Intent;
 import android.net.Uri;
@@ -83,57 +84,44 @@ public class hosting_final_description extends AppCompatActivity {
         dAdd = findViewById(R.id.img_discount_add);
         dMinus = findViewById(R.id.img_discount_minus);
 
-        review.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        review.setOnClickListener((View v) -> {
 
-                String h_title = title.getText().toString();
-                String h_desc = description.getText().toString();
-                String h_offer = offer.getText().toString();
+            String h_title = title.getText().toString();
+            String h_desc = description.getText().toString();
+            String h_offer = offer.getText().toString();
 
-                if (TextUtils.isEmpty(h_title)){
-                    Toast.makeText(hosting_final_description.this, "Please enter a title.", Toast.LENGTH_LONG).show();
-                    title.setError("Title is required");
-                    title.requestFocus();
-                }
-                else if (TextUtils.isEmpty(h_desc)){
-                    Toast.makeText(hosting_final_description.this, "Please enter a description.", Toast.LENGTH_LONG).show();
-                    description.setError("Description is required");
-                    description.requestFocus();
-                }
-                else if (TextUtils.isEmpty(h_offer)){
-                    Toast.makeText(hosting_final_description.this, "Please enter a description.", Toast.LENGTH_LONG).show();
-                    offer.setError("Offer Description is required");
-                    offer.requestFocus();
-                }
-                else if(!peaceful.isChecked() && !family.isChecked() && !central.isChecked() && !unique.isChecked() && !stylish.isChecked() && !spacious.isChecked())
-                {
-                    Toast.makeText(hosting_final_description.this, "You haven't selected any Highlights.", Toast.LENGTH_LONG).show();
-                }
-                else
-                {
-                    hostDescriptions();
-                    Toast.makeText(hosting_final_description.this, "Your Place was successfully saved.", Toast.LENGTH_LONG).show();
+            if (TextUtils.isEmpty(h_title)){
+                Toast.makeText(hosting_final_description.this, "Please enter a title.", Toast.LENGTH_LONG).show();
+                title.setError("Title is required");
+                title.requestFocus();
+            }
+            else if (TextUtils.isEmpty(h_desc)){
+                Toast.makeText(hosting_final_description.this, "Please enter a description.", Toast.LENGTH_LONG).show();
+                description.setError("Description is required");
+                description.requestFocus();
+            }
+            else if (TextUtils.isEmpty(h_offer)){
+                Toast.makeText(hosting_final_description.this, "Please enter a description.", Toast.LENGTH_LONG).show();
+                offer.setError("Offer Description is required");
+                offer.requestFocus();
+            }
+            else if(!peaceful.isChecked() && !family.isChecked() && !central.isChecked() && !unique.isChecked() && !stylish.isChecked() && !spacious.isChecked())
+            {
+                Toast.makeText(hosting_final_description.this, "You haven't selected any Highlights.", Toast.LENGTH_LONG).show();
+            }
+            else
+            {
+                hostDescriptions();
+                Toast.makeText(hosting_final_description.this, "Your Place was successfully saved.", Toast.LENGTH_LONG).show();
 //                    Intent intent = new Intent(hosting_final_description.this, hosting_checking_description.class);
 //                    startActivity(intent);
-                }
-
             }
+
         });
         // PICTURES ARE NOT YET BEING SAVED IN THE DATABASE
-        uploadPhoto1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                OpenGallery(101);
-            }
-        });
+        uploadPhoto1.setOnClickListener(view -> OpenGallery(101));
 
-        uploadPhoto2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                OpenGallery(1);
-            }
-        });
+        uploadPhoto2.setOnClickListener(view -> OpenGallery(1));
 
 
         back.setOnClickListener(v -> onBackPressed());
@@ -152,10 +140,12 @@ public class hosting_final_description extends AppCompatActivity {
     protected void onActivityResult(int requestCode, int resultCode, @Nullable Intent data){
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 101 && resultCode == Activity.RESULT_OK){
+            assert data != null;
             uri1 = data.getData();
             uploadPhoto1.setImageURI(uri1);
         }
         else if(requestCode == 1 && resultCode == Activity.RESULT_OK){
+            assert data != null;
             uri2 = data.getData();
             uploadPhoto2.setImageURI(uri2);
         }
@@ -249,6 +239,7 @@ public class hosting_final_description extends AppCompatActivity {
     }
 
     //INCREMENT METHOD
+    @SuppressLint("SetTextI18n")
     public void incrementPrice(View v)
     {
         pAdd = findViewById(R.id.img_price_add);
@@ -257,6 +248,7 @@ public class hosting_final_description extends AppCompatActivity {
         price.setText("" + countPrice);
     }
 
+    @SuppressLint("SetTextI18n")
     public void incrementDiscount(View v)
     {
         dAdd = findViewById(R.id.img_discount_add);
@@ -266,6 +258,7 @@ public class hosting_final_description extends AppCompatActivity {
     }
 
     //DECREMENT METHOD
+    @SuppressLint("SetTextI18n")
     public void decrementPrice(View v)
     {
         pMinus = findViewById(R.id.img_price_minus);
@@ -280,6 +273,7 @@ public class hosting_final_description extends AppCompatActivity {
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void decrementDiscount(View v)
     {
         dMinus = findViewById(R.id.img_discount_minus);

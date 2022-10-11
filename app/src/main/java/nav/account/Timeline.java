@@ -57,12 +57,7 @@ public class Timeline extends AppCompatActivity {
         backButton.setOnClickListener(v -> onBackPressed());
 
         EditButton = findViewById(R.id.EditButton);
-        EditButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                openActivity();
-            }
-        });
+        EditButton.setOnClickListener(v -> openActivity());
 
 
         reference.addValueEventListener(new ValueEventListener() {

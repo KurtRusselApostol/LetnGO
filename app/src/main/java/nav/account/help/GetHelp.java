@@ -19,9 +19,6 @@ public class GetHelp extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager2 viewPager;
     VPAdapter_Get_Help get_helpAdapter;
-    private FirebaseAuth auth;
-    private FirebaseUser user;
-    private TextView fullName;
 
 
     ImageButton back;
@@ -34,10 +31,10 @@ public class GetHelp extends AppCompatActivity {
         tabLayout = findViewById(R.id.get_help);
         viewPager = findViewById(R.id.viewPagerGetHelp);
         back = findViewById(R.id.btn_back_host);
-        fullName = findViewById(R.id.Full_name);
+        TextView fullName = findViewById(R.id.Full_name);
 
-        auth = FirebaseAuth.getInstance();
-        user = auth.getCurrentUser();
+        FirebaseAuth auth = FirebaseAuth.getInstance();
+        FirebaseUser user = auth.getCurrentUser();
 
         FragmentManager fm = getSupportFragmentManager();
         get_helpAdapter = new VPAdapter_Get_Help(fm, getLifecycle());

@@ -45,12 +45,9 @@ public class hosting_checking_description extends AppCompatActivity implements V
 //        retrievePlaceDescription();
 //        TRIAL();
 
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hosting_checking_description.this, hosting_success.class);
-                startActivity(intent);
-            }
+        next.setOnClickListener(v -> {
+            Intent intent = new Intent(hosting_checking_description.this, hosting_success.class);
+            startActivity(intent);
         });
 
         back.setOnClickListener(v -> onBackPressed());

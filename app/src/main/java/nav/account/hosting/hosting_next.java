@@ -1,5 +1,6 @@
 package nav.account.hosting;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -105,56 +106,53 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
         //END
 
 
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        next.setOnClickListener(v -> {
 
-                //STRINGS
-                String h_street = street.getText().toString();
-                String h_city = city.getText().toString();
-                String h_state = state.getText().toString();
-                String h_zip = zipCode.getText().toString();
+            //STRINGS
+            String h_street = street.getText().toString();
+            String h_city = city.getText().toString();
+            String h_state = state.getText().toString();
+            String h_zip = zipCode.getText().toString();
 
-                //------------------------------------------------------------------//
+            //------------------------------------------------------------------//
 
-                //CALLING VALIDATION METHODS
-                if (TextUtils.isEmpty(h_street)){
-                    Toast.makeText(hosting_next.this, "Please enter your street.", Toast.LENGTH_LONG).show();
-                    street.setError("Street Address is required");
-                    street.requestFocus();
-                }
-                else if (TextUtils.isEmpty(h_city)){
-                    Toast.makeText(hosting_next.this, "Please enter your city.", Toast.LENGTH_LONG).show();
-                    city.setError("City is required");
-                    city.requestFocus();
-                }
-                else if (TextUtils.isEmpty(h_state)){
-                    Toast.makeText(hosting_next.this, "Please enter your state.", Toast.LENGTH_LONG).show();
-                    state.setError("State is required");
-                    state.requestFocus();
-                }
-                else if (TextUtils.isEmpty(h_zip)){
-                    Toast.makeText(hosting_next.this, "Please enter your zip code.", Toast.LENGTH_LONG).show();
-                    zipCode.setError("Zip Code is required");
-                    zipCode.requestFocus();
-                }
-                else if(!pool.isChecked() && !jaccuzi.isChecked() && !patio.isChecked() && !bbq.isChecked() && !pit.isChecked() && !table.isChecked() && !indoor.isChecked() && !outdoor.isChecked() && !exercise.isChecked())
-                {
-                    Toast.makeText(hosting_next.this, "You haven't selected any Amenities.", Toast.LENGTH_LONG).show();
-                }
-                else if(!wifi.isChecked() && !tv.isChecked() && !aircon.isChecked() && !kitchen.isChecked() && !washer.isChecked() && !freePark.isChecked() && !paidPark.isChecked() && !workspace.isChecked() && !shower.isChecked())
-                {
-                    Toast.makeText(hosting_next.this, "You haven't selected any.", Toast.LENGTH_LONG).show();
-                }
-                else if(!kit.isChecked() && !extinguisher.isChecked() && !alarm.isChecked() && !carbon.isChecked())
-                {
-                    Toast.makeText(hosting_next.this, "You haven't selected any safety items.", Toast.LENGTH_LONG).show();
-                }
-                else {
-                    hostRegistration();
-                    Intent intent = new Intent(hosting_next.this, hosting_final_description.class);
-                    startActivity(intent);
-                }
+            //CALLING VALIDATION METHODS
+            if (TextUtils.isEmpty(h_street)){
+                Toast.makeText(hosting_next.this, "Please enter your street.", Toast.LENGTH_LONG).show();
+                street.setError("Street Address is required");
+                street.requestFocus();
+            }
+            else if (TextUtils.isEmpty(h_city)){
+                Toast.makeText(hosting_next.this, "Please enter your city.", Toast.LENGTH_LONG).show();
+                city.setError("City is required");
+                city.requestFocus();
+            }
+            else if (TextUtils.isEmpty(h_state)){
+                Toast.makeText(hosting_next.this, "Please enter your state.", Toast.LENGTH_LONG).show();
+                state.setError("State is required");
+                state.requestFocus();
+            }
+            else if (TextUtils.isEmpty(h_zip)){
+                Toast.makeText(hosting_next.this, "Please enter your zip code.", Toast.LENGTH_LONG).show();
+                zipCode.setError("Zip Code is required");
+                zipCode.requestFocus();
+            }
+            else if(!pool.isChecked() && !jaccuzi.isChecked() && !patio.isChecked() && !bbq.isChecked() && !pit.isChecked() && !table.isChecked() && !indoor.isChecked() && !outdoor.isChecked() && !exercise.isChecked())
+            {
+                Toast.makeText(hosting_next.this, "You haven't selected any Amenities.", Toast.LENGTH_LONG).show();
+            }
+            else if(!wifi.isChecked() && !tv.isChecked() && !aircon.isChecked() && !kitchen.isChecked() && !washer.isChecked() && !freePark.isChecked() && !paidPark.isChecked() && !workspace.isChecked() && !shower.isChecked())
+            {
+                Toast.makeText(hosting_next.this, "You haven't selected any.", Toast.LENGTH_LONG).show();
+            }
+            else if(!kit.isChecked() && !extinguisher.isChecked() && !alarm.isChecked() && !carbon.isChecked())
+            {
+                Toast.makeText(hosting_next.this, "You haven't selected any safety items.", Toast.LENGTH_LONG).show();
+            }
+            else {
+                hostRegistration();
+                Intent intent = new Intent(hosting_next.this, hosting_final_description.class);
+                startActivity(intent);
             }
         });
 
@@ -342,6 +340,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
     }
 
     //INCREMENT METHOD
+    @SuppressLint("SetTextI18n")
     public void incrementGuest(View v)
     {
         gAdd = findViewById(R.id.img_guest_add);
@@ -350,6 +349,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
         guest.setText("" + countGuest);
     }
 
+    @SuppressLint("SetTextI18n")
     public void incrementBed(View v)
     {
         bAdd = findViewById(R.id.img_bed_add);
@@ -358,6 +358,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
         bed.setText("" + countBed);
     }
 
+    @SuppressLint("SetTextI18n")
     public void incrementRoom(View v)
     {
         rAdd = findViewById(R.id.img_room_add);
@@ -367,6 +368,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
 
     }
 
+    @SuppressLint("SetTextI18n")
     public void incrementBathroom(View v)
     {
         brAdd = findViewById(R.id.img_bathroom_add);
@@ -377,6 +379,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
 
 
     //DECREMENT METHOD
+    @SuppressLint("SetTextI18n")
     public void decrementGuest(View v)
     {
         gMinus = findViewById(R.id.img_guest_minus);
@@ -391,6 +394,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void decrementBed(View v)
     {
         bMinus = findViewById(R.id.img_bed_minus);
@@ -405,6 +409,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void decrementRoom(View v)
     {
         rMinus = findViewById(R.id.img_room_minus);
@@ -419,6 +424,7 @@ public class hosting_next extends AppCompatActivity implements AdapterView.OnIte
         }
     }
 
+    @SuppressLint("SetTextI18n")
     public void decrementBathroom(View v)
     {
         brMinus = findViewById(R.id.img_bathroom_minus);

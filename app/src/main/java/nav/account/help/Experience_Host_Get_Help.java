@@ -11,6 +11,8 @@ import androidx.fragment.app.Fragment;
 
 import com.example.letngo.R;
 
+import java.util.Objects;
+
 /**
  * A simple {@link Fragment} subclass.
  * Use the {@link Experience_Host_Get_Help#newInstance} factory method to
@@ -23,11 +25,6 @@ public class Experience_Host_Get_Help extends Fragment {
     private static final String ARG_PARAM1 = "param1";
     private static final String ARG_PARAM2 = "param2";
 
-    // TODO: Rename and change types of parameters
-    private String mParam1;
-    private String mParam2;
-
-    Button guest1, guest2, guest3, guest4;
     Button exp_host1, exp_host2, exp_host3, exp_host4;
 
     public Experience_Host_Get_Help() {
@@ -56,8 +53,9 @@ public class Experience_Host_Get_Help extends Fragment {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-            mParam1 = getArguments().getString(ARG_PARAM1);
-            mParam2 = getArguments().getString(ARG_PARAM2);
+            // TODO: Rename and change types of parameters
+            String mParam1 = getArguments().getString(ARG_PARAM1);
+            String mParam2 = getArguments().getString(ARG_PARAM2);
         }
     }
 
@@ -72,42 +70,30 @@ public class Experience_Host_Get_Help extends Fragment {
         exp_host3 = v.findViewById(R.id.btn_experience_host_3);
         exp_host4 = v.findViewById(R.id.btn_experience_host_4);
 
-        String userhelp = getActivity().getIntent().getStringExtra("user");
+        String userhelp = requireActivity().getIntent().getStringExtra("user");
 
-        exp_host1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), Experience_Host1_Get_Help.class);
-                intent.putExtra("user", userhelp);
-                startActivity(intent);
-            }
+        exp_host1.setOnClickListener(v1 -> {
+            Intent intent = new Intent(getContext(), Experience_Host1_Get_Help.class);
+            intent.putExtra("user", userhelp);
+            startActivity(intent);
         });
 
-        exp_host2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), Experience_Host2_Get_Help.class);
-                intent.putExtra("user", userhelp);
-                startActivity(intent);
-            }
+        exp_host2.setOnClickListener(v12 -> {
+            Intent intent = new Intent(getContext(), Experience_Host2_Get_Help.class);
+            intent.putExtra("user", userhelp);
+            startActivity(intent);
         });
 
-        exp_host3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), Experience_Host3_Get_Help.class);
-                intent.putExtra("user", userhelp);
-                startActivity(intent);
-            }
+        exp_host3.setOnClickListener(v13 -> {
+            Intent intent = new Intent(getContext(), Experience_Host3_Get_Help.class);
+            intent.putExtra("user", userhelp);
+            startActivity(intent);
         });
 
-        exp_host4.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), Experience_Host4_Get_Help.class);
-                intent.putExtra("user", userhelp);
-                startActivity(intent);
-            }
+        exp_host4.setOnClickListener(v14 -> {
+            Intent intent = new Intent(getContext(), Experience_Host4_Get_Help.class);
+            intent.putExtra("user", userhelp);
+            startActivity(intent);
         });
 
         return v;
