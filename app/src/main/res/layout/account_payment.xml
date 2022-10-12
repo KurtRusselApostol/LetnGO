@@ -156,6 +156,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="320dp"
                 android:layout_marginTop="60dp"
+                android:textStyle="bold
+"
                 android:clickable="true"
                 android:text="Learn More"
                 android:textSize="@dimen/_11ssp" />
@@ -166,6 +168,8 @@
                 android:layout_height="wrap_content"
                 android:layout_marginStart="320dp"
                 android:layout_marginTop="100dp"
+                android:textStyle="bold
+"
                 android:clickable="true"
                 android:text="Edit"
                 android:textSize="@dimen/_12ssp" />
