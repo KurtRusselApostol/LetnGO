@@ -1,5 +1,6 @@
 package nav.account.hosting;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -37,12 +38,9 @@ public class Manage_Hosting extends AppCompatActivity {
 
         back = findViewById(R.id.img_Cancel);
         Button button = findViewById(R.id.add_hosting);
-        button.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent=new Intent(Manage_Hosting.this,new_Hosting.class);
-                startActivity(intent);
-            }
+        button.setOnClickListener(v -> {
+            Intent intent=new Intent(Manage_Hosting.this,new_Hosting.class);
+            startActivity(intent);
         });
 
         recyclerview=findViewById(R.id.recycleview);
@@ -53,6 +51,7 @@ public class Manage_Hosting extends AppCompatActivity {
         recyclerview.setAdapter(adapter);
 
         databaseReference.addValueEventListener(new ValueEventListener() {
+            @SuppressLint("NotifyDataSetChanged")
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
                 for (DataSnapshot dataSnapshot: snapshot.getChildren())

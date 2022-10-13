@@ -20,12 +20,9 @@ public class hosting_success extends AppCompatActivity {
 
         success = findViewById(R.id.success);
 
-        success.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(hosting_success.this, Manage_Hosting.class);
-                startActivity(intent);
-            }
+        success.setOnClickListener(v -> {
+            Intent intent = new Intent(hosting_success.this, Manage_Hosting.class);
+            startActivity(intent);
         });
     }
 }

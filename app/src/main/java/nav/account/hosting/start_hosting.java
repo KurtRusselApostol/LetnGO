@@ -1,6 +1,7 @@
 package nav.account.hosting;
 
 import android.Manifest;
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.graphics.Bitmap;
@@ -50,16 +51,9 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
     ImageView host_photo, cancel;
     CountryCodePicker countryCodePicker;
     private ImageView img_host_id;
-    private Button upload_pic;
-    //public Uri imageURI;
-    private Uri filepath;
-    private FirebaseStorage storage;
-    private StorageReference storageReference;
-    private FirebaseAuth mAuth;
     //private StorageReference storageIdPic;
     protected static final int CAMERA_REQUEST = 0;
     protected static final int GALLERY_PICTURE = 1;
-    private Intent pictureActionIntent = null;
     Bitmap capturedImage;
 
     String selectedImagePath;
@@ -81,6 +75,7 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
+    @SuppressLint("CutPasteId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -97,16 +92,16 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
         host_photo = findViewById(R.id.img_host_id);
         cancel = findViewById(R.id.img_Cancel);
         next = findViewById(R.id.tv_next);
-        storage = FirebaseStorage.getInstance();
-        storageReference = storage.getReference();
+        FirebaseStorage storage = FirebaseStorage.getInstance();
+        storage.getReference();
 
         img_host_id = findViewById(R.id.img_host_id);
-        upload_pic = findViewById(R.id.upload_pic);
+        Button upload_pic = findViewById(R.id.upload_pic);
 
 
         System.out.println(userUid);
 
-        mAuth = FirebaseAuth.getInstance();
+        FirebaseAuth.getInstance();
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //GETTING THE DATA OF THE CURRENT USER USING HIS/HER ID
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference("User_account");
@@ -147,74 +142,71 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
 
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
         //SAVING FIRST PART OF HOSTING
-        next.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
+        next.setOnClickListener(v -> {
 
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-                String h_fn = full_name.getText().toString();
-                String h_em = email.getText().toString();
-                String h_pass = password.getText().toString();
-                String h_mb = phone.getText().toString();
-                String h_id = spinner.getSelectedItem().toString();
-                String h_ccp = countryCodePicker.getSelectedCountryCodeWithPlus().toString();
+            String h_fn = full_name.getText().toString();
+            String h_em = email.getText().toString();
+            String h_pass = password.getText().toString();
+            String h_mb = phone.getText().toString();
+            String h_id = spinner.getSelectedItem().toString();
+            String h_ccp = countryCodePicker.getSelectedCountryCodeWithPlus();
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-                String h_fullname = "[a-zA-Z ]";
-                Matcher h_fullnameMatcher;
-                Pattern mobilePattern = Pattern.compile(h_fullname);
-                h_fullnameMatcher = mobilePattern.matcher(h_fn);
+            String h_fullname = "[a-zA-Z ]";
+            Matcher h_fullnameMatcher;
+            Pattern mobilePattern = Pattern.compile(h_fullname);
+            h_fullnameMatcher = mobilePattern.matcher(h_fn);
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-                if (!h_pass.equals(password_user)){
-                    Toast.makeText(start_hosting.this, "Your password is incorrect", Toast.LENGTH_LONG).show();
-                    password.setError("Password is incorrect");
-                    password.requestFocus();
-                }
-                else if(capturedImage == null){
-                    Toast.makeText(start_hosting.this, "ID picture is required. Please take a photo of your valid ID.", Toast.LENGTH_LONG).show();
-                }
-                else if (TextUtils.isEmpty(h_fn)){
-                    Toast.makeText(start_hosting.this, "Please enter your Full Name", Toast.LENGTH_LONG).show();
-                    full_name.setError("Full Name is required");
-                    full_name.requestFocus();
-                }
-                else if (!h_fullnameMatcher.find())
-                {
-                    Toast.makeText(start_hosting.this, "Please only enter letters.", Toast.LENGTH_SHORT).show();
-                    full_name.setError("No other characters allowed");
-                    full_name.requestFocus();
-                }
-                else if (TextUtils.isEmpty(h_em)){
-                    Toast.makeText(start_hosting.this, "Please enter your email", Toast.LENGTH_LONG).show();
-                    email.setError("Email is required");
-                    email.requestFocus();
-                }
-                else if (!Patterns.EMAIL_ADDRESS.matcher(h_em).matches()){
-                    Toast.makeText(start_hosting.this, "Please re-enter your email", Toast.LENGTH_LONG).show();
-                    email.setError("Valid email is required");
-                    email.requestFocus();
-
-                }
-                else if (TextUtils.isEmpty(h_mb)){
-                    Toast.makeText(start_hosting.this, "Please enter your mobile no.", Toast.LENGTH_LONG).show();
-                    phone.setError("Mobile no. is required");
-                    phone.requestFocus();
-                }
-                else if (h_mb.length() != 10){
-                    Toast.makeText(start_hosting.this, "Please re-enter your mobile no.", Toast.LENGTH_LONG).show();
-                    phone.setError("Valid Mobile no. should be 10 digits");
-                    phone.requestFocus();
-                }
-                else {
-                    host_Registration(h_fn, h_em, h_mb, h_ccp, h_id);
-                    movetoNextPage();
-                }
+            if (!h_pass.equals(password_user)){
+                Toast.makeText(start_hosting.this, "Your password is incorrect", Toast.LENGTH_LONG).show();
+                password.setError("Password is incorrect");
+                password.requestFocus();
+            }
+            else if(capturedImage == null){
+                Toast.makeText(start_hosting.this, "ID picture is required. Please take a photo of your valid ID.", Toast.LENGTH_LONG).show();
+            }
+            else if (TextUtils.isEmpty(h_fn)){
+                Toast.makeText(start_hosting.this, "Please enter your Full Name", Toast.LENGTH_LONG).show();
+                full_name.setError("Full Name is required");
+                full_name.requestFocus();
+            }
+            else if (!h_fullnameMatcher.find())
+            {
+                Toast.makeText(start_hosting.this, "Please only enter letters.", Toast.LENGTH_SHORT).show();
+                full_name.setError("No other characters allowed");
+                full_name.requestFocus();
+            }
+            else if (TextUtils.isEmpty(h_em)){
+                Toast.makeText(start_hosting.this, "Please enter your email", Toast.LENGTH_LONG).show();
+                email.setError("Email is required");
+                email.requestFocus();
+            }
+            else if (!Patterns.EMAIL_ADDRESS.matcher(h_em).matches()){
+                Toast.makeText(start_hosting.this, "Please re-enter your email", Toast.LENGTH_LONG).show();
+                email.setError("Valid email is required");
+                email.requestFocus();
 
             }
+            else if (TextUtils.isEmpty(h_mb)){
+                Toast.makeText(start_hosting.this, "Please enter your mobile no.", Toast.LENGTH_LONG).show();
+                phone.setError("Mobile no. is required");
+                phone.requestFocus();
+            }
+            else if (h_mb.length() != 10){
+                Toast.makeText(start_hosting.this, "Please re-enter your mobile no.", Toast.LENGTH_LONG).show();
+                phone.setError("Valid Mobile no. should be 10 digits");
+                phone.requestFocus();
+            }
+            else {
+                host_Registration(h_fn, h_em, h_mb, h_ccp, h_id);
+                movetoNextPage();
+            }
+
         });
 
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
@@ -235,13 +227,10 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
                     100);
         }
 
-        upload_pic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                //OPENS CAMERA
-                Intent intent= new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
-                startActivityForResult(intent, 101);
-            }
+        upload_pic.setOnClickListener(v -> {
+            //OPENS CAMERA
+            Intent intent= new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
+            startActivityForResult(intent, 101);
         });
 
     }
@@ -256,7 +245,9 @@ public class start_hosting extends AppCompatActivity implements AdapterView.OnIt
             //imageURI = data.getData();
             //img_host_id.setImageURI(imageURI);
 
-            filepath = data.getData();
+            //public Uri imageURI;
+            assert data != null;
+            data.getData();
 
             //Using bitmap
             capturedImage = (Bitmap) data.getExtras().get("data");

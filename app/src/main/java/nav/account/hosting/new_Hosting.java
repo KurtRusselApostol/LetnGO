@@ -47,19 +47,11 @@ public class new_Hosting extends AppCompatActivity {
         PriceDiscount = findViewById(R.id.editPriceDiscount);
         databaseUser= FirebaseDatabase.getInstance().getReference();
 
-        btnInsert.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                InsertData();
-            }
-        });
+        btnInsert.setOnClickListener(v -> InsertData());
 
-        btnView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(new_Hosting.this, Hostinglist.class));
-                finish();
-            }
+        btnView.setOnClickListener(v -> {
+            startActivity(new Intent(new_Hosting.this, Hostinglist.class));
+            finish();
         });
     }
 
@@ -74,16 +66,14 @@ public class new_Hosting extends AppCompatActivity {
         String id=databaseUser.push().getKey();
 
         Hosting hosting= new Hosting(title,description,highlights,offer_description,others,price,price_discount);
+        assert id != null;
         databaseUser.child("Host_Description").child(id).setValue(hosting)
-                .addOnCompleteListener(new OnCompleteListener<Void>() {
-                    @Override
-                    public void onComplete(@NonNull Task<Void> task) {
-                        if(task.isSuccessful()){
-                            Toast.makeText(new_Hosting.this,"Data is inserted", Toast.LENGTH_SHORT).show();
-                        }
-                        else{
-                            Toast.makeText(new_Hosting.this,"Data insert failed", Toast.LENGTH_SHORT).show();
-                        }
+                .addOnCompleteListener(task -> {
+                    if(task.isSuccessful()){
+                        Toast.makeText(new_Hosting.this,"Data is inserted", Toast.LENGTH_SHORT).show();
+                    }
+                    else{
+                        Toast.makeText(new_Hosting.this,"Data insert failed", Toast.LENGTH_SHORT).show();
                     }
                 });
 
